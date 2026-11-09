@@ -1,0 +1,290 @@
+{
+  "latent_full_min": [
+    -2.8635432720184326,
+    -1.8652675151824951,
+    -0.847847580909729,
+    0.5820451378822327,
+    0.6910279989242554,
+    -0.6786985397338867,
+    -0.5639190077781677,
+    -0.44432196021080017
+  ],
+  "latent_full_max": [
+    -1.6575733423233032,
+    0.3470880389213562,
+    0.5327821373939514,
+    2.1570687294006348,
+    1.7172272205352783,
+    0.6647028923034668,
+    0.7902041673660278,
+    0.9367374181747437
+  ],
+  "queries": {
+    "P1a_CTE_upper": {
+      "pixel_box": {
+        "status": "sat",
+        "time_seconds": 0.0198,
+        "counterexample": {
+          "CTE": 10.0,
+          "HE": -52.470728,
+          "input_mean": 0.611054
+        }
+      },
+      "mean_only": {
+        "status": "sat",
+        "time_seconds": 0.0169,
+        "counterexample": {
+          "CTE": 10.0,
+          "HE": -54.284214,
+          "input_mean": 0.5
+        }
+      },
+      "ae_full": {
+        "status": "sat",
+        "time_seconds": 0.0735,
+        "counterexample": {
+          "CTE": 10.0,
+          "HE": -11.742835,
+          "latent": [
+            -1.898495,
+            -1.112276,
+            -0.477231,
+            1.570268,
+            1.121608,
+            0.664703,
+            0.779982,
+            0.488247
+          ]
+        }
+      },
+      "ae_subset": {
+        "status": "sat",
+        "time_seconds": 0.0713,
+        "counterexample": {
+          "CTE": 10.0,
+          "HE": -12.138976,
+          "latent": [
+            -2.734216,
+            -0.901977,
+            -0.127922,
+            1.014828,
+            1.376647,
+            0.304029,
+            0.264322,
+            0.545167
+          ]
+        }
+      }
+    },
+    "P1b_CTE_lower": {
+      "pixel_box": {
+        "status": "sat",
+        "time_seconds": 0.0117,
+        "counterexample": {
+          "CTE": -10.0,
+          "HE": 14.978943,
+          "input_mean": 0.443435
+        }
+      },
+      "mean_only": {
+        "status": "sat",
+        "time_seconds": 0.0168,
+        "counterexample": {
+          "CTE": -10.0,
+          "HE": 13.494626,
+          "input_mean": 0.5
+        }
+      },
+      "ae_full": {
+        "status": "sat",
+        "time_seconds": 0.0666,
+        "counterexample": {
+          "CTE": -10.0,
+          "HE": 31.99032,
+          "latent": [
+            -1.776146,
+            -0.400881,
+            -0.275318,
+            1.029476,
+            1.18397,
+            -0.148907,
+            -0.467462,
+            0.936737
+          ]
+        }
+      },
+      "ae_subset": {
+        "status": "sat",
+        "time_seconds": 0.0658,
+        "counterexample": {
+          "CTE": -10.0,
+          "HE": 42.582245,
+          "latent": [
+            -2.202279,
+            -1.095199,
+            -0.431669,
+            1.354987,
+            1.156044,
+            -0.012409,
+            -0.214642,
+            0.007698
+          ]
+        }
+      }
+    },
+    "P4_C_left": {
+      "pixel_box": {
+        "status": "sat",
+        "time_seconds": 0.015,
+        "counterexample": {
+          "CTE": 0.0,
+          "HE": -2.414173,
+          "input_mean": 0.472049
+        }
+      },
+      "mean_only": {
+        "status": "sat",
+        "time_seconds": 0.0131,
+        "counterexample": {
+          "CTE": -4.376821,
+          "HE": 6.313047,
+          "input_mean": 0.5
+        }
+      },
+      "ae_full": {
+        "status": "sat",
+        "time_seconds": 0.053,
+        "counterexample": {
+          "CTE": -4.204257,
+          "HE": 19.512754,
+          "latent": [
+            -1.657573,
+            -0.659994,
+            0.532782,
+            0.640339,
+            1.407778,
+            -0.514044,
+            -0.367222,
+            0.739345
+          ]
+        }
+      },
+      "ae_subset": {
+        "status": "sat",
+        "time_seconds": 0.0573,
+        "counterexample": {
+          "CTE": 0.0,
+          "HE": 6.908824,
+          "latent": [
+            -1.930364,
+            -0.247799,
+            -0.016903,
+            0.582045,
+            0.961635,
+            -0.305983,
+            -0.108842,
+            0.659786
+          ]
+        }
+      }
+    },
+    "P4_C_right": {
+      "pixel_box": {
+        "status": "sat",
+        "time_seconds": 0.0107,
+        "counterexample": {
+          "CTE": 0.0,
+          "HE": -0.45964,
+          "input_mean": 0.426617
+        }
+      },
+      "mean_only": {
+        "status": "sat",
+        "time_seconds": 0.0127,
+        "counterexample": {
+          "CTE": 0.0,
+          "HE": -0.423643,
+          "input_mean": 0.5
+        }
+      },
+      "ae_full": {
+        "status": "sat",
+        "time_seconds": 0.0574,
+        "counterexample": {
+          "CTE": 2.875773,
+          "HE": 7.862014,
+          "latent": [
+            -1.657573,
+            -0.602142,
+            0.364424,
+            0.582045,
+            1.162947,
+            -0.466618,
+            -0.223417,
+            0.836906
+          ]
+        }
+      },
+      "ae_subset": {
+        "status": "sat",
+        "time_seconds": 0.0583,
+        "counterexample": {
+          "CTE": 2.40117,
+          "HE": -21.864639,
+          "latent": [
+            -1.657573,
+            -0.520285,
+            0.202766,
+            0.820106,
+            1.022457,
+            0.064057,
+            -0.563919,
+            0.352194
+          ]
+        }
+      }
+    },
+    "P5_deadzone": {
+      "pixel_box": {
+        "status": "sat",
+        "time_seconds": 0.0121,
+        "counterexample": {
+          "CTE": -0.01,
+          "HE": -0.01,
+          "input_mean": 0.396623
+        }
+      },
+      "mean_only": {
+        "status": "sat",
+        "time_seconds": 0.0274,
+        "counterexample": {
+          "CTE": -0.01,
+          "HE": -0.01,
+          "input_mean": 0.5
+        }
+      },
+      "ae_full": {
+        "status": "timeout",
+        "time_seconds": 600.018
+      },
+      "ae_subset": {
+        "status": "sat",
+        "time_seconds": 0.1536,
+        "counterexample": {
+          "CTE": -0.01,
+          "HE": -0.01,
+          "latent": [
+            -1.657573,
+            -0.75909,
+            -0.157533,
+            1.354723,
+            0.691028,
+            0.207199,
+            -0.439326,
+            0.170756
+          ]
+        }
+      }
+    }
+  }
+}

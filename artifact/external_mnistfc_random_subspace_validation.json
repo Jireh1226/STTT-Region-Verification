@@ -1,0 +1,25 @@
+{
+  "provenance": {
+    "script": "run_mnistfc_random_parallel.py"
+  },
+  "validation": {
+    "output_indexing": {
+      "timestamp_utc": "2026-07-02T01:57:31.479006+00:00",
+      "anchor_idx": 3,
+      "onnxruntime_output0_is_pixels": true,
+      "ground_truth_logits_only_net": "unsat",
+      "two_output_confusion_at_Y0to9": "unsat",
+      "two_output_confusion_at_Y784plus": "sat",
+      "logits_at": "Y_0..9",
+      "expected": "Y_0..9",
+      "PASS": true
+    },
+    "basis_validation": {
+      "worst_orthonormality_error": 7.771561172376096e-16,
+      "worst_zero_mean_error": 2.0533461552378533e-18,
+      "n_bases": 150,
+      "within_1e-9": true
+    },
+    "witness_checks": []
+  }
+}

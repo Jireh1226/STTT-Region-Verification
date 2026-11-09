@@ -1,0 +1,43 @@
+{
+  "seed": 42,
+  "architecture": "128 -> 64 -> 16 -> 1",
+  "epochs": 100,
+  "n_real_train": 10000,
+  "n_fake_train": 10000,
+  "fake_composition": [
+    {
+      "type": "box_corners",
+      "count": 2500
+    },
+    {
+      "type": "cross_blends",
+      "count": 2500
+    },
+    {
+      "type": "uniform_noise",
+      "count": 2500
+    },
+    {
+      "type": "high_freq_patterns",
+      "count": 2500
+    }
+  ],
+  "final_train_loss": 0.055306326597929,
+  "final_val_loss": 0.07293803244829178,
+  "final_train_acc": 0.9810555577278137,
+  "final_val_acc": 0.9785000085830688,
+  "real_logit_stats": {
+    "mean": 4.253546714782715,
+    "std": 1.6924015283584595,
+    "min": -6.305874347686768,
+    "max": 6.954420566558838
+  },
+  "fake_logit_stats": {
+    "mean": -31.16939926147461,
+    "std": 24.76091194152832,
+    "min": -91.51329040527344,
+    "max": 6.032415866851807
+  },
+  "real_frac_above_0": 0.9826,
+  "fake_frac_below_0": 0.9858
+}

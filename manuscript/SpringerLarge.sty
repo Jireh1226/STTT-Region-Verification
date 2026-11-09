@@ -1,0 +1,464 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{SpringerLarge}[2022/07/01 SpringerLarge -- LaTeX Author Package]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Force cmrfnt mode (Computer Modern, skipping newtx) for local texlive-basic.
+% Original SpringerLarge cmrfnt-option logic removed to avoid conditional fragility.
+\usepackage{amssymb}
+
+% Enable unicode input
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[english]{babel}
+
+% Math
+\usepackage{mathtools}
+% \usepackage{soul}  % commented locally: unused; avoids basic-texlive dependency
+
+
+\usepackage[pdftex,dvipsnames]{xcolor}
+% \usepackage{csquotes}    % commented locally: unused
+\usepackage{enumitem}
+\usepackage[pdftex]{graphicx}
+\usepackage{array}
+\usepackage{xurl}
+
+% Algorithms and pseudo code
+% \usepackage{listings}                       % commented locally: unused
+% \usepackage{algorithm,algpseudocodex}       % commented locally: unused
+
+% Caption package is incompatible with Springer's document classes
+% \usepackage[caption=false]{subfig}          % commented locally: no subfigures
+\usepackage{booktabs}
+
+% \usepackage[binary-units=true,...]{siunitx} % commented locally: unused
+
+\usepackage[%
+	activate={true,nocompatibility},%
+	final,tracking=true,kerning=true,%
+	expansion=false,%
+	protrusion=false
+]{microtype}
+
+% % To fix a bug in svjour3 with cleveref
+% \newcounter{chapter}
+
+\usepackage{hyperref}
+% \usepackage[capitalise,nameinlink,noabbrev]{cleveref}  % commented locally: unused
+
+\definecolor{hyplink}{named}{Maroon}
+\definecolor{hypurl}{named}{RoyalBlue}
+\definecolor{hypcitation}{rgb}{0,0.5,0}
+\hypersetup{%
+	colorlinks=true,
+	linkcolor=hypurl,
+	urlcolor=hypurl,
+	citecolor=hypurl
+}
+\usepackage{tikz}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\paperwidth}{210mm}%
+\setlength{\paperheight}{279mm}%
+\setlength{\textwidth}{174mm}%
+\setlength{\textheight}{660.2pt}%
+\setlength{\columnwidth}{84mm}%
+\setlength{\columnsep}{6mm}%
+\setlength\topmargin{-17.45mm}%
+\setlength{\evensidemargin}{-7.4mm}%
+\setlength{\oddsidemargin}{-7.4mm}%
+\setlength\headsep{21.7\p@}%
+\setlength\parindent{4truemm}%
+\setlength{\parskip}{0pt}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\rhhrulefill{\leavevmode\leaders\hrule height .35truemm\hfill\kern\z@}%%running head rule
+\def\runheadhook{\rlap{\smash{\lower12pt\hbox to\textwidth{\rhhrulefill}}}}%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\ps@headings{%
+    \let\@oddfoot\@empty\let\@evenfoot\@empty
+    \def\@evenhead{\small\csname runheadhook\endcsname
+    \rlap{\thepage}\hfil\leftmark\unskip}%
+    \def\@oddhead{\small\csname runheadhook\endcsname
+    \ignorespaces\rightmark\hfil\llap{\thepage}}%
+    \let\@mkboth\@gobbletwo
+    \let\sectionmark\@gobble
+    \let\subsectionmark\@gobble
+    }
+\def\@oddfoot{\begin{picture}(0,0)(0,0)%
+\put(0,1.1){\hbox to \textwidth{\hfill{\small{Springer}}}}%
+\end{picture}}%
+\def\@evenfoot{\begin{picture}(0,0)(0,0)%
+\put(1.7,1.1){\hbox to \textwidth{\small{Springer}\hfill}}%
+\end{picture}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+\def\ps@vpupdate{\def\@oddfoot{%
+\begin{picture}(0,0)(0,0)%
+\put(0,1.1){\hbox to \textwidth{\hfill{\small{Springer}}}}%
+\end{picture}%
+\HD{25}{0}\normalfont\hfil\bfseries``{\if!\@shortname!{sample}\else{\@shortname}\fi}-\jobname''\enspace \the\year/\the\month/\the\day\quad \currenttime\hfil}
+}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\HD#1#2{\vrule height#1pt depth#2pt width0pt} %% Vertical spaces
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lefthyphenmin=3%%%
+\righthyphenmin=3%%%
+\doublehyphendemerits=1000000%%%
+\brokenpenalty10000\relax%%%Suppressing hyphenation across pages - new
+\finalhyphendemerits=1000000%%%avoid a word to break in the last line of a paragraph - new
+\tolerance=9999%%%avoid for lot of overfull - new
+\emergencystretch=10pt%%%avoid for lot of overfull still if continue... - new
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\newraggedright{\raggedright}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\section{\ifnum\value{secnumdepth}=0\refstepcounter{section}\fi\@startsection{section}{1}{\z@}%
+    {-25\p@ \@plus-3pt}{5dd}
+     {\sectfont}}
+\def\subsection{\ifnum\value{secnumdepth}=0\refstepcounter{subsection}\fi\@startsection{subsection}{2}{\z@}%
+    {-12.5\p@ \@plus-3pt}{5dd}
+     {\newraggedright\subsectfont}}
+\def\subsubsection{\ifnum\value{secnumdepth}=0\refstepcounter{subsubsection}\fi\@startsection{subsubsection}{3}{\z@}%
+    {-12.5\p@ \@plus-3pt}{5dd}
+     {\subsubsectfont}}
+\def\paragraph{\@startsection{paragraph}{4}{\z@}%
+    {-12.5\p@ \@plus-3pt minus-3pt}{\z@}{\normalsize\sffamily\bfseries}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\aftertext=3pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\sectfont{\sffamily\bfseries\boldmath\fontsize{12}{12.5}\selectfont}%
+\def\subsectfont{\sffamily\bfseries\boldmath\fontsize{11}{12.5}\selectfont}%
+\def\subsubsectfont{\sffamily\bfseries\boldmath\fontsize{10}{12.5}\selectfont}%
+\gdef\floatlegendstyle{\sffamily\bfseries}%
+\def\floatcounterend{\ }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% numbered
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\normalthmheadings{\def\@spbegintheorem##1##2##3##4{\trivlist\normalfont
+                 \item[\hskip\labelsep{##3##1\ ##2\@thmcounterend}]\mbox{}\nopagebreak\par\noindent##4}
+\def\@spopargbegintheorem##1##2##3##4##5{\trivlist
+      \item[\hskip\labelsep{##4##1\ ##2}]{##4(##3)\@thmcounterend\ }\mbox{}\nopagebreak\par\noindent##5}}
+\normalthmheadings
+%%%
+\def\reversethmheadings{\def\@spbegintheorem##1##2##3##4{\trivlist\normalfont
+                 \item[\hskip\labelsep{##3##2\ ##1\@thmcounterend}]\mbox{}\nopagebreak\par\noindent##4}
+\def\@spopargbegintheorem##1##2##3##4##5{\trivlist
+      \item[\hskip\labelsep{##4##2\ ##1}]{##4(##3)\@thmcounterend\ }\mbox{}\nopagebreak\par\noindent##5}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% unnumbered
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\@Begintheorem#1#2#3{#3\trivlist
+                           \item[\hskip\labelsep{#2#1\@thmcounterend}]\mbox{}\nopagebreak\par\noindent}
+
+\def\@Opargbegintheorem#1#2#3#4{#4\trivlist
+      \item[\hskip\labelsep{#3#1}]{#3(#2)\@thmcounterend\ }\mbox{}\nopagebreak\par\noindent}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%ARTICLE TOTAL POINT SIZES UPDATED
+\renewcommand\normalsize{%
+   \@setfontsize\normalsize{10pt}{12.5pt}%
+   \abovedisplayskip=12\p@ plus3pt minus1pt
+   \belowdisplayskip=12\p@ plus3pt minus1pt
+   \abovedisplayshortskip=0.0 mm plus6pt
+   \belowdisplayshortskip=6\p@ plus3pt minus1pt
+               \topsep 6.25\p@ plus3\p@ %\@minus4\p@
+   \let\@listi\@listI}
+\normalsize
+\renewcommand\small{%
+   \@setfontsize\small{8.5pt}{10pt}%
+   \abovedisplayskip 8.5\p@ \@plus3\p@ \@minus4\p@
+   \abovedisplayshortskip \z@ \@plus2\p@
+   \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
+   \def\@listi{\leftmargin\leftmargini
+               \parsep 0\p@ \@plus1\p@ \@minus\p@
+               \topsep 4\p@ \@plus2\p@ \@minus4\p@
+               \itemsep0\p@}%
+   \belowdisplayskip \abovedisplayskip
+}
+\let\footnotesize\small%
+\renewcommand\tiny{\@setfontsize\tiny\@vpt\@vipt}
+\renewcommand\large{\@setfontsize\large\@xiipt{14pt}}
+\renewcommand\Large{\@setfontsize\Large\@xivpt{16dd}}
+\renewcommand\LARGE{\@setfontsize\LARGE\@xviipt{17dd}}
+\renewcommand\huge{\@setfontsize\huge\@xxpt{25}}
+\renewcommand\Huge{\@setfontsize\Huge\@xxvpt{30}}
+\topsep 16\p@ \@plus2\p@ %\@minus4\p@
+%%%%%%%%%%SINKAGE UPDATE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\let\@tabfontsize\@empty%
+\newcommand{\tabfontsize}[2]{\gdef\@tabfontsize{\fontsize{#1}{#2}\selectfont}}%
+\AtBeginDocument{\long\def\@makecaption#1#2{%
+ \captionstyle
+ \ifx\@captype\fig@type
+ \ifx Y\colorfig%
+ \advance\figcapgap by0pt%
+   \vskip\figcapgap%
+   \else%
+   \vskip\figcapgap%
+   \fi%
+ \fi
+ \setbox\@tempboxa\hbox{\def\mysimpar##1{}\@tabfontsize{\floatlegendstyle #1\floatcounterend}%
+ \capstrut #2}%
+ \ifdim \wd\@tempboxa >\hsize
+   \@tabfontsize{\floatlegendstyle #1\floatcounterend}\capstrut #2\par
+ \else
+   \hbox to\hsize{\leftlegendglue\unhbox\@tempboxa\hfil}%
+ \fi
+ \ifx\@captype\fig@type\else
+   \vskip\tabcapgap
+ \fi}}
+%%%
+\AtBeginDocument{\def\figurename{Fig.}%
+\def\fnum@figure{\figurename~\thefigure\ignorespaces\hskip0.75truemm\ignorespaces}}%
+%%%
+\AtBeginDocument{\def\tablename{Table}%
+\def\fnum@table{\tablename~\thetable\ignorespaces\hskip0.6truemm\ignorespaces}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\@journalname{Unknown journal: specify in preambel}
+\def\@doi{}
+\def\doi#1{\gdef\@doi{#1}}
+\def\makeheadbox{\small\rlap{\smash{\raise10.25\p@\hb@xt@\z@{\sffamily\@journalname}
+\vbox to \z@{\kern-4.79\p@{\hskip-2pt\sffamily\@doi}}}}}%
+\AtBeginDocument{\dorubric}
+\def\dorubric{\if!\paper@type!\else\def\rubric{%
+\sodef\letterspace{}{.125em}{.8em plus1em}{.2em plus.2em minus.1em}%
+\setbox0=\hbox{\sffamily\bfseries\letterspace\paper@type}%
+\ifdim\wd0>\rubricwidth
+   \if@twocolumn
+      %\rubricwidth=131mm\relax%%org
+   \ifx Y\fullcategbar\rubricwidth=174mm\else\rubricwidth=131mm\fi\relax
+   \else
+      \rubricwidth=\columnwidth
+   \fi
+\fi
+\advance\rubricwidth by-2\fboxsep
+\color{black}\colorbox{gray!70}{\hbox
+to\rubricwidth{\kern-0.2pt\fontsize{9.5pt}{11pt}\selectfont\sffamily\bfseries\vbox to2.76mm{\vspace*{1pt}\strut\ \letterspace\sffamily\bfseries\paper@type\hfil}}}}\fi}
+
+%\def\abstract#1{\gdef\@abstract{#1}}
+\long\def\abstract#1{\gdef\@abstract{\noindent{\sffamily\bfseries\abstractname}\par\ignorespaces#1\par\vspace*{0.5\baselineskip}}}
+
+%\def\keywords#1{\gdef\@keywords{#1}}
+\def\keywords#1{\gdef\@keywords{\par\addvspace\medskipamount{\rightskip=0pt plus1cm%
+\def\and{\ifhmode\unskip\nobreak\fi\ $\cdot$ }%
+\noindent{\sffamily\bfseries\keywordname}\enspace\ignorespaces#1\par\vspace*{1\baselineskip}}}}
+
+\def\@maketitle{\newpage
+\normalfont
+\vbox to0pt{\if@twocolumn\vskip-39pt\else\vskip-49pt\fi
+\nointerlineskip
+\begin{picture}(0,0)(0,0)%
+\put(0,-30.45){\makeheadbox}%
+\put(0,-70){\@subcateg}%
+\end{picture}
+\vss}\nointerlineskip
+\vbox to 0pt{\offinterlineskip\rubricwidth=\columnwidth
+%%%%\vskip-12.5pt          % -12.5pt
+\if@twocolumn\else % one column journal
+   \divide\rubricwidth by144\multiply\rubricwidth by89 % perform golden section
+   \vskip-\topskip
+\fi
+\hrule\@height0.35mm\noindent
+\advance\fboxsep by.25mm
+\global\advance\rubricwidth by0pt
+\rubric
+\vss}\vskip19.5pt    % war 9pt
+%
+\if@twocolumn\else
+ \gdef\footnoterule{%
+  \kern-3\p@
+  \hrule\@width38mm     % \columnwidth  \rubricwidth
+  \kern2.6\p@}
+\fi
+%
+ \setbox\authrun=\vbox\bgroup
+     \if@twocolumn
+        \hrule\@height10.5mm\@width0\p@
+     \else
+        \hrule\@height 2mm\@width0\p@
+     \fi
+     \pretolerance=10000
+     \rightskip=0pt plus 4cm
+    \nothanksmarks
+%   \if!\@headnote!\else
+%     \noindent
+%     {\LARGE\normalfont\itshape\ignorespaces\@headnote\par}\vskip 3.5mm
+%   \fi
+    {\LARGE\titlefont
+     \noindent\ignorespaces
+     \@title \par}\vskip 17pt\relax
+    \if!\@subtitle!\else
+      {\large\bfseries
+      \pretolerance=10000
+      \rightskip=0pt plus 3cm
+      \vskip-12pt
+%     \noindent\ignorespaces\@subtitle \par}\vskip 11.24pt\relax
+      \noindent\ignorespaces\@subtitle \par}\vskip 17pt\relax
+    \fi
+    {\authorfont
+    \setbox0=\vbox{\setcounter{auth}{1}\def\and{\stepcounter{auth} }%
+                   \hfuzz=2\textwidth\def\thanks##1{}\@author}%
+    \setcounter{footnote}{0}%
+    \global\value{inst}=\value{auth}%
+    \setcounter{auth}{1}%
+    \if@twocolumn
+       \rightskip43mm plus 4cm minus 3mm
+    \else % one column journal
+       \rightskip=\linewidth
+       \advance\rightskip by-\rubricwidth
+       \advance\rightskip by0pt plus 4cm minus 3mm
+    \fi
+%
+\def\and{\unskip\nobreak\enskip{\boldmath$\cdot$}\enskip\ignorespaces}%
+    \noindent\ignorespaces\@author\vskip7.23pt}
+%
+    \small
+    \if!\@dedic!\else
+       \par
+       \normalsize\it
+       \addvspace\baselineskip
+       \noindent\@dedic
+    \fi
+ \egroup % end of header box
+ %\@tempdima=\headerboxheight
+ %\advance\@tempdima by-\ht\authrun
+ \unvbox\authrun
+ %\ifdim\@tempdima>0pt
+    %\vrule width0pt height\@tempdima\par
+ %\fi
+ \vskip4mm%
+ \noindent{\small\sffamily\@date\if@twocolumn\vskip 7.2mm\else\vskip 5.2mm\fi}
+ \global\@minipagetrue
+ \global\everypar{\global\@minipagefalse\global\everypar{}}%
+%\vskip22.47pt
+\begin{minipage}{\textwidth}
+\@abstract
+\@keywords
+\end{minipage}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\titlefont{\sffamily\bfseries}
+\def\authorfont{\sffamily\bfseries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\copyleft{}%
+\def\date#1{\gdef\@date{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\@copyrightyear{}
+\def\copyrightyear#1{\gdef\@copyrightyear{#1}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\@subcateg{}
+\def\subcateg#1{\gdef\@subcateg{\fontsize{9.5pt}{11pt}\selectfont\sffamily\bfseries\hskip1.75mm#1}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\@copyholdername{}
+\def\copyholdername#1{\gdef\@copyholdername{#1}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\def\abstract{\topsep=0pt\partopsep=0pt\parsep=0pt\itemsep=0pt\relax
+%\trivlist\item[\hskip\labelsep
+%{\sffamily\bfseries\abstractname}]\if!\abstractname!\hskip-\labelsep\fi}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\def\keywords#1{\par\addvspace\medskipamount{\rightskip=0pt plus1cm
+%\def\and{\ifhmode\unskip\nobreak\fi\ $\cdot$
+%}\noindent{\sffamily\bfseries\keywordname}\enspace\ignorespaces#1\par}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\maketitle{\par\let\thanks=\orithanks
+\ch@ckobl{journalname}{Noname}
+\ch@ckobl{date}{the date of receipt and acceptance should be inserted
+later}
+\ch@ckobl{title}{A title should be given}
+\ch@ckobl{author}{Name(s) and initial(s) of author(s) should be given}
+\ch@ckobl{institute}{Address(es) of author(s) should be given}
+\begingroup
+%
+    \renewcommand\thefootnote{\@fnsymbol\c@footnote}%
+    \def\@makefnmark{$^{\@thefnmark}$}%
+    \renewcommand\@makefntext[1]{%
+    \noindent
+    \hb@xt@\bibindent{\hss\@makefnmark\enspace}##1\vrule height0pt
+    width0pt depth8pt}
+%
+ \def\lastand{\ifnum\value{inst}=2\relax
+                 \unskip{} \andname\
+              \else
+                 \unskip, \andname\
+              \fi}%
+ \def\and{\stepcounter{auth}\relax
+          \if@smartand
+             \ifnum\value{auth}=\value{inst}%
+                \lastand
+             \else
+                \unskip,
+             \fi
+          \else
+             \unskip,
+          \fi}%
+ \thispagestyle{firstpage}
+ \ifnum \col@number=\@ne
+   \@maketitle
+ \else
+   \twocolumn[\@maketitle]%
+ \fi
+%
+ \global\@topnum\z@
+ \if!\@thanks!\else
+    \@thanks
+\insert\footins{\vskip-3pt\hrule\@width\if@twocolumn\columnwidth
+\else 38mm\fi\vskip3pt}%
+ \fi
+ {\def\thanks##1{\unskip{}}%
+ \def\iand{\\[5pt]\let\and=\nand}%
+ \def\nand{\ifhmode\unskip\nobreak\fi\ $\cdot$ }%
+ \let\and=\nand
+ \def\at{\\\let\and=\iand}%
+ \footnotetext[0]{\kern-\bibindent
+ \ignorespaces\@institute}\vspace{5dd}}%
+%\if!\@mail!\else
+%   \footnotetext[0]{\kern-\bibindent\mailname\
+%   \ignorespaces\@mail}%
+%\fi
+%
+ \if@runhead
+    \ProcessRunnHead
+ \fi
+%
+ \endgroup
+ \setcounter{footnote}{0}
+ \global\let\thanks\relax
+ \global\let\maketitle\relax
+ \global\let\@maketitle\relax
+ \global\let\@thanks\@empty
+ \global\let\@author\@empty
+ \global\let\@abstract\@empty
+ \global\let\abstract\relax
+ \global\let\@keywords\@empty
+ \global\let\keywords\relax
+ \global\let\@date\@empty
+ \global\let\@title\@empty
+ \global\let\@subtitle\@empty
+ \global\let\title\relax
+ \global\let\author\relax
+ \global\let\date\relax
+ \global\let\and\relax}
+
+
+\def\ps@firstpage{\let\@mkboth\@gobbletwo
+     \let\@oddhead\@empty
+     \def\@oddfoot{\reset@font\hfill{\small{Springer}}}
+     \let\@evenhead\@empty
+     \let\@evenfoot\@oddfoot}
+
+\endinput

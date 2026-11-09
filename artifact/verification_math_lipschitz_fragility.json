@@ -1,0 +1,91 @@
+{
+  "provenance": {
+    "script": "verify_math_lipschitz_fragility.py",
+    "timestamp_utc": "2026-05-30T00:23:32.134176+00:00",
+    "timeout_seconds": 60
+  },
+  "B_p3": {
+    "lip_p99": {
+      "n_verified": 6,
+      "n_empty": 0,
+      "n_errors": 0,
+      "n_total": 20
+    },
+    "lip_p90": {
+      "n_verified": 19,
+      "n_empty": 0,
+      "n_errors": 0,
+      "n_total": 20
+    }
+  },
+  "B_p2": {
+    "lip_p99": {
+      "n_verified": 1,
+      "n_nominally_wrong": 11,
+      "n_empty": 0,
+      "n_errors": 0,
+      "n_total": 20
+    },
+    "lip_p90": {
+      "n_verified": 9,
+      "n_nominally_wrong": 11,
+      "n_empty": 0,
+      "n_errors": 0,
+      "n_total": 20
+    }
+  },
+  "C_p3_fragility": {
+    "n_anchors": 50,
+    "taus": [
+      12,
+      10,
+      8,
+      6,
+      4
+    ],
+    "results_by_tau": {
+      "tau_12": {
+        "n_verified": 13,
+        "n_empty": 0,
+        "n_errors": 0,
+        "wall_s": 73.8,
+        "n_total": 50
+      },
+      "tau_10": {
+        "n_verified": 16,
+        "n_empty": 0,
+        "n_errors": 0,
+        "wall_s": 88.7,
+        "n_total": 50
+      },
+      "tau_8": {
+        "n_verified": 33,
+        "n_empty": 0,
+        "n_errors": 0,
+        "wall_s": 86.4,
+        "n_total": 50
+      },
+      "tau_6": {
+        "n_verified": 44,
+        "n_empty": 0,
+        "n_errors": 0,
+        "wall_s": 52.6,
+        "n_total": 50
+      },
+      "tau_4": {
+        "n_verified": 50,
+        "n_empty": 0,
+        "n_errors": 0,
+        "wall_s": 22.6,
+        "n_total": 50
+      }
+    },
+    "threshold_distribution": {
+      "12": 13,
+      "10": 3,
+      "8": 17,
+      "6": 11,
+      "4": 6
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "P1a_CTE_upper": {
+    "onnx": "composed_centered.onnx",
+    "subset": "centered",
+    "pixel_box": {
+      "status": "sat",
+      "time_seconds": 0.0417,
+      "counterexample": {
+        "CTE": 10.0,
+        "HE": -52.470728,
+        "input_mean": 0.611054
+      }
+    },
+    "mean_only": {
+      "status": "sat",
+      "time_seconds": 0.0224,
+      "counterexample": {
+        "CTE": 10.0,
+        "HE": -54.284214,
+        "input_mean": 0.5
+      }
+    },
+    "ae_subset": {
+      "status": "unsat",
+      "time_seconds": 10.6605
+    }
+  },
+  "P1b_CTE_lower": {
+    "onnx": "composed_centered.onnx",
+    "subset": "centered",
+    "pixel_box": {
+      "status": "sat",
+      "time_seconds": 0.012,
+      "counterexample": {
+        "CTE": -10.0,
+        "HE": 14.978943,
+        "input_mean": 0.443435
+      }
+    },
+    "mean_only": {
+      "status": "sat",
+      "time_seconds": 0.0141,
+      "counterexample": {
+        "CTE": -10.0,
+        "HE": 13.494626,
+        "input_mean": 0.5
+      }
+    },
+    "ae_subset": {
+      "status": "unsat",
+      "time_seconds": 2.8895
+    }
+  },
+  "P4_C_left": {
+    "onnx": "composed_left.onnx",
+    "subset": "left",
+    "pixel_box": {
+      "status": "sat",
+      "time_seconds": 0.0161,
+      "counterexample": {
+        "CTE": 0.0,
+        "HE": -2.414173,
+        "input_mean": 0.472049
+      }
+    },
+    "mean_only": {
+      "status": "sat",
+      "time_seconds": 0.0186,
+      "counterexample": {
+        "CTE": -4.376821,
+        "HE": 6.313047,
+        "input_mean": 0.5
+      }
+    },
+    "ae_subset": {
+      "status": "sat",
+      "time_seconds": 0.0696,
+      "counterexample": {
+        "CTE": -0.585071,
+        "HE": 5.836114,
+        "latent": [
+          -1.583211,
+          -0.924695,
+          0.530107,
+          0.593781,
+          1.836424,
+          -0.843378,
+          0.539348,
+          0.311324
+        ]
+      }
+    }
+  },
+  "P4_C_right": {
+    "onnx": "composed_right.onnx",
+    "subset": "right",
+    "pixel_box": {
+      "status": "sat",
+      "time_seconds": 0.0116,
+      "counterexample": {
+        "CTE": 0.0,
+        "HE": -0.45964,
+        "input_mean": 0.426617
+      }
+    },
+    "mean_only": {
+      "status": "sat",
+      "time_seconds": 0.0125,
+      "counterexample": {
+        "CTE": 0.0,
+        "HE": -0.423643,
+        "input_mean": 0.5
+      }
+    },
+    "ae_subset": {
+      "status": "sat",
+      "time_seconds": 0.0573,
+      "counterexample": {
+        "CTE": 3.247892,
+        "HE": 9.540199,
+        "latent": [
+          -1.764717,
+          -1.037253,
+          -0.33435,
+          1.175066,
+          1.313737,
+          -0.132333,
+          -0.099662,
+          -0.150516
+        ]
+      }
+    }
+  },
+  "P5_deadzone": {
+    "onnx": "composed_off_center.onnx",
+    "subset": "off_center",
+    "pixel_box": {
+      "status": "sat",
+      "time_seconds": 0.0117,
+      "counterexample": {
+        "CTE": -0.01,
+        "HE": -0.01,
+        "input_mean": 0.396623
+      }
+    },
+    "mean_only": {
+      "status": "sat",
+      "time_seconds": 0.0235,
+      "counterexample": {
+        "CTE": -0.01,
+        "HE": -0.01,
+        "input_mean": 0.5
+      }
+    },
+    "ae_subset": {
+      "status": "sat",
+      "time_seconds": 0.1089,
+      "counterexample": {
+        "CTE": 0.01,
+        "HE": -0.01,
+        "latent": [
+          -1.158397,
+          -0.763109,
+          -0.061203,
+          1.571539,
+          1.07355,
+          -0.479988,
+          -0.430372,
+          -0.170451
+        ]
+      }
+    }
+  }
+}

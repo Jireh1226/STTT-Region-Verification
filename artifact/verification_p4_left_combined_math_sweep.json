@@ -1,0 +1,68 @@
+{
+  "provenance": {
+    "script": "verify_p4_left_combined_math_sweep.py",
+    "timestamp_utc": "2026-05-30T22:32:38.560443+00:00",
+    "timeout_seconds": 180,
+    "constraint": "TV<=12 AND Fourier<=7.0 (orthonormal) AND photometric<=0.20"
+  },
+  "per_k": {
+    "k_1": {
+      "k": -1,
+      "status": "sat",
+      "time_seconds": 2.74,
+      "CTE": -1.108
+    },
+    "k_2": {
+      "k": -2,
+      "status": "sat",
+      "time_seconds": 2.7,
+      "CTE": -5.2947
+    },
+    "k_4": {
+      "k": -4,
+      "status": "sat",
+      "time_seconds": 2.53,
+      "CTE": -4.0
+    },
+    "k_8": {
+      "k": -8,
+      "status": "sat",
+      "time_seconds": 2.22,
+      "CTE": -8.0
+    },
+    "k_10": {
+      "k": -10,
+      "status": "sat",
+      "time_seconds": 2.69,
+      "CTE": -10.0
+    },
+    "k_12": {
+      "k": -12,
+      "status": "sat",
+      "time_seconds": 3.05,
+      "CTE": -12.0
+    },
+    "k_15": {
+      "k": -15,
+      "status": "sat",
+      "time_seconds": 5.2,
+      "CTE": -15.0
+    },
+    "k_18": {
+      "k": -18,
+      "status": "sat",
+      "time_seconds": 5.32,
+      "CTE": -18.0
+    },
+    "k_20": {
+      "k": -20,
+      "status": "sat",
+      "time_seconds": 8.05,
+      "CTE": -20.0
+    }
+  },
+  "summary": {
+    "largest_sat_k": -20,
+    "first_unsat_k": null
+  }
+}

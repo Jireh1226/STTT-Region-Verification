@@ -1,0 +1,931 @@
+{
+  "tool": "Marabou 2.0 (maraboupy)",
+  "network": "VerifyGAN/models/TinyTaxiNet.nnet",
+  "timestamp": "2026-03-11 20:45:40",
+  "assumptions": {
+    "normalization": "Pixel values in [0,1], no additional normalization applied",
+    "input_model": "L-inf box constraints on pixel values",
+    "P1_input_region": "Synthetic C_centered: cols 7,8 in [0.7,1.0], others in [0.0,0.3]",
+    "P2_input_region": "L-inf ball of radius 0.02 around each test image",
+    "P2_image_selection": "Near-centered images (|CTE| < 2.0) from VerifyGAN dataset",
+    "note": "HDF5 file has swapped naming: y_train=images, X_train=labels"
+  },
+  "P1": {
+    "property": "Safety Bound",
+    "specification": "|CTE| < 10.0 AND |HE| < 90.0",
+    "input_region": "C_centered",
+    "holds": false,
+    "sub_queries": {
+      "P1a": {
+        "description": "CTE >= 10",
+        "status": "sat",
+        "time_seconds": 0.0137,
+        "counterexample": {
+          "CTE": 10.0,
+          "HE": -47.315514
+        }
+      },
+      "P1b": {
+        "description": "CTE <= -10",
+        "status": "sat",
+        "time_seconds": 0.0225,
+        "counterexample": {
+          "CTE": -10.0,
+          "HE": 23.570335
+        }
+      },
+      "P1c": {
+        "description": "HE >= 90",
+        "status": "unsat",
+        "time_seconds": 0.2915
+      },
+      "P1d": {
+        "description": "HE <= -90",
+        "status": "unsat",
+        "time_seconds": 0.6003
+      }
+    }
+  },
+  "P2": {
+    "property": "Local Correctness",
+    "specification": "|CTE - CTE*| <= 1.5 AND |HE - HE*| <= 5.0",
+    "epsilon": 0.02,
+    "images_verified": 0,
+    "images_violated": 20,
+    "total_images": 20,
+    "results": {
+      "image_1": {
+        "dataset_index": 19,
+        "CTE_true": -1.997485,
+        "HE_true": 4.302723,
+        "verified": false,
+        "sub_queries": {
+          "P2_img1a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0112,
+            "counterexample": {
+              "CTE": -0.497485,
+              "HE": 0.80004
+            }
+          },
+          "P2_img1b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0114,
+            "counterexample": {
+              "CTE": -3.497485,
+              "HE": 8.054234
+            }
+          },
+          "P2_img1c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0107,
+            "counterexample": {
+              "CTE": -3.741911,
+              "HE": 9.302723
+            }
+          },
+          "P2_img1d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0113,
+            "counterexample": {
+              "CTE": -0.091187,
+              "HE": -0.697277
+            }
+          }
+        }
+      },
+      "image_2": {
+        "dataset_index": 575,
+        "CTE_true": -0.187124,
+        "HE_true": 21.097,
+        "verified": false,
+        "sub_queries": {
+          "P2_img2a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0118,
+            "counterexample": {
+              "CTE": 4.973054,
+              "HE": 13.317794
+            }
+          },
+          "P2_img2b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0123,
+            "counterexample": {
+              "CTE": -1.687124,
+              "HE": 24.961585
+            }
+          },
+          "P2_img2c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0145,
+            "counterexample": {
+              "CTE": 0.914759,
+              "HE": 26.097
+            }
+          },
+          "P2_img2d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0119,
+            "counterexample": {
+              "CTE": 3.965604,
+              "HE": 16.097
+            }
+          }
+        }
+      },
+      "image_3": {
+        "dataset_index": 1023,
+        "CTE_true": 1.076878,
+        "HE_true": -2.485836,
+        "verified": false,
+        "sub_queries": {
+          "P2_img3a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0121,
+            "counterexample": {
+              "CTE": 2.576878,
+              "HE": -4.904311
+            }
+          },
+          "P2_img3b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0114,
+            "counterexample": {
+              "CTE": -0.423122,
+              "HE": 0.544242
+            }
+          },
+          "P2_img3c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0114,
+            "counterexample": {
+              "CTE": -2.340328,
+              "HE": 2.514164
+            }
+          },
+          "P2_img3d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0117,
+            "counterexample": {
+              "CTE": 1.569826,
+              "HE": -7.485836
+            }
+          }
+        }
+      },
+      "image_4": {
+        "dataset_index": 1564,
+        "CTE_true": -1.547297,
+        "HE_true": 28.163454,
+        "verified": false,
+        "sub_queries": {
+          "P2_img4a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0112,
+            "counterexample": {
+              "CTE": 3.337467,
+              "HE": 21.838794
+            }
+          },
+          "P2_img4b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0105,
+            "counterexample": {
+              "CTE": -3.047297,
+              "HE": 35.515426
+            }
+          },
+          "P2_img4c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0089,
+            "counterexample": {
+              "CTE": -0.30044,
+              "HE": 33.163454
+            }
+          },
+          "P2_img4d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0099,
+            "counterexample": {
+              "CTE": 3.337467,
+              "HE": 21.838794
+            }
+          }
+        }
+      },
+      "image_5": {
+        "dataset_index": 2027,
+        "CTE_true": 1.928615,
+        "HE_true": -3.660737,
+        "verified": false,
+        "sub_queries": {
+          "P2_img5a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0107,
+            "counterexample": {
+              "CTE": 3.428615,
+              "HE": -7.457009
+            }
+          },
+          "P2_img5b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0106,
+            "counterexample": {
+              "CTE": 0.428615,
+              "HE": 1.200791
+            }
+          },
+          "P2_img5c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0102,
+            "counterexample": {
+              "CTE": -0.757949,
+              "HE": 1.339263
+            }
+          },
+          "P2_img5d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0104,
+            "counterexample": {
+              "CTE": 2.430733,
+              "HE": -8.660737
+            }
+          }
+        }
+      },
+      "image_6": {
+        "dataset_index": 2680,
+        "CTE_true": 1.944211,
+        "HE_true": 13.586737,
+        "verified": false,
+        "sub_queries": {
+          "P2_img6a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0092,
+            "counterexample": {
+              "CTE": 3.444211,
+              "HE": 15.754489
+            }
+          },
+          "P2_img6b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "unsat",
+            "time_seconds": 0.0114
+          },
+          "P2_img6c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0097,
+            "counterexample": {
+              "CTE": 2.670076,
+              "HE": 18.586737
+            }
+          },
+          "P2_img6d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0113,
+            "counterexample": {
+              "CTE": 4.813046,
+              "HE": 8.586737
+            }
+          }
+        }
+      },
+      "image_7": {
+        "dataset_index": 3225,
+        "CTE_true": -1.741839,
+        "HE_true": 29.834965,
+        "verified": false,
+        "sub_queries": {
+          "P2_img7a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0103,
+            "counterexample": {
+              "CTE": 3.088839,
+              "HE": 23.40662
+            }
+          },
+          "P2_img7b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0107,
+            "counterexample": {
+              "CTE": -3.241839,
+              "HE": 37.190198
+            }
+          },
+          "P2_img7c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0097,
+            "counterexample": {
+              "CTE": 0.105843,
+              "HE": 34.834965
+            }
+          },
+          "P2_img7d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0118,
+            "counterexample": {
+              "CTE": 3.088839,
+              "HE": 23.40662
+            }
+          }
+        }
+      },
+      "image_8": {
+        "dataset_index": 3677,
+        "CTE_true": 1.149273,
+        "HE_true": -5.971086,
+        "verified": false,
+        "sub_queries": {
+          "P2_img8a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0115,
+            "counterexample": {
+              "CTE": 2.649273,
+              "HE": -8.298165
+            }
+          },
+          "P2_img8b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0119,
+            "counterexample": {
+              "CTE": -0.350727,
+              "HE": -3.339855
+            }
+          },
+          "P2_img8c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0113,
+            "counterexample": {
+              "CTE": -1.483134,
+              "HE": -0.971086
+            }
+          },
+          "P2_img8d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0132,
+            "counterexample": {
+              "CTE": 2.241882,
+              "HE": -10.971086
+            }
+          }
+        }
+      },
+      "image_9": {
+        "dataset_index": 4133,
+        "CTE_true": 1.246374,
+        "HE_true": 12.886088,
+        "verified": false,
+        "sub_queries": {
+          "P2_img9a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0108,
+            "counterexample": {
+              "CTE": 2.746374,
+              "HE": 12.141469
+            }
+          },
+          "P2_img9b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "unsat",
+            "time_seconds": 0.0063
+          },
+          "P2_img9c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.012,
+            "counterexample": {
+              "CTE": 2.243085,
+              "HE": 17.886088
+            }
+          },
+          "P2_img9d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0119,
+            "counterexample": {
+              "CTE": 4.191749,
+              "HE": 7.886088
+            }
+          }
+        }
+      },
+      "image_10": {
+        "dataset_index": 4679,
+        "CTE_true": 1.986539,
+        "HE_true": -17.589844,
+        "verified": false,
+        "sub_queries": {
+          "P2_img10a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0098,
+            "counterexample": {
+              "CTE": 3.486539,
+              "HE": -19.404391
+            }
+          },
+          "P2_img10b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0099,
+            "counterexample": {
+              "CTE": 0.486539,
+              "HE": -13.648223
+            }
+          },
+          "P2_img10c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0103,
+            "counterexample": {
+              "CTE": 0.124355,
+              "HE": -12.589844
+            }
+          },
+          "P2_img10d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0097,
+            "counterexample": {
+              "CTE": 3.866402,
+              "HE": -22.589844
+            }
+          }
+        }
+      },
+      "image_11": {
+        "dataset_index": 5225,
+        "CTE_true": 1.708736,
+        "HE_true": -1.820615,
+        "verified": false,
+        "sub_queries": {
+          "P2_img11a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.011,
+            "counterexample": {
+              "CTE": 3.208736,
+              "HE": -5.469587
+            }
+          },
+          "P2_img11b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.011,
+            "counterexample": {
+              "CTE": 0.208736,
+              "HE": -0.978151
+            }
+          },
+          "P2_img11c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0108,
+            "counterexample": {
+              "CTE": -1.558731,
+              "HE": 3.179385
+            }
+          },
+          "P2_img11d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0098,
+            "counterexample": {
+              "CTE": 2.000018,
+              "HE": -6.820615
+            }
+          }
+        }
+      },
+      "image_12": {
+        "dataset_index": 5768,
+        "CTE_true": -0.778604,
+        "HE_true": -2.800879,
+        "verified": false,
+        "sub_queries": {
+          "P2_img12a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.011,
+            "counterexample": {
+              "CTE": 0.721396,
+              "HE": -6.357399
+            }
+          },
+          "P2_img12b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0116,
+            "counterexample": {
+              "CTE": -2.278604,
+              "HE": -0.589616
+            }
+          },
+          "P2_img12c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0107,
+            "counterexample": {
+              "CTE": -3.598816,
+              "HE": 2.199121
+            }
+          },
+          "P2_img12d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.01,
+            "counterexample": {
+              "CTE": 1.06648,
+              "HE": -7.800879
+            }
+          }
+        }
+      },
+      "image_13": {
+        "dataset_index": 6230,
+        "CTE_true": 1.866978,
+        "HE_true": -15.730796,
+        "verified": false,
+        "sub_queries": {
+          "P2_img13a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0099,
+            "counterexample": {
+              "CTE": 3.366978,
+              "HE": -19.060125
+            }
+          },
+          "P2_img13b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0098,
+            "counterexample": {
+              "CTE": 0.366978,
+              "HE": -14.274803
+            }
+          },
+          "P2_img13c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.01,
+            "counterexample": {
+              "CTE": -0.872256,
+              "HE": -10.730796
+            }
+          },
+          "P2_img13d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0089,
+            "counterexample": {
+              "CTE": 3.044763,
+              "HE": -20.730796
+            }
+          }
+        }
+      },
+      "image_14": {
+        "dataset_index": 6823,
+        "CTE_true": -1.735281,
+        "HE_true": -11.82247,
+        "verified": false,
+        "sub_queries": {
+          "P2_img14a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0101,
+            "counterexample": {
+              "CTE": -0.235281,
+              "HE": -14.516426
+            }
+          },
+          "P2_img14b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0093,
+            "counterexample": {
+              "CTE": -5.49242,
+              "HE": -5.336895
+            }
+          },
+          "P2_img14c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0123,
+            "counterexample": {
+              "CTE": -3.889588,
+              "HE": -6.82247
+            }
+          },
+          "P2_img14d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0098,
+            "counterexample": {
+              "CTE": -0.19637,
+              "HE": -16.82247
+            }
+          }
+        }
+      },
+      "image_15": {
+        "dataset_index": 7315,
+        "CTE_true": -1.228649,
+        "HE_true": 5.153046,
+        "verified": false,
+        "sub_queries": {
+          "P2_img15a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0115,
+            "counterexample": {
+              "CTE": 0.271351,
+              "HE": 3.217477
+            }
+          },
+          "P2_img15b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0112,
+            "counterexample": {
+              "CTE": -2.728649,
+              "HE": 8.500754
+            }
+          },
+          "P2_img15c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0104,
+            "counterexample": {
+              "CTE": -3.682042,
+              "HE": 10.153046
+            }
+          },
+          "P2_img15d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0111,
+            "counterexample": {
+              "CTE": 1.018019,
+              "HE": 0.153046
+            }
+          }
+        }
+      },
+      "image_16": {
+        "dataset_index": 7774,
+        "CTE_true": -1.234075,
+        "HE_true": -22.924587,
+        "verified": false,
+        "sub_queries": {
+          "P2_img16a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0104,
+            "counterexample": {
+              "CTE": 0.402514,
+              "HE": -20.479096
+            }
+          },
+          "P2_img16b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0119,
+            "counterexample": {
+              "CTE": -2.734075,
+              "HE": -14.177961
+            }
+          },
+          "P2_img16c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.011,
+            "counterexample": {
+              "CTE": -0.918774,
+              "HE": -17.924587
+            }
+          },
+          "P2_img16d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0113,
+            "counterexample": {
+              "CTE": 2.056285,
+              "HE": -27.924587
+            }
+          }
+        }
+      },
+      "image_17": {
+        "dataset_index": 8274,
+        "CTE_true": -0.28723,
+        "HE_true": 29.13175,
+        "verified": false,
+        "sub_queries": {
+          "P2_img17a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0129,
+            "counterexample": {
+              "CTE": 2.544795,
+              "HE": 25.312212
+            }
+          },
+          "P2_img17b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0132,
+            "counterexample": {
+              "CTE": -1.78723,
+              "HE": 35.615216
+            }
+          },
+          "P2_img17c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0109,
+            "counterexample": {
+              "CTE": 0.532742,
+              "HE": 34.13175
+            }
+          },
+          "P2_img17d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0142,
+            "counterexample": {
+              "CTE": 2.72703,
+              "HE": 24.13175
+            }
+          }
+        }
+      },
+      "image_18": {
+        "dataset_index": 8872,
+        "CTE_true": -0.870581,
+        "HE_true": 18.599285,
+        "verified": false,
+        "sub_queries": {
+          "P2_img18a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0124,
+            "counterexample": {
+              "CTE": 2.728208,
+              "HE": 18.254004
+            }
+          },
+          "P2_img18b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0133,
+            "counterexample": {
+              "CTE": -2.370581,
+              "HE": 25.984745
+            }
+          },
+          "P2_img18c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0104,
+            "counterexample": {
+              "CTE": 2.151176,
+              "HE": 23.599285
+            }
+          },
+          "P2_img18d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0115,
+            "counterexample": {
+              "CTE": 3.848958,
+              "HE": 13.599285
+            }
+          }
+        }
+      },
+      "image_19": {
+        "dataset_index": 9438,
+        "CTE_true": 1.628783,
+        "HE_true": 23.024939,
+        "verified": false,
+        "sub_queries": {
+          "P2_img19a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0131,
+            "counterexample": {
+              "CTE": 3.350455,
+              "HE": 19.427004
+            }
+          },
+          "P2_img19b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0133,
+            "counterexample": {
+              "CTE": 0.128783,
+              "HE": 33.841372
+            }
+          },
+          "P2_img19c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0109,
+            "counterexample": {
+              "CTE": 1.311812,
+              "HE": 28.024939
+            }
+          },
+          "P2_img19d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0119,
+            "counterexample": {
+              "CTE": 3.685502,
+              "HE": 18.024939
+            }
+          }
+        }
+      },
+      "image_20": {
+        "dataset_index": 9975,
+        "CTE_true": 1.984824,
+        "HE_true": 28.876308,
+        "verified": false,
+        "sub_queries": {
+          "P2_img20a": {
+            "description": "CTE > CTE*+1.5",
+            "status": "sat",
+            "time_seconds": 0.0124,
+            "counterexample": {
+              "CTE": 3.484824,
+              "HE": 23.577771
+            }
+          },
+          "P2_img20b": {
+            "description": "CTE < CTE*-1.5",
+            "status": "sat",
+            "time_seconds": 0.0103,
+            "counterexample": {
+              "CTE": 0.484824,
+              "HE": 35.109711
+            }
+          },
+          "P2_img20c": {
+            "description": "HE > HE*+5.0",
+            "status": "sat",
+            "time_seconds": 0.0099,
+            "counterexample": {
+              "CTE": 0.763622,
+              "HE": 33.876308
+            }
+          },
+          "P2_img20d": {
+            "description": "HE < HE*-5.0",
+            "status": "sat",
+            "time_seconds": 0.0114,
+            "counterexample": {
+              "CTE": 3.122955,
+              "HE": 23.876308
+            }
+          }
+        }
+      }
+    }
+  }
+}

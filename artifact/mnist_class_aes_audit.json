@@ -1,0 +1,110 @@
+{
+  "provenance": {
+    "script": "train_mnist_class_aes.py",
+    "timestamp_utc": "2026-06-02T20:36:57.295798+00:00",
+    "seed": 42,
+    "arch": "784->32->8->32->784, ReLU encoder, ReLU+linear decoder"
+  },
+  "per_class": {
+    "0": {
+      "n_train": 5923,
+      "n_test": 980,
+      "held_out_in_train_latent_box": 0.9959183673469387,
+      "recon_L_inf_median": 0.7559881806373596,
+      "recon_L_inf_p95": 0.9781107068061825,
+      "classifier_argmax_preservation": 0.9964544994090833,
+      "classifier_margin_shift_median": 2.372097969055176,
+      "classifier_margin_shift_p95": 8.065841197967528
+    },
+    "1": {
+      "n_train": 6742,
+      "n_test": 1135,
+      "held_out_in_train_latent_box": 0.9991189427312775,
+      "recon_L_inf_median": 0.5305966138839722,
+      "recon_L_inf_p95": 0.8804725855588913,
+      "classifier_argmax_preservation": 0.9890240284781964,
+      "classifier_margin_shift_median": 1.0203125476837158,
+      "classifier_margin_shift_p95": 3.5964889764785766
+    },
+    "2": {
+      "n_train": 5958,
+      "n_test": 1032,
+      "held_out_in_train_latent_box": 0.998062015503876,
+      "recon_L_inf_median": 0.8521997332572937,
+      "recon_L_inf_p95": 0.9882352948188782,
+      "classifier_argmax_preservation": 0.9934541792547835,
+      "classifier_margin_shift_median": 2.5664546489715576,
+      "classifier_margin_shift_p95": 8.098792028427123
+    },
+    "3": {
+      "n_train": 6131,
+      "n_test": 1010,
+      "held_out_in_train_latent_box": 0.997029702970297,
+      "recon_L_inf_median": 0.8298736214637756,
+      "recon_L_inf_p95": 0.9813019037246704,
+      "classifier_argmax_preservation": 0.9892350350676888,
+      "classifier_margin_shift_median": 2.8686447143554688,
+      "classifier_margin_shift_p95": 9.418562889099121
+    },
+    "4": {
+      "n_train": 5842,
+      "n_test": 982,
+      "held_out_in_train_latent_box": 0.9979633401221996,
+      "recon_L_inf_median": 0.8104759454727173,
+      "recon_L_inf_p95": 0.9728038877248764,
+      "classifier_argmax_preservation": 0.9885313248887367,
+      "classifier_margin_shift_median": 2.6904637813568115,
+      "classifier_margin_shift_p95": 8.73576483726501
+    },
+    "5": {
+      "n_train": 5421,
+      "n_test": 892,
+      "held_out_in_train_latent_box": 0.9988789237668162,
+      "recon_L_inf_median": 0.82376629114151,
+      "recon_L_inf_p95": 0.9843137264251709,
+      "classifier_argmax_preservation": 0.9826600258254935,
+      "classifier_margin_shift_median": 2.845205307006836,
+      "classifier_margin_shift_p95": 8.86516284942627
+    },
+    "6": {
+      "n_train": 5918,
+      "n_test": 958,
+      "held_out_in_train_latent_box": 0.9979123173277662,
+      "recon_L_inf_median": 0.7732527256011963,
+      "recon_L_inf_p95": 0.977509331703186,
+      "classifier_argmax_preservation": 0.9962825278810409,
+      "classifier_margin_shift_median": 2.175528049468994,
+      "classifier_margin_shift_p95": 7.503544640541076
+    },
+    "7": {
+      "n_train": 6265,
+      "n_test": 1028,
+      "held_out_in_train_latent_box": 0.9990272373540856,
+      "recon_L_inf_median": 0.7701088190078735,
+      "recon_L_inf_p95": 0.9663352370262145,
+      "classifier_argmax_preservation": 0.9907422186751795,
+      "classifier_margin_shift_median": 2.0150632858276367,
+      "classifier_margin_shift_p95": 6.608799362182617
+    },
+    "8": {
+      "n_train": 5851,
+      "n_test": 974,
+      "held_out_in_train_latent_box": 0.9969199178644764,
+      "recon_L_inf_median": 0.8246205449104309,
+      "recon_L_inf_p95": 0.986449271440506,
+      "classifier_argmax_preservation": 0.9793197743975389,
+      "classifier_margin_shift_median": 3.655607223510742,
+      "classifier_margin_shift_p95": 10.68639850616455
+    },
+    "9": {
+      "n_train": 5949,
+      "n_test": 1009,
+      "held_out_in_train_latent_box": 0.9990089197224975,
+      "recon_L_inf_median": 0.7574811577796936,
+      "recon_L_inf_p95": 0.9704496860504149,
+      "classifier_argmax_preservation": 0.9882333165237855,
+      "classifier_margin_shift_median": 2.200587272644043,
+      "classifier_margin_shift_p95": 7.164870643615716
+    }
+  }
+}

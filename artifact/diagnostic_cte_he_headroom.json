@@ -1,0 +1,84 @@
+{
+  "provenance": {
+    "script": "diagnostic_cte_he_headroom.py",
+    "timestamp_utc": "2026-06-24T00:19:05.652168+00:00",
+    "bounds": {
+      "CTE_m": 10.0,
+      "HE_deg": 90.0
+    }
+  },
+  "output_distribution_centered": {
+    "n": 893,
+    "tag": "centered (|CTE|<1)",
+    "CTE_pred": {
+      "mean": 0.19416352674289472,
+      "abs_mean": 1.7917057587693905,
+      "abs_median": 1.681179831321363,
+      "abs_p95": 3.838540878769476,
+      "abs_max": 4.947525074859966,
+      "headroom_to_10m_median": 8.318820168678638,
+      "headroom_to_10m_p05": 6.161459121230524,
+      "frac_inside_bound": 1.0
+    },
+    "HE_pred": {
+      "mean": 0.9676519185800507,
+      "abs_mean": 15.060454352955343,
+      "abs_median": 14.741363827337269,
+      "abs_p95": 28.70102943708235,
+      "abs_max": 33.25684046237703,
+      "headroom_to_90deg_median": 75.25863617266273,
+      "headroom_to_90deg_p05": 61.298970562917646,
+      "frac_inside_bound": 1.0
+    }
+  },
+  "output_distribution_all": {
+    "n": 10000,
+    "tag": "all 10000",
+    "CTE_pred": {
+      "mean": -0.5638167285088155,
+      "abs_mean": 4.788516855103081,
+      "abs_median": 4.756348601974297,
+      "abs_p95": 8.786497932052843,
+      "abs_max": 10.923796648619673,
+      "headroom_to_10m_median": 5.243651398025703,
+      "headroom_to_10m_p05": 1.2135020679471533,
+      "frac_inside_bound": 0.9972
+    },
+    "HE_pred": {
+      "mean": 0.6323607614238886,
+      "abs_mean": 13.015811014531932,
+      "abs_median": 12.147370491421862,
+      "abs_p95": 27.547358828758966,
+      "abs_max": 38.101691450002875,
+      "headroom_to_90deg_median": 77.85262950857813,
+      "headroom_to_90deg_p05": 62.45264117124103,
+      "frac_inside_bound": 1.0
+    }
+  },
+  "local_saturating_eps_centered": {
+    "definition": "eps_local_sat(x) = (bound - |y_pred(x)|) / ||J_row||_1   (pixel-perturbation L_inf radius that linearly saturates the bound)",
+    "CTE": {
+      "median": 0.03447059206633318,
+      "mean": 0.03962219106325869,
+      "p05": 0.019332937354060838,
+      "p95": 0.06913368754577878
+    },
+    "HE": {
+      "median": 0.12047827317961061,
+      "mean": 0.12266647629055764,
+      "p05": 0.08650259786914229,
+      "p95": 0.1689823656364146
+    },
+    "ratio_CTE_over_HE_median": 0.28611459275270296
+  },
+  "global_linear_envelope_centered_mean": {
+    "x_ref": "centered subset mean",
+    "CTE_pred_at_ref": 0.19723788475321757,
+    "HE_pred_at_ref": -3.3359908747176767,
+    "linear_max_dCTE_positive_dir": 48.82985288371046,
+    "linear_max_dCTE_negative_dir": -50.084088152242686,
+    "linear_max_dHE_positive_dir": 172.15992286048055,
+    "linear_max_dHE_negative_dir": -181.68627834963226,
+    "note": "first-order envelope at x_ref over the dataset box; valid only in the local linear region"
+  }
+}

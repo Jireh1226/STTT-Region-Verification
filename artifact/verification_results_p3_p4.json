@@ -1,0 +1,1790 @@
+{
+  "tool": "Marabou 2.0 (maraboupy 2.0.0)",
+  "network": "VerifyGAN/models/TinyTaxiNet.nnet",
+  "timestamp": "2026-03-16 13:18:17",
+  "properties": [
+    "P3",
+    "P4"
+  ],
+  "P3": {
+    "epsilon_0.05": {
+      "property": "Robustness Under Input Noise",
+      "specification": "|CTE| < 10.0 AND |HE| < 90.0",
+      "epsilon": 0.05,
+      "images_verified": 3,
+      "images_violated": 17,
+      "total_images": 20,
+      "results": {
+        "image_1": {
+          "dataset_index": 20,
+          "CTE_true": -0.546069,
+          "CTE_predicted": -1.415818,
+          "HE_predicted": -22.56656,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img1a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.023,
+              "peak_memory_mb": 73.7,
+              "memory_delta_mb": 1.4,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -43.565024
+              }
+            },
+            "P3_eps0.05_img1b": {
+              "description": "CTE <= -10.0",
+              "status": "unsat",
+              "time_seconds": 0.0874,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img1c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0061,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img1d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0099,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_2": {
+          "dataset_index": 375,
+          "CTE_true": 0.873571,
+          "CTE_predicted": -0.593677,
+          "HE_predicted": -26.083149,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img2a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0172,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.300038
+              }
+            },
+            "P3_eps0.05_img2b": {
+              "description": "CTE <= -10.0",
+              "status": "unsat",
+              "time_seconds": 0.096,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img2c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0061,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img2d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0098,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_3": {
+          "dataset_index": 921,
+          "CTE_true": 0.971548,
+          "CTE_predicted": -1.482714,
+          "HE_predicted": -2.713888,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img3a": {
+              "description": "CTE >= 10.0",
+              "status": "unsat",
+              "time_seconds": 0.1032,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img3b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0238,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 25.205877
+              }
+            },
+            "P3_eps0.05_img3c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0065,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img3d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0097,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_4": {
+          "dataset_index": 1478,
+          "CTE_true": 0.744407,
+          "CTE_predicted": 1.296451,
+          "HE_predicted": 29.864808,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img4a": {
+              "description": "CTE >= 10.0",
+              "status": "unsat",
+              "time_seconds": 0.0726,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img4b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0172,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 39.871545
+              }
+            },
+            "P3_eps0.05_img4c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0157,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img4d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0101,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_5": {
+          "dataset_index": 1980,
+          "CTE_true": 0.794625,
+          "CTE_predicted": 4.032241,
+          "HE_predicted": 5.576686,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img5a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.027,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -17.832681
+              }
+            },
+            "P3_eps0.05_img5b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0205,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 24.912895
+              }
+            },
+            "P3_eps0.05_img5c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0089,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img5d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0097,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_6": {
+          "dataset_index": 2616,
+          "CTE_true": -0.457279,
+          "CTE_predicted": 1.844597,
+          "HE_predicted": 21.330472,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img6a": {
+              "description": "CTE >= 10.0",
+              "status": "unsat",
+              "time_seconds": 0.0331,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img6b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0201,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 35.768707
+              }
+            },
+            "P3_eps0.05_img6c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0123,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img6d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0102,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_7": {
+          "dataset_index": 3132,
+          "CTE_true": 0.080727,
+          "CTE_predicted": -0.608303,
+          "HE_predicted": -16.008975,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img7a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0197,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -42.64675
+              }
+            },
+            "P3_eps0.05_img7b": {
+              "description": "CTE <= -10.0",
+              "status": "unsat",
+              "time_seconds": 0.6562,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img7c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0061,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img7d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0105,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_8": {
+          "dataset_index": 3572,
+          "CTE_true": -0.163001,
+          "CTE_predicted": -0.7075,
+          "HE_predicted": -4.012617,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img8a": {
+              "description": "CTE >= 10.0",
+              "status": "unsat",
+              "time_seconds": 0.1117,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img8b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.021,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 21.575049
+              }
+            },
+            "P3_eps0.05_img8c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0065,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img8d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0095,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_9": {
+          "dataset_index": 4130,
+          "CTE_true": 0.649563,
+          "CTE_predicted": -0.076406,
+          "HE_predicted": -27.188981,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img9a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0218,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.539278
+              }
+            },
+            "P3_eps0.05_img9b": {
+              "description": "CTE <= -10.0",
+              "status": "unsat",
+              "time_seconds": 0.0963,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img9c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0073,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img9d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0104,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_10": {
+          "dataset_index": 4772,
+          "CTE_true": -0.148475,
+          "CTE_predicted": 3.206763,
+          "HE_predicted": 23.794984,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img10a": {
+              "description": "CTE >= 10.0",
+              "status": "unsat",
+              "time_seconds": 0.2176,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img10b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0176,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 40.424738
+              }
+            },
+            "P3_eps0.05_img10c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0127,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img10d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0099,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_11": {
+          "dataset_index": 5221,
+          "CTE_true": -0.940606,
+          "CTE_predicted": -3.680848,
+          "HE_predicted": -8.445041,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img11a": {
+              "description": "CTE >= 10.0",
+              "status": "unsat",
+              "time_seconds": 0.0183,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img11b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0388,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 16.333256
+              }
+            },
+            "P3_eps0.05_img11c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0063,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img11d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0109,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_12": {
+          "dataset_index": 5723,
+          "CTE_true": -0.412779,
+          "CTE_predicted": -1.593309,
+          "HE_predicted": -9.23609,
+          "verified": true,
+          "sub_queries": {
+            "P3_eps0.05_img12a": {
+              "description": "CTE >= 10.0",
+              "status": "unsat",
+              "time_seconds": 0.0249,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img12b": {
+              "description": "CTE <= -10.0",
+              "status": "unsat",
+              "time_seconds": 0.4712,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img12c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0078,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img12d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0101,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_13": {
+          "dataset_index": 6276,
+          "CTE_true": -0.68768,
+          "CTE_predicted": -2.231319,
+          "HE_predicted": 4.18618,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img13a": {
+              "description": "CTE >= 10.0",
+              "status": "unsat",
+              "time_seconds": 0.1414,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img13b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0196,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 15.377281
+              }
+            },
+            "P3_eps0.05_img13c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0071,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img13d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0096,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_14": {
+          "dataset_index": 6775,
+          "CTE_true": 0.70509,
+          "CTE_predicted": 0.000858,
+          "HE_predicted": -13.85547,
+          "verified": true,
+          "sub_queries": {
+            "P3_eps0.05_img14a": {
+              "description": "CTE >= 10.0",
+              "status": "unsat",
+              "time_seconds": 0.0273,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img14b": {
+              "description": "CTE <= -10.0",
+              "status": "unsat",
+              "time_seconds": 0.0617,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img14c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0063,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img14d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0095,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_15": {
+          "dataset_index": 7268,
+          "CTE_true": -0.804416,
+          "CTE_predicted": -1.494873,
+          "HE_predicted": 4.600115,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img15a": {
+              "description": "CTE >= 10.0",
+              "status": "unsat",
+              "time_seconds": 0.1853,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img15b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0232,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 27.019236
+              }
+            },
+            "P3_eps0.05_img15c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0067,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img15d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0096,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_16": {
+          "dataset_index": 7724,
+          "CTE_true": -0.339141,
+          "CTE_predicted": -0.587848,
+          "HE_predicted": -27.956166,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img16a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.017,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.496101
+              }
+            },
+            "P3_eps0.05_img16b": {
+              "description": "CTE <= -10.0",
+              "status": "unsat",
+              "time_seconds": 0.1331,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img16c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.006,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img16d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0102,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_17": {
+          "dataset_index": 8224,
+          "CTE_true": 0.039603,
+          "CTE_predicted": -1.647992,
+          "HE_predicted": -17.426286,
+          "verified": true,
+          "sub_queries": {
+            "P3_eps0.05_img17a": {
+              "description": "CTE >= 10.0",
+              "status": "unsat",
+              "time_seconds": 0.0861,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img17b": {
+              "description": "CTE <= -10.0",
+              "status": "unsat",
+              "time_seconds": 0.1091,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img17c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0059,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img17d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0104,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_18": {
+          "dataset_index": 8775,
+          "CTE_true": -0.676967,
+          "CTE_predicted": -1.104476,
+          "HE_predicted": -5.268573,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img18a": {
+              "description": "CTE >= 10.0",
+              "status": "unsat",
+              "time_seconds": 0.0685,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img18b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.025,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 22.403755
+              }
+            },
+            "P3_eps0.05_img18c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0065,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img18d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0099,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_19": {
+          "dataset_index": 9322,
+          "CTE_true": -0.101021,
+          "CTE_predicted": 3.687631,
+          "HE_predicted": 17.181707,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img19a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0271,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -12.718608
+              }
+            },
+            "P3_eps0.05_img19b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0204,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 39.012567
+              }
+            },
+            "P3_eps0.05_img19c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0144,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img19d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0095,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_20": {
+          "dataset_index": 9973,
+          "CTE_true": 0.594215,
+          "CTE_predicted": -1.299148,
+          "HE_predicted": -7.115612,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.05_img20a": {
+              "description": "CTE >= 10.0",
+              "status": "unsat",
+              "time_seconds": 0.0608,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img20b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0239,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 20.122964
+              }
+            },
+            "P3_eps0.05_img20c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0074,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.05_img20d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0098,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0
+            }
+          }
+        }
+      }
+    },
+    "epsilon_0.1": {
+      "property": "Robustness Under Input Noise",
+      "specification": "|CTE| < 10.0 AND |HE| < 90.0",
+      "epsilon": 0.1,
+      "images_verified": 0,
+      "images_violated": 20,
+      "total_images": 20,
+      "results": {
+        "image_1": {
+          "dataset_index": 20,
+          "CTE_true": -0.546069,
+          "CTE_predicted": -1.415818,
+          "HE_predicted": -22.56656,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img1a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0175,
+              "peak_memory_mb": 98.0,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.577824
+              }
+            },
+            "P3_eps0.1_img1b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0222,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 8.378243
+              }
+            },
+            "P3_eps0.1_img1c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0123,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img1d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.2463,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_2": {
+          "dataset_index": 375,
+          "CTE_true": 0.873571,
+          "CTE_predicted": -0.593677,
+          "HE_predicted": -26.083149,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img2a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.018,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.869226
+              }
+            },
+            "P3_eps0.1_img2b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0168,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 14.163413
+              }
+            },
+            "P3_eps0.1_img2c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0128,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img2d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.2935,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_3": {
+          "dataset_index": 921,
+          "CTE_true": 0.971548,
+          "CTE_predicted": -1.482714,
+          "HE_predicted": -2.713888,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img3a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0222,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -47.640382
+              }
+            },
+            "P3_eps0.1_img3b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0578,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 42.111808
+              }
+            },
+            "P3_eps0.1_img3c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0122,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img3d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.3964,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_4": {
+          "dataset_index": 1478,
+          "CTE_true": 0.744407,
+          "CTE_predicted": 1.296451,
+          "HE_predicted": 29.864808,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img4a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0213,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -13.71709
+              }
+            },
+            "P3_eps0.1_img4b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0177,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 20.639565
+              }
+            },
+            "P3_eps0.1_img4c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.6434,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img4d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.1928,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_5": {
+          "dataset_index": 1980,
+          "CTE_true": 0.794625,
+          "CTE_predicted": 4.032241,
+          "HE_predicted": 5.576686,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img5a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0213,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -14.534992
+              }
+            },
+            "P3_eps0.1_img5b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0355,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 45.13343
+              }
+            },
+            "P3_eps0.1_img5c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.023,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img5d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.3781,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_6": {
+          "dataset_index": 2616,
+          "CTE_true": -0.457279,
+          "CTE_predicted": 1.844597,
+          "HE_predicted": 21.330472,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img6a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.036,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -32.367417
+              }
+            },
+            "P3_eps0.1_img6b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0662,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 55.88295
+              }
+            },
+            "P3_eps0.1_img6c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 1.1236,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img6d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0856,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_7": {
+          "dataset_index": 3132,
+          "CTE_true": 0.080727,
+          "CTE_predicted": -0.608303,
+          "HE_predicted": -16.008975,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img7a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0206,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -42.876854
+              }
+            },
+            "P3_eps0.1_img7b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0198,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 14.293138
+              }
+            },
+            "P3_eps0.1_img7c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0123,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img7d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.1582,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_8": {
+          "dataset_index": 3572,
+          "CTE_true": -0.163001,
+          "CTE_predicted": -0.7075,
+          "HE_predicted": -4.012617,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img8a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.025,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -23.824987
+              }
+            },
+            "P3_eps0.1_img8b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.023,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 13.494626
+              }
+            },
+            "P3_eps0.1_img8c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0129,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img8d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.3339,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_9": {
+          "dataset_index": 4130,
+          "CTE_true": 0.649563,
+          "CTE_predicted": -0.076406,
+          "HE_predicted": -27.188981,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img9a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0213,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.844282
+              }
+            },
+            "P3_eps0.1_img9b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0213,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 2.816601
+              }
+            },
+            "P3_eps0.1_img9c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0143,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img9d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.3539,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_10": {
+          "dataset_index": 4772,
+          "CTE_true": -0.148475,
+          "CTE_predicted": 3.206763,
+          "HE_predicted": 23.794984,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img10a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0278,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -22.20076
+              }
+            },
+            "P3_eps0.1_img10b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0266,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 46.546667
+              }
+            },
+            "P3_eps0.1_img10c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.2319,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img10d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0782,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_11": {
+          "dataset_index": 5221,
+          "CTE_true": -0.940606,
+          "CTE_predicted": -3.680848,
+          "HE_predicted": -8.445041,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img11a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0193,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.45833
+              }
+            },
+            "P3_eps0.1_img11b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0186,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 13.494626
+              }
+            },
+            "P3_eps0.1_img11c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0124,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img11d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.1872,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_12": {
+          "dataset_index": 5723,
+          "CTE_true": -0.412779,
+          "CTE_predicted": -1.593309,
+          "HE_predicted": -9.23609,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img12a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0192,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -31.184504
+              }
+            },
+            "P3_eps0.1_img12b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0487,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 31.474462
+              }
+            },
+            "P3_eps0.1_img12c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0122,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img12d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.193,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_13": {
+          "dataset_index": 6276,
+          "CTE_true": -0.68768,
+          "CTE_predicted": -2.231319,
+          "HE_predicted": 4.18618,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img13a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0224,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -46.5455
+              }
+            },
+            "P3_eps0.1_img13b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0175,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 15.516264
+              }
+            },
+            "P3_eps0.1_img13c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0126,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img13d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.607,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_14": {
+          "dataset_index": 6775,
+          "CTE_true": 0.70509,
+          "CTE_predicted": 0.000858,
+          "HE_predicted": -13.85547,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img14a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.023,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -53.268007
+              }
+            },
+            "P3_eps0.1_img14b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0195,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 13.494626
+              }
+            },
+            "P3_eps0.1_img14c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0124,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img14d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.1671,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_15": {
+          "dataset_index": 7268,
+          "CTE_true": -0.804416,
+          "CTE_predicted": -1.494873,
+          "HE_predicted": 4.600115,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img15a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0238,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -46.884221
+              }
+            },
+            "P3_eps0.1_img15b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0172,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 15.516264
+              }
+            },
+            "P3_eps0.1_img15c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0125,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img15d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.4671,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_16": {
+          "dataset_index": 7724,
+          "CTE_true": -0.339141,
+          "CTE_predicted": -0.587848,
+          "HE_predicted": -27.956166,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img16a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0193,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.660706
+              }
+            },
+            "P3_eps0.1_img16b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0175,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 13.479561
+              }
+            },
+            "P3_eps0.1_img16c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0123,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img16d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.3663,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_17": {
+          "dataset_index": 8224,
+          "CTE_true": 0.039603,
+          "CTE_predicted": -1.647992,
+          "HE_predicted": -17.426286,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img17a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0175,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.622138
+              }
+            },
+            "P3_eps0.1_img17b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0189,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 14.358322
+              }
+            },
+            "P3_eps0.1_img17c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0117,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img17d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.2184,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_18": {
+          "dataset_index": 8775,
+          "CTE_true": -0.676967,
+          "CTE_predicted": -1.104476,
+          "HE_predicted": -5.268573,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img18a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0169,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -27.632352
+              }
+            },
+            "P3_eps0.1_img18b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.036,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 23.772494
+              }
+            },
+            "P3_eps0.1_img18c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0126,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img18d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.1097,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_19": {
+          "dataset_index": 9322,
+          "CTE_true": -0.101021,
+          "CTE_predicted": 3.687631,
+          "HE_predicted": 17.181707,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img19a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0231,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -23.358124
+              }
+            },
+            "P3_eps0.1_img19b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0192,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 33.179459
+              }
+            },
+            "P3_eps0.1_img19c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.02,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img19d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.0608,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        },
+        "image_20": {
+          "dataset_index": 9973,
+          "CTE_true": 0.594215,
+          "CTE_predicted": -1.299148,
+          "HE_predicted": -7.115612,
+          "verified": false,
+          "sub_queries": {
+            "P3_eps0.1_img20a": {
+              "description": "CTE >= 10.0",
+              "status": "sat",
+              "time_seconds": 0.0273,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -16.24241
+              }
+            },
+            "P3_eps0.1_img20b": {
+              "description": "CTE <= -10.0",
+              "status": "sat",
+              "time_seconds": 0.0184,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 13.494626
+              }
+            },
+            "P3_eps0.1_img20c": {
+              "description": "HE >= 90.0",
+              "status": "unsat",
+              "time_seconds": 0.0117,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            },
+            "P3_eps0.1_img20d": {
+              "description": "HE <= -90.0",
+              "status": "unsat",
+              "time_seconds": 0.2207,
+              "peak_memory_mb": 106.3,
+              "memory_delta_mb": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "P4": {
+    "property": "Directional Correctness",
+    "results": {
+      "C_left": {
+        "region": "C_left",
+        "n_images": 4128,
+        "cte_range": [
+          2.0002729892730713,
+          10.996367454528809
+        ],
+        "property": "CTE > 0",
+        "status": "sat",
+        "time_seconds": 0.0214,
+        "peak_memory_mb": 106.3,
+        "memory_delta_mb": 0.0,
+        "empirical_wrong_sign": 92,
+        "counterexample": {
+          "CTE": 0.0,
+          "HE": -2.414173
+        },
+        "counterexample_input_mean": 0.472049
+      },
+      "C_right": {
+        "region": "C_right",
+        "n_images": 4099,
+        "cte_range": [
+          -10.99848461151123,
+          -2.000883102416992
+        ],
+        "property": "CTE < 0",
+        "status": "sat",
+        "time_seconds": 0.0157,
+        "peak_memory_mb": 112.2,
+        "memory_delta_mb": 0.0,
+        "empirical_wrong_sign": 50,
+        "counterexample": {
+          "CTE": 0.0,
+          "HE": -0.45964
+        },
+        "counterexample_input_mean": 0.426617
+      }
+    }
+  }
+}

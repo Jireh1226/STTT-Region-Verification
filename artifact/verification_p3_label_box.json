@@ -1,0 +1,656 @@
+{
+  "results": {
+    "image_1": {
+      "dataset_index": 20,
+      "n_label_neighbors": 68,
+      "median_pixel_half_width": 0.02353,
+      "max_pixel_half_width": 0.10828,
+      "sub_queries": {
+        "a": {
+          "status": "unsat",
+          "time_seconds": 0.009
+        },
+        "b": {
+          "status": "unsat",
+          "time_seconds": 0.1267
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0114
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0125
+        }
+      },
+      "verified": true
+    },
+    "image_2": {
+      "dataset_index": 375,
+      "n_label_neighbors": 43,
+      "median_pixel_half_width": 0.02037,
+      "max_pixel_half_width": 0.10069,
+      "sub_queries": {
+        "a": {
+          "status": "unsat",
+          "time_seconds": 0.0089
+        },
+        "b": {
+          "status": "unsat",
+          "time_seconds": 0.0266
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0051
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0077
+        }
+      },
+      "verified": true
+    },
+    "image_3": {
+      "dataset_index": 921,
+      "n_label_neighbors": 76,
+      "median_pixel_half_width": 0.03396,
+      "max_pixel_half_width": 0.16937,
+      "sub_queries": {
+        "a": {
+          "status": "sat",
+          "time_seconds": 0.0213,
+          "counterexample": {
+            "CTE": 10.0,
+            "HE": -35.171247,
+            "input_mean": 0.5
+          }
+        },
+        "b": {
+          "status": "sat",
+          "time_seconds": 0.0206,
+          "counterexample": {
+            "CTE": -10.0,
+            "HE": 14.668604,
+            "input_mean": 0.5
+          }
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.008
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0082
+        }
+      },
+      "verified": false
+    },
+    "image_4": {
+      "dataset_index": 1478,
+      "n_label_neighbors": 51,
+      "median_pixel_half_width": 0.03967,
+      "max_pixel_half_width": 0.17046,
+      "sub_queries": {
+        "a": {
+          "status": "unsat",
+          "time_seconds": 0.1244
+        },
+        "b": {
+          "status": "sat",
+          "time_seconds": 0.0169,
+          "counterexample": {
+            "CTE": -10.0,
+            "HE": 40.83886,
+            "input_mean": 0.5
+          }
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0095
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0084
+        }
+      },
+      "verified": false
+    },
+    "image_5": {
+      "dataset_index": 1980,
+      "n_label_neighbors": 83,
+      "median_pixel_half_width": 0.04638,
+      "max_pixel_half_width": 0.17526,
+      "sub_queries": {
+        "a": {
+          "status": "sat",
+          "time_seconds": 0.0248,
+          "counterexample": {
+            "CTE": 10.0,
+            "HE": -15.576659,
+            "input_mean": 0.5
+          }
+        },
+        "b": {
+          "status": "sat",
+          "time_seconds": 0.0239,
+          "counterexample": {
+            "CTE": -10.0,
+            "HE": 15.592186,
+            "input_mean": 0.5
+          }
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0084
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.008
+        }
+      },
+      "verified": false
+    },
+    "image_6": {
+      "dataset_index": 2616,
+      "n_label_neighbors": 70,
+      "median_pixel_half_width": 0.05392,
+      "max_pixel_half_width": 0.16651,
+      "sub_queries": {
+        "a": {
+          "status": "sat",
+          "time_seconds": 0.0182,
+          "counterexample": {
+            "CTE": 10.0,
+            "HE": -38.904464,
+            "input_mean": 0.5
+          }
+        },
+        "b": {
+          "status": "sat",
+          "time_seconds": 0.0197,
+          "counterexample": {
+            "CTE": -10.0,
+            "HE": 32.235779,
+            "input_mean": 0.5
+          }
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0097
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0082
+        }
+      },
+      "verified": false
+    },
+    "image_7": {
+      "dataset_index": 3132,
+      "n_label_neighbors": 74,
+      "median_pixel_half_width": 0.02916,
+      "max_pixel_half_width": 0.16095,
+      "sub_queries": {
+        "a": {
+          "status": "sat",
+          "time_seconds": 0.0214,
+          "counterexample": {
+            "CTE": 10.0,
+            "HE": -36.010124,
+            "input_mean": 0.5
+          }
+        },
+        "b": {
+          "status": "sat",
+          "time_seconds": 0.0283,
+          "counterexample": {
+            "CTE": -10.0,
+            "HE": 25.426659,
+            "input_mean": 0.5
+          }
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0196
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0078
+        }
+      },
+      "verified": false
+    },
+    "image_8": {
+      "dataset_index": 3572,
+      "n_label_neighbors": 90,
+      "median_pixel_half_width": 0.03399,
+      "max_pixel_half_width": 0.16781,
+      "sub_queries": {
+        "a": {
+          "status": "sat",
+          "time_seconds": 0.0194,
+          "counterexample": {
+            "CTE": 10.0,
+            "HE": -36.10838,
+            "input_mean": 0.5
+          }
+        },
+        "b": {
+          "status": "sat",
+          "time_seconds": 0.0186,
+          "counterexample": {
+            "CTE": -10.0,
+            "HE": 15.205087,
+            "input_mean": 0.5
+          }
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0076
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0087
+        }
+      },
+      "verified": false
+    },
+    "image_9": {
+      "dataset_index": 4130,
+      "n_label_neighbors": 58,
+      "median_pixel_half_width": 0.02084,
+      "max_pixel_half_width": 0.09698,
+      "sub_queries": {
+        "a": {
+          "status": "unsat",
+          "time_seconds": 0.008
+        },
+        "b": {
+          "status": "unsat",
+          "time_seconds": 0.0258
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0053
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0067
+        }
+      },
+      "verified": true
+    },
+    "image_10": {
+      "dataset_index": 4772,
+      "n_label_neighbors": 76,
+      "median_pixel_half_width": 0.04702,
+      "max_pixel_half_width": 0.17989,
+      "sub_queries": {
+        "a": {
+          "status": "sat",
+          "time_seconds": 0.0184,
+          "counterexample": {
+            "CTE": 10.0,
+            "HE": -38.056656,
+            "input_mean": 0.5
+          }
+        },
+        "b": {
+          "status": "sat",
+          "time_seconds": 0.0192,
+          "counterexample": {
+            "CTE": -10.0,
+            "HE": 22.65863,
+            "input_mean": 0.5
+          }
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0169
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0096
+        }
+      },
+      "verified": false
+    },
+    "image_11": {
+      "dataset_index": 5221,
+      "n_label_neighbors": 74,
+      "median_pixel_half_width": 0.02642,
+      "max_pixel_half_width": 0.15831,
+      "sub_queries": {
+        "a": {
+          "status": "sat",
+          "time_seconds": 0.0761,
+          "counterexample": {
+            "CTE": 10.0,
+            "HE": -19.027989,
+            "input_mean": 0.5
+          }
+        },
+        "b": {
+          "status": "sat",
+          "time_seconds": 0.0617,
+          "counterexample": {
+            "CTE": -10.0,
+            "HE": 22.406011,
+            "input_mean": 0.5
+          }
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0091
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0074
+        }
+      },
+      "verified": false
+    },
+    "image_12": {
+      "dataset_index": 5723,
+      "n_label_neighbors": 89,
+      "median_pixel_half_width": 0.02775,
+      "max_pixel_half_width": 0.16539,
+      "sub_queries": {
+        "a": {
+          "status": "sat",
+          "time_seconds": 0.1263,
+          "counterexample": {
+            "CTE": 10.0,
+            "HE": -21.259977,
+            "input_mean": 0.5
+          }
+        },
+        "b": {
+          "status": "sat",
+          "time_seconds": 0.0168,
+          "counterexample": {
+            "CTE": -10.0,
+            "HE": 16.491595,
+            "input_mean": 0.5
+          }
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0149
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0077
+        }
+      },
+      "verified": false
+    },
+    "image_13": {
+      "dataset_index": 6276,
+      "n_label_neighbors": 70,
+      "median_pixel_half_width": 0.03406,
+      "max_pixel_half_width": 0.17808,
+      "sub_queries": {
+        "a": {
+          "status": "sat",
+          "time_seconds": 0.0244,
+          "counterexample": {
+            "CTE": 10.0,
+            "HE": -20.1396,
+            "input_mean": 0.5
+          }
+        },
+        "b": {
+          "status": "sat",
+          "time_seconds": 0.017,
+          "counterexample": {
+            "CTE": -10.0,
+            "HE": 14.531478,
+            "input_mean": 0.5
+          }
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0092
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.008
+        }
+      },
+      "verified": false
+    },
+    "image_14": {
+      "dataset_index": 6775,
+      "n_label_neighbors": 81,
+      "median_pixel_half_width": 0.03105,
+      "max_pixel_half_width": 0.16979,
+      "sub_queries": {
+        "a": {
+          "status": "sat",
+          "time_seconds": 0.016,
+          "counterexample": {
+            "CTE": 10.0,
+            "HE": -36.369954,
+            "input_mean": 0.5
+          }
+        },
+        "b": {
+          "status": "sat",
+          "time_seconds": 0.0146,
+          "counterexample": {
+            "CTE": -10.0,
+            "HE": 16.541008,
+            "input_mean": 0.5
+          }
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0107
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0072
+        }
+      },
+      "verified": false
+    },
+    "image_15": {
+      "dataset_index": 7268,
+      "n_label_neighbors": 68,
+      "median_pixel_half_width": 0.03595,
+      "max_pixel_half_width": 0.17097,
+      "sub_queries": {
+        "a": {
+          "status": "sat",
+          "time_seconds": 0.0786,
+          "counterexample": {
+            "CTE": 10.0,
+            "HE": -21.506644,
+            "input_mean": 0.5
+          }
+        },
+        "b": {
+          "status": "sat",
+          "time_seconds": 0.0179,
+          "counterexample": {
+            "CTE": -10.0,
+            "HE": 15.516264,
+            "input_mean": 0.5
+          }
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0093
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0071
+        }
+      },
+      "verified": false
+    },
+    "image_16": {
+      "dataset_index": 7724,
+      "n_label_neighbors": 50,
+      "median_pixel_half_width": 0.02006,
+      "max_pixel_half_width": 0.10828,
+      "sub_queries": {
+        "a": {
+          "status": "unsat",
+          "time_seconds": 0.0071
+        },
+        "b": {
+          "status": "unsat",
+          "time_seconds": 0.0306
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0046
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0102
+        }
+      },
+      "verified": true
+    },
+    "image_17": {
+      "dataset_index": 8224,
+      "n_label_neighbors": 71,
+      "median_pixel_half_width": 0.02626,
+      "max_pixel_half_width": 0.1546,
+      "sub_queries": {
+        "a": {
+          "status": "unsat",
+          "time_seconds": 0.2361
+        },
+        "b": {
+          "status": "unsat",
+          "time_seconds": 0.0673
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0054
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0084
+        }
+      },
+      "verified": true
+    },
+    "image_18": {
+      "dataset_index": 8775,
+      "n_label_neighbors": 80,
+      "median_pixel_half_width": 0.02718,
+      "max_pixel_half_width": 0.16539,
+      "sub_queries": {
+        "a": {
+          "status": "sat",
+          "time_seconds": 0.0215,
+          "counterexample": {
+            "CTE": 10.0,
+            "HE": -23.557674,
+            "input_mean": 0.5
+          }
+        },
+        "b": {
+          "status": "sat",
+          "time_seconds": 0.0192,
+          "counterexample": {
+            "CTE": -10.0,
+            "HE": 15.332652,
+            "input_mean": 0.5
+          }
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0101
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0097
+        }
+      },
+      "verified": false
+    },
+    "image_19": {
+      "dataset_index": 9322,
+      "n_label_neighbors": 75,
+      "median_pixel_half_width": 0.04832,
+      "max_pixel_half_width": 0.1703,
+      "sub_queries": {
+        "a": {
+          "status": "sat",
+          "time_seconds": 0.0188,
+          "counterexample": {
+            "CTE": 10.0,
+            "HE": -26.405647,
+            "input_mean": 0.5
+          }
+        },
+        "b": {
+          "status": "sat",
+          "time_seconds": 0.0164,
+          "counterexample": {
+            "CTE": -10.0,
+            "HE": 21.183403,
+            "input_mean": 0.5
+          }
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0095
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0075
+        }
+      },
+      "verified": false
+    },
+    "image_20": {
+      "dataset_index": 9973,
+      "n_label_neighbors": 78,
+      "median_pixel_half_width": 0.03208,
+      "max_pixel_half_width": 0.17486,
+      "sub_queries": {
+        "a": {
+          "status": "sat",
+          "time_seconds": 0.0218,
+          "counterexample": {
+            "CTE": 10.0,
+            "HE": -30.265847,
+            "input_mean": 0.5
+          }
+        },
+        "b": {
+          "status": "sat",
+          "time_seconds": 0.0177,
+          "counterexample": {
+            "CTE": -10.0,
+            "HE": 15.516264,
+            "input_mean": 0.5
+          }
+        },
+        "c": {
+          "status": "unsat",
+          "time_seconds": 0.0077
+        },
+        "d": {
+          "status": "unsat",
+          "time_seconds": 0.0083
+        }
+      },
+      "verified": false
+    }
+  },
+  "summary": {
+    "verified": 5,
+    "violated": 15,
+    "empty": 0,
+    "total": 20,
+    "elapsed_seconds": 2.16
+  }
+}

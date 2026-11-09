@@ -1,0 +1,30 @@
+{
+  "experiment": "external_mnistfc_strong_transfer",
+  "verdict": "STRONG TRANSFER EVIDENCE",
+  "external_network": "VNN-COMP mnist_fc mnist-net_256x2 (784-256-256-10 ReLU), not trained by us",
+  "setup": {"anchors": 20, "per_class": 2, "held_out": true, "train_only_region_calibration": true, "property": "targeted class confusion (highest non-true logit at x0)", "solver": "Marabou 2.0 CLI on composed/base ONNX, SnC 4 workers, 120 s", "R4": "composed ONNX z -> x0+V_d^T z -> mnist_fc; d=8; alpha in {1,2,3} sigma", "R3": "composed ONNX z -> class-AE decoder -> mnist_fc; per-class train latent box"},
+  "ran": {"R1": true, "R4": true, "R3": true},
+  "verdict_tally": {
+    "R1@0.05": {"sat": 11, "timeout": 9},
+    "R1@0.03": {"unsat": 9, "sat": 5, "timeout": 6},
+    "R4@1sigma": {"unsat": 13, "sat": 6, "timeout": 1},
+    "R4@2sigma": {"sat": 15, "unsat": 2, "timeout": 3},
+    "R4@3sigma": {"sat": 17, "unsat": 1, "timeout": 2},
+    "R3_latent_box": {"sat": 20}
+  },
+  "answers": {
+    "R4_ran": "YES (composed ONNX z -> x0 + V_d^T z -> mnist_fc, verified over z-box via CLI; ~35 s/query)",
+    "R3_ran": "YES (composed ONNX z -> class-AE decoder -> mnist_fc, verified over per-class train latent box)",
+    "region_dependent_verdict_shift": "YES. The tight data-conditioned local-PCA region R4@1sigma is UNSAT on 13/20 anchors, including 6 of the 11 anchors where the broad pixel ball R1@0.05 admits a class-confusion witness (SAT). The data-conditioned region removes the broad-region witness. The R4 verification rate falls monotonically as the region loosens: 13/20 UNSAT at 1sigma, 2/20 at 2sigma, 1/20 at 3sigma (analogous to the TinyTaxiNet P3 region-geometry sensitivity).",
+    "witness_audit": "Secondary and weak. Per-pair Lipschitz violation flags all region witnesses as off-manifold vs the real baseline (0.007): R1 0.122, R4 0.121, R3 0.319. By nearest-real L2, R1 witnesses sit near their real anchor (0.88) because they are eps-ball perturbations, while raw composed-region SAT witnesses drift farther from held-out test digits (R3 5.02, R4 5.73) and leave the unit pixel cube. The external evidence is therefore the R4 verdict shift, not a realism claim about SAT witnesses.",
+    "timeouts": "R4 is solver-tractable (1-3 timeouts per alpha over 20 anchors); R1 broad-ball times out on 9/20, but the data-conditioned region that carries the result is clean. R3 latent box never times out.",
+    "expected_label_calibration": "Unaffected; mnist_fc plumbing calibration remains 12/12 completed-match (separate §7 run); make reproduce-calibration still defaults to mnist_fc."
+  },
+  "caveats_no_overclaim": [
+    "One external network; not universal transfer.",
+    "R1 broad-ball times out on 9/20, so the broad baseline is often unresolved; the shift is established on the 11 anchors where R1 resolves plus the internal R4 alpha sweep.",
+    "Witness-audit signals are mixed, not a clean ranking; no single signal is a realism oracle.",
+    "Expected-label calibration checks solver plumbing, not region realism."
+  ],
+  "manuscript_action": "STRONG -> add a compact external-instantiation subsection (one verdict table + one paragraph) plus one sentence in abstract and conclusion; keep the expected-label calibration separate in the calibration section."
+}

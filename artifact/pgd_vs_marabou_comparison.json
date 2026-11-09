@@ -1,0 +1,119 @@
+{
+  "experiment": "pgd_vs_marabou_subspace",
+  "attack": "cheap multi-restart corner-jump / sign-PGD in the same z-box (pgd_vs_marabou.py); witness requires valid pixels in [0,1]",
+  "note": "Marabou is sound and complete over the encoded region; the attack is incomplete. attack_only must be 0 (soundness check).",
+  "d8_alpha_sweep": {
+    "1sigma": {
+      "both_SAT_attackFinds": 0,
+      "solver_only_SAT_attackMisses": 33,
+      "attack_only_UNSOUND": 0,
+      "solver_only_UNSAT_certified": 622,
+      "marabou_timeout": 2,
+      "n_joined": 657
+    },
+    "2sigma": {
+      "both_SAT_attackFinds": 0,
+      "solver_only_SAT_attackMisses": 225,
+      "attack_only_UNSOUND": 0,
+      "solver_only_UNSAT_certified": 664,
+      "marabou_timeout": 4,
+      "n_joined": 893
+    },
+    "3sigma": {
+      "both_SAT_attackFinds": 0,
+      "solver_only_SAT_attackMisses": 70,
+      "attack_only_UNSOUND": 0,
+      "solver_only_UNSAT_certified": 128,
+      "marabou_timeout": 2,
+      "n_joined": 200
+    }
+  },
+  "dimension_overlay_alpha1": {
+    "pca_d2": {
+      "n": 657,
+      "attack_witness": 0,
+      "attack_witness_pct": 0.0,
+      "best_margin_median": -7.454,
+      "best_margin_max": -3.151
+    },
+    "pca_d4": {
+      "n": 657,
+      "attack_witness": 0,
+      "attack_witness_pct": 0.0,
+      "best_margin_median": -6.884,
+      "best_margin_max": -2.605
+    },
+    "pca_d8": {
+      "n": 657,
+      "attack_witness": 0,
+      "attack_witness_pct": 0.0,
+      "best_margin_median": -6.315,
+      "best_margin_max": -2.206
+    },
+    "pca_d16": {
+      "n": 657,
+      "attack_witness": 0,
+      "attack_witness_pct": 0.0,
+      "best_margin_median": -5.694,
+      "best_margin_max": -1.639
+    },
+    "pca_d32": {
+      "n": 657,
+      "attack_witness": 0,
+      "attack_witness_pct": 0.0,
+      "best_margin_median": -4.941,
+      "best_margin_max": -1.192
+    },
+    "pca_d64": {
+      "n": 657,
+      "attack_witness": 0,
+      "attack_witness_pct": 0.0,
+      "best_margin_median": -4.561,
+      "best_margin_max": -0.976
+    },
+    "random_d2": {
+      "n": 1971,
+      "attack_witness": 0,
+      "attack_witness_pct": 0.0,
+      "best_margin_median": -7.152,
+      "best_margin_max": -3.219
+    },
+    "random_d4": {
+      "n": 1971,
+      "attack_witness": 0,
+      "attack_witness_pct": 0.0,
+      "best_margin_median": -6.596,
+      "best_margin_max": -2.65
+    },
+    "random_d8": {
+      "n": 1971,
+      "attack_witness": 0,
+      "attack_witness_pct": 0.0,
+      "best_margin_median": -5.874,
+      "best_margin_max": -1.178
+    },
+    "random_d16": {
+      "n": 1971,
+      "attack_witness": 0,
+      "attack_witness_pct": 0.0,
+      "best_margin_median": -5.151,
+      "best_margin_max": -0.711
+    },
+    "random_d32": {
+      "n": 1971,
+      "attack_witness": 0,
+      "attack_witness_pct": 0.0,
+      "best_margin_median": -4.525,
+      "best_margin_max": -0.285
+    },
+    "random_d64": {
+      "n": 1971,
+      "attack_witness": 2,
+      "attack_witness_pct": 0.1,
+      "best_margin_median": -4.18,
+      "best_margin_max": 0.241
+    }
+  },
+  "attack_mean_time_s_per_region": 0.1014,
+  "interpretation": "The cheap attack finds essentially no P3 witnesses (0 of the Marabou-SAT regions at d=8), and its best objective value falls well short of the bound (median margin far below 0), while attack_only=0 confirms soundness. Marabou both recovers SAT witnesses the attack misses and certifies UNSAT where attack failure is inconclusive: formal solving is decisive on the local-PCA regions."
+}

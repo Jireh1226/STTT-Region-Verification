@@ -1,0 +1,197 @@
+{
+  "title": "TinyTaxiNet region-tagged verification: matched-dimension follow-up experiments",
+  "exp1_P1_matched_dim_control": {
+    "baseline": {
+      "pixel_box_P1a": "sat",
+      "pixel_box_P1b": "sat",
+      "AE_decoder_box_P1a": "unsat",
+      "AE_decoder_box_P1b": "unsat",
+      "source": "verification_ae_with_mean_constraint.json (ae_with_mean); pixel box from verification_autoencoder_composed.json"
+    },
+    "pca_affine_8D": {
+      "P1a": "unsat",
+      "P1b": "unsat"
+    },
+    "random_affine_8D": {
+      "seed0": {
+        "P1a": "unsat",
+        "P1b": "unsat"
+      },
+      "seed1": {
+        "P1a": "unsat",
+        "P1b": "unsat"
+      },
+      "seed2": {
+        "P1a": "unsat",
+        "P1b": "unsat"
+      }
+    },
+    "validation_reached_CTE": {
+      "pca": {
+        "method": "all 256 z-box corners plus 5000 random feasible samples; not exact optimization",
+        "valid_samples": 5254,
+        "max_pos_CTE": 7.899,
+        "max_neg_CTE": 5.85
+      },
+      "random_seed0": {
+        "method": "all 256 z-box corners plus 5000 random feasible samples; not exact optimization",
+        "valid_samples": 5257,
+        "max_pos_CTE": 2.939,
+        "max_neg_CTE": 2.429
+      },
+      "random_seed1": {
+        "method": "all 256 z-box corners plus 5000 random feasible samples; not exact optimization",
+        "valid_samples": 5257,
+        "max_pos_CTE": 3.59,
+        "max_neg_CTE": 3.208
+      },
+      "random_seed2": {
+        "method": "all 256 z-box corners plus 5000 random feasible samples; not exact optimization",
+        "valid_samples": 5257,
+        "max_pos_CTE": 3.894,
+        "max_neg_CTE": 3.889
+      }
+    },
+    "verdict": "Random 8D affine region flips P1a/P1b to UNSAT like the AE decoder box: the flip is a generic low-dimensional-region effect, not decoder-support-specific. The validation search shows the regions are non-degenerate; the exact UNSAT verdicts prove the 10 m bound is not reachable."
+  },
+  "exp2_P3_dimension_sweep": {
+    "n_anchors": 694,
+    "pca_verified_pct_by_d": {
+      "2": 100.0,
+      "4": 100.0,
+      "8": 94.38,
+      "16": 68.44,
+      "32": 38.76,
+      "64": 26.8
+    },
+    "random_verified_pct_by_d": {
+      "2": 100.0,
+      "4": 100.0,
+      "8": 100.0,
+      "16": 100.0,
+      "32": 99.81,
+      "64": 99.28
+    },
+    "pca_timeouts_by_d": {
+      "2": 0,
+      "4": 0,
+      "8": 2,
+      "16": 18,
+      "32": 33,
+      "64": 26
+    },
+    "verdict": "PCA verification collapses with dimension (100% at d=2 to ~27% at d=64) while a matched random subspace stays ~100%: at the operating point d=8 they nearly agree (dimensionality dominates), but direction becomes decisive at d>=16. Timeouts reported, not counted as verified."
+  },
+  "exp2_ctehe_breakdown": {
+    "2": {
+      "n": 159,
+      "CTE_sat": 0,
+      "HE_sat": 0,
+      "timeout": 0
+    },
+    "4": {
+      "n": 159,
+      "CTE_sat": 0,
+      "HE_sat": 0,
+      "timeout": 0
+    },
+    "8": {
+      "n": 159,
+      "CTE_sat": 9,
+      "HE_sat": 0,
+      "timeout": 1
+    },
+    "16": {
+      "n": 159,
+      "CTE_sat": 43,
+      "HE_sat": 0,
+      "timeout": 6
+    },
+    "32": {
+      "n": 159,
+      "CTE_sat": 95,
+      "HE_sat": 2,
+      "timeout": 8
+    },
+    "64": {
+      "n": 159,
+      "CTE_sat": 107,
+      "HE_sat": 7,
+      "timeout": 4
+    }
+  },
+  "exp3_pgd_vs_marabou": {
+    "d8_alpha_sweep": {
+      "1sigma": {
+        "both_SAT_attackFinds": 0,
+        "solver_only_SAT_attackMisses": 33,
+        "attack_only_UNSOUND": 0,
+        "solver_only_UNSAT_certified": 622,
+        "marabou_timeout": 2,
+        "n_joined": 657
+      },
+      "2sigma": {
+        "both_SAT_attackFinds": 0,
+        "solver_only_SAT_attackMisses": 225,
+        "attack_only_UNSOUND": 0,
+        "solver_only_UNSAT_certified": 664,
+        "marabou_timeout": 4,
+        "n_joined": 893
+      },
+      "3sigma": {
+        "both_SAT_attackFinds": 0,
+        "solver_only_SAT_attackMisses": 70,
+        "attack_only_UNSOUND": 0,
+        "solver_only_UNSAT_certified": 128,
+        "marabou_timeout": 2,
+        "n_joined": 200
+      }
+    },
+    "attack_mean_time_s_per_region": 0.1014,
+    "verdict": "The cheap subspace attack finds 0 of the Marabou-SAT witnesses (all missed), attack_only=0 (sound), and Marabou certifies UNSAT where attack failure is inconclusive: formal solving is decisive."
+  },
+  "support_LARD_dimension_sweep": {
+    "pca_d2": {
+      "unsat": 50
+    },
+    "pca_d8": {
+      "unsat": 50
+    },
+    "pca_d32": {
+      "unsat": 50
+    },
+    "pca_d64": {
+      "unsat": 50
+    },
+    "random_d2": {
+      "unsat": 150
+    },
+    "random_d8": {
+      "unsat": 150
+    },
+    "random_d32": {
+      "unsat": 150
+    },
+    "random_d64": {
+      "unsat": 150
+    }
+  },
+  "support_LARD_verdict": "Both PCA and random remove all LARD broad witnesses (100% UNSAT) at every d 2-64: matched sigma-scale keeps witnesses off the data manifold at any dimension.",
+  "support_scale_calibration": {
+    "TinyTaxiNet": {
+      "z_logvol_gap": 0.0,
+      "l2_reach_gap": 0.0
+    },
+    "verdict": "PCA and random share identical z-box volume and L2 reach (gap=0); the random control is matched, not secretly smaller (its effective pixel footprint is equal or larger)."
+  },
+  "support_closed_loop_P4": {
+    "normal_departure_rate": 0.0,
+    "always_flip_departure_rate": 0.66,
+    "verdict": "P4 wrong-sign washes out (0% departures) while a systematic always-flip diverges (66%): the mode is real but marginal/transient, and does not destabilize a simple proportional controller."
+  },
+  "support_frontier": {
+    "pca_d8_coverage": 0.9131,
+    "random_d8_coverage": 0.0604,
+    "verdict": "At d=8 PCA captures 91.3% of held-out data variance vs random 6.0%: equal verification, opposite data coverage; verification rate alone does not certify realism."
+  }
+}

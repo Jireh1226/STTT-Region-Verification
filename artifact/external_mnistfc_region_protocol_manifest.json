@@ -1,0 +1,27 @@
+{
+  "experiment": "external_mnistfc_region_transfer",
+  "purpose": "Test whether the region-tagged workflow transfers to an external image classifier (VNN-COMP mnist_fc, mnist-net_256x2) that we did not train.",
+  "external_network": "external/vnncomp/mnist_fc/onnx/mnist-net_256x2.onnx (784-256-256-10 ReLU, VNN-COMP mnist_fc; input shape [1,784,1], inputs in [0,1])",
+  "seed": 0,
+  "data": {
+    "source": "official MNIST (~/.keras/datasets/mnist.npz), numpy load, no TensorFlow",
+    "anchors": "correctly-classified test images, 2 per class by ascending test index (held out); region calibration uses train split only",
+    "forward_eval": "onnxruntime 1.19.2"
+  },
+  "epsilons": [0.05],
+  "regions_planned": ["R1 per-anchor Linf ball", "R2 R1 + class total-mass band (mu_c +- 2 sigma_c, train)", "R3 class-AE decoder box", "R4 local PCA same-class train neighbors", "R5 same-class nearest-neighbor per-pixel box (K=100 train)", "R6 class box + TV p90 (train)"],
+  "regions_runnable_in_environment": ["R1", "R2", "R5"],
+  "regions_blocked": {
+    "R3_R4": "decoder/PCA composition requires maraboupy (import hangs on this filesystem) or onnx graph surgery (onnx lib absent); cannot compose onto the external ONNX",
+    "R6": "TV bound needs auxiliary slack variables, not expressible in the pure VNN-LIB subset the Marabou CLI parses; maraboupy path unavailable"
+  },
+  "properties": {
+    "P4_ext_targeted": "single-target class-confusion Y_t >= Y_c with t = runner-up class on the clean anchor (deterministic)",
+    "P3_ext_robustness": "full OR_{j!=c} Y_j >= Y_c; attempted but the OR property is markedly slower than single-target on this net"
+  },
+  "region_params": {"R5_K": 100, "R2_mass_band_sigma": 2.0},
+  "solver": "Marabou 2.0 CLI on the external ONNX, split-and-conquer, 4 workers, 120 s per query, exact status parsing (no substring matching)",
+  "audit_signals": ["nearest-real L2 to held-out test (same-class and all-class)", "nearest-real L2 to train (same-class and all-class)", "per-pair Lipschitz violation fraction (train-calibrated)", "total variation"],
+  "no_tuning_after_results": true,
+  "note": "Specs/epsilons of any VNN-COMP file are NOT modified. This region-transfer run is separate from the mnist_fc expected-label plumbing calibration."
+}

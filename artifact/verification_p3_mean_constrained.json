@@ -1,0 +1,2178 @@
+{
+  "mean_target": 0.5,
+  "epsilons": [
+    0.02,
+    0.05,
+    0.1
+  ],
+  "results_by_epsilon": {
+    "epsilon_0.02": {
+      "verified": 20,
+      "violated": 0,
+      "infeasible_region": 0,
+      "total": 20,
+      "per_image": {
+        "image_1": {
+          "dataset_index": 20,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.014
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0078
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0047
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0048
+            }
+          },
+          "verified": true
+        },
+        "image_2": {
+          "dataset_index": 375,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0077
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0076
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.005
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0048
+            }
+          },
+          "verified": true
+        },
+        "image_3": {
+          "dataset_index": 921,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0077
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0132
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0052
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0092
+            }
+          },
+          "verified": true
+        },
+        "image_4": {
+          "dataset_index": 1478,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.008
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0118
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0048
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0048
+            }
+          },
+          "verified": true
+        },
+        "image_5": {
+          "dataset_index": 1980,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0075
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0076
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0047
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0047
+            }
+          },
+          "verified": true
+        },
+        "image_6": {
+          "dataset_index": 2616,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0076
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.007
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0049
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0049
+            }
+          },
+          "verified": true
+        },
+        "image_7": {
+          "dataset_index": 3132,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0084
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0085
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0057
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0049
+            }
+          },
+          "verified": true
+        },
+        "image_8": {
+          "dataset_index": 3572,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0072
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0144
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0046
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0044
+            }
+          },
+          "verified": true
+        },
+        "image_9": {
+          "dataset_index": 4130,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0073
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0076
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0046
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0048
+            }
+          },
+          "verified": true
+        },
+        "image_10": {
+          "dataset_index": 4772,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0076
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.012
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0053
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0059
+            }
+          },
+          "verified": true
+        },
+        "image_11": {
+          "dataset_index": 5221,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0128
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0132
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0048
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0047
+            }
+          },
+          "verified": true
+        },
+        "image_12": {
+          "dataset_index": 5723,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0071
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0607
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0051
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0047
+            }
+          },
+          "verified": true
+        },
+        "image_13": {
+          "dataset_index": 6276,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0076
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0129
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0048
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0046
+            }
+          },
+          "verified": true
+        },
+        "image_14": {
+          "dataset_index": 6775,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0075
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.009
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.005
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0046
+            }
+          },
+          "verified": true
+        },
+        "image_15": {
+          "dataset_index": 7268,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0086
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.014
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0054
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0052
+            }
+          },
+          "verified": true
+        },
+        "image_16": {
+          "dataset_index": 7724,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0079
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0083
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0052
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0064
+            }
+          },
+          "verified": true
+        },
+        "image_17": {
+          "dataset_index": 8224,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0105
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0119
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0053
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0059
+            }
+          },
+          "verified": true
+        },
+        "image_18": {
+          "dataset_index": 8775,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0096
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.009
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.005
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0043
+            }
+          },
+          "verified": true
+        },
+        "image_19": {
+          "dataset_index": 9322,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0077
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0082
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.005
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0075
+            }
+          },
+          "verified": true
+        },
+        "image_20": {
+          "dataset_index": 9973,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            61.44,
+            66.56
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0082
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.014
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.005
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0053
+            }
+          },
+          "verified": true
+        }
+      }
+    },
+    "epsilon_0.05": {
+      "verified": 4,
+      "violated": 16,
+      "infeasible_region": 0,
+      "total": 20,
+      "per_image": {
+        "image_1": {
+          "dataset_index": 20,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0202,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.072558,
+                "input_mean": 0.5,
+                "input_min": 0.387785,
+                "input_max": 0.720628,
+                "linf_from_x0": 0.05
+              }
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0884
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0079
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.009
+            }
+          },
+          "verified": false
+        },
+        "image_2": {
+          "dataset_index": 375,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0179,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.278692,
+                "input_mean": 0.5,
+                "input_min": 0.355557,
+                "input_max": 0.738155,
+                "linf_from_x0": 0.05
+              }
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1758
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0066
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0083
+            }
+          },
+          "verified": false
+        },
+        "image_3": {
+          "dataset_index": 921,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1226
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0174,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 16.672509,
+                "input_mean": 0.5,
+                "input_min": 0.317592,
+                "input_max": 0.774209,
+                "linf_from_x0": 0.05
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0051
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0078
+            }
+          },
+          "verified": false
+        },
+        "image_4": {
+          "dataset_index": 1478,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.061
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0167,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 41.204347,
+                "input_mean": 0.5,
+                "input_min": 0.333261,
+                "input_max": 0.754094,
+                "linf_from_x0": 0.05
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0129
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0101
+            }
+          },
+          "verified": false
+        },
+        "image_5": {
+          "dataset_index": 1980,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0221,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -19.000969,
+                "input_mean": 0.5,
+                "input_min": 0.346854,
+                "input_max": 0.746854,
+                "linf_from_x0": 0.05
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0188,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 23.944824,
+                "input_mean": 0.5,
+                "input_min": 0.340726,
+                "input_max": 0.746854,
+                "linf_from_x0": 0.05
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.007
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0087
+            }
+          },
+          "verified": false
+        },
+        "image_6": {
+          "dataset_index": 2616,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0307
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0228,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 36.170188,
+                "input_mean": 0.5,
+                "input_min": 0.337107,
+                "input_max": 0.720686,
+                "linf_from_x0": 0.05
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0106
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0092
+            }
+          },
+          "verified": false
+        },
+        "image_7": {
+          "dataset_index": 3132,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0209,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -41.498158,
+                "input_mean": 0.5,
+                "input_min": 0.331698,
+                "input_max": 0.779247,
+                "linf_from_x0": 0.05
+              }
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.4379
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0054
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0077
+            }
+          },
+          "verified": false
+        },
+        "image_8": {
+          "dataset_index": 3572,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0997
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0406,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 25.941649,
+                "input_mean": 0.5,
+                "input_min": 0.318279,
+                "input_max": 0.776612,
+                "linf_from_x0": 0.05
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0055
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0081
+            }
+          },
+          "verified": false
+        },
+        "image_9": {
+          "dataset_index": 4130,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0203,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.373123,
+                "input_mean": 0.5,
+                "input_min": 0.321325,
+                "input_max": 0.759561,
+                "linf_from_x0": 0.05
+              }
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0825
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0067
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0086
+            }
+          },
+          "verified": false
+        },
+        "image_10": {
+          "dataset_index": 4772,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.2643
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.019,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 40.015259,
+                "input_mean": 0.5,
+                "input_min": 0.346944,
+                "input_max": 0.734199,
+                "linf_from_x0": 0.05
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0096
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0078
+            }
+          },
+          "verified": false
+        },
+        "image_11": {
+          "dataset_index": 5221,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0197
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0469,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 11.778212,
+                "input_mean": 0.5,
+                "input_min": 0.304515,
+                "input_max": 0.788094,
+                "linf_from_x0": 0.05
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0058
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0077
+            }
+          },
+          "verified": false
+        },
+        "image_12": {
+          "dataset_index": 5723,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0434
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.2156
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0053
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0079
+            }
+          },
+          "verified": true
+        },
+        "image_13": {
+          "dataset_index": 6276,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1914
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0222,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 29.018778,
+                "input_mean": 0.5,
+                "input_min": 0.304107,
+                "input_max": 0.781068,
+                "linf_from_x0": 0.05
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0057
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0075
+            }
+          },
+          "verified": false
+        },
+        "image_14": {
+          "dataset_index": 6775,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0212
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0767
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0058
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0076
+            }
+          },
+          "verified": true
+        },
+        "image_15": {
+          "dataset_index": 7268,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1564
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0223,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 28.261694,
+                "input_mean": 0.5,
+                "input_min": 0.313813,
+                "input_max": 0.77391,
+                "linf_from_x0": 0.05
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0055
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0078
+            }
+          },
+          "verified": false
+        },
+        "image_16": {
+          "dataset_index": 7724,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0181,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.446231,
+                "input_mean": 0.5,
+                "input_min": 0.338251,
+                "input_max": 0.749525,
+                "linf_from_x0": 0.05
+              }
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.291
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0048
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0076
+            }
+          },
+          "verified": false
+        },
+        "image_17": {
+          "dataset_index": 8224,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0982
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1177
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.005
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0091
+            }
+          },
+          "verified": true
+        },
+        "image_18": {
+          "dataset_index": 8775,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0531
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.5799
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0053
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0079
+            }
+          },
+          "verified": true
+        },
+        "image_19": {
+          "dataset_index": 9322,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0219,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -12.536746,
+                "input_mean": 0.5,
+                "input_min": 0.343564,
+                "input_max": 0.75778,
+                "linf_from_x0": 0.05
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0177,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 37.324244,
+                "input_mean": 0.5,
+                "input_min": 0.340133,
+                "input_max": 0.712927,
+                "linf_from_x0": 0.05
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0138
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0083
+            }
+          },
+          "verified": false
+        },
+        "image_20": {
+          "dataset_index": 9973,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            57.6,
+            70.4
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0829
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0263,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 24.089077,
+                "input_mean": 0.5,
+                "input_min": 0.31928,
+                "input_max": 0.802124,
+                "linf_from_x0": 0.05
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0057
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0078
+            }
+          },
+          "verified": false
+        }
+      }
+    },
+    "epsilon_0.1": {
+      "verified": 0,
+      "violated": 20,
+      "infeasible_region": 0,
+      "total": 20,
+      "per_image": {
+        "image_1": {
+          "dataset_index": 20,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0226,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.586179,
+                "input_mean": 0.5,
+                "input_min": 0.306168,
+                "input_max": 0.770628,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0179,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 7.81579,
+                "input_mean": 0.5,
+                "input_min": 0.314746,
+                "input_max": 0.764991,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0091
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.1597
+            }
+          },
+          "verified": false
+        },
+        "image_2": {
+          "dataset_index": 375,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0163,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.364687,
+                "input_mean": 0.5,
+                "input_min": 0.290116,
+                "input_max": 0.788155,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0182,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 4.599031,
+                "input_mean": 0.5,
+                "input_min": 0.301145,
+                "input_max": 0.778351,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0091
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.4773
+            }
+          },
+          "verified": false
+        },
+        "image_3": {
+          "dataset_index": 921,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0347,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -21.98743,
+                "input_mean": 0.5,
+                "input_min": 0.286464,
+                "input_max": 0.789405,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0365,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 17.908857,
+                "input_mean": 0.5,
+                "input_min": 0.266366,
+                "input_max": 0.832788,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0091
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.604
+            }
+          },
+          "verified": false
+        },
+        "image_4": {
+          "dataset_index": 1478,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0333,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -41.734923,
+                "input_mean": 0.5,
+                "input_min": 0.284241,
+                "input_max": 0.796986,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0187,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 15.316482,
+                "input_mean": 0.5,
+                "input_min": 0.289143,
+                "input_max": 0.804094,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.2191
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.1524
+            }
+          },
+          "verified": false
+        },
+        "image_5": {
+          "dataset_index": 1980,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0255,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -16.50439,
+                "input_mean": 0.5,
+                "input_min": 0.298325,
+                "input_max": 0.819648,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0216,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 15.720569,
+                "input_mean": 0.5,
+                "input_min": 0.298325,
+                "input_max": 0.810825,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0696
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.1849
+            }
+          },
+          "verified": false
+        },
+        "image_6": {
+          "dataset_index": 2616,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0232,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -26.871796,
+                "input_mean": 0.5,
+                "input_min": 0.324117,
+                "input_max": 0.772156,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0211,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 15.516264,
+                "input_mean": 0.5,
+                "input_min": 0.287107,
+                "input_max": 0.772156,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.7731
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0987
+            }
+          },
+          "verified": false
+        },
+        "image_7": {
+          "dataset_index": 3132,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0202,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -53.417606,
+                "input_mean": 0.5,
+                "input_min": 0.2741,
+                "input_max": 0.816257,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0213,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": -2.746019,
+                "input_mean": 0.5,
+                "input_min": 0.2741,
+                "input_max": 0.816257,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0096
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.1988
+            }
+          },
+          "verified": false
+        },
+        "image_8": {
+          "dataset_index": 3572,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0286,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -24.963077,
+                "input_mean": 0.5,
+                "input_min": 0.277102,
+                "input_max": 0.826612,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0224,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 15.516264,
+                "input_mean": 0.5,
+                "input_min": 0.277102,
+                "input_max": 0.83372,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0096
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.4415
+            }
+          },
+          "verified": false
+        },
+        "image_9": {
+          "dataset_index": 4130,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0187,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.717413,
+                "input_mean": 0.5,
+                "input_min": 0.267159,
+                "input_max": 0.809561,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0185,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 14.322476,
+                "input_mean": 0.5,
+                "input_min": 0.267159,
+                "input_max": 0.809561,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0091
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.2619
+            }
+          },
+          "verified": false
+        },
+        "image_10": {
+          "dataset_index": 4772,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0201,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -36.495965,
+                "input_mean": 0.5,
+                "input_min": 0.297434,
+                "input_max": 0.784199,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0195,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 18.850624,
+                "input_mean": 0.5,
+                "input_min": 0.288856,
+                "input_max": 0.784199,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.5183
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.1041
+            }
+          },
+          "verified": false
+        },
+        "image_11": {
+          "dataset_index": 5221,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0188,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.183585,
+                "input_mean": 0.5,
+                "input_min": 0.254515,
+                "input_max": 0.838094,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0199,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 13.494626,
+                "input_mean": 0.5,
+                "input_min": 0.254515,
+                "input_max": 0.838094,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0095
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.1421
+            }
+          },
+          "verified": false
+        },
+        "image_12": {
+          "dataset_index": 5723,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0205,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -38.119999,
+                "input_mean": 0.5,
+                "input_min": 0.267278,
+                "input_max": 0.819728,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0177,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 15.516264,
+                "input_mean": 0.5,
+                "input_min": 0.253797,
+                "input_max": 0.821444,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.011
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.1898
+            }
+          },
+          "verified": false
+        },
+        "image_13": {
+          "dataset_index": 6276,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0228,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -30.576395,
+                "input_mean": 0.5,
+                "input_min": 0.26195,
+                "input_max": 0.805333,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0186,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 13.494626,
+                "input_mean": 0.5,
+                "input_min": 0.254107,
+                "input_max": 0.831068,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0092
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.632
+            }
+          },
+          "verified": false
+        },
+        "image_14": {
+          "dataset_index": 6775,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.022,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -53.412369,
+                "input_mean": 0.5,
+                "input_min": 0.267329,
+                "input_max": 0.846006,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0208,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 5.490967,
+                "input_mean": 0.5,
+                "input_min": 0.272721,
+                "input_max": 0.743555,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0095
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.2885
+            }
+          },
+          "verified": false
+        },
+        "image_15": {
+          "dataset_index": 7268,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0245,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -18.672642,
+                "input_mean": 0.5,
+                "input_min": 0.262391,
+                "input_max": 0.818028,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.048,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 15.516264,
+                "input_mean": 0.5,
+                "input_min": 0.280283,
+                "input_max": 0.828077,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.1085
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.6723
+            }
+          },
+          "verified": false
+        },
+        "image_16": {
+          "dataset_index": 7724,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0207,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.486982,
+                "input_mean": 0.5,
+                "input_min": 0.267417,
+                "input_max": 0.792662,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0188,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 14.083162,
+                "input_mean": 0.5,
+                "input_min": 0.267417,
+                "input_max": 0.780898,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0101
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.3515
+            }
+          },
+          "verified": false
+        },
+        "image_17": {
+          "dataset_index": 8224,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0193,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -54.648176,
+                "input_mean": 0.5,
+                "input_min": 0.252608,
+                "input_max": 0.833735,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0185,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 11.879149,
+                "input_mean": 0.5,
+                "input_min": 0.252608,
+                "input_max": 0.82001,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0094
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.2159
+            }
+          },
+          "verified": false
+        },
+        "image_18": {
+          "dataset_index": 8775,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.0262,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -15.491719,
+                "input_mean": 0.5,
+                "input_min": 0.262701,
+                "input_max": 0.732242,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0189,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 13.494626,
+                "input_mean": 0.5,
+                "input_min": 0.260985,
+                "input_max": 0.819809,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0095
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0856
+            }
+          },
+          "verified": false
+        },
+        "image_19": {
+          "dataset_index": 9322,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.034,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -28.427317,
+                "input_mean": 0.5,
+                "input_min": 0.290133,
+                "input_max": 0.797731,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0213,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 16.793784,
+                "input_mean": 0.5,
+                "input_min": 0.290133,
+                "input_max": 0.827143,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0193
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0903
+            }
+          },
+          "verified": false
+        },
+        "image_20": {
+          "dataset_index": 9973,
+          "x0_mean": 0.5,
+          "ball_sum_range": [
+            51.2,
+            76.8
+          ],
+          "region_feasible": true,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.021,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -25.303956,
+                "input_mean": 0.5,
+                "input_min": 0.270261,
+                "input_max": 0.852124,
+                "linf_from_x0": 0.1
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.0324,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 19.633765,
+                "input_mean": 0.5,
+                "input_min": 0.276878,
+                "input_max": 0.852124,
+                "linf_from_x0": 0.1
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0092
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.4377
+            }
+          },
+          "verified": false
+        }
+      }
+    }
+  }
+}

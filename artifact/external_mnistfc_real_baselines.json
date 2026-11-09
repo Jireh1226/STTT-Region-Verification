@@ -1,0 +1,11 @@
+{
+  "provenance": {
+    "script": "audit_external_mnistfc_strong_transfer.py",
+    "timestamp_utc": "2026-06-29T18:45:58.123056+00:00"
+  },
+  "baselines": {
+    "test_self_nn_L2_median": 5.95214091907402,
+    "test_per_pair_violation_frac_mean": 0.007251322751322751,
+    "test_tv_median": 101.29019607843138
+  }
+}

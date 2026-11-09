@@ -1,0 +1,612 @@
+{
+  "provenance": {
+    "script": "verify_math_sensitivity_batch.py",
+    "timestamp_utc": "2026-05-30T00:18:27.793263+00:00",
+    "timeout_seconds": 120
+  },
+  "exp_A_quantile_sensitivity": {
+    "q90": {
+      "tv_tau": 11.498921716213227,
+      "fourier_tau": 7.425496363253921,
+      "photometric_eps": 0.22826983071315823,
+      "tv": {
+        "P1a": {
+          "status": "sat",
+          "time_seconds": 0.821,
+          "CTE": 10.0,
+          "HE": -51.3704
+        },
+        "P1b": {
+          "status": "sat",
+          "time_seconds": 0.294,
+          "CTE": -10.0,
+          "HE": 13.4946
+        },
+        "P4_left": {
+          "status": "sat",
+          "time_seconds": 0.289,
+          "CTE": -0.4839,
+          "HE": 1.8452
+        },
+        "P4_right": {
+          "status": "sat",
+          "time_seconds": 0.252,
+          "CTE": 0.0,
+          "HE": -0.4236
+        },
+        "P5": {
+          "status": "sat",
+          "time_seconds": 0.472,
+          "CTE": -0.01,
+          "HE": -0.01
+        }
+      },
+      "fourier": {
+        "P1a": {
+          "status": "sat",
+          "time_seconds": 2.089,
+          "CTE": 10.0,
+          "HE": -53.0631
+        },
+        "P1b": {
+          "status": "sat",
+          "time_seconds": 1.143,
+          "CTE": -10.0,
+          "HE": 13.4946
+        },
+        "P4_left": {
+          "status": "sat",
+          "time_seconds": 0.843,
+          "CTE": -0.036,
+          "HE": -0.255
+        },
+        "P4_right": {
+          "status": "sat",
+          "time_seconds": 1.103,
+          "CTE": 0.0,
+          "HE": -0.4236
+        },
+        "P5": {
+          "status": "sat",
+          "time_seconds": 1.941,
+          "CTE": -0.01,
+          "HE": -0.01
+        }
+      },
+      "photometric": {
+        "P1a": {
+          "status": "sat",
+          "time_seconds": 0.162,
+          "CTE": 10.0,
+          "HE": -54.6984
+        },
+        "P1b": {
+          "status": "sat",
+          "time_seconds": 0.078,
+          "CTE": -10.0,
+          "HE": 13.4946
+        },
+        "P4_left": {
+          "status": "sat",
+          "time_seconds": 0.073,
+          "CTE": -0.2818,
+          "HE": 0.8975
+        },
+        "P4_right": {
+          "status": "sat",
+          "time_seconds": 0.095,
+          "CTE": 0.0,
+          "HE": -3.7465
+        },
+        "P5": {
+          "status": "sat",
+          "time_seconds": 0.228,
+          "CTE": -0.01,
+          "HE": -0.01
+        }
+      }
+    },
+    "q95": {
+      "tv_tau": 11.761274671554565,
+      "fourier_tau": 7.544612859159251,
+      "photometric_eps": 0.2347192889134236,
+      "tv": {
+        "P1a": {
+          "status": "sat",
+          "time_seconds": 0.73,
+          "CTE": 10.0,
+          "HE": -51.1031
+        },
+        "P1b": {
+          "status": "sat",
+          "time_seconds": 0.289,
+          "CTE": -10.0,
+          "HE": 13.4946
+        },
+        "P4_left": {
+          "status": "sat",
+          "time_seconds": 0.712,
+          "CTE": -0.4839,
+          "HE": 1.8452
+        },
+        "P4_right": {
+          "status": "sat",
+          "time_seconds": 0.287,
+          "CTE": 0.0,
+          "HE": -3.8147
+        },
+        "P5": {
+          "status": "sat",
+          "time_seconds": 0.7,
+          "CTE": 0.01,
+          "HE": 0.01
+        }
+      },
+      "fourier": {
+        "P1a": {
+          "status": "sat",
+          "time_seconds": 2.083,
+          "CTE": 10.0,
+          "HE": -54.1757
+        },
+        "P1b": {
+          "status": "sat",
+          "time_seconds": 0.759,
+          "CTE": -10.0,
+          "HE": 13.4946
+        },
+        "P4_left": {
+          "status": "sat",
+          "time_seconds": 0.745,
+          "CTE": 0.0,
+          "HE": -0.4236
+        },
+        "P4_right": {
+          "status": "sat",
+          "time_seconds": 0.823,
+          "CTE": 0.0,
+          "HE": -0.4236
+        },
+        "P5": {
+          "status": "sat",
+          "time_seconds": 1.993,
+          "CTE": -0.01,
+          "HE": -0.01
+        }
+      },
+      "photometric": {
+        "P1a": {
+          "status": "sat",
+          "time_seconds": 0.053,
+          "CTE": 10.0,
+          "HE": -52.8872
+        },
+        "P1b": {
+          "status": "sat",
+          "time_seconds": 0.037,
+          "CTE": -10.0,
+          "HE": 13.4946
+        },
+        "P4_left": {
+          "status": "sat",
+          "time_seconds": 0.036,
+          "CTE": 0.0,
+          "HE": -0.4236
+        },
+        "P4_right": {
+          "status": "sat",
+          "time_seconds": 0.036,
+          "CTE": 0.0,
+          "HE": -0.4236
+        },
+        "P5": {
+          "status": "sat",
+          "time_seconds": 0.053,
+          "CTE": -0.01,
+          "HE": -0.01
+        }
+      }
+    },
+    "q99": {
+      "tv_tau": 12.184695773124695,
+      "fourier_tau": 7.917472892792535,
+      "photometric_eps": 0.2497369481688914,
+      "tv": {
+        "P1a": {
+          "status": "sat",
+          "time_seconds": 0.322,
+          "CTE": 10.0,
+          "HE": -54.3888
+        },
+        "P1b": {
+          "status": "sat",
+          "time_seconds": 0.144,
+          "CTE": -10.0,
+          "HE": 13.4946
+        },
+        "P4_left": {
+          "status": "sat",
+          "time_seconds": 0.171,
+          "CTE": -0.4839,
+          "HE": 1.8452
+        },
+        "P4_right": {
+          "status": "sat",
+          "time_seconds": 0.141,
+          "CTE": 0.0,
+          "HE": -0.4236
+        },
+        "P5": {
+          "status": "sat",
+          "time_seconds": 0.208,
+          "CTE": -0.01,
+          "HE": -0.01
+        }
+      },
+      "fourier": {
+        "P1a": {
+          "status": "sat",
+          "time_seconds": 0.909,
+          "CTE": 10.0,
+          "HE": -53.0517
+        },
+        "P1b": {
+          "status": "sat",
+          "time_seconds": 0.644,
+          "CTE": -10.0,
+          "HE": 13.4946
+        },
+        "P4_left": {
+          "status": "sat",
+          "time_seconds": 0.564,
+          "CTE": -0.1734,
+          "HE": 0.3893
+        },
+        "P4_right": {
+          "status": "sat",
+          "time_seconds": 0.519,
+          "CTE": 0.0,
+          "HE": -0.4236
+        },
+        "P5": {
+          "status": "sat",
+          "time_seconds": 2.336,
+          "CTE": -0.01,
+          "HE": -0.01
+        }
+      },
+      "photometric": {
+        "P1a": {
+          "status": "sat",
+          "time_seconds": 0.047,
+          "CTE": 10.0,
+          "HE": -49.9295
+        },
+        "P1b": {
+          "status": "sat",
+          "time_seconds": 0.038,
+          "CTE": -10.0,
+          "HE": 15.5163
+        },
+        "P4_left": {
+          "status": "sat",
+          "time_seconds": 0.035,
+          "CTE": -0.3143,
+          "HE": 1.0504
+        },
+        "P4_right": {
+          "status": "sat",
+          "time_seconds": 0.038,
+          "CTE": 0.0,
+          "HE": -0.4236
+        },
+        "P5": {
+          "status": "sat",
+          "time_seconds": 0.063,
+          "CTE": -0.01,
+          "HE": 0.01
+        }
+      }
+    },
+    "q100": {
+      "tv_tau": 12.647794127464294,
+      "fourier_tau": 8.156756568656004,
+      "photometric_eps": 0.2620710892986288,
+      "tv": {
+        "P1a": {
+          "status": "sat",
+          "time_seconds": 0.238,
+          "CTE": 10.0,
+          "HE": -50.9908
+        },
+        "P1b": {
+          "status": "sat",
+          "time_seconds": 0.146,
+          "CTE": -10.0,
+          "HE": 13.4946
+        },
+        "P4_left": {
+          "status": "sat",
+          "time_seconds": 0.184,
+          "CTE": -0.4839,
+          "HE": 1.8452
+        },
+        "P4_right": {
+          "status": "sat",
+          "time_seconds": 0.159,
+          "CTE": 0.0,
+          "HE": -0.9605
+        },
+        "P5": {
+          "status": "sat",
+          "time_seconds": 0.189,
+          "CTE": -0.01,
+          "HE": -0.01
+        }
+      },
+      "fourier": {
+        "P1a": {
+          "status": "sat",
+          "time_seconds": 1.018,
+          "CTE": 10.0,
+          "HE": -32.5301
+        },
+        "P1b": {
+          "status": "sat",
+          "time_seconds": 2.602,
+          "CTE": -10.0,
+          "HE": 25.1028
+        },
+        "P4_left": {
+          "status": "sat",
+          "time_seconds": 0.512,
+          "CTE": -0.4839,
+          "HE": 1.8452
+        },
+        "P4_right": {
+          "status": "sat",
+          "time_seconds": 0.523,
+          "CTE": 0.0,
+          "HE": -0.9172
+        },
+        "P5": {
+          "status": "sat",
+          "time_seconds": 0.62,
+          "CTE": -0.01,
+          "HE": -0.01
+        }
+      },
+      "photometric": {
+        "P1a": {
+          "status": "sat",
+          "time_seconds": 0.047,
+          "CTE": 10.0,
+          "HE": -49.9294
+        },
+        "P1b": {
+          "status": "sat",
+          "time_seconds": 0.071,
+          "CTE": -10.0,
+          "HE": 15.5163
+        },
+        "P4_left": {
+          "status": "sat",
+          "time_seconds": 0.034,
+          "CTE": -0.3303,
+          "HE": 1.1251
+        },
+        "P4_right": {
+          "status": "sat",
+          "time_seconds": 0.039,
+          "CTE": 0.0,
+          "HE": -3.7871
+        },
+        "P5": {
+          "status": "sat",
+          "time_seconds": 0.051,
+          "CTE": -0.01,
+          "HE": -0.01
+        }
+      }
+    }
+  },
+  "exp_B_per_pair_lipschitz_extension": {
+    "p3_lip_p99": {
+      "n_verified": 6,
+      "n_violated": 14,
+      "n_empty": 0,
+      "n_total": 20
+    },
+    "p3_lip_p90": {
+      "n_verified": 19,
+      "n_violated": 1,
+      "n_empty": 0,
+      "n_total": 20
+    },
+    "p2_lip_p99": {
+      "n_verified": 1,
+      "n_violated": 8,
+      "n_empty": 0,
+      "n_nominally_wrong": 11,
+      "n_total": 20
+    },
+    "p2_lip_p90": {
+      "n_verified": 9,
+      "n_violated": 0,
+      "n_empty": 0,
+      "n_nominally_wrong": 11,
+      "n_total": 20
+    },
+    "p6_lip_p99": {
+      "cte_bounds_approx": [
+        -18.75,
+        18.75
+      ],
+      "he_bounds_approx": [
+        -81.25,
+        68.75
+      ]
+    }
+  },
+  "exp_C_larger_p3_fragility": {
+    "n_anchors": 100,
+    "taus": [
+      12,
+      10,
+      8,
+      6,
+      4
+    ],
+    "results_by_tau": {
+      "tau_12": {
+        "tau": 12,
+        "n_verified": 28,
+        "n_violated": 72,
+        "n_empty": 0,
+        "n_total": 100,
+        "wall_s": 162.4
+      },
+      "tau_10": {
+        "tau": 10,
+        "n_verified": 37,
+        "n_violated": 63,
+        "n_empty": 0,
+        "n_total": 100,
+        "wall_s": 161.8
+      },
+      "tau_8": {
+        "tau": 8,
+        "n_verified": 74,
+        "n_violated": 26,
+        "n_empty": 0,
+        "n_total": 100,
+        "wall_s": 168.3
+      },
+      "tau_6": {
+        "tau": 6,
+        "n_verified": 91,
+        "n_violated": 9,
+        "n_empty": 0,
+        "n_total": 100,
+        "wall_s": 107.1
+      },
+      "tau_4": {
+        "tau": 4,
+        "n_verified": 100,
+        "n_violated": 0,
+        "n_empty": 0,
+        "n_total": 100,
+        "wall_s": 45.7
+      }
+    },
+    "threshold_per_anchor": {
+      "20": 6,
+      "76": 4,
+      "172": 4,
+      "227": 8,
+      "275": 4,
+      "374": 4,
+      "573": 4,
+      "621": 12,
+      "676": 4,
+      "777": 4,
+      "877": 6,
+      "1022": 8,
+      "1126": 8,
+      "1219": 10,
+      "1326": 8,
+      "1376": 8,
+      "1522": 6,
+      "1669": 8,
+      "1776": 12,
+      "1825": 6,
+      "1926": 12,
+      "2023": 6,
+      "2270": 4,
+      "2333": 4,
+      "2418": 8,
+      "2468": 6,
+      "2616": 6,
+      "2676": 10,
+      "2775": 6,
+      "2918": 12,
+      "2975": 8,
+      "3130": 12,
+      "3176": 8,
+      "3276": 8,
+      "3371": 8,
+      "3466": 12,
+      "3528": 8,
+      "3671": 8,
+      "3727": 8,
+      "3874": 6,
+      "3974": 12,
+      "4124": 8,
+      "4175": 12,
+      "4277": 10,
+      "4520": 12,
+      "4622": 8,
+      "4676": 8,
+      "4773": 6,
+      "4877": 12,
+      "4971": 8,
+      "5025": 8,
+      "5121": 8,
+      "5174": 6,
+      "5280": 12,
+      "5425": 6,
+      "5520": 12,
+      "5622": 12,
+      "5673": 12,
+      "5770": 12,
+      "5876": 10,
+      "5973": 6,
+      "6020": 8,
+      "6127": 12,
+      "6280": 8,
+      "6371": 8,
+      "6523": 8,
+      "6616": 8,
+      "6680": 12,
+      "6777": 8,
+      "6875": 8,
+      "6928": 6,
+      "7070": 10,
+      "7175": 12,
+      "7268": 6,
+      "7324": 10,
+      "7425": 12,
+      "7524": 12,
+      "7622": 8,
+      "7680": 12,
+      "7777": 8,
+      "7874": 12,
+      "7974": 8,
+      "8080": 8,
+      "8176": 8,
+      "8276": 12,
+      "8375": 12,
+      "8424": 6,
+      "8572": 10,
+      "8724": 8,
+      "8828": 12,
+      "8923": 10,
+      "9079": 6,
+      "9127": 8,
+      "9178": 12,
+      "9323": 8,
+      "9527": 12,
+      "9621": 10,
+      "9772": 8,
+      "9875": 12,
+      "9973": 8
+    },
+    "threshold_distribution": {
+      "12": 28,
+      "10": 9,
+      "8": 37,
+      "6": 17,
+      "4": 9
+    }
+  }
+}

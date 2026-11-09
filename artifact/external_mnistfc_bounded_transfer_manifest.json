@@ -1,0 +1,17 @@
+{
+  "experiment": "external_mnistfc_bounded_transfer",
+  "purpose": "Determine whether the external R4/R3 transfer result survives valid-pixel constraints (0<=x_i<=1), or whether SAT witnesses are artifacts of composed regions leaving the image cube.",
+  "external_network": "external/vnncomp/mnist_fc/onnx/mnist-net_256x2.onnx (not trained by us)",
+  "anchors": "SAME 20 held-out test anchors, targets, and train-only calibration as external_mnistfc_strong_transfer_protocol_manifest.json (loaded from external_mnistfc_anchor_baseline.json; unchanged)",
+  "regions": {
+    "R1": "pixel ball eps in {0.03,0.05} (reused from external_mnistfc_r1_r2_results.json)",
+    "R4": "local PCA alpha in {1,2,3} (reused from external_mnistfc_r4_results.json)",
+    "R4_bounded": "local PCA alpha in {1,2,3} with 0<=reconstructed x_i<=1 enforced (NEW)",
+    "R3": "class-AE latent box (reused from external_mnistfc_r3_results.json)",
+    "R3_bounded": "class-AE latent box with 0<=decoded x_i<=1 enforced (NEW)"
+  },
+  "bounded_encoding": "composed ONNX outputs concatenate-by-two-outputs [pixels(784), logits(10)]; Marabou maps Y_0..783=pixels, Y_784..793=logits (Concat is unsupported by Marabou, so two graph outputs are used and the index order is verified by a confusion-only sanity query). VNN-LIB imposes z/latent-box on inputs, 0<=Y_i<=1 for i in 0..783, and Y_{784+target}>=Y_{784+true}.",
+  "witness_policy": "raw verifier inputs scored; reconstructed pixels NOT clipped; validity in [0,1] reported.",
+  "solver": "Marabou 2.0 CLI, SnC 4 workers, 120 s per query, exact status parsing",
+  "no_change_to_network_anchors_targets_split": true
+}

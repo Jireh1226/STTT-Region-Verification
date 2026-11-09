@@ -1,0 +1,371 @@
+{
+  "provenance": {
+    "script": "verify_external_mnistfc_strong_transfer.py",
+    "timestamp_utc": "2026-06-29T16:27:56.784333+00:00",
+    "external_network": "VNN-COMP mnist_fc mnist-net_256x2 (not trained by us)",
+    "solver": "Marabou 2.0 CLI on base/composed ONNX, SnC 4 workers, 120s",
+    "anchors": 20
+  },
+  "results": [
+    {
+      "anchor_idx": 3,
+      "true_class": 0,
+      "target_class": 5,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 33.0,
+      "witness_z": [
+        0.735792,
+        -1.40074,
+        -0.5737,
+        -1.163198,
+        -0.379835,
+        0.554363,
+        0.757208,
+        -0.397537
+      ]
+    },
+    {
+      "anchor_idx": 10,
+      "true_class": 0,
+      "target_class": 8,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 34.3,
+      "witness_z": [
+        0.717309,
+        -1.345196,
+        -0.5737,
+        -1.163198,
+        -0.379835,
+        0.5163,
+        0.776051,
+        -0.435841
+      ]
+    },
+    {
+      "anchor_idx": 2,
+      "true_class": 1,
+      "target_class": 9,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 31.1,
+      "witness_z": [
+        0.140068,
+        -0.88219,
+        0.443436,
+        -0.348277,
+        0.339947,
+        -0.267569,
+        -0.574,
+        -0.011119
+      ]
+    },
+    {
+      "anchor_idx": 5,
+      "true_class": 1,
+      "target_class": 9,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 32.6,
+      "witness_z": [
+        0.140068,
+        -0.88219,
+        0.443436,
+        -0.348277,
+        0.339947,
+        -0.267569,
+        -0.574,
+        -0.011119
+      ]
+    },
+    {
+      "anchor_idx": 1,
+      "true_class": 2,
+      "target_class": 5,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 33.0,
+      "witness_z": [
+        -0.295843,
+        -0.641984,
+        -0.219466,
+        0.060717,
+        -0.238862,
+        -0.212925,
+        -0.592265,
+        -0.297144
+      ]
+    },
+    {
+      "anchor_idx": 35,
+      "true_class": 2,
+      "target_class": 5,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 33.4,
+      "witness_z": [
+        -0.295843,
+        -0.641984,
+        -0.219466,
+        0.060717,
+        -0.238862,
+        -0.212925,
+        -0.592265,
+        -0.297144
+      ]
+    },
+    {
+      "anchor_idx": 18,
+      "true_class": 3,
+      "target_class": 9,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 45.5,
+      "witness_z": [
+        1.030824,
+        0.879981,
+        -0.220295,
+        -2.191015,
+        1.051703,
+        -0.034885,
+        -0.070869,
+        -0.251247
+      ]
+    },
+    {
+      "anchor_idx": 30,
+      "true_class": 3,
+      "target_class": 5,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 33.9,
+      "witness_z": [
+        0.008179,
+        -0.119323,
+        0.174585,
+        0.191933,
+        -0.010946,
+        -0.043922,
+        -0.287101,
+        -0.05976
+      ]
+    },
+    {
+      "anchor_idx": 4,
+      "true_class": 4,
+      "target_class": 2,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 34.4,
+      "witness_z": [
+        -1.353909,
+        -0.262138,
+        -0.43956,
+        -0.387207,
+        0.218805,
+        0.442179,
+        0.258847,
+        -0.765335
+      ]
+    },
+    {
+      "anchor_idx": 6,
+      "true_class": 4,
+      "target_class": 9,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 34.8,
+      "witness_z": [
+        -2.091879,
+        -0.993459,
+        -1.813265,
+        -0.371698,
+        1.324777,
+        -4.329937,
+        -0.939041,
+        -0.677711
+      ]
+    },
+    {
+      "anchor_idx": 8,
+      "true_class": 5,
+      "target_class": 6,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 34.9,
+      "witness_z": [
+        0.315886,
+        -2.272558,
+        -1.354279,
+        -2.189156,
+        -1.155917,
+        -3.743655,
+        0.297836,
+        -1.12167
+      ]
+    },
+    {
+      "anchor_idx": 15,
+      "true_class": 5,
+      "target_class": 9,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 30.7,
+      "witness_z": [
+        0.5233,
+        -0.190631,
+        -1.011766,
+        -1.603883,
+        0.260604,
+        -1.240696,
+        -0.099081,
+        -0.657658
+      ]
+    },
+    {
+      "anchor_idx": 11,
+      "true_class": 6,
+      "target_class": 3,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 30.4,
+      "witness_z": [
+        -0.857982,
+        -1.498144,
+        0.644081,
+        0.075454,
+        -4.169278,
+        0.245503,
+        -0.493212,
+        -1.170691
+      ]
+    },
+    {
+      "anchor_idx": 21,
+      "true_class": 6,
+      "target_class": 3,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 32.1,
+      "witness_z": [
+        -0.857982,
+        -1.498144,
+        0.644081,
+        0.075454,
+        -4.169278,
+        0.245503,
+        -0.493212,
+        -1.170691
+      ]
+    },
+    {
+      "anchor_idx": 0,
+      "true_class": 7,
+      "target_class": 4,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 54.0,
+      "witness_z": [
+        -0.742674,
+        -0.388518,
+        -0.188056,
+        -0.078723,
+        -0.206926,
+        -0.207988,
+        -0.254778,
+        -0.281128
+      ]
+    },
+    {
+      "anchor_idx": 17,
+      "true_class": 7,
+      "target_class": 4,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 54.7,
+      "witness_z": [
+        -0.432137,
+        -0.157619,
+        -0.32765,
+        -0.33249,
+        -0.120652,
+        -0.27823,
+        -0.105371,
+        0.086036
+      ]
+    },
+    {
+      "anchor_idx": 61,
+      "true_class": 8,
+      "target_class": 2,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 37.5,
+      "witness_z": [
+        0.306328,
+        -5.314197,
+        -1.043093,
+        -0.037529,
+        0.841669,
+        0.594841,
+        -0.74542,
+        -2.996359
+      ]
+    },
+    {
+      "anchor_idx": 84,
+      "true_class": 8,
+      "target_class": 2,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 91.6,
+      "witness_z": [
+        -1.01428,
+        -1.003201,
+        0.041384,
+        0.597784,
+        0.310707,
+        -0.646141,
+        -0.893939,
+        -1.232005
+      ]
+    },
+    {
+      "anchor_idx": 7,
+      "true_class": 9,
+      "target_class": 2,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 57.5,
+      "witness_z": [
+        0.076947,
+        0.078843,
+        -0.054452,
+        -0.078848,
+        0.033565,
+        -0.034953,
+        -0.077677,
+        0.003057
+      ]
+    },
+    {
+      "anchor_idx": 9,
+      "true_class": 9,
+      "target_class": 4,
+      "region": "R3_class_ae",
+      "status": "sat",
+      "runtime_s": 33.0,
+      "witness_z": [
+        0.085968,
+        0.079333,
+        -0.035669,
+        -0.096709,
+        0.050784,
+        -0.022254,
+        -0.108922,
+        0.018651
+      ]
+    }
+  ]
+}

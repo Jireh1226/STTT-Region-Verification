@@ -1,0 +1,93 @@
+{
+  "provenance": {
+    "script": "audit_external_mnistfc_bounded.py",
+    "timestamp_utc": "2026-06-29T23:21:37.730828+00:00",
+    "anchors_with_bounded_done": 20
+  },
+  "region_tallies": {
+    "R1_0.05": {
+      "sat": 11,
+      "timeout": 9
+    },
+    "R4u_1": {
+      "unsat": 13,
+      "sat": 6,
+      "timeout": 1
+    },
+    "R4b_1": {
+      "timeout": 9,
+      "unsat": 10,
+      "sat": 1
+    },
+    "R4u_2": {
+      "timeout": 3,
+      "sat": 15,
+      "unsat": 2
+    },
+    "R4b_2": {
+      "timeout": 15,
+      "unsat": 4,
+      "sat": 1
+    },
+    "R4u_3": {
+      "timeout": 2,
+      "sat": 17,
+      "unsat": 1
+    },
+    "R4b_3": {
+      "timeout": 18,
+      "sat": 1,
+      "unsat": 1
+    },
+    "R3u": {
+      "sat": 20
+    },
+    "R3b": {
+      "timeout": 20
+    }
+  },
+  "R1@0.05_SAT_anchors": 11,
+  "R1_SAT_removed_by_R4_unbounded_1sigma": 6,
+  "R1_SAT_removed_by_R4_bounded_1sigma": 3,
+  "R1_SAT_with_R4_bounded_1sigma_timeout": 7,
+  "R3_SAT_eliminated_by_pixel_bounds": 0,
+  "R3_bounded_timeout_count": 20,
+  "out_of_cube_flips": {
+    "R4@1sigma_unbounded_SAT_to_bounded_UNSAT": "1/6",
+    "R4@2sigma_unbounded_SAT_to_bounded_UNSAT": "2/15",
+    "R4@3sigma_unbounded_SAT_to_bounded_UNSAT": "1/17"
+  },
+  "n_bounded_sat_witnesses": 3,
+  "witness_audit": [
+    {
+      "anchor_idx": 8,
+      "region": "R4_local_pca_bounded",
+      "alpha": 1.0,
+      "frac_in_unit": 1.0,
+      "recon_min": -0.0,
+      "recon_max": 0.98,
+      "nearest_test_sameclass_L2": 0.527,
+      "per_pair_violation_frac": 0.077
+    },
+    {
+      "anchor_idx": 8,
+      "region": "R4_local_pca_bounded",
+      "alpha": 2.0,
+      "frac_in_unit": 1.0,
+      "recon_min": -0.0,
+      "recon_max": 0.983,
+      "nearest_test_sameclass_L2": 0.635,
+      "per_pair_violation_frac": 0.081
+    },
+    {
+      "anchor_idx": 7,
+      "region": "R4_local_pca_bounded",
+      "alpha": 3.0,
+      "frac_in_unit": 1.0,
+      "recon_min": -0.0,
+      "recon_max": 0.968,
+      "nearest_test_sameclass_L2": 2.899,
+      "per_pair_violation_frac": 0.096
+    }
+  ]
+}

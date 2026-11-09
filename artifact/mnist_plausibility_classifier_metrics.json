@@ -1,0 +1,21 @@
+{
+  "provenance": {
+    "script": "train_mnist_plausibility_classifier.py",
+    "timestamp_utc": "2026-06-02T23:20:41.215367+00:00",
+    "seed": 42
+  },
+  "arch": "784 -> 64 -> 32 -> 1 sigmoid",
+  "fake_families": [
+    "box_corner",
+    "cross_blend",
+    "uniform_noise",
+    "hf_noise"
+  ],
+  "n_train": 12000,
+  "n_val": 12000,
+  "val_accuracy": 0.9910833333333333,
+  "real_recall": 0.9936666666666667,
+  "fake_recall": 0.9885,
+  "real_mean_prob": 0.9917965531349182,
+  "fake_mean_prob": 0.015092960558831692
+}

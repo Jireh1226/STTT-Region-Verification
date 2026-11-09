@@ -1,0 +1,238 @@
+{
+  "experiment": "p1_matched_dimension_control",
+  "d": 8,
+  "n_centered": 893,
+  "timeout_s": 600,
+  "baseline": {
+    "pixel_box_P1a": "sat",
+    "pixel_box_P1b": "sat",
+    "AE_decoder_box_P1a": "unsat",
+    "AE_decoder_box_P1b": "unsat",
+    "source": "verification_ae_with_mean_constraint.json (ae_with_mean); pixel box from verification_autoencoder_composed.json"
+  },
+  "control": "linear 8D affine region x=mu+V^T z over the centered projection min/max box, x in [0,1]; mu is centered mean so mean(x)=0.5; d=8 matches AE latent dim",
+  "regions": {
+    "pca": {
+      "basis_ortho_err": 0.0,
+      "basis_zero_mean_err": 3.24e-10,
+      "z_box": [
+        [
+          -0.5612,
+          0.6567
+        ],
+        [
+          -0.3803,
+          0.667
+        ],
+        [
+          -0.6366,
+          0.5831
+        ],
+        [
+          -0.4595,
+          0.47
+        ],
+        [
+          -0.3806,
+          0.4049
+        ],
+        [
+          -0.4365,
+          0.477
+        ],
+        [
+          -0.3278,
+          0.3118
+        ],
+        [
+          -0.3309,
+          0.4156
+        ]
+      ],
+      "P1a": {
+        "status": "unsat",
+        "time_s": 0.54,
+        "counterexample": null
+      },
+      "P1b": {
+        "status": "unsat",
+        "time_s": 0.19,
+        "counterexample": null
+      },
+      "validation_reached_CTE": {
+        "method": "all 256 z-box corners plus 5000 random feasible samples; not exact optimization",
+        "valid_samples": 5254,
+        "max_pos_CTE": 7.899,
+        "max_neg_CTE": 5.85
+      }
+    },
+    "random_seed0": {
+      "basis_ortho_err": 0.0,
+      "basis_zero_mean_err": 0.0,
+      "z_box": [
+        [
+          -0.251,
+          0.2187
+        ],
+        [
+          -0.1442,
+          0.1793
+        ],
+        [
+          -0.2051,
+          0.1439
+        ],
+        [
+          -0.2069,
+          0.2377
+        ],
+        [
+          -0.2038,
+          0.2013
+        ],
+        [
+          -0.1803,
+          0.2177
+        ],
+        [
+          -0.1467,
+          0.1398
+        ],
+        [
+          -0.1434,
+          0.2034
+        ]
+      ],
+      "P1a": {
+        "status": "unsat",
+        "time_s": 0.01,
+        "counterexample": null
+      },
+      "P1b": {
+        "status": "unsat",
+        "time_s": 0.01,
+        "counterexample": null
+      },
+      "validation_reached_CTE": {
+        "method": "all 256 z-box corners plus 5000 random feasible samples; not exact optimization",
+        "valid_samples": 5257,
+        "max_pos_CTE": 2.939,
+        "max_neg_CTE": 2.429
+      }
+    },
+    "random_seed1": {
+      "basis_ortho_err": 0.0,
+      "basis_zero_mean_err": 0.0,
+      "z_box": [
+        [
+          -0.1541,
+          0.2163
+        ],
+        [
+          -0.1451,
+          0.1372
+        ],
+        [
+          -0.178,
+          0.1516
+        ],
+        [
+          -0.137,
+          0.1232
+        ],
+        [
+          -0.2546,
+          0.1856
+        ],
+        [
+          -0.1351,
+          0.2295
+        ],
+        [
+          -0.1935,
+          0.1571
+        ],
+        [
+          -0.2248,
+          0.1668
+        ]
+      ],
+      "P1a": {
+        "status": "unsat",
+        "time_s": 0.01,
+        "counterexample": null
+      },
+      "P1b": {
+        "status": "unsat",
+        "time_s": 0.01,
+        "counterexample": null
+      },
+      "validation_reached_CTE": {
+        "method": "all 256 z-box corners plus 5000 random feasible samples; not exact optimization",
+        "valid_samples": 5257,
+        "max_pos_CTE": 3.59,
+        "max_neg_CTE": 3.208
+      }
+    },
+    "random_seed2": {
+      "basis_ortho_err": 0.0,
+      "basis_zero_mean_err": 0.0,
+      "z_box": [
+        [
+          -0.2467,
+          0.2228
+        ],
+        [
+          -0.1499,
+          0.1753
+        ],
+        [
+          -0.2327,
+          0.1771
+        ],
+        [
+          -0.153,
+          0.1921
+        ],
+        [
+          -0.2382,
+          0.1564
+        ],
+        [
+          -0.2163,
+          0.168
+        ],
+        [
+          -0.1856,
+          0.1589
+        ],
+        [
+          -0.1693,
+          0.1574
+        ]
+      ],
+      "P1a": {
+        "status": "unsat",
+        "time_s": 0.02,
+        "counterexample": null
+      },
+      "P1b": {
+        "status": "unsat",
+        "time_s": 0.02,
+        "counterexample": null
+      },
+      "validation_reached_CTE": {
+        "method": "all 256 z-box corners plus 5000 random feasible samples; not exact optimization",
+        "valid_samples": 5257,
+        "max_pos_CTE": 3.894,
+        "max_neg_CTE": 3.889
+      }
+    }
+  },
+  "interpretation": {
+    "pca_affine_flips_to_unsat": true,
+    "random_affine_flips_to_unsat": true,
+    "reading": "If random 8D affine also flips P1a/P1b to UNSAT, the AE flip is (at least partly) a generic low-dimensional-region effect; if random stays SAT while AE/PCA flip, the flip needs a data-aligned or decoder-support model, not mere 8D dimensionality."
+  },
+  "validation_note": "The validation_reached_CTE fields are a reproducible corner/random search used to show the affine regions are non-degenerate. They are not exact optima; the exact statements are the Marabou UNSAT verdicts for CTE >= 10 and CTE <= -10."
+}

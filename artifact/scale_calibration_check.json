@@ -1,0 +1,52 @@
+{
+  "experiment": "scale_calibration_check",
+  "note": "Confirms the random 8D control is matched to local PCA in z-box volume and L2 reach; any difference is orientation, reflected in per-pixel half-widths and valid-pixel clipping activity.",
+  "TinyTaxiNet_P3": {
+    "n_anchors": 40,
+    "d": 8,
+    "alpha": 1.0,
+    "pca_mean": {
+      "z_logvol": -10.76707,
+      "l2_reach": 0.478,
+      "pixel_halfwidth_median": 0.02852,
+      "pixel_halfwidth_max": 0.27238,
+      "frac_pixels_clipped": 0.0,
+      "eff_postclip_pixelbox_logvol": -329.42531
+    },
+    "random_mean": {
+      "z_logvol": -10.76707,
+      "l2_reach": 0.478,
+      "pixel_halfwidth_median": 0.08421,
+      "pixel_halfwidth_max": 0.15839,
+      "frac_pixels_clipped": 0.0,
+      "eff_postclip_pixelbox_logvol": -237.01426
+    },
+    "max_abs_z_logvol_gap_pca_vs_random": 0.0,
+    "max_abs_l2_reach_gap_pca_vs_random": 0.0,
+    "matched_invariants": "z-box volume and L2 reach are identical for PCA and random (same sigma, alpha, d; orthonormal isometry); regions differ only in orientation."
+  },
+  "LARD": {
+    "n_anchors": 50,
+    "d": 8,
+    "alpha": 1.0,
+    "pca_mean": {
+      "z_logvol": 3.72395,
+      "l2_reach": 3.7074,
+      "pixel_halfwidth_median": 0.16346,
+      "pixel_halfwidth_max": 0.49506,
+      "frac_pixels_clipped": 0.12934,
+      "eff_postclip_pixelbox_logvol": -1369.14845
+    },
+    "random_mean": {
+      "z_logvol": 3.72395,
+      "l2_reach": 3.7074,
+      "pixel_halfwidth_median": 0.18003,
+      "pixel_halfwidth_max": 0.46013,
+      "frac_pixels_clipped": 0.10373,
+      "eff_postclip_pixelbox_logvol": -1226.41643
+    },
+    "max_abs_z_logvol_gap_pca_vs_random": 0.0,
+    "max_abs_l2_reach_gap_pca_vs_random": 0.0,
+    "matched_invariants": "z-box volume and L2 reach are identical for PCA and random (same sigma, alpha, d; orthonormal isometry); regions differ only in orientation."
+  }
+}

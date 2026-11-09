@@ -1,0 +1,121 @@
+{
+  "provenance": {
+    "script": "make_dimension_sweep_plot.py",
+    "n_anchors": 694,
+    "note": "TinyTaxiNet P3, alpha=1sigma; timeouts not counted as verified"
+  },
+  "tallies": {
+    "pca": {
+      "2": {
+        "verified": 694,
+        "sat": 0,
+        "timeout": 0,
+        "region_empty": 0,
+        "n": 694,
+        "verified_pct": 100.0
+      },
+      "4": {
+        "verified": 694,
+        "sat": 0,
+        "timeout": 0,
+        "region_empty": 0,
+        "n": 694,
+        "verified_pct": 100.0
+      },
+      "8": {
+        "verified": 655,
+        "sat": 37,
+        "timeout": 2,
+        "region_empty": 0,
+        "n": 694,
+        "verified_pct": 94.38
+      },
+      "16": {
+        "verified": 475,
+        "sat": 201,
+        "timeout": 18,
+        "region_empty": 0,
+        "n": 694,
+        "verified_pct": 68.44
+      },
+      "32": {
+        "verified": 269,
+        "sat": 392,
+        "timeout": 33,
+        "region_empty": 0,
+        "n": 694,
+        "verified_pct": 38.76
+      },
+      "64": {
+        "verified": 186,
+        "sat": 482,
+        "timeout": 26,
+        "region_empty": 0,
+        "n": 694,
+        "verified_pct": 26.8
+      }
+    },
+    "random": {
+      "2": {
+        "verified": 2082,
+        "sat": 0,
+        "timeout": 0,
+        "region_empty": 0,
+        "n": 2082,
+        "verified_pct": 100.0,
+        "verified_pct_seed_min": 100.0,
+        "verified_pct_seed_max": 100.0
+      },
+      "4": {
+        "verified": 2082,
+        "sat": 0,
+        "timeout": 0,
+        "region_empty": 0,
+        "n": 2082,
+        "verified_pct": 100.0,
+        "verified_pct_seed_min": 100.0,
+        "verified_pct_seed_max": 100.0
+      },
+      "8": {
+        "verified": 2082,
+        "sat": 0,
+        "timeout": 0,
+        "region_empty": 0,
+        "n": 2082,
+        "verified_pct": 100.0,
+        "verified_pct_seed_min": 100.0,
+        "verified_pct_seed_max": 100.0
+      },
+      "16": {
+        "verified": 2082,
+        "sat": 0,
+        "timeout": 0,
+        "region_empty": 0,
+        "n": 2082,
+        "verified_pct": 100.0,
+        "verified_pct_seed_min": 100.0,
+        "verified_pct_seed_max": 100.0
+      },
+      "32": {
+        "verified": 2078,
+        "sat": 4,
+        "timeout": 0,
+        "region_empty": 0,
+        "n": 2082,
+        "verified_pct": 99.81,
+        "verified_pct_seed_min": 99.57,
+        "verified_pct_seed_max": 100.0
+      },
+      "64": {
+        "verified": 2067,
+        "sat": 15,
+        "timeout": 0,
+        "region_empty": 0,
+        "n": 2082,
+        "verified_pct": 99.28,
+        "verified_pct_seed_min": 99.14,
+        "verified_pct_seed_max": 99.42
+      }
+    }
+  }
+}

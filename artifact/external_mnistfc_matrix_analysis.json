@@ -1,0 +1,119 @@
+{
+  "network": "mnist-net_256x2.onnx (VNN-COMP mnist_fc; 784-256-256-10 ReLU; not trained by us)",
+  "n_anchors": 50,
+  "per_class": 5,
+  "selection": "deterministic, 5 correctly-classified held-out test images per class, no post-hoc tuning",
+  "pca_dim": 8,
+  "knn_basis": 100,
+  "timeouts_s": {
+    "R1": 120,
+    "R4_bounded": 600
+  },
+  "output_indexing_validation": {
+    "timestamp_utc": "2026-06-30T01:46:17.594580+00:00",
+    "anchor_idx": 3,
+    "onnxruntime_output0_is_pixels": true,
+    "ground_truth_logits_only_net": "unsat",
+    "two_output_confusion_at_Y0to9": "unsat",
+    "two_output_confusion_at_Y784plus": "sat",
+    "logits_at": "Y_0..9",
+    "expected": "Y_0..9",
+    "PASS": true
+  },
+  "headline_eps0.05": {
+    "R1_broad": {
+      "sat": 23,
+      "timeout": 23,
+      "unsat": 4
+    },
+    "broad_SAT_anchors": [
+      0,
+      1,
+      2,
+      4,
+      6,
+      7,
+      8,
+      17,
+      18,
+      19,
+      20,
+      24,
+      26,
+      27,
+      31,
+      35,
+      36,
+      38,
+      43,
+      44,
+      45,
+      50,
+      61
+    ],
+    "R4_bounded_1sigma_on_broad_SAT": {
+      "unsat": 23
+    },
+    "every_resolved_broad_witness_removed": true,
+    "removed_count": "23/23"
+  },
+  "bounded_1sigma_all50": {
+    "unsat_established": 50,
+    "direct": 50,
+    "via_2sigma_subset_bound": 0,
+    "uncovered": [],
+    "note": "All 50 anchors directly solved R4_bounded@1sigma=UNSAT (23 broad-SAT in the matrix run + 27 non-broad-SAT in external_mnistfc_1sigma_rest27.py). The 1sigma-subset-of-2sigma bound independently corroborates every verdict."
+  },
+  "eps0.03_dimension": {
+    "R1_broad": {
+      "sat": 7,
+      "timeout": 20,
+      "unsat": 23
+    },
+    "broad_SAT_anchors": [
+      0,
+      4,
+      6,
+      8,
+      18,
+      19,
+      24
+    ],
+    "subset_of_eps0.05_broad_SAT": true,
+    "R4_bounded_1sigma_on_broad_SAT": {
+      "unsat": 7
+    },
+    "removed_count": "7/7"
+  },
+  "alpha_matrix": {
+    "R4b_1sigma_direct_on_broadSAT": {
+      "unsat": 23
+    },
+    "R4b_2sigma_all50": {
+      "unsat": 44,
+      "timeout": 5,
+      "sat": 1
+    },
+    "R4b_3sigma_all50": {
+      "unsat": 27,
+      "timeout": 23
+    },
+    "monotonicity_violations": [],
+    "only_2sigma_SAT_anchor": [
+      38
+    ],
+    "note": "No SAT-shrinks-to-UNSAT violation. Sole 2sigma SAT (idx38) is UNSAT at 1sigma: enlarging the local box re-admits one confusion witness, the expected monotone behavior."
+  },
+  "per_witness_checks": [
+    {
+      "anchor_idx": 38,
+      "region": "R4_bounded",
+      "alpha": 2.0,
+      "z_in_alpha_box": true,
+      "recon_min": -0.0,
+      "recon_max": 0.9647,
+      "pixels_in_unit_cube": true,
+      "confusion_replayed": true
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "autoencoder_info": {
+    "latent_dim": 8,
+    "latent_min_all": [
+      -2.8635432720184326,
+      -1.8652675151824951,
+      -0.847847580909729,
+      0.5820451378822327,
+      0.6910279989242554,
+      -0.6786985397338867,
+      -0.5639190077781677,
+      -0.44432196021080017
+    ],
+    "latent_max_all": [
+      -1.6575733423233032,
+      0.3470880389213562,
+      0.5327821373939514,
+      2.1570687294006348,
+      1.7172272205352783,
+      0.6647028923034668,
+      0.7902041673660278,
+      0.9367374181747437
+    ]
+  },
+  "queries": {
+    "P1a_CTE_upper": {
+      "unconstrained": {
+        "status": "sat",
+        "time_seconds": 0.0172,
+        "counterexample": {
+          "CTE": 10.0,
+          "HE": -52.470728,
+          "input_mean": 0.611054,
+          "input_min": 0.344564,
+          "input_max": 0.759067
+        }
+      },
+      "mean_only": {
+        "status": "sat",
+        "time_seconds": 0.0262,
+        "counterexample": {
+          "CTE": 10.0,
+          "HE": -54.284214,
+          "input_mean": 0.5,
+          "input_min": 0.335767,
+          "input_max": 0.754607
+        }
+      },
+      "ae_full_range": {
+        "status": "error",
+        "time_seconds": 0.1896
+      },
+      "ae_subset_range": {
+        "status": "error",
+        "time_seconds": 0.1858
+      }
+    },
+    "P1b_CTE_lower": {
+      "unconstrained": {
+        "status": "sat",
+        "time_seconds": 0.0123,
+        "counterexample": {
+          "CTE": -10.0,
+          "HE": 14.978943,
+          "input_mean": 0.443435,
+          "input_min": 0.335767,
+          "input_max": 0.760244
+        }
+      },
+      "mean_only": {
+        "status": "sat",
+        "time_seconds": 0.014,
+        "counterexample": {
+          "CTE": -10.0,
+          "HE": 13.494626,
+          "input_mean": 0.5,
+          "input_min": 0.335767,
+          "input_max": 0.760244
+        }
+      },
+      "ae_full_range": {
+        "status": "error",
+        "time_seconds": 0.1972
+      },
+      "ae_subset_range": {
+        "status": "error",
+        "time_seconds": 0.192
+      }
+    },
+    "P4_C_left": {
+      "unconstrained": {
+        "status": "sat",
+        "time_seconds": 0.0137,
+        "counterexample": {
+          "CTE": 0.0,
+          "HE": -2.414173,
+          "input_mean": 0.472049,
+          "input_min": 0.313706,
+          "input_max": 0.753232
+        }
+      },
+      "mean_only": {
+        "status": "sat",
+        "time_seconds": 0.0138,
+        "counterexample": {
+          "CTE": -4.376821,
+          "HE": 6.313047,
+          "input_mean": 0.5,
+          "input_min": 0.313706,
+          "input_max": 0.756568
+        }
+      },
+      "ae_full_range": {
+        "status": "error",
+        "time_seconds": 0.1881
+      },
+      "ae_subset_range": {
+        "status": "error",
+        "time_seconds": 0.2355
+      }
+    },
+    "P4_C_right": {
+      "unconstrained": {
+        "status": "sat",
+        "time_seconds": 0.0124,
+        "counterexample": {
+          "CTE": 0.0,
+          "HE": -0.45964,
+          "input_mean": 0.426617,
+          "input_min": 0.307066,
+          "input_max": 0.754678
+        }
+      },
+      "mean_only": {
+        "status": "sat",
+        "time_seconds": 0.0143,
+        "counterexample": {
+          "CTE": 0.0,
+          "HE": -0.423643,
+          "input_mean": 0.5,
+          "input_min": 0.313051,
+          "input_max": 0.754678
+        }
+      },
+      "ae_full_range": {
+        "status": "error",
+        "time_seconds": 0.2121
+      },
+      "ae_subset_range": {
+        "status": "error",
+        "time_seconds": 0.2057
+      }
+    },
+    "P5_deadzone": {
+      "unconstrained": {
+        "status": "sat",
+        "time_seconds": 0.0142,
+        "counterexample": {
+          "CTE": -0.01,
+          "HE": -0.01,
+          "input_mean": 0.396623,
+          "input_min": 0.307066,
+          "input_max": 0.759134
+        }
+      },
+      "mean_only": {
+        "status": "sat",
+        "time_seconds": 0.0261,
+        "counterexample": {
+          "CTE": -0.01,
+          "HE": -0.01,
+          "input_mean": 0.5,
+          "input_min": 0.307066,
+          "input_max": 0.764074
+        }
+      },
+      "ae_full_range": {
+        "status": "error",
+        "time_seconds": 0.211
+      },
+      "ae_subset_range": {
+        "status": "error",
+        "time_seconds": 0.2191
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "epochs": 100,
+  "n_real_train": 9000,
+  "n_real_holdout": 1000,
+  "n_fake_train": 9000,
+  "final_train_loss": 0.1939610093832016,
+  "final_val_loss": 0.13932405412197113,
+  "final_val_accuracy": 0.9472222328186035,
+  "note": "real images split 90/10 BEFORE fake generation; fakes derived from training reals only"
+}

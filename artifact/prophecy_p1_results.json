@@ -1,0 +1,1841 @@
+{
+  "config": {
+    "cte_bound": 10.0,
+    "he_bound": 90.0,
+    "centered_threshold": 1.0,
+    "nnet_path": "./VerifyGAN/models/TinyTaxiNet.nnet",
+    "total_centered_images": 893,
+    "total_patterns": 24,
+    "approach": "full_sequence_property",
+    "layers_constrained": [
+      "dense_0 (16 neurons)",
+      "dense_1 (8 neurons)",
+      "dense_2 (8 neurons)"
+    ],
+    "total_neurons_constrained": 32
+  },
+  "patterns": [
+    {
+      "pattern_idx": 0,
+      "pattern_dense0": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "image_count": 129,
+      "observed_cte_range": [
+        -3.926913022994995,
+        0.9829663038253784
+      ],
+      "observed_he_range": [
+        -32.04115295410156,
+        -13.888669967651367
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.1096
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0106
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0086
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.004
+        }
+      ],
+      "verified": true
+    },
+    {
+      "pattern_idx": 1,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "image_count": 15,
+      "observed_cte_range": [
+        0.9826622009277344,
+        1.894655704498291
+      ],
+      "observed_he_range": [
+        27.967172622680664,
+        32.28011703491211
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0041
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0084
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0039
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0042
+        }
+      ],
+      "verified": true
+    },
+    {
+      "pattern_idx": 2,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "image_count": 1,
+      "observed_cte_range": [
+        0.6225062608718872,
+        0.6225062608718872
+      ],
+      "observed_he_range": [
+        33.256858825683594,
+        33.256858825683594
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0042
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0044
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.004
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0039
+        }
+      ],
+      "verified": true
+    },
+    {
+      "pattern_idx": 3,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "image_count": 1,
+      "observed_cte_range": [
+        -1.1336567401885986,
+        -1.1336567401885986
+      ],
+      "observed_he_range": [
+        11.760287284851074,
+        11.760287284851074
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0039
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0044
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0038
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0043
+        }
+      ],
+      "verified": true
+    },
+    {
+      "pattern_idx": 4,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "image_count": 15,
+      "observed_cte_range": [
+        -2.451831102371216,
+        1.160250186920166
+      ],
+      "observed_he_range": [
+        4.047362804412842,
+        13.561387062072754
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0069
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.007
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0045
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0042
+        }
+      ],
+      "verified": true
+    },
+    {
+      "pattern_idx": 5,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "image_count": 1,
+      "observed_cte_range": [
+        -1.440934419631958,
+        -1.440934419631958
+      ],
+      "observed_he_range": [
+        13.210689544677734,
+        13.210689544677734
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0054
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0062
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0044
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0047
+        }
+      ],
+      "verified": true
+    },
+    {
+      "pattern_idx": 6,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "image_count": 11,
+      "observed_cte_range": [
+        3.4161159992218018,
+        4.433247089385986
+      ],
+      "observed_he_range": [
+        3.527712345123291,
+        9.61998176574707
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0039
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0075
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.004
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0041
+        }
+      ],
+      "verified": true
+    },
+    {
+      "pattern_idx": 7,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "image_count": 32,
+      "observed_cte_range": [
+        -1.2596006393432617,
+        3.4583332538604736
+      ],
+      "observed_he_range": [
+        5.08057165145874,
+        12.930912971496582
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0156
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0077
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0045
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0044
+        }
+      ],
+      "verified": true
+    },
+    {
+      "pattern_idx": 8,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "image_count": 49,
+      "observed_cte_range": [
+        1.88327956199646,
+        4.284197807312012
+      ],
+      "observed_he_range": [
+        5.910142421722412,
+        18.452383041381836
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0054
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0123
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0046
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0042
+        }
+      ],
+      "verified": true
+    },
+    {
+      "pattern_idx": 9,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "image_count": 11,
+      "observed_cte_range": [
+        -1.290482997894287,
+        3.7862119674682617
+      ],
+      "observed_he_range": [
+        7.737411022186279,
+        18.664098739624023
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0125
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0067
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.004
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0053
+        }
+      ],
+      "verified": true
+    },
+    {
+      "pattern_idx": 10,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "image_count": 149,
+      "observed_cte_range": [
+        -4.539489269256592,
+        1.3348437547683716
+      ],
+      "observed_he_range": [
+        -27.949377059936523,
+        -4.21187686920166
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "SAT",
+          "time_s": 0.0118,
+          "counterexample_output": {
+            "CTE": -10.0,
+            "HE": 9.497885377215965
+          },
+          "counterexample_input_mean": 0.5092708404736234
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "SAT",
+          "time_s": 0.0102,
+          "counterexample_output": {
+            "CTE": 10.0,
+            "HE": -54.32177045579051
+          },
+          "counterexample_input_mean": 0.4795496925906312
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0076
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0044
+        }
+      ],
+      "verified": false
+    },
+    {
+      "pattern_idx": 11,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "image_count": 126,
+      "observed_cte_range": [
+        -3.099048614501953,
+        2.986767292022705
+      ],
+      "observed_he_range": [
+        -20.82404136657715,
+        0.39968574047088623
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "SAT",
+          "time_s": 0.0113,
+          "counterexample_output": {
+            "CTE": -10.0,
+            "HE": 17.743932412750105
+          },
+          "counterexample_input_mean": 0.49765117934811703
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "SAT",
+          "time_s": 0.0142,
+          "counterexample_output": {
+            "CTE": 10.0,
+            "HE": -37.04447341746152
+          },
+          "counterexample_input_mean": 0.4848606690079186
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0084
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0041
+        }
+      ],
+      "verified": false
+    },
+    {
+      "pattern_idx": 12,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "image_count": 98,
+      "observed_cte_range": [
+        -4.543111801147461,
+        0.9787600040435791
+      ],
+      "observed_he_range": [
+        -0.8453508615493774,
+        10.78570556640625
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "SAT",
+          "time_s": 0.0109,
+          "counterexample_output": {
+            "CTE": -10.0,
+            "HE": 16.373867159851258
+          },
+          "counterexample_input_mean": 0.48636779631432936
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0113
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0056
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0053
+        }
+      ],
+      "verified": false
+    },
+    {
+      "pattern_idx": 13,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "image_count": 1,
+      "observed_cte_range": [
+        -0.21873778104782104,
+        -0.21873778104782104
+      ],
+      "observed_he_range": [
+        9.56421184539795,
+        9.56421184539795
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0065
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0058
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0049
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0041
+        }
+      ],
+      "verified": true
+    },
+    {
+      "pattern_idx": 14,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "image_count": 31,
+      "observed_cte_range": [
+        -4.947524070739746,
+        1.0499719381332397
+      ],
+      "observed_he_range": [
+        -19.39387321472168,
+        5.835954189300537
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "SAT",
+          "time_s": 0.0104,
+          "counterexample_output": {
+            "CTE": -10.0,
+            "HE": 17.160661290145644
+          },
+          "counterexample_input_mean": 0.4684814541750508
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "SAT",
+          "time_s": 0.0105,
+          "counterexample_output": {
+            "CTE": 10.0,
+            "HE": -38.09601421586238
+          },
+          "counterexample_input_mean": 0.49418443253500877
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0094
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0044
+        }
+      ],
+      "verified": false
+    },
+    {
+      "pattern_idx": 15,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "image_count": 71,
+      "observed_cte_range": [
+        0.7478502988815308,
+        4.857870101928711
+      ],
+      "observed_he_range": [
+        15.073151588439941,
+        32.865543365478516
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0076
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "SAT",
+          "time_s": 0.0116,
+          "counterexample_output": {
+            "CTE": 10.0,
+            "HE": -0.8934881571085178
+          },
+          "counterexample_input_mean": 0.4968906488814132
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0064
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0074
+        }
+      ],
+      "verified": false
+    },
+    {
+      "pattern_idx": 16,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "image_count": 6,
+      "observed_cte_range": [
+        -0.012278109788894653,
+        2.386698007583618
+      ],
+      "observed_he_range": [
+        24.328413009643555,
+        32.750545501708984
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "SAT",
+          "time_s": 0.0135,
+          "counterexample_output": {
+            "CTE": -10.0,
+            "HE": 48.234825848128466
+          },
+          "counterexample_input_mean": 0.48527369937321774
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0137
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0041
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.01
+        }
+      ],
+      "verified": false
+    },
+    {
+      "pattern_idx": 17,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "image_count": 6,
+      "observed_cte_range": [
+        -0.34512293338775635,
+        3.6667823791503906
+      ],
+      "observed_he_range": [
+        19.55546760559082,
+        28.67202377319336
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0141
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0117
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0078
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0052
+        }
+      ],
+      "verified": true
+    },
+    {
+      "pattern_idx": 18,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "image_count": 1,
+      "observed_cte_range": [
+        4.032241344451904,
+        4.032241344451904
+      ],
+      "observed_he_range": [
+        5.576685428619385,
+        5.576685428619385
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0041
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0046
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0059
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.006
+        }
+      ],
+      "verified": true
+    },
+    {
+      "pattern_idx": 19,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "image_count": 4,
+      "observed_cte_range": [
+        -1.2408702373504639,
+        3.723318576812744
+      ],
+      "observed_he_range": [
+        7.538921356201172,
+        10.821067810058594
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0188
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0075
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.005
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0047
+        }
+      ],
+      "verified": true
+    },
+    {
+      "pattern_idx": 20,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "image_count": 98,
+      "observed_cte_range": [
+        1.4831390380859375,
+        4.433279037475586
+      ],
+      "observed_he_range": [
+        12.423454284667969,
+        28.44960594177246
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0073
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0113
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0087
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0072
+        }
+      ],
+      "verified": true
+    },
+    {
+      "pattern_idx": 21,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "image_count": 24,
+      "observed_cte_range": [
+        -1.365532636642456,
+        3.3372483253479004
+      ],
+      "observed_he_range": [
+        12.788947105407715,
+        31.179636001586914
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "SAT",
+          "time_s": 0.0113,
+          "counterexample_output": {
+            "CTE": -10.0,
+            "HE": 44.90587783479968
+          },
+          "counterexample_input_mean": 0.46120061337141505
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0135
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0099
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0079
+        }
+      ],
+      "verified": false
+    },
+    {
+      "pattern_idx": 22,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "image_count": 3,
+      "observed_cte_range": [
+        -0.6403736472129822,
+        1.8829710483551025
+      ],
+      "observed_he_range": [
+        7.176483154296875,
+        11.880332946777344
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0249
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0094
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0072
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.0087
+        }
+      ],
+      "verified": true
+    },
+    {
+      "pattern_idx": 23,
+      "pattern_dense0": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "pattern_dense1": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pattern_dense2": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "image_count": 10,
+      "observed_cte_range": [
+        -1.2089259624481201,
+        2.5546135902404785
+      ],
+      "observed_he_range": [
+        12.112923622131348,
+        31.464235305786133
+      ],
+      "sub_queries": [
+        {
+          "query": "P1a_CTE_lower",
+          "status": "SAT",
+          "time_s": 0.0196,
+          "counterexample_output": {
+            "CTE": -10.0,
+            "HE": 42.08553689334319
+          },
+          "counterexample_input_mean": 0.4603719035153878
+        },
+        {
+          "query": "P1b_CTE_upper",
+          "status": "SAT",
+          "time_s": 0.0207,
+          "counterexample_output": {
+            "CTE": 10.0,
+            "HE": -13.799648165865733
+          },
+          "counterexample_input_mean": 0.4852443269980496
+        },
+        {
+          "query": "P1c_HE_lower",
+          "status": "UNSAT",
+          "time_s": 0.0114
+        },
+        {
+          "query": "P1d_HE_upper",
+          "status": "UNSAT",
+          "time_s": 0.019
+        }
+      ],
+      "verified": false
+    }
+  ],
+  "summary": {
+    "total_patterns": 24,
+    "verified_patterns": 16,
+    "violated_patterns": 8,
+    "images_covered": 893,
+    "coverage_pct": 100.0,
+    "total_queries": 96,
+    "total_time_s": 0.8652,
+    "avg_time_per_query_s": 0.009
+  }
+}

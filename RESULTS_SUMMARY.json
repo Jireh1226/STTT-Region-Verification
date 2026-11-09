@@ -1,0 +1,73 @@
+{
+  "source": "Saved experiment records in artifact/",
+  "tinytaxinet": {
+    "pixel_region_epsilon_0.05": {
+      "n_total": 893,
+      "verified": 186,
+      "violated": 707
+    },
+    "local_pca_one_sigma": {
+      "verified": 847,
+      "sat": 43,
+      "timeout": 3
+    },
+    "random_eight_dimensions_one_sigma": {
+      "seed_0_alpha_1.0": {
+        "verified": 893
+      },
+      "seed_1_alpha_1.0": {
+        "verified": 893
+      },
+      "seed_2_alpha_1.0": {
+        "verified": 893
+      }
+    },
+    "wrong_side_predictions": {
+      "wrong": 142,
+      "images": 8227,
+      "rate": 0.01726024067096147
+    }
+  },
+  "compact_mnist": {
+    "test_images": 20,
+    "per_image_queries": 200
+  },
+  "vnncomp_mnist": {
+    "local_pca_one_sigma": {
+      "unsat": 50
+    },
+    "matched_random_queries": {
+      "unsat": 450
+    }
+  },
+  "lard_google_earth_studio": {
+    "broad_pixel_region_epsilon_0.4": {
+      "sat": 32,
+      "unsat": 18
+    },
+    "valid_pixel_local_pca": {
+      "1.0": {
+        "unsat": 50
+      },
+      "2.0": {
+        "unsat": 50
+      },
+      "3.0": {
+        "unsat": 50
+      }
+    },
+    "matched_random_queries": {
+      "unsat": 900
+    }
+  },
+  "module_checks": {
+    "module_smoke_taxinet.json": {
+      "passed": 8,
+      "total": 8
+    },
+    "module_smoke_mnist.json": {
+      "passed": 7,
+      "total": 7
+    }
+  }
+}

@@ -1,0 +1,929 @@
+{
+  "experiment": "external_lard_region_transfer",
+  "purpose": "Test whether broad pixel regions admit class-confusion witnesses that tighter data-conditioned regions remove, on an EXTERNAL runway dataset/model (LARD V2 ges) independent of VerifyGAN/TinyTaxiNet.",
+  "network": "external_lard_mlp.nnet (1152-64-32-3 ReLU MLP, trained by us on LARD V2 ges)",
+  "dataset": "LARD V2 ges; see external_lard_provenance.json",
+  "target": "pitch",
+  "class_names": [
+    "low_pitch",
+    "mid_pitch",
+    "high_pitch"
+  ],
+  "input": {
+    "dim": 1152,
+    "rows": 24,
+    "cols": 48,
+    "range": "[0,1] grayscale"
+  },
+  "selection": "50 held-out anchors with class quotas [17, 17, 16], correctly classified, clean margin >= 0.25, ascending test index; train-only region calibration",
+  "n_anchors": 50,
+  "property": "targeted class-confusion: assert Y_target >= Y_true (SAT = confusion witness exists)",
+  "regions": {
+    "R1_pixel_ball": {
+      "type": "broad Linf box",
+      "eps_grid": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "clip": [
+        0,
+        1
+      ]
+    },
+    "R2_mean_band": {
+      "type": "R1 + class mean-brightness band",
+      "eps_grid": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "sigma": 2.0
+    },
+    "R5_knn_box": {
+      "type": "label-conditioned per-pixel box over K same-class train NN",
+      "K": 100,
+      "clip": [
+        0,
+        1
+      ]
+    },
+    "R4_local_pca": {
+      "type": "per-anchor local PCA (composed)",
+      "d": 8,
+      "alphas": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "neighbors": "same-class train, K=200 nearest",
+      "variants": [
+        "unbounded",
+        "valid_pixel_bounded"
+      ]
+    }
+  },
+  "solver": "maraboupy Marabou 2.0, snc, 4 workers, verbosity 0",
+  "timeout_s": 120,
+  "no_tuning_after_results": true,
+  "seed": 0,
+  "thresholds_train_tercile": [
+    85.09930674235027,
+    86.79979960123698
+  ],
+  "generated_utc": "2026-06-30T18:25:09Z",
+  "anchors": [
+    {
+      "anchor_test_idx": 1,
+      "image": "images/ges/KCLT/KCLT-18R-00L-18C-00C-18L-00R-23-05__10-smpl__10h35_062_GES.jpg",
+      "airport": "KCLT",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 84.15252685546875,
+      "yaw": 3.937070608139038,
+      "clean_logits": [
+        3.1484228396189495,
+        -0.022883483372777125,
+        -3.71798513156808
+      ],
+      "clean_margin": 3.1713063229917267
+    },
+    {
+      "anchor_test_idx": 8,
+      "image": "images/ges/KHOU/KHOU-13R-31L-4-22__10-smpl__10h37_056_GES.jpg",
+      "airport": "KHOU",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 84.14740753173828,
+      "yaw": 123.55244445800781,
+      "clean_logits": [
+        4.352911491328767,
+        -1.3385192288171863,
+        -4.019112823097508
+      ],
+      "clean_margin": 5.691430720145953
+    },
+    {
+      "anchor_test_idx": 16,
+      "image": "images/ges/EGBB/EGBB-15-33__10-smpl__10h40_23_GES.jpg",
+      "airport": "EGBB",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 82.6499252319336,
+      "yaw": -35.31913375854492,
+      "clean_logits": [
+        5.831680618380182,
+        -2.829149314238746,
+        -4.732390215664038
+      ],
+      "clean_margin": 8.660829932618928
+    },
+    {
+      "anchor_test_idx": 19,
+      "image": "images/ges/SKBO/SKBO-32L-14R-32R-14L__10-smpl__10h35_084_GES.jpg",
+      "airport": "SKBO",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 83.6912841796875,
+      "yaw": 128.3144073486328,
+      "clean_logits": [
+        4.327915083647483,
+        -1.7321350384827443,
+        -3.396580252460554
+      ],
+      "clean_margin": 6.060050122130227
+    },
+    {
+      "anchor_test_idx": 31,
+      "image": "images/ges/KAUS/KAUS-18R-00L-18L-00R__10-smpl__10h37_053_GES.jpg",
+      "airport": "KAUS",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 82.5232925415039,
+      "yaw": 177.80702209472656,
+      "clean_logits": [
+        4.924224227496092,
+        -2.1321424520338628,
+        -4.161520823551129
+      ],
+      "clean_margin": 7.056366679529955
+    },
+    {
+      "anchor_test_idx": 35,
+      "image": "images/ges/KATL/KATL-8R-26L-9L-27R-9R-27L-10-28-8L-26R__10-smpl__14h46_090_GES.jpg",
+      "airport": "KATL",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 84.25933837890625,
+      "yaw": 89.45873260498047,
+      "clean_logits": [
+        1.8297671452041882,
+        0.4157633778196348,
+        -2.9844028702417775
+      ],
+      "clean_margin": 1.4140037673845534
+    },
+    {
+      "anchor_test_idx": 43,
+      "image": "images/ges/VTBS/VTBS-1L-19R-1R-19L__10-smpl__10h35_105_GES.jpg",
+      "airport": "VTBS",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 83.26805877685547,
+      "yaw": 20.142534255981445,
+      "clean_logits": [
+        4.6648739152560355,
+        -1.1352196192097845,
+        -4.02686478046421
+      ],
+      "clean_margin": 5.8000935344658195
+    },
+    {
+      "anchor_test_idx": 45,
+      "image": "images/ges/YPPH/YPPH-24-06-21-03__10-smpl__10h40_086_GES.jpg",
+      "airport": "YPPH",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 83.9177474975586,
+      "yaw": 10.564163208007812,
+      "clean_logits": [
+        3.3493603132727294,
+        0.3832201776681794,
+        -3.9251008566105297
+      ],
+      "clean_margin": 2.96614013560455
+    },
+    {
+      "anchor_test_idx": 50,
+      "image": "images/ges/KSAT/KSAT-13R-31L-4-22__10-smpl__10h38_067_GES.jpg",
+      "airport": "KSAT",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 84.30769348144531,
+      "yaw": -139.43865966796875,
+      "clean_logits": [
+        1.0601655389139426,
+        0.7917115344836545,
+        -2.587398545198912
+      ],
+      "clean_margin": 0.2684540044302881
+    },
+    {
+      "anchor_test_idx": 51,
+      "image": "images/ges/LTAC/LTAC-21C-03C-21L-03R__10-smpl__10h38_010_GES.jpg",
+      "airport": "LTAC",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 83.16568756103516,
+      "yaw": 42.187564849853516,
+      "clean_logits": [
+        4.231040981342765,
+        -1.8235624265480874,
+        -4.045331424279193
+      ],
+      "clean_margin": 6.054603407890853
+    },
+    {
+      "anchor_test_idx": 56,
+      "image": "images/ges/MMMY/MMMY-11-29-34-16__10-smpl__10h39_100_GES.jpg",
+      "airport": "MMMY",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 83.48971557617188,
+      "yaw": -5.645263671875,
+      "clean_logits": [
+        2.2629033250450465,
+        0.3506102613312496,
+        -3.46862044940248
+      ],
+      "clean_margin": 1.912293063713797
+    },
+    {
+      "anchor_test_idx": 61,
+      "image": "images/ges/CYYZ/CYYZ-15L-33R-15R-33L-24L-06R-24R-06L__10-smpl__10h36_128_GES.jpg",
+      "airport": "CYYZ",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 81.8734359741211,
+      "yaw": 48.29043960571289,
+      "clean_logits": [
+        5.778927581630912,
+        -2.97868481091966,
+        -4.492620388121798
+      ],
+      "clean_margin": 8.757612392550572
+    },
+    {
+      "anchor_test_idx": 66,
+      "image": "images/ges/KATL/KATL-8R-26L-9L-27R-9R-27L-10-28-8L-26R__10-smpl__14h46_148_GES.jpg",
+      "airport": "KATL",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 84.58883666992188,
+      "yaw": -91.11221313476562,
+      "clean_logits": [
+        2.445496462947575,
+        0.69958851791589,
+        -3.5600043531932575
+      ],
+      "clean_margin": 1.7459079450316848
+    },
+    {
+      "anchor_test_idx": 73,
+      "image": "images/ges/LTBJ/LTBJ-16L-34R-16R-34L__10-smpl__10h39_004_GES.jpg",
+      "airport": "LTBJ",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 84.2008056640625,
+      "yaw": -9.650341033935547,
+      "clean_logits": [
+        2.7402305979909642,
+        -0.17363629176516948,
+        -2.863885787831501
+      ],
+      "clean_margin": 2.9138668897561337
+    },
+    {
+      "anchor_test_idx": 76,
+      "image": "images/ges/SBSP/SBSP-17R-35L__10-smpl__10h36_24_GES.jpg",
+      "airport": "SBSP",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 84.0775375366211,
+      "yaw": -31.407760620117188,
+      "clean_logits": [
+        5.552237055701162,
+        -0.035852949016062396,
+        -5.297587160298183
+      ],
+      "clean_margin": 5.588090004717224
+    },
+    {
+      "anchor_test_idx": 77,
+      "image": "images/ges/LIRF/LIRF-16R-34L-16L-34R-25-07__10-smpl__10h35_175_GES.jpg",
+      "airport": "LIRF",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 82.39302825927734,
+      "yaw": -102.38916015625,
+      "clean_logits": [
+        6.189181846975932,
+        -3.2250142461059124,
+        -5.010680052854601
+      ],
+      "clean_margin": 9.414196093081845
+    },
+    {
+      "anchor_test_idx": 86,
+      "image": "images/ges/ULLI/ULLI-28L-10R-28R-10L__10-smpl__10h37_058_GES.jpg",
+      "airport": "ULLI",
+      "true_class": 0,
+      "true_class_name": "low_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 82.12857818603516,
+      "yaw": -74.61298370361328,
+      "clean_logits": [
+        5.987711996415424,
+        -2.7858995875192716,
+        -4.593543653207464
+      ],
+      "clean_margin": 8.773611583934695
+    },
+    {
+      "anchor_test_idx": 0,
+      "image": "images/ges/ESSA/ESSA-19L-01R-19R-01L-26-08__10-smpl__10h36_009_GES.jpg",
+      "airport": "ESSA",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 2,
+      "target_class_name": "high_pitch",
+      "target_value": 86.14082336425781,
+      "yaw": 15.91809368133545,
+      "clean_logits": [
+        -3.184537263701358,
+        2.5581239144620405,
+        -0.46431877528260124
+      ],
+      "clean_margin": 3.0224426897446417
+    },
+    {
+      "anchor_test_idx": 3,
+      "image": "images/ges/KOAK/KOAK-10R-28L-10L-28R__10-smpl__10h37_022_GES.jpg",
+      "airport": "KOAK",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 0,
+      "target_class_name": "low_pitch",
+      "target_value": 85.6820068359375,
+      "yaw": -72.15584564208984,
+      "clean_logits": [
+        0.25513420866275155,
+        1.5321042073630893,
+        -2.6817715777261046
+      ],
+      "clean_margin": 1.2769699987003378
+    },
+    {
+      "anchor_test_idx": 4,
+      "image": "images/ges/ESSA/ESSA-19L-01R-19R-01L-26-08__10-smpl__10h36_112_GES.jpg",
+      "airport": "ESSA",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 0,
+      "target_class_name": "low_pitch",
+      "target_value": 85.68234252929688,
+      "yaw": -183.1699676513672,
+      "clean_logits": [
+        -1.6157170267356522,
+        2.52986825736596,
+        -1.7278617818234452
+      ],
+      "clean_margin": 4.145585284101612
+    },
+    {
+      "anchor_test_idx": 12,
+      "image": "images/ges/CYYZ/CYYZ-15L-33R-15R-33L-24L-06R-24R-06L__10-smpl__10h36_125_GES.jpg",
+      "airport": "CYYZ",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 2,
+      "target_class_name": "high_pitch",
+      "target_value": 85.71868133544922,
+      "yaw": 42.6129150390625,
+      "clean_logits": [
+        -3.4399881449412733,
+        1.7691864561568846,
+        0.11455267257577723
+      ],
+      "clean_margin": 1.6546337835811074
+    },
+    {
+      "anchor_test_idx": 13,
+      "image": "images/ges/KBOS/KBOS-4R-22L-9-27-15R-33L-4L-22R__10-smpl__10h35_092_GES.jpg",
+      "airport": "KBOS",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 2,
+      "target_class_name": "high_pitch",
+      "target_value": 85.85356903076172,
+      "yaw": 79.73217010498047,
+      "clean_logits": [
+        -3.5108039087336755,
+        3.222307228744599,
+        -0.6857358363389863
+      ],
+      "clean_margin": 3.9080430650835853
+    },
+    {
+      "anchor_test_idx": 14,
+      "image": "images/ges/EGLL/EGLL-9L-27R-9R-27L__10-smpl__10h35_042_GES.jpg",
+      "airport": "EGLL",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 2,
+      "target_class_name": "high_pitch",
+      "target_value": 85.74117279052734,
+      "yaw": 87.5458755493164,
+      "clean_logits": [
+        -3.3938975782777567,
+        2.3192470402486465,
+        -0.19188114570289017
+      ],
+      "clean_margin": 2.5111281859515366
+    },
+    {
+      "anchor_test_idx": 18,
+      "image": "images/ges/LTBJ/LTBJ-16L-34R-16R-34L__10-smpl__10h39_085_GES.jpg",
+      "airport": "LTBJ",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 0,
+      "target_class_name": "low_pitch",
+      "target_value": 85.23876953125,
+      "yaw": -12.474161148071289,
+      "clean_logits": [
+        0.08592774273537407,
+        2.1759307488230655,
+        -2.558849853704288
+      ],
+      "clean_margin": 2.0900030060876915
+    },
+    {
+      "anchor_test_idx": 20,
+      "image": "images/ges/LTBJ/LTBJ-16L-34R-16R-34L__10-smpl__10h39_080_GES.jpg",
+      "airport": "LTBJ",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 2,
+      "target_class_name": "high_pitch",
+      "target_value": 86.07984924316406,
+      "yaw": -12.482338905334473,
+      "clean_logits": [
+        -4.392562819966829,
+        2.6287508756910922,
+        0.2717551851744193
+      ],
+      "clean_margin": 2.3569956905166727
+    },
+    {
+      "anchor_test_idx": 28,
+      "image": "images/ges/KATL/KATL-8R-26L-9L-27R-9R-27L-10-28-8L-26R__10-smpl__14h46_227_GES.jpg",
+      "airport": "KATL",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 2,
+      "target_class_name": "high_pitch",
+      "target_value": 85.72698974609375,
+      "yaw": 94.16099548339844,
+      "clean_logits": [
+        -4.447589016018955,
+        3.138301291240844,
+        -0.0695087020970151
+      ],
+      "clean_margin": 3.207809993337859
+    },
+    {
+      "anchor_test_idx": 30,
+      "image": "images/ges/KMSY/KMSY-11-29-2-20__10-smpl__10h37_054_GES.jpg",
+      "airport": "KMSY",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 2,
+      "target_class_name": "high_pitch",
+      "target_value": 85.94100952148438,
+      "yaw": 106.37103271484375,
+      "clean_logits": [
+        -4.61221316938648,
+        2.692762678947086,
+        0.2994932836388916
+      ],
+      "clean_margin": 2.3932693953081947
+    },
+    {
+      "anchor_test_idx": 36,
+      "image": "images/ges/KSAT/KSAT-13R-31L-4-22__10-smpl__10h38_072_GES.jpg",
+      "airport": "KSAT",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 2,
+      "target_class_name": "high_pitch",
+      "target_value": 85.70478057861328,
+      "yaw": -139.4864044189453,
+      "clean_logits": [
+        -4.489819206593485,
+        1.8960145619882793,
+        0.9273225022526135
+      ],
+      "clean_margin": 0.9686920597356659
+    },
+    {
+      "anchor_test_idx": 38,
+      "image": "images/ges/LIRF/LIRF-16R-34L-16L-34R-25-07__10-smpl__10h35_159_GES.jpg",
+      "airport": "LIRF",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 0,
+      "target_class_name": "low_pitch",
+      "target_value": 85.38390350341797,
+      "yaw": -102.28236389160156,
+      "clean_logits": [
+        -1.3827418692657858,
+        1.8125334660300871,
+        -1.4529443443554744
+      ],
+      "clean_margin": 3.195275335295873
+    },
+    {
+      "anchor_test_idx": 40,
+      "image": "images/ges/KLAX/KLAX-6L-24R-6R-24L-7L-25R-7R-25L__10-smpl__10h34_236_GES.jpg",
+      "airport": "KLAX",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 2,
+      "target_class_name": "high_pitch",
+      "target_value": 86.5938720703125,
+      "yaw": 78.4508285522461,
+      "clean_logits": [
+        -4.078339912980455,
+        2.1482719251568376,
+        0.4066659150421543
+      ],
+      "clean_margin": 1.7416060101146833
+    },
+    {
+      "anchor_test_idx": 42,
+      "image": "images/ges/EGBB/EGBB-15-33__10-smpl__10h40_09_GES.jpg",
+      "airport": "EGBB",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 2,
+      "target_class_name": "high_pitch",
+      "target_value": 85.97163391113281,
+      "yaw": -40.13597869873047,
+      "clean_logits": [
+        -3.7285841900121977,
+        2.4843812186975507,
+        -0.04189179094731721
+      ],
+      "clean_margin": 2.526273009644868
+    },
+    {
+      "anchor_test_idx": 52,
+      "image": "images/ges/KATL/KATL-8R-26L-9L-27R-9R-27L-10-28-8L-26R__10-smpl__14h46_176_GES.jpg",
+      "airport": "KATL",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 2,
+      "target_class_name": "high_pitch",
+      "target_value": 86.19990539550781,
+      "yaw": 90.2120132446289,
+      "clean_logits": [
+        -5.638713176879059,
+        3.8465052007862015,
+        0.28621007175873725
+      ],
+      "clean_margin": 3.5602951290274643
+    },
+    {
+      "anchor_test_idx": 54,
+      "image": "images/ges/EGPF/EGPF-5-23__10-smpl__10h40_38_GES.jpg",
+      "airport": "EGPF",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 2,
+      "target_class_name": "high_pitch",
+      "target_value": 86.67635345458984,
+      "yaw": 50.11156463623047,
+      "clean_logits": [
+        -4.4361258986810945,
+        2.0119378419650245,
+        0.7897906988430442
+      ],
+      "clean_margin": 1.2221471431219801
+    },
+    {
+      "anchor_test_idx": 62,
+      "image": "images/ges/ESSA/ESSA-19L-01R-19R-01L-26-08__10-smpl__10h36_042_GES.jpg",
+      "airport": "ESSA",
+      "true_class": 1,
+      "true_class_name": "mid_pitch",
+      "target_class": 2,
+      "target_class_name": "high_pitch",
+      "target_value": 86.4249267578125,
+      "yaw": -166.24876403808594,
+      "clean_logits": [
+        -3.815443504662213,
+        2.5681575312463263,
+        0.10831084567620053
+      ],
+      "clean_margin": 2.4598466855701258
+    },
+    {
+      "anchor_test_idx": 2,
+      "image": "images/ges/KPBI/KPBI-14-32-10L-28R__10-smpl__10h40_083_GES.jpg",
+      "airport": "KPBI",
+      "true_class": 2,
+      "true_class_name": "high_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 87.48162078857422,
+      "yaw": -96.65108489990234,
+      "clean_logits": [
+        -7.558107068521647,
+        0.23447580429218062,
+        5.4295651825016025
+      ],
+      "clean_margin": 5.195089378209422
+    },
+    {
+      "anchor_test_idx": 5,
+      "image": "images/ges/LTBA/LTBA-5-23__10-smpl__10h38_09_GES.jpg",
+      "airport": "LTBA",
+      "true_class": 2,
+      "true_class_name": "high_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 86.94891357421875,
+      "yaw": -114.57428741455078,
+      "clean_logits": [
+        -8.052095243651628,
+        1.0421969386062748,
+        5.095938134036486
+      ],
+      "clean_margin": 4.053741195430211
+    },
+    {
+      "anchor_test_idx": 6,
+      "image": "images/ges/ZLXY/ZLXY-23L-05R-23R-05L__10-smpl__10h34_075_GES.jpg",
+      "airport": "ZLXY",
+      "true_class": 2,
+      "true_class_name": "high_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 88.34756469726562,
+      "yaw": 46.68267059326172,
+      "clean_logits": [
+        -7.048868219367422,
+        0.20867943310115966,
+        5.031845115676796
+      ],
+      "clean_margin": 4.823165682575636
+    },
+    {
+      "anchor_test_idx": 7,
+      "image": "images/ges/WMKK/WMKK-15-33-14R-32L-14L-32R__10-smpl__10h34_163_GES.jpg",
+      "airport": "WMKK",
+      "true_class": 2,
+      "true_class_name": "high_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 89.88373565673828,
+      "yaw": 148.29763793945312,
+      "clean_logits": [
+        -8.168231313543933,
+        -1.359595896550296,
+        7.534357074003447
+      ],
+      "clean_margin": 8.893952970553743
+    },
+    {
+      "anchor_test_idx": 10,
+      "image": "images/ges/ULLI/ULLI-28L-10R-28R-10L__10-smpl__10h37_015_GES.jpg",
+      "airport": "ULLI",
+      "true_class": 2,
+      "true_class_name": "high_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 87.36112976074219,
+      "yaw": 100.33831024169922,
+      "clean_logits": [
+        -6.721386155116839,
+        1.0307558418552367,
+        4.0881830495042255
+      ],
+      "clean_margin": 3.057427207648989
+    },
+    {
+      "anchor_test_idx": 11,
+      "image": "images/ges/LTAC/LTAC-21C-03C-21L-03R__10-smpl__10h38_060_GES.jpg",
+      "airport": "LTAC",
+      "true_class": 2,
+      "true_class_name": "high_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 87.68603515625,
+      "yaw": 42.498836517333984,
+      "clean_logits": [
+        -8.492940559706152,
+        -0.1816238323552275,
+        6.5710278534901185
+      ],
+      "clean_margin": 6.752651685845346
+    },
+    {
+      "anchor_test_idx": 21,
+      "image": "images/ges/UUEE/UUEE-6C-24C-6R-24L__10-smpl__10h35_056_GES.jpg",
+      "airport": "UUEE",
+      "true_class": 2,
+      "true_class_name": "high_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 88.3692398071289,
+      "yaw": 76.32301330566406,
+      "clean_logits": [
+        -8.008259722767741,
+        -0.8287667134000252,
+        6.493526168887199
+      ],
+      "clean_margin": 7.322292882287224
+    },
+    {
+      "anchor_test_idx": 23,
+      "image": "images/ges/KDEN/KDEN-7-25-8-26-16L-34R-16R-34L-17R-35L__10-smpl__13h49_222_GES.jpg",
+      "airport": "KDEN",
+      "true_class": 2,
+      "true_class_name": "high_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 87.04254913330078,
+      "yaw": -172.64993286132812,
+      "clean_logits": [
+        -7.26556013818282,
+        0.6415083246121882,
+        4.753416102476585
+      ],
+      "clean_margin": 4.111907777864397
+    },
+    {
+      "anchor_test_idx": 24,
+      "image": "images/ges/EGLL/EGLL-9L-27R-9R-27L__10-smpl__10h35_076_GES.jpg",
+      "airport": "EGLL",
+      "true_class": 2,
+      "true_class_name": "high_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 87.52999877929688,
+      "yaw": -86.95249938964844,
+      "clean_logits": [
+        -8.772492582002224,
+        0.3874138729893257,
+        6.296431043528169
+      ],
+      "clean_margin": 5.909017170538843
+    },
+    {
+      "anchor_test_idx": 25,
+      "image": "images/ges/KATL/KATL-8R-26L-9L-27R-9R-27L-10-28-8L-26R__10-smpl__14h46_003_GES.jpg",
+      "airport": "KATL",
+      "true_class": 2,
+      "true_class_name": "high_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 88.39673614501953,
+      "yaw": -89.8025894165039,
+      "clean_logits": [
+        -8.98600354163271,
+        -1.5336139072507444,
+        7.909785404825114
+      ],
+      "clean_margin": 9.443399312075858
+    },
+    {
+      "anchor_test_idx": 29,
+      "image": "images/ges/ZYTX/ZYTX-6-24__10-smpl__10h37_42_GES.jpg",
+      "airport": "ZYTX",
+      "true_class": 2,
+      "true_class_name": "high_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 90.99520874023438,
+      "yaw": 57.16775131225586,
+      "clean_logits": [
+        -5.663236699417451,
+        -1.3548004236197249,
+        5.094299133353833
+      ],
+      "clean_margin": 6.449099556973558
+    },
+    {
+      "anchor_test_idx": 33,
+      "image": "images/ges/KBOS/KBOS-4R-22L-9-27-15R-33L-4L-22R__10-smpl__10h35_232_GES.jpg",
+      "airport": "KBOS",
+      "true_class": 2,
+      "true_class_name": "high_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 88.3859634399414,
+      "yaw": 18.46346092224121,
+      "clean_logits": [
+        -7.64558854592233,
+        -0.339096493240985,
+        6.013106063789784
+      ],
+      "clean_margin": 6.352202557030768
+    },
+    {
+      "anchor_test_idx": 34,
+      "image": "images/ges/OBBI/OBBI-30R-12L__10-smpl__10h39_21_GES.jpg",
+      "airport": "OBBI",
+      "true_class": 2,
+      "true_class_name": "high_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 90.52394104003906,
+      "yaw": 127.04811096191406,
+      "clean_logits": [
+        -5.869627407093951,
+        0.028348276453482146,
+        3.661988807221996
+      ],
+      "clean_margin": 3.633640530768514
+    },
+    {
+      "anchor_test_idx": 44,
+      "image": "images/ges/VDPP/VDPP-23-05__10-smpl__10h40_54_GES.jpg",
+      "airport": "VDPP",
+      "true_class": 2,
+      "true_class_name": "high_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 87.58503723144531,
+      "yaw": -137.84718322753906,
+      "clean_logits": [
+        -7.7713767755823255,
+        1.2352495829157784,
+        4.508069161933841
+      ],
+      "clean_margin": 3.272819579018063
+    },
+    {
+      "anchor_test_idx": 46,
+      "image": "images/ges/KSFO/KSFO-1L-19R-1R-19L-10L-28R-10R-28L__10-smpl__10h35_133_GES.jpg",
+      "airport": "KSFO",
+      "true_class": 2,
+      "true_class_name": "high_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 89.0865707397461,
+      "yaw": -64.2413330078125,
+      "clean_logits": [
+        -7.059578852968985,
+        -1.0486426638880997,
+        5.515386159008127
+      ],
+      "clean_margin": 6.564028822896226
+    },
+    {
+      "anchor_test_idx": 47,
+      "image": "images/ges/LTAC/LTAC-21C-03C-21L-03R__10-smpl__10h38_105_GES.jpg",
+      "airport": "LTAC",
+      "true_class": 2,
+      "true_class_name": "high_pitch",
+      "target_class": 1,
+      "target_class_name": "mid_pitch",
+      "target_value": 86.99722290039062,
+      "yaw": -136.40733337402344,
+      "clean_logits": [
+        -6.9362980468472895,
+        0.5627669677971645,
+        4.076761957837496
+      ],
+      "clean_margin": 3.5139949900403313
+    }
+  ]
+}

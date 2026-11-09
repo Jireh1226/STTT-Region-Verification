@@ -1,0 +1,448 @@
+{
+  "tool": "Marabou 2.0 (maraboupy 2.0.0)",
+  "network": "VerifyGAN/models/TinyTaxiNet.nnet",
+  "timestamp": "2026-03-16 14:22:53",
+  "properties": [
+    "P5",
+    "P6"
+  ],
+  "P5": {
+    "property": "Deadzone Detection",
+    "input_region": "C_off_center: per-pixel [min, max] from 9107 images with |CTE| > 1.0m",
+    "postcondition": "NOT(|CTE| <= 0.01 AND |HE| <= 0.01)",
+    "negated_query": "|CTE| <= 0.01 AND |HE| <= 0.01",
+    "status": "sat",
+    "time_seconds": 0.0237,
+    "peak_memory_mb": 83.9,
+    "memory_delta_mb": 2.6,
+    "n_off_center_images": 9107,
+    "empirical_deadzone_count": 0,
+    "counterexample": {
+      "CTE": -0.01,
+      "HE": -0.01
+    },
+    "counterexample_input_mean": 0.396623
+  },
+  "P6": {
+    "property": "Output Bound Tightening",
+    "input_region": "C_centered: per-pixel [min, max] from images with |CTE| < 1.0m",
+    "binary_search_tolerance": 0.01,
+    "results": {
+      "CTE": {
+        "upper_bound": 23.29834,
+        "lower_bound": -24.331055,
+        "total_range": 47.629395,
+        "upper_iterations": 12,
+        "lower_iterations": 12,
+        "upper_search_log": [
+          {
+            "iteration": 1,
+            "mid": 15.0,
+            "status": "sat",
+            "time_seconds": 0.0163,
+            "peak_memory_mb": 108.3,
+            "witness_value": 15.0
+          },
+          {
+            "iteration": 2,
+            "mid": 22.5,
+            "status": "sat",
+            "time_seconds": 0.1125,
+            "peak_memory_mb": 108.3,
+            "witness_value": 22.5
+          },
+          {
+            "iteration": 3,
+            "mid": 26.25,
+            "status": "unsat",
+            "time_seconds": 2.9289,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 4,
+            "mid": 24.375,
+            "status": "unsat",
+            "time_seconds": 2.8419,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 5,
+            "mid": 23.4375,
+            "status": "unsat",
+            "time_seconds": 3.8476,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 6,
+            "mid": 22.96875,
+            "status": "sat",
+            "time_seconds": 0.141,
+            "peak_memory_mb": 108.3,
+            "witness_value": 22.96875
+          },
+          {
+            "iteration": 7,
+            "mid": 23.203125,
+            "status": "sat",
+            "time_seconds": 0.1244,
+            "peak_memory_mb": 108.3,
+            "witness_value": 23.203125
+          },
+          {
+            "iteration": 8,
+            "mid": 23.320312,
+            "status": "unsat",
+            "time_seconds": 3.0407,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 9,
+            "mid": 23.261719,
+            "status": "sat",
+            "time_seconds": 0.1312,
+            "peak_memory_mb": 108.3,
+            "witness_value": 23.261719
+          },
+          {
+            "iteration": 10,
+            "mid": 23.291016,
+            "status": "sat",
+            "time_seconds": 0.1318,
+            "peak_memory_mb": 108.3,
+            "witness_value": 23.291016
+          },
+          {
+            "iteration": 11,
+            "mid": 23.305664,
+            "status": "unsat",
+            "time_seconds": 6.1436,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 12,
+            "mid": 23.29834,
+            "status": "sat",
+            "time_seconds": 0.127,
+            "peak_memory_mb": 108.3,
+            "witness_value": 23.29834
+          }
+        ],
+        "lower_search_log": [
+          {
+            "iteration": 1,
+            "mid": -15.0,
+            "status": "sat",
+            "time_seconds": 0.0171,
+            "peak_memory_mb": 108.3,
+            "witness_value": -15.0
+          },
+          {
+            "iteration": 2,
+            "mid": -22.5,
+            "status": "sat",
+            "time_seconds": 0.0159,
+            "peak_memory_mb": 108.3,
+            "witness_value": -22.5
+          },
+          {
+            "iteration": 3,
+            "mid": -26.25,
+            "status": "unsat",
+            "time_seconds": 0.7213,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 4,
+            "mid": -24.375,
+            "status": "unsat",
+            "time_seconds": 0.9803,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 5,
+            "mid": -23.4375,
+            "status": "sat",
+            "time_seconds": 0.0167,
+            "peak_memory_mb": 108.3,
+            "witness_value": -23.4375
+          },
+          {
+            "iteration": 6,
+            "mid": -23.90625,
+            "status": "sat",
+            "time_seconds": 0.0171,
+            "peak_memory_mb": 108.3,
+            "witness_value": -23.90625
+          },
+          {
+            "iteration": 7,
+            "mid": -24.140625,
+            "status": "sat",
+            "time_seconds": 0.0189,
+            "peak_memory_mb": 108.3,
+            "witness_value": -24.140625
+          },
+          {
+            "iteration": 8,
+            "mid": -24.257812,
+            "status": "sat",
+            "time_seconds": 0.0217,
+            "peak_memory_mb": 108.3,
+            "witness_value": -24.257812
+          },
+          {
+            "iteration": 9,
+            "mid": -24.316406,
+            "status": "sat",
+            "time_seconds": 0.5014,
+            "peak_memory_mb": 108.3,
+            "witness_value": -24.316406
+          },
+          {
+            "iteration": 10,
+            "mid": -24.345703,
+            "status": "unsat",
+            "time_seconds": 0.9643,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 11,
+            "mid": -24.331055,
+            "status": "sat",
+            "time_seconds": 0.5601,
+            "peak_memory_mb": 108.3,
+            "witness_value": -24.331055
+          },
+          {
+            "iteration": 12,
+            "mid": -24.338379,
+            "status": "unsat",
+            "time_seconds": 0.9776,
+            "peak_memory_mb": 108.3
+          }
+        ]
+      },
+      "HE": {
+        "upper_bound": 84.074707,
+        "lower_bound": -90.102539,
+        "total_range": 174.177246,
+        "upper_iterations": 14,
+        "lower_iterations": 14,
+        "upper_search_log": [
+          {
+            "iteration": 1,
+            "mid": 60.0,
+            "status": "sat",
+            "time_seconds": 0.0195,
+            "peak_memory_mb": 108.3,
+            "witness_value": 60.0
+          },
+          {
+            "iteration": 2,
+            "mid": 90.0,
+            "status": "unsat",
+            "time_seconds": 1.5601,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 3,
+            "mid": 75.0,
+            "status": "sat",
+            "time_seconds": 0.0201,
+            "peak_memory_mb": 108.3,
+            "witness_value": 75.0
+          },
+          {
+            "iteration": 4,
+            "mid": 82.5,
+            "status": "sat",
+            "time_seconds": 0.0191,
+            "peak_memory_mb": 108.3,
+            "witness_value": 82.5
+          },
+          {
+            "iteration": 5,
+            "mid": 86.25,
+            "status": "unsat",
+            "time_seconds": 1.5543,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 6,
+            "mid": 84.375,
+            "status": "unsat",
+            "time_seconds": 1.6846,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 7,
+            "mid": 83.4375,
+            "status": "sat",
+            "time_seconds": 1.5734,
+            "peak_memory_mb": 108.3,
+            "witness_value": 83.4375
+          },
+          {
+            "iteration": 8,
+            "mid": 83.90625,
+            "status": "sat",
+            "time_seconds": 1.3563,
+            "peak_memory_mb": 108.3,
+            "witness_value": 83.90625
+          },
+          {
+            "iteration": 9,
+            "mid": 84.140625,
+            "status": "unsat",
+            "time_seconds": 2.159,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 10,
+            "mid": 84.023438,
+            "status": "sat",
+            "time_seconds": 1.141,
+            "peak_memory_mb": 108.3,
+            "witness_value": 84.023438
+          },
+          {
+            "iteration": 11,
+            "mid": 84.082031,
+            "status": "unsat",
+            "time_seconds": 2.1403,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 12,
+            "mid": 84.052734,
+            "status": "sat",
+            "time_seconds": 1.0211,
+            "peak_memory_mb": 108.3,
+            "witness_value": 84.052734
+          },
+          {
+            "iteration": 13,
+            "mid": 84.067383,
+            "status": "sat",
+            "time_seconds": 1.3061,
+            "peak_memory_mb": 108.3,
+            "witness_value": 84.067383
+          },
+          {
+            "iteration": 14,
+            "mid": 84.074707,
+            "status": "sat",
+            "time_seconds": 1.4397,
+            "peak_memory_mb": 108.3,
+            "witness_value": 84.074707
+          }
+        ],
+        "lower_search_log": [
+          {
+            "iteration": 1,
+            "mid": -60.0,
+            "status": "sat",
+            "time_seconds": 0.0168,
+            "peak_memory_mb": 108.3,
+            "witness_value": -60.0
+          },
+          {
+            "iteration": 2,
+            "mid": -90.0,
+            "status": "sat",
+            "time_seconds": 1.1787,
+            "peak_memory_mb": 108.3,
+            "witness_value": -90.0
+          },
+          {
+            "iteration": 3,
+            "mid": -105.0,
+            "status": "unsat",
+            "time_seconds": 0.8487,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 4,
+            "mid": -97.5,
+            "status": "unsat",
+            "time_seconds": 0.909,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 5,
+            "mid": -93.75,
+            "status": "unsat",
+            "time_seconds": 1.3102,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 6,
+            "mid": -91.875,
+            "status": "unsat",
+            "time_seconds": 1.4192,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 7,
+            "mid": -90.9375,
+            "status": "unsat",
+            "time_seconds": 1.6175,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 8,
+            "mid": -90.46875,
+            "status": "unsat",
+            "time_seconds": 2.3052,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 9,
+            "mid": -90.234375,
+            "status": "unsat",
+            "time_seconds": 1.6107,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 10,
+            "mid": -90.117188,
+            "status": "unsat",
+            "time_seconds": 3.2333,
+            "peak_memory_mb": 108.3
+          },
+          {
+            "iteration": 11,
+            "mid": -90.058594,
+            "status": "sat",
+            "time_seconds": 0.9176,
+            "peak_memory_mb": 108.3,
+            "witness_value": -90.058594
+          },
+          {
+            "iteration": 12,
+            "mid": -90.087891,
+            "status": "sat",
+            "time_seconds": 1.4111,
+            "peak_memory_mb": 108.3,
+            "witness_value": -90.087891
+          },
+          {
+            "iteration": 13,
+            "mid": -90.102539,
+            "status": "sat",
+            "time_seconds": 1.5287,
+            "peak_memory_mb": 108.3,
+            "witness_value": -90.102539
+          },
+          {
+            "iteration": 14,
+            "mid": -90.109863,
+            "status": "unsat",
+            "time_seconds": 3.1072,
+            "peak_memory_mb": 108.3
+          }
+        ]
+      }
+    }
+  }
+}

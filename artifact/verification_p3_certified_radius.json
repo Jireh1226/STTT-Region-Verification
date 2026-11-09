@@ -1,0 +1,986 @@
+{
+  "spec": "|CTE| < 10 AND |HE| < 90 inside L_inf eps ball + clip + mean=0.5",
+  "tolerance": 0.005,
+  "grid": [
+    0.005,
+    0.01,
+    0.02,
+    0.03,
+    0.05,
+    0.075,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "per_image": [
+    {
+      "radius": 0.045,
+      "lower_bracket": 0.045,
+      "upper_bracket": 0.0475,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.04,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.045,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.0475,
+          "verified": false,
+          "status_last_subquery": "sat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 20,
+      "true_CTE": -0.5460690259933472
+    },
+    {
+      "radius": 0.04,
+      "lower_bracket": 0.04,
+      "upper_bracket": 0.045,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.04,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.045,
+          "verified": false,
+          "status_last_subquery": "sat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 375,
+      "true_CTE": 0.87357097864151
+    },
+    {
+      "radius": 0.035,
+      "lower_bracket": 0.035,
+      "upper_bracket": 0.04,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.04,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.035,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 921,
+      "true_CTE": 0.9715480208396912
+    },
+    {
+      "radius": 0.035,
+      "lower_bracket": 0.035,
+      "upper_bracket": 0.04,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.04,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.035,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 1478,
+      "true_CTE": 0.7444069981575012
+    },
+    {
+      "radius": 0.04,
+      "lower_bracket": 0.04,
+      "upper_bracket": 0.045,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.04,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.045,
+          "verified": false,
+          "status_last_subquery": "sat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 1980,
+      "true_CTE": 0.7946249842643738
+    },
+    {
+      "radius": 0.04,
+      "lower_bracket": 0.04,
+      "upper_bracket": 0.045,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.04,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.045,
+          "verified": false,
+          "status_last_subquery": "sat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 2616,
+      "true_CTE": -0.4572789967060089
+    },
+    {
+      "radius": 0.0475,
+      "lower_bracket": 0.0475,
+      "upper_bracket": 0.05,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.04,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.045,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.0475,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 3132,
+      "true_CTE": 0.0807270035147667
+    },
+    {
+      "radius": 0.04,
+      "lower_bracket": 0.04,
+      "upper_bracket": 0.045,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.04,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.045,
+          "verified": false,
+          "status_last_subquery": "sat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 3572,
+      "true_CTE": -0.16300100088119507
+    },
+    {
+      "radius": 0.04,
+      "lower_bracket": 0.04,
+      "upper_bracket": 0.045,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.04,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.045,
+          "verified": false,
+          "status_last_subquery": "sat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 4130,
+      "true_CTE": 0.6495630145072937
+    },
+    {
+      "radius": 0.035,
+      "lower_bracket": 0.035,
+      "upper_bracket": 0.04,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.04,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.035,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 4772,
+      "true_CTE": -0.14847500622272491
+    },
+    {
+      "radius": 0.0475,
+      "lower_bracket": 0.0475,
+      "upper_bracket": 0.05,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.04,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.045,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.0475,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 5221,
+      "true_CTE": -0.9406059980392456
+    },
+    {
+      "radius": 0.05,
+      "lower_bracket": 0.05,
+      "upper_bracket": 0.05313,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.075,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.0625,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.05625,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.05313,
+          "verified": false,
+          "status_last_subquery": "sat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 5723,
+      "true_CTE": -0.4127790033817291
+    },
+    {
+      "radius": 0.0325,
+      "lower_bracket": 0.0325,
+      "upper_bracket": 0.035,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.04,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.035,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.0325,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 6276,
+      "true_CTE": -0.6876800060272217
+    },
+    {
+      "radius": 0.05,
+      "lower_bracket": 0.05,
+      "upper_bracket": 0.05313,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.075,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.0625,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.05625,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.05313,
+          "verified": false,
+          "status_last_subquery": "sat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 6775,
+      "true_CTE": 0.7050899863243103
+    },
+    {
+      "radius": 0.035,
+      "lower_bracket": 0.035,
+      "upper_bracket": 0.04,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.04,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.035,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 7268,
+      "true_CTE": -0.8044160008430481
+    },
+    {
+      "radius": 0.04,
+      "lower_bracket": 0.04,
+      "upper_bracket": 0.045,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.04,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.045,
+          "verified": false,
+          "status_last_subquery": "sat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 7724,
+      "true_CTE": -0.33914101123809814
+    },
+    {
+      "radius": 0.05,
+      "lower_bracket": 0.05,
+      "upper_bracket": 0.05313,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.075,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.0625,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.05625,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.05313,
+          "verified": false,
+          "status_last_subquery": "sat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 8224,
+      "true_CTE": 0.03960299864411354
+    },
+    {
+      "radius": 0.05,
+      "lower_bracket": 0.05,
+      "upper_bracket": 0.05313,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.075,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.0625,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.05625,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.05313,
+          "verified": false,
+          "status_last_subquery": "sat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 8775,
+      "true_CTE": -0.6769670248031616
+    },
+    {
+      "radius": 0.04,
+      "lower_bracket": 0.04,
+      "upper_bracket": 0.045,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.04,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.045,
+          "verified": false,
+          "status_last_subquery": "sat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 9322,
+      "true_CTE": -0.10102099925279617
+    },
+    {
+      "radius": 0.04,
+      "lower_bracket": 0.04,
+      "upper_bracket": 0.045,
+      "log": [
+        {
+          "eps": 0.005,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.01,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.02,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.03,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.05,
+          "verified": false,
+          "status_last_subquery": "sat"
+        },
+        {
+          "eps": 0.04,
+          "verified": true,
+          "status_last_subquery": "unsat"
+        },
+        {
+          "eps": 0.045,
+          "verified": false,
+          "status_last_subquery": "sat"
+        }
+      ],
+      "note": "bisected to tolerance 0.005",
+      "dataset_index": 9973,
+      "true_CTE": 0.5942149758338928
+    }
+  ],
+  "summary": {
+    "n_images": 20,
+    "min_radius": 0.0325,
+    "max_radius": 0.05,
+    "median_radius": 0.04,
+    "mean_radius": 0.04162500000000001,
+    "fraction_above_0.02": 1.0,
+    "fraction_above_0.05": 0.2
+  }
+}

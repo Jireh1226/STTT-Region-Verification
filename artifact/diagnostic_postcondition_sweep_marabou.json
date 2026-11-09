@@ -1,0 +1,9 @@
+{
+  "eps": 0.05,
+  "n_sample": 20,
+  "CTE_violated_at_10m": 16,
+  "HE_violated_at_90deg": 0,
+  "HE_violated_at_equalized_bound": 15,
+  "equalized_bound_deg": 35.40690089469858,
+  "note": "exact solver; mean-constrained ball matches the P3 region"
+}

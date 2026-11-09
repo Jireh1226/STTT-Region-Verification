@@ -1,0 +1,60 @@
+{
+  "source": "review/sources/vnnlib_expected_results.csv",
+  "preferred_benchmarks": [
+    "acasxu_2023",
+    "mnist_fc",
+    "cifar2020",
+    "dist_shift_2023",
+    "cgan_2023",
+    "collins_rul_cnn_2023"
+  ],
+  "per_label_cap": 10,
+  "total_selected": 108,
+  "selected_sat": 54,
+  "selected_unsat": 54,
+  "per_benchmark": {
+    "acasxu_2023": {
+      "available_sat": 47,
+      "available_unsat": 139,
+      "selected_sat": 10,
+      "selected_unsat": 10,
+      "repo_dir": "acasxu"
+    },
+    "mnist_fc": {
+      "available_sat": 18,
+      "available_unsat": 68,
+      "selected_sat": 10,
+      "selected_unsat": 10,
+      "repo_dir": "mnist_fc"
+    },
+    "cifar2020": {
+      "available_sat": 33,
+      "available_unsat": 108,
+      "selected_sat": 10,
+      "selected_unsat": 10,
+      "repo_dir": "cifar2020"
+    },
+    "dist_shift_2023": {
+      "available_sat": 6,
+      "available_unsat": 44,
+      "selected_sat": 6,
+      "selected_unsat": 6,
+      "repo_dir": "dist_shift"
+    },
+    "cgan_2023": {
+      "available_sat": 11,
+      "available_unsat": 8,
+      "selected_sat": 8,
+      "selected_unsat": 8,
+      "repo_dir": "cgan"
+    },
+    "collins_rul_cnn_2023": {
+      "available_sat": 32,
+      "available_unsat": 30,
+      "selected_sat": 10,
+      "selected_unsat": 10,
+      "repo_dir": "collins_rul_cnn"
+    }
+  },
+  "note": "External known-label slice for solver/property-plumbing calibration only; not a semantic-realism oracle."
+}

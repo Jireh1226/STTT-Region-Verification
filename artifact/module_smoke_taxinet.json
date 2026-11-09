@@ -1,0 +1,172 @@
+{
+  "provenance": {
+    "script": "taxinet_instantiation.py",
+    "module": "region_audit.py",
+    "timestamp_utc": "2026-06-13T00:00:57.454815+00:00"
+  },
+  "checks": [
+    {
+      "name": "P1a@R1(centered)",
+      "expected": "sat",
+      "got": "sat",
+      "ok": true,
+      "time_seconds": 0.0471,
+      "region": {
+        "tag": "R1",
+        "kind": "subset_box",
+        "subset": "centered",
+        "n_images": 893
+      }
+    },
+    {
+      "name": "P1d@R2(centered)",
+      "expected": "unsat",
+      "got": "unsat",
+      "ok": true,
+      "time_seconds": 4.2588,
+      "region": {
+        "tag": "R2",
+        "kind": "subset_box",
+        "subset": "centered",
+        "n_images": 893,
+        "constraints": [
+          {
+            "name": "mass_equality",
+            "target": 64.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "P1a@R6(TV<=10)",
+      "expected": "sat",
+      "got": "sat",
+      "ok": true,
+      "time_seconds": 0.5035,
+      "region": {
+        "tag": "R6",
+        "kind": "subset_box",
+        "subset": "centered",
+        "n_images": 893,
+        "constraints": [
+          {
+            "name": "mass_equality",
+            "target": 64.0
+          },
+          {
+            "name": "tv",
+            "tau": 10.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "P3a@R5(idx921)",
+      "expected": "sat",
+      "got": "sat",
+      "ok": true,
+      "time_seconds": 0.0402,
+      "region": {
+        "tag": "R5",
+        "kind": "neighbor_box",
+        "n_neighbors": 76,
+        "constraints": [
+          {
+            "name": "mass_equality",
+            "target": 64.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "P3a@R5(idx20)",
+      "expected": "unsat",
+      "got": "unsat",
+      "ok": true,
+      "time_seconds": 0.0157,
+      "region": {
+        "tag": "R5",
+        "kind": "neighbor_box",
+        "n_neighbors": 68,
+        "constraints": [
+          {
+            "name": "mass_equality",
+            "target": 64.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "P3b@R5(idx20)",
+      "expected": "unsat",
+      "got": "unsat",
+      "ok": true,
+      "time_seconds": 0.1743,
+      "region": {
+        "tag": "R5",
+        "kind": "neighbor_box",
+        "n_neighbors": 68,
+        "constraints": [
+          {
+            "name": "mass_equality",
+            "target": 64.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "P3c@R5(idx20)",
+      "expected": "unsat",
+      "got": "unsat",
+      "ok": true,
+      "time_seconds": 0.0104,
+      "region": {
+        "tag": "R5",
+        "kind": "neighbor_box",
+        "n_neighbors": 68,
+        "constraints": [
+          {
+            "name": "mass_equality",
+            "target": 64.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "P3d@R5(idx20)",
+      "expected": "unsat",
+      "got": "unsat",
+      "ok": true,
+      "time_seconds": 0.0154,
+      "region": {
+        "tag": "R5",
+        "kind": "neighbor_box",
+        "n_neighbors": 68,
+        "constraints": [
+          {
+            "name": "mass_equality",
+            "target": 64.0
+          }
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "passed": 8,
+    "total": 8
+  },
+  "witness_audit": {
+    "witness_scores": {
+      "nearest_real_L2": 0.9879259930715144,
+      "per_pair_violation_frac": 0.11637931034482758,
+      "classifier_prob": 0.9950730249866846
+    },
+    "real_baseline": {
+      "n": 45,
+      "nearest_real_L2_median": 0.18316817541334876,
+      "per_pair_violation_frac_mean": 0.010919540229885059,
+      "classifier_prob_mean": 0.93446293037551,
+      "classifier_prob_median": 0.9912920537522169
+    }
+  }
+}

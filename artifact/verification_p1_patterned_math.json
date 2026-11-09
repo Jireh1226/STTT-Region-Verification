@@ -1,0 +1,4048 @@
+{
+  "provenance": {
+    "script": "verify_prophecy_p1_with_math.py",
+    "timestamp_utc": "2026-05-28T20:52:36+00:00",
+    "git_commit": "4836ac25d55e6e0892bcd41f9330a0cc0843b849",
+    "nnet": "VerifyGAN/models/TinyTaxiNet.nnet",
+    "data": "VerifyGAN/data/SK_DownsampledGANFocusAreaData.h5",
+    "keras_model": "Prophecy/dataset_models/kj_tiny_taxinet/KJ_Taxinet_flat.h5",
+    "baseline_results_json": "prophecy_p1_results.json",
+    "timeout_seconds_per_query": 300,
+    "cte_bound": 10.0,
+    "he_bound": 90.0,
+    "centered_threshold": 1.0,
+    "mean_target": 0.5,
+    "sum_target": 64.0,
+    "neurons_constrained_per_pattern": 32,
+    "layers_constrained": [
+      "dense_0 (16 neurons)",
+      "dense_1 (8 neurons)",
+      "dense_2 (8 neurons)"
+    ],
+    "sub_queries_per_pattern": [
+      "P1a_CTE_lower (y_CTE <= -10)",
+      "P1b_CTE_upper (y_CTE >=  10)",
+      "P1c_HE_lower  (y_HE  <= -90)",
+      "P1d_HE_upper  (y_HE  >=  90)"
+    ],
+    "math_settings_order": [
+      "tv_tau_12",
+      "tv_tau_10",
+      "fourier_tau_7p0",
+      "photometric_eps_0p20",
+      "combined_tight"
+    ]
+  },
+  "n_patterns_total": 24,
+  "n_baseline_verified": 16,
+  "n_baseline_violated": 8,
+  "math_settings": {
+    "tv_tau_12": {
+      "tau_TV": 12.0,
+      "tau_F": "inf",
+      "eps_P": "inf",
+      "n_verified": 16,
+      "n_violated": 8,
+      "per_pattern": [
+        {
+          "pattern_id": 0,
+          "image_count": 129,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.1263,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.038,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0301,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0294,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0111,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 1,
+          "image_count": 15,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0726,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.011,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0258,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0112,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0114,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 2,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0582,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0123,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0117,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0112,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0105,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 3,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0557,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0098,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0103,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0116,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0105,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 4,
+          "image_count": 15,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0945,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0291,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0295,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0107,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0116,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 5,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0578,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0112,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0102,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0114,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0108,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 6,
+          "image_count": 11,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0739,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0111,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0273,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0105,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0112,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 7,
+          "image_count": 32,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2479,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.1841,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0259,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0113,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0116,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 8,
+          "image_count": 49,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2434,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.016,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1841,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0129,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0137,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 9,
+          "image_count": 11,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2542,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.1773,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0306,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0127,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0172,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 10,
+          "image_count": 149,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.4036,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.1892,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.1525,
+              "CTE": 10.0,
+              "HE": -54.239431,
+              "witness_mean": 0.5,
+              "witness_TV": 5.936141,
+              "witness_fourier_hf_l1": 4.896702,
+              "witness_residual_linf": 0.217392,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0341,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0124,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 11,
+          "image_count": 126,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.3599,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.1653,
+              "CTE": -10.0,
+              "HE": 15.721189,
+              "witness_mean": 0.5,
+              "witness_TV": 7.255506,
+              "witness_fourier_hf_l1": 6.984605,
+              "witness_residual_linf": 0.249045,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.131,
+              "CTE": 10.0,
+              "HE": -35.536328,
+              "witness_mean": 0.5,
+              "witness_TV": 7.495469,
+              "witness_fourier_hf_l1": 6.200125,
+              "witness_residual_linf": 0.215906,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0344,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0127,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 12,
+          "image_count": 98,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.3485,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.1584,
+              "CTE": -10.0,
+              "HE": 18.161722,
+              "witness_mean": 0.5,
+              "witness_TV": 8.217714,
+              "witness_fourier_hf_l1": 6.365363,
+              "witness_residual_linf": 0.189752,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1512,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0128,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0121,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 13,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0595,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0123,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0113,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0105,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0115,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 14,
+          "image_count": 31,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.319,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.1425,
+              "CTE": -10.0,
+              "HE": 19.537544,
+              "witness_mean": 0.5,
+              "witness_TV": 5.105376,
+              "witness_fourier_hf_l1": 5.424788,
+              "witness_residual_linf": 0.182084,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.1201,
+              "CTE": 10.0,
+              "HE": -39.002865,
+              "witness_mean": 0.5,
+              "witness_TV": 8.924934,
+              "witness_fourier_hf_l1": 6.63698,
+              "witness_residual_linf": 0.216411,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0303,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0113,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 15,
+          "image_count": 71,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.2314,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.026,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.1463,
+              "CTE": 10.0,
+              "HE": 0.11464,
+              "witness_mean": 0.5,
+              "witness_TV": 12.0,
+              "witness_fourier_hf_l1": 9.53417,
+              "witness_residual_linf": 0.297371,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0162,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0268,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 16,
+          "image_count": 6,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.407,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.1655,
+              "CTE": -10.0,
+              "HE": 51.674112,
+              "witness_mean": 0.5,
+              "witness_TV": 9.069055,
+              "witness_fourier_hf_l1": 6.078509,
+              "witness_residual_linf": 0.187328,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1875,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0109,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0288,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 17,
+          "image_count": 6,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.3539,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.1545,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1445,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0277,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0133,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 18,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0551,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0102,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0106,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0104,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0097,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 19,
+          "image_count": 4,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2332,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.1633,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0302,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0109,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0122,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 20,
+          "image_count": 98,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2807,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0271,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1805,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0301,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0273,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 21,
+          "image_count": 24,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.3682,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.1305,
+              "CTE": -10.0,
+              "HE": 43.489333,
+              "witness_mean": 0.5,
+              "witness_TV": 5.027007,
+              "witness_fourier_hf_l1": 4.497303,
+              "witness_residual_linf": 0.208687,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1852,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0113,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0265,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 22,
+          "image_count": 3,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.1756,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0289,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0282,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0119,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0116,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 23,
+          "image_count": 10,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.3545,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.1391,
+              "CTE": -10.0,
+              "HE": 44.914146,
+              "witness_mean": 0.5,
+              "witness_TV": 3.967505,
+              "witness_fourier_hf_l1": 3.698969,
+              "witness_residual_linf": 0.208127,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.1426,
+              "CTE": 10.0,
+              "HE": -11.095771,
+              "witness_mean": 0.5,
+              "witness_TV": 7.929243,
+              "witness_fourier_hf_l1": 5.334359,
+              "witness_residual_linf": 0.221946,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0276,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0296,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        }
+      ],
+      "wall_seconds": 5.2354
+    },
+    "tv_tau_10": {
+      "tau_TV": 10.0,
+      "tau_F": "inf",
+      "eps_P": "inf",
+      "n_verified": 17,
+      "n_violated": 7,
+      "per_pattern": [
+        {
+          "pattern_id": 0,
+          "image_count": 129,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.1181,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0305,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0284,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0351,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0105,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 1,
+          "image_count": 15,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0807,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0119,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.029,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0117,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.013,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 2,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0588,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0109,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0118,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0113,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0117,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 3,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0552,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0101,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0102,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0103,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0107,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 4,
+          "image_count": 15,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0924,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0295,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0282,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0111,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0106,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 5,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0559,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0094,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0104,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0103,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.011,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 6,
+          "image_count": 11,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0772,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0121,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0293,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0114,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0112,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 7,
+          "image_count": 32,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2494,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.1767,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0306,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0116,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0118,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 8,
+          "image_count": 49,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2472,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.017,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1891,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0125,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.013,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 9,
+          "image_count": 11,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2399,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.1676,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0294,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0104,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0161,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 10,
+          "image_count": 149,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.3809,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.1759,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.1436,
+              "CTE": 10.0,
+              "HE": -54.239431,
+              "witness_mean": 0.5,
+              "witness_TV": 5.936141,
+              "witness_fourier_hf_l1": 4.896702,
+              "witness_residual_linf": 0.217392,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0334,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0123,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 11,
+          "image_count": 126,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.3412,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.1527,
+              "CTE": -10.0,
+              "HE": 15.721189,
+              "witness_mean": 0.5,
+              "witness_TV": 7.255506,
+              "witness_fourier_hf_l1": 6.984605,
+              "witness_residual_linf": 0.249045,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.1267,
+              "CTE": 10.0,
+              "HE": -35.536328,
+              "witness_mean": 0.5,
+              "witness_TV": 7.495469,
+              "witness_fourier_hf_l1": 6.200125,
+              "witness_residual_linf": 0.215906,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0346,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0116,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 12,
+          "image_count": 98,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.3547,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.1579,
+              "CTE": -10.0,
+              "HE": 18.161722,
+              "witness_mean": 0.5,
+              "witness_TV": 8.217714,
+              "witness_fourier_hf_l1": 6.365363,
+              "witness_residual_linf": 0.189752,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1611,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0104,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0107,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 13,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0611,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0113,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0126,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0118,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0117,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 14,
+          "image_count": 31,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.3296,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.1444,
+              "CTE": -10.0,
+              "HE": 19.537544,
+              "witness_mean": 0.5,
+              "witness_TV": 5.105376,
+              "witness_fourier_hf_l1": 5.424788,
+              "witness_residual_linf": 0.182084,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.1259,
+              "CTE": 10.0,
+              "HE": -39.002865,
+              "witness_mean": 0.5,
+              "witness_TV": 8.924934,
+              "witness_fourier_hf_l1": 6.63698,
+              "witness_residual_linf": 0.216411,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0317,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0127,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 15,
+          "image_count": 71,
+          "baseline_verified": false,
+          "verdict": "verified",
+          "time_s": 0.2369,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0283,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1496,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0157,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0299,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 16,
+          "image_count": 6,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.4134,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.169,
+              "CTE": -10.0,
+              "HE": 51.674112,
+              "witness_mean": 0.5,
+              "witness_TV": 9.069055,
+              "witness_fourier_hf_l1": 6.078509,
+              "witness_residual_linf": 0.187328,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1885,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0118,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.03,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 17,
+          "image_count": 6,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.3745,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.1649,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1512,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0303,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0134,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 18,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0574,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0102,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0107,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0109,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0111,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 19,
+          "image_count": 4,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2213,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.1569,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0276,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0114,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0118,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 20,
+          "image_count": 98,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2934,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.032,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.184,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0308,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0304,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 21,
+          "image_count": 24,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.3815,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.1342,
+              "CTE": -10.0,
+              "HE": 43.489333,
+              "witness_mean": 0.5,
+              "witness_TV": 5.027007,
+              "witness_fourier_hf_l1": 4.497303,
+              "witness_residual_linf": 0.208687,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1907,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0113,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0285,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 22,
+          "image_count": 3,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.099,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0293,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0302,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0111,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0115,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 23,
+          "image_count": 10,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.3715,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.1422,
+              "CTE": -10.0,
+              "HE": 44.914146,
+              "witness_mean": 0.5,
+              "witness_TV": 3.967505,
+              "witness_fourier_hf_l1": 3.698969,
+              "witness_residual_linf": 0.208127,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.1523,
+              "CTE": 10.0,
+              "HE": -11.095771,
+              "witness_mean": 0.5,
+              "witness_TV": 7.929243,
+              "witness_fourier_hf_l1": 5.334359,
+              "witness_residual_linf": 0.221946,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0313,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0304,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        }
+      ],
+      "wall_seconds": 5.1922
+    },
+    "fourier_tau_7p0": {
+      "tau_TV": "inf",
+      "tau_F": 7.0,
+      "eps_P": "inf",
+      "n_verified": 17,
+      "n_violated": 7,
+      "per_pattern": [
+        {
+          "pattern_id": 0,
+          "image_count": 129,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.3302,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0901,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0778,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0779,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0448,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 1,
+          "image_count": 15,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2513,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0413,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0811,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0444,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0436,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 2,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2213,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0447,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.044,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0465,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0447,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 3,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.209,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0429,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0405,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0421,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0408,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 4,
+          "image_count": 15,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.3236,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0343,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0724,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0464,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0448,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 5,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.4681,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0451,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1941,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.102,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0665,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 6,
+          "image_count": 11,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.3014,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0658,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0913,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0476,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0484,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 7,
+          "image_count": 32,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.8765,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.6508,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.095,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0468,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0422,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 8,
+          "image_count": 49,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.3115,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0571,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1216,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0457,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0474,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 9,
+          "image_count": 11,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 1.0364,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.5915,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.087,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0826,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1526,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 10,
+          "image_count": 149,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 1.5285,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.8515,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.4896,
+              "CTE": 10.0,
+              "HE": -54.006802,
+              "witness_mean": 0.5,
+              "witness_TV": 11.065813,
+              "witness_fourier_hf_l1": 5.628361,
+              "witness_residual_linf": 0.225585,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.097,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0443,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 11,
+          "image_count": 126,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 1.2686,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.5499,
+              "CTE": -10.0,
+              "HE": 15.59771,
+              "witness_mean": 0.5,
+              "witness_TV": 11.839649,
+              "witness_fourier_hf_l1": 7.0,
+              "witness_residual_linf": 0.246314,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.5313,
+              "CTE": 10.0,
+              "HE": -35.442553,
+              "witness_mean": 0.5,
+              "witness_TV": 12.401494,
+              "witness_fourier_hf_l1": 6.71365,
+              "witness_residual_linf": 0.216927,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0941,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0469,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 12,
+          "image_count": 98,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 1.2373,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.491,
+              "CTE": -10.0,
+              "HE": 18.898099,
+              "witness_mean": 0.5,
+              "witness_TV": 13.537226,
+              "witness_fourier_hf_l1": 7.0,
+              "witness_residual_linf": 0.216353,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.615,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0464,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0438,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 13,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2234,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0452,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0443,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0454,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0424,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 14,
+          "image_count": 31,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 1.0377,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.4365,
+              "CTE": -10.0,
+              "HE": 23.094228,
+              "witness_mean": 0.5,
+              "witness_TV": 10.133362,
+              "witness_fourier_hf_l1": 4.996517,
+              "witness_residual_linf": 0.226849,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.4162,
+              "CTE": 10.0,
+              "HE": -38.054664,
+              "witness_mean": 0.5,
+              "witness_TV": 13.207077,
+              "witness_fourier_hf_l1": 6.969426,
+              "witness_residual_linf": 0.21623,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.094,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0472,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 15,
+          "image_count": 71,
+          "baseline_verified": false,
+          "verdict": "verified",
+          "time_s": 0.9584,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0816,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.6868,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.062,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0841,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 16,
+          "image_count": 6,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 1.1835,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.4418,
+              "CTE": -10.0,
+              "HE": 50.344895,
+              "witness_mean": 0.5,
+              "witness_TV": 10.571098,
+              "witness_fourier_hf_l1": 5.784533,
+              "witness_residual_linf": 0.190754,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.5745,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0457,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.078,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 17,
+          "image_count": 6,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 1.2377,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.4935,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.5744,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0792,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0492,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 18,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2013,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0394,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0414,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0419,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.039,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 19,
+          "image_count": 4,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.7688,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.4825,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0773,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0414,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0439,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 20,
+          "image_count": 98,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.9549,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0815,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.658,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.09,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0835,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 21,
+          "image_count": 24,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 1.201,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.3544,
+              "CTE": -10.0,
+              "HE": 40.611968,
+              "witness_mean": 0.5,
+              "witness_TV": 14.200888,
+              "witness_fourier_hf_l1": 6.909938,
+              "witness_residual_linf": 0.206144,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.6665,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0481,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0874,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 22,
+          "image_count": 3,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.3151,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0917,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0845,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0489,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0445,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 23,
+          "image_count": 10,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 1.0765,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.4218,
+              "CTE": -10.0,
+              "HE": 41.388993,
+              "witness_mean": 0.5,
+              "witness_TV": 12.714217,
+              "witness_fourier_hf_l1": 5.737765,
+              "witness_residual_linf": 0.152661,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.4364,
+              "CTE": 10.0,
+              "HE": -12.60635,
+              "witness_mean": 0.5,
+              "witness_TV": 12.772281,
+              "witness_fourier_hf_l1": 5.982078,
+              "witness_residual_linf": 0.195647,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0877,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0849,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        }
+      ],
+      "wall_seconds": 17.5232
+    },
+    "photometric_eps_0p20": {
+      "tau_TV": "inf",
+      "tau_F": "inf",
+      "eps_P": 0.2,
+      "n_verified": 16,
+      "n_violated": 8,
+      "per_pattern": [
+        {
+          "pattern_id": 0,
+          "image_count": 129,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0629,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.016,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0135,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0147,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0072,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 1,
+          "image_count": 15,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0475,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0075,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0128,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0071,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.007,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 2,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.043,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0081,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0079,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0065,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0079,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 3,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0396,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0062,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0075,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0072,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0066,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 4,
+          "image_count": 15,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0551,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0131,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.013,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0075,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0081,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 5,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0403,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0065,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0073,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0069,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0069,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 6,
+          "image_count": 11,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0433,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.006,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0125,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0072,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0067,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 7,
+          "image_count": 32,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0775,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0394,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0128,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0072,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0061,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 8,
+          "image_count": 49,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0596,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0094,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0262,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0059,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0071,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 9,
+          "image_count": 11,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0679,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0281,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0121,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0061,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0099,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 10,
+          "image_count": 149,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.0961,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0336,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.0294,
+              "CTE": 10.0,
+              "HE": -54.222725,
+              "witness_mean": 0.5,
+              "witness_TV": 9.880361,
+              "witness_fourier_hf_l1": 7.949728,
+              "witness_residual_linf": 0.209016,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0141,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0067,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 11,
+          "image_count": 126,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.1061,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.0372,
+              "CTE": -10.0,
+              "HE": 18.54771,
+              "witness_mean": 0.5,
+              "witness_TV": 12.132143,
+              "witness_fourier_hf_l1": 8.594303,
+              "witness_residual_linf": 0.269188,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.0336,
+              "CTE": 10.0,
+              "HE": -36.202626,
+              "witness_mean": 0.5,
+              "witness_TV": 10.763039,
+              "witness_fourier_hf_l1": 7.295705,
+              "witness_residual_linf": 0.213342,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0155,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.007,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 12,
+          "image_count": 98,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.0993,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.0334,
+              "CTE": -10.0,
+              "HE": 19.626733,
+              "witness_mean": 0.5,
+              "witness_TV": 15.062939,
+              "witness_fourier_hf_l1": 9.829126,
+              "witness_residual_linf": 0.252862,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0409,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0064,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0071,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 13,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0404,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0082,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0061,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0077,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0065,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 14,
+          "image_count": 31,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.0956,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.0295,
+              "CTE": -10.0,
+              "HE": 17.551738,
+              "witness_mean": 0.5,
+              "witness_TV": 12.202688,
+              "witness_fourier_hf_l1": 8.937067,
+              "witness_residual_linf": 0.227507,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.03,
+              "CTE": 10.0,
+              "HE": -38.482278,
+              "witness_mean": 0.5,
+              "witness_TV": 13.070115,
+              "witness_fourier_hf_l1": 8.079537,
+              "witness_residual_linf": 0.225701,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0137,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.007,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 15,
+          "image_count": 71,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.0801,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0128,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.0339,
+              "CTE": 10.0,
+              "HE": -0.035001,
+              "witness_mean": 0.5,
+              "witness_TV": 18.168392,
+              "witness_fourier_hf_l1": 11.249232,
+              "witness_residual_linf": 0.217488,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0095,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0123,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 16,
+          "image_count": 6,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.0913,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.031,
+              "CTE": -10.0,
+              "HE": 53.807625,
+              "witness_mean": 0.5,
+              "witness_TV": 13.469645,
+              "witness_fourier_hf_l1": 8.441129,
+              "witness_residual_linf": 0.222982,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0299,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0064,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0121,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 17,
+          "image_count": 6,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0989,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0335,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0312,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0133,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0079,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 18,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0409,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0071,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0064,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0068,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0073,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 19,
+          "image_count": 4,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0762,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0338,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0146,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0079,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0081,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 20,
+          "image_count": 98,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.1001,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0163,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0387,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0158,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0151,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 21,
+          "image_count": 24,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.1083,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.0343,
+              "CTE": -10.0,
+              "HE": 49.595942,
+              "witness_mean": 0.5,
+              "witness_TV": 14.809369,
+              "witness_fourier_hf_l1": 9.446989,
+              "witness_residual_linf": 0.249746,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0376,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0077,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0138,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 22,
+          "image_count": 3,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.0549,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0149,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0134,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0065,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0072,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 23,
+          "image_count": 10,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 0.1105,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 0.0337,
+              "CTE": -10.0,
+              "HE": 45.818076,
+              "witness_mean": 0.5,
+              "witness_TV": 11.497383,
+              "witness_fourier_hf_l1": 7.297925,
+              "witness_residual_linf": 0.220833,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 0.0335,
+              "CTE": 10.0,
+              "HE": -11.826263,
+              "witness_mean": 0.5,
+              "witness_TV": 11.769613,
+              "witness_fourier_hf_l1": 7.450807,
+              "witness_residual_linf": 0.195058,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0148,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0143,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        }
+      ],
+      "wall_seconds": 1.7363
+    },
+    "combined_tight": {
+      "tau_TV": 12.0,
+      "tau_F": 7.0,
+      "eps_P": 0.2,
+      "n_verified": 17,
+      "n_violated": 7,
+      "per_pattern": [
+        {
+          "pattern_id": 0,
+          "image_count": 129,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.6166,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.1906,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1558,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1604,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0586,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 1,
+          "image_count": 15,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.3751,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0628,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1535,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0532,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0533,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 2,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2912,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0557,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0577,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0655,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.06,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 3,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2721,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.059,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.053,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0527,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0541,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 4,
+          "image_count": 15,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.5539,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.1542,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1533,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0567,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0535,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 5,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2598,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0528,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0527,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0528,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0492,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 6,
+          "image_count": 11,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.3397,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0514,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1414,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0521,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.049,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 7,
+          "image_count": 32,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 2.4129,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 2.1188,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1406,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0508,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0518,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 8,
+          "image_count": 49,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 1.7394,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0671,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 1.5144,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0528,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0542,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 9,
+          "image_count": 11,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 2.3876,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 2.0456,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1598,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0565,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0747,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 10,
+          "image_count": 149,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 4.0155,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 2.1438,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 1.6211,
+              "CTE": 10.0,
+              "HE": -54.094525,
+              "witness_mean": 0.5,
+              "witness_TV": 6.132748,
+              "witness_fourier_hf_l1": 4.324965,
+              "witness_residual_linf": 0.215597,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1498,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0489,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 11,
+          "image_count": 126,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 3.7692,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 1.8734,
+              "CTE": -10.0,
+              "HE": 16.053013,
+              "witness_mean": 0.5,
+              "witness_TV": 8.825098,
+              "witness_fourier_hf_l1": 7.0,
+              "witness_residual_linf": 0.242677,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 1.6479,
+              "CTE": 10.0,
+              "HE": -34.297778,
+              "witness_mean": 0.5,
+              "witness_TV": 8.682116,
+              "witness_fourier_hf_l1": 5.664117,
+              "witness_residual_linf": 0.216876,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1468,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0535,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 12,
+          "image_count": 98,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 3.3952,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 1.5576,
+              "CTE": -10.0,
+              "HE": 16.713454,
+              "witness_mean": 0.5,
+              "witness_TV": 10.002283,
+              "witness_fourier_hf_l1": 6.780175,
+              "witness_residual_linf": 0.195645,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 1.5975,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0516,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0562,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 13,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2666,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0604,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0541,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0538,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0504,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 14,
+          "image_count": 31,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 3.6414,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 1.9072,
+              "CTE": -10.0,
+              "HE": 21.36905,
+              "witness_mean": 0.5,
+              "witness_TV": 7.985372,
+              "witness_fourier_hf_l1": 5.305995,
+              "witness_residual_linf": 0.174637,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 1.4736,
+              "CTE": 10.0,
+              "HE": -39.356168,
+              "witness_mean": 0.5,
+              "witness_TV": 10.109039,
+              "witness_fourier_hf_l1": 6.67942,
+              "witness_residual_linf": 0.209752,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1561,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0561,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 15,
+          "image_count": 71,
+          "baseline_verified": false,
+          "verdict": "verified",
+          "time_s": 2.3039,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.1441,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 1.8895,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0726,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1465,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 16,
+          "image_count": 6,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 4.0539,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 1.5183,
+              "CTE": -10.0,
+              "HE": 51.106785,
+              "witness_mean": 0.5,
+              "witness_TV": 8.01746,
+              "witness_fourier_hf_l1": 5.400053,
+              "witness_residual_linf": 0.189382,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 2.2803,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0547,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1471,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 17,
+          "image_count": 6,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 4.0256,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 1.8124,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 1.9632,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.144,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0565,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 18,
+          "image_count": 1,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.2389,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.0508,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0474,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0499,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0458,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 19,
+          "image_count": 4,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 2.2024,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 1.9122,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1403,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0517,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0516,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 20,
+          "image_count": 98,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 2.439,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.1452,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 1.866,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1475,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1476,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 21,
+          "image_count": 24,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 3.7768,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 1.3409,
+              "CTE": -10.0,
+              "HE": 46.284219,
+              "witness_mean": 0.5,
+              "witness_TV": 7.124191,
+              "witness_fourier_hf_l1": 4.259384,
+              "witness_residual_linf": 0.157957,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 2.1824,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0555,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1492,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 22,
+          "image_count": 3,
+          "baseline_verified": true,
+          "verdict": "verified",
+          "time_s": 0.4344,
+          "sub_queries": [
+            {
+              "status": "unsat",
+              "time_seconds": 0.1428,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1408,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0528,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.0518,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        },
+        {
+          "pattern_id": 23,
+          "image_count": 10,
+          "baseline_verified": false,
+          "verdict": "violated",
+          "time_s": 3.7991,
+          "sub_queries": [
+            {
+              "status": "sat",
+              "time_seconds": 1.6948,
+              "CTE": -10.0,
+              "HE": 43.963078,
+              "witness_mean": 0.5,
+              "witness_TV": 8.046725,
+              "witness_fourier_hf_l1": 4.567386,
+              "witness_residual_linf": 0.141377,
+              "query": "P1a_CTE_lower"
+            },
+            {
+              "status": "sat",
+              "time_seconds": 1.7593,
+              "CTE": 10.0,
+              "HE": -11.215514,
+              "witness_mean": 0.5,
+              "witness_TV": 8.388491,
+              "witness_fourier_hf_l1": 4.997858,
+              "witness_residual_linf": 0.183589,
+              "query": "P1b_CTE_upper"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.1485,
+              "query": "P1c_HE_lower"
+            },
+            {
+              "status": "unsat",
+              "time_seconds": 0.147,
+              "query": "P1d_HE_upper"
+            }
+          ]
+        }
+      ],
+      "wall_seconds": 47.6115
+    }
+  },
+  "summary_vs_baseline": {
+    "tv_tau_12": {
+      "restored_patterns": [],
+      "lost_patterns": [],
+      "unchanged_safe": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        17,
+        18,
+        19,
+        20,
+        22
+      ],
+      "unchanged_violated": [
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        21,
+        23
+      ]
+    },
+    "tv_tau_10": {
+      "restored_patterns": [
+        15
+      ],
+      "lost_patterns": [],
+      "unchanged_safe": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        17,
+        18,
+        19,
+        20,
+        22
+      ],
+      "unchanged_violated": [
+        10,
+        11,
+        12,
+        14,
+        16,
+        21,
+        23
+      ]
+    },
+    "fourier_tau_7p0": {
+      "restored_patterns": [
+        15
+      ],
+      "lost_patterns": [],
+      "unchanged_safe": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        17,
+        18,
+        19,
+        20,
+        22
+      ],
+      "unchanged_violated": [
+        10,
+        11,
+        12,
+        14,
+        16,
+        21,
+        23
+      ]
+    },
+    "photometric_eps_0p20": {
+      "restored_patterns": [],
+      "lost_patterns": [],
+      "unchanged_safe": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        17,
+        18,
+        19,
+        20,
+        22
+      ],
+      "unchanged_violated": [
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        21,
+        23
+      ]
+    },
+    "combined_tight": {
+      "restored_patterns": [
+        15
+      ],
+      "lost_patterns": [],
+      "unchanged_safe": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        17,
+        18,
+        19,
+        20,
+        22
+      ],
+      "unchanged_violated": [
+        10,
+        11,
+        12,
+        14,
+        16,
+        21,
+        23
+      ]
+    }
+  }
+}

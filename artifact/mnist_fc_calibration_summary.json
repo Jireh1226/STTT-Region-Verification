@@ -1,0 +1,45 @@
+{
+  "provenance": {
+    "script": "run_vnnlib_calibration_slice.py",
+    "timestamp_utc": "2026-06-29T00:36:59.357677+00:00",
+    "marabou": "Marabou version 2.0.0 [HEAD 215828c]",
+    "solver_binary": "prophecy_env/bin/Marabou",
+    "timeout_s": 120,
+    "split_and_conquer": true,
+    "snc_workers": 4,
+    "asset_source": "VNN-COMP 2023 benchmark mirror (github.com/ChristopherBrix/vnncomp2023_benchmarks)",
+    "purpose": "solver/property-plumbing calibration on known SAT/UNSAT labels; NOT a semantic-realism oracle",
+    "summarizer": "summarize_vnnlib_calibration.py"
+  },
+  "overall": {
+    "n_total": 20,
+    "expected_sat": 10,
+    "expected_unsat": 10,
+    "completed": 12,
+    "matched_sat": 5,
+    "matched_unsat": 7,
+    "matched_total": 12,
+    "timeouts": 8,
+    "errors": 0,
+    "not_run_missing_assets": 0,
+    "agreement_excluding_timeouts_errors": 1.0,
+    "agreement_including_timeouts_errors_as_nonmatch": 0.6
+  },
+  "per_benchmark": {
+    "mnist_fc": {
+      "n_total": 20,
+      "expected_sat": 10,
+      "expected_unsat": 10,
+      "completed": 12,
+      "matched_sat": 5,
+      "matched_unsat": 7,
+      "matched_total": 12,
+      "timeouts": 8,
+      "errors": 0,
+      "not_run_missing_assets": 0,
+      "agreement_excluding_timeouts_errors": 1.0,
+      "agreement_including_timeouts_errors_as_nonmatch": 0.6
+    }
+  },
+  "interpretation": "Solver/property-plumbing calibration on external known-label instances. High agreement on completed queries indicates the ONNX+VNNLIB handling reproduces accepted SAT/UNSAT ground truth; it does not validate semantic realism of any TinyTaxiNet witness."
+}

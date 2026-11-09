@@ -1,0 +1,50 @@
+[
+  {
+    "witness": "P4_C_right_thr=3.0_mean=0.5",
+    "subset": "right",
+    "CTE": 3.0,
+    "pixel_mean_decoded": 0.5,
+    "logit": 3.778,
+    "prob": 0.978
+  },
+  {
+    "witness": "P4_C_left_thr=3.0_mean=0.5",
+    "subset": "left",
+    "CTE": -3.422289,
+    "pixel_mean_decoded": 0.5,
+    "logit": 4.503,
+    "prob": 0.989
+  },
+  {
+    "witness": "P4_C_right_thr=2.0_mean=0.5",
+    "subset": "right",
+    "CTE": 2.34144,
+    "pixel_mean_decoded": 0.5,
+    "logit": 4.935,
+    "prob": 0.993
+  },
+  {
+    "witness": "P4_C_left_base_mean=0.5",
+    "subset": "left",
+    "CTE": 0.0,
+    "pixel_mean_decoded": 0.5,
+    "logit": 5.031,
+    "prob": 0.994
+  },
+  {
+    "witness": "P4_C_right_base_mean=0.5",
+    "subset": "right",
+    "CTE": 0.0,
+    "pixel_mean_decoded": 0.5,
+    "logit": 2.631,
+    "prob": 0.933
+  },
+  {
+    "witness": "P5_deadzone_base_mean=0.5",
+    "subset": "off_center",
+    "CTE": 0.01,
+    "pixel_mean_decoded": 0.5,
+    "logit": 4.845,
+    "prob": 0.992
+  }
+]

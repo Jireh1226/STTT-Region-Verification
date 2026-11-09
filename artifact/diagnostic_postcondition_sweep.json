@@ -1,0 +1,167 @@
+{
+  "provenance": {
+    "script": "diagnostic_postcondition_sweep.py",
+    "timestamp_utc": "2026-06-24T16:59:24.199421+00:00",
+    "method": "exact local ReLU Jacobian, first-order L_inf-ball reachable extremum, pure numpy",
+    "n_centered_anchors": 893,
+    "eps_primary": 0.05
+  },
+  "sensitivity_and_headroom_medians": {
+    "median_abs_pred_CTE_m": 1.681179831321363,
+    "median_abs_pred_HE_deg": 14.741363827337269,
+    "median_J1_CTE": 259.4481448773898,
+    "median_J1_HE": 649.0235857943287,
+    "median_saturating_radius_CTE": 0.03447059206633318,
+    "median_saturating_radius_HE": 0.12047827317961061
+  },
+  "bound_sweep_eps_0.05": {
+    "CTE": {
+      "bounds": [
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0,
+        18.0,
+        19.0,
+        20.0,
+        21.0
+      ],
+      "violation_fraction": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9944008958566629,
+        0.9406494960806271,
+        0.7984322508398656,
+        0.7312430011198209,
+        0.7267637178051511,
+        0.7256438969764838,
+        0.7110862262038073,
+        0.5263157894736842,
+        0.2788353863381859,
+        0.15677491601343785,
+        0.11534154535274356,
+        0.10974244120940649,
+        0.10862262038073908,
+        0.10862262038073908,
+        0.10302351623740201
+      ],
+      "fifty_pct_crossing_bound": 15.0,
+      "headroom_predicted_crossing": 14.653587075190853,
+      "violation_at_paper_bound_10m": 0.7312430011198209
+    },
+    "HE": {
+      "bounds": [
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0,
+        45.0,
+        50.0,
+        55.0,
+        60.0,
+        65.0,
+        70.0,
+        75.0,
+        80.0,
+        85.0,
+        90.0,
+        95.0,
+        100.0,
+        105.0,
+        110.0,
+        115.0,
+        120.0,
+        125.0,
+        130.0,
+        135.0
+      ],
+      "violation_fraction": [
+        1.0,
+        1.0,
+        1.0,
+        0.9876819708846585,
+        0.9832026875699889,
+        0.9372900335946248,
+        0.6942889137737962,
+        0.5072788353863382,
+        0.3650615901455767,
+        0.21500559910414332,
+        0.0929451287793953,
+        0.032474804031354984,
+        0.02127659574468085,
+        0.015677491601343786,
+        0.008958566629339306,
+        0.0033594624860022394,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fifty_pct_crossing_bound": 50.0,
+      "headroom_predicted_crossing": 47.1925431170537,
+      "violation_at_paper_bound_90deg": 0.0
+    }
+  },
+  "headroom_equalized": {
+    "CTE_bound_m": 10.0,
+    "HE_bound_deg_equalized": 35.40690089469858,
+    "median_saturating_radius_CTE": 0.03447059206633318,
+    "median_saturating_radius_HE_equalized": 0.03447059206633318,
+    "by_eps": [
+      {
+        "eps": 0.02,
+        "CTE_violation_frac_at_10m": 0.06382978723404255,
+        "HE_violation_frac_at_paper_90deg": 0.0,
+        "HE_violation_frac_at_equalized_bound": 0.2206047032474804
+      },
+      {
+        "eps": 0.0345,
+        "CTE_violation_frac_at_10m": 0.5016797312430011,
+        "HE_violation_frac_at_paper_90deg": 0.0,
+        "HE_violation_frac_at_equalized_bound": 0.5005599104143337
+      },
+      {
+        "eps": 0.05,
+        "CTE_violation_frac_at_10m": 0.7312430011198209,
+        "HE_violation_frac_at_paper_90deg": 0.0,
+        "HE_violation_frac_at_equalized_bound": 0.9227323628219485
+      },
+      {
+        "eps": 0.08,
+        "CTE_violation_frac_at_10m": 1.0,
+        "HE_violation_frac_at_paper_90deg": 0.026875699888017916,
+        "HE_violation_frac_at_equalized_bound": 0.9876819708846585
+      },
+      {
+        "eps": 0.1,
+        "CTE_violation_frac_at_10m": 1.0,
+        "HE_violation_frac_at_paper_90deg": 0.20716685330347145,
+        "HE_violation_frac_at_equalized_bound": 1.0
+      }
+    ]
+  }
+}

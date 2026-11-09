@@ -1,0 +1,14 @@
+{
+  "checked_on": "2026-11-08",
+  "saved_result_summary_matches": true,
+  "saved_results_and_manuscript_preserved": true,
+  "original_source_files": 455,
+  "release_changes": [
+    "artifact/README.md",
+    "artifact/_inspect_net.py"
+  ],
+  "solver_queries_rerun": false,
+  "model_training_rerun": false,
+  "review_commands_require_external_packages": false,
+  "release_check_command": "python3 check_artifact.py"
+}

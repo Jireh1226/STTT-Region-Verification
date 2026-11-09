@@ -1,0 +1,43 @@
+{
+  "script": "train_external_lard_mlp.py",
+  "arch": "1152-64-32-3 ReLU MLP, linear logits",
+  "target": "pitch",
+  "class_names": [
+    "low_pitch",
+    "mid_pitch",
+    "high_pitch"
+  ],
+  "input": "24x48 grayscale, raw [0,1], no standardization",
+  "seed": 0,
+  "epochs": 400,
+  "batch": 128,
+  "lr": 0.002,
+  "l2": 1e-05,
+  "n_train": 1700,
+  "n_val": 300,
+  "n_test": 700,
+  "tercile_thresholds_train": [
+    85.09930674235027,
+    86.79979960123698
+  ],
+  "train_acc": 0.9,
+  "val_acc": 0.86,
+  "test_acc": 0.83,
+  "majority_baseline": 0.3333333333333333,
+  "test_per_class": {
+    "0": [
+      232,
+      0.8232758620689655
+    ],
+    "1": [
+      236,
+      0.7669491525423728
+    ],
+    "2": [
+      232,
+      0.9008620689655172
+    ]
+  },
+  "gpu_used": false,
+  "generated_utc": "2026-06-30T02:08:39Z"
+}

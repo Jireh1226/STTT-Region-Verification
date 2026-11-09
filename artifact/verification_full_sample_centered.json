@@ -1,0 +1,38 @@
+{
+  "description": "Full-sample (893 centered images) P2 and P3 expansion.",
+  "P2": {
+    "epsilon": 0.02,
+    "n_total": 893,
+    "nominally_wrong": 615,
+    "nominally_correct_fragile": 278,
+    "verified_robust": 0,
+    "elapsed_seconds": 12.03
+  },
+  "P3_mean_clip": {
+    "epsilon_0.02": {
+      "epsilon": 0.02,
+      "n_total": 893,
+      "verified": 892,
+      "violated": 1,
+      "empty_region": 0,
+      "elapsed_seconds": 31.95
+    },
+    "epsilon_0.05": {
+      "epsilon": 0.05,
+      "n_total": 893,
+      "verified": 186,
+      "violated": 707,
+      "empty_region": 0,
+      "elapsed_seconds": 116.15
+    },
+    "epsilon_0.1": {
+      "epsilon": 0.1,
+      "n_total": 893,
+      "verified": 0,
+      "violated": 893,
+      "empty_region": 0,
+      "elapsed_seconds": 22.79
+    }
+  },
+  "total_elapsed_seconds": 182.92
+}

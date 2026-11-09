@@ -1,0 +1,70 @@
+{
+  "provenance": {
+    "script": "p3_dimsweep_ctehe_breakdown.py",
+    "basis": "pca",
+    "candidate_subset_size": 200,
+    "merged_from_chunk_files": 44,
+    "processed_anchor_count": 159,
+    "min_neighbors_required": 65,
+    "dims": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "alpha": 1.0,
+    "note": "merged full-200 run; chunk18 split into single-anchor jobs for anchors 90-94 (chunk18a-e); stale chunk18.json excluded"
+  },
+  "by_dimension": {
+    "2": {
+      "n": 159,
+      "anchors_CTE_sat": 0,
+      "anchors_HE_sat": 0,
+      "anchors_sat": 0,
+      "anchors_verified": 159,
+      "anchors_timeout": 0
+    },
+    "4": {
+      "n": 159,
+      "anchors_CTE_sat": 0,
+      "anchors_HE_sat": 0,
+      "anchors_sat": 0,
+      "anchors_verified": 159,
+      "anchors_timeout": 0
+    },
+    "8": {
+      "n": 159,
+      "anchors_CTE_sat": 9,
+      "anchors_HE_sat": 0,
+      "anchors_sat": 9,
+      "anchors_verified": 149,
+      "anchors_timeout": 1
+    },
+    "16": {
+      "n": 159,
+      "anchors_CTE_sat": 43,
+      "anchors_HE_sat": 0,
+      "anchors_sat": 43,
+      "anchors_verified": 110,
+      "anchors_timeout": 6
+    },
+    "32": {
+      "n": 159,
+      "anchors_CTE_sat": 95,
+      "anchors_HE_sat": 2,
+      "anchors_sat": 96,
+      "anchors_verified": 55,
+      "anchors_timeout": 8
+    },
+    "64": {
+      "n": 159,
+      "anchors_CTE_sat": 107,
+      "anchors_HE_sat": 7,
+      "anchors_sat": 109,
+      "anchors_verified": 46,
+      "anchors_timeout": 4
+    }
+  }
+}

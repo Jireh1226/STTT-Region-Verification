@@ -1,0 +1,37 @@
+{
+  "dataset": "LARD V2",
+  "source_split": "ges",
+  "host": "https://huggingface.co/datasets/DEEL-AI/LARD_V2",
+  "paper": "https://arxiv.org/pdf/2603.26748",
+  "license": "MIT (LARD code/labels); GES imagery under Google Earth terms, academic use",
+  "independent_of_verifygan": true,
+  "independence_note": "Different generator (Google Earth Studio vs X-Plane/TinyTaxiNet/VerifyGAN), different airports/imagery source, different authors.",
+  "seed": 0,
+  "input": {
+    "resized_rows": 24,
+    "resized_cols": 48,
+    "dim": 1152,
+    "channels": "grayscale",
+    "range": "[0,1]"
+  },
+  "counts": {
+    "train": 2000,
+    "test": 700,
+    "train_pool_IN_ODD": 11830,
+    "test_pool_IN_ODD": 11177
+  },
+  "stored_geometry_labels": [
+    "yaw",
+    "pitch",
+    "roll",
+    "slant_distance",
+    "along_track_distance",
+    "height_above_runway",
+    "lateral_path_angle",
+    "vertical_path_angle",
+    "offset (image-space lateral centroid)"
+  ],
+  "label_note": "Final classification target chosen empirically by select_external_lard_target.py.",
+  "gpu_used": false,
+  "generated_utc": "2026-06-30T01:55:36Z"
+}

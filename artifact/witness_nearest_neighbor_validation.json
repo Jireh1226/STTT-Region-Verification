@@ -1,0 +1,120 @@
+{
+  "empirical_wrong_sign": {
+    "left_total": 4128,
+    "left_wrong_sign": 92,
+    "left_wrong_sign_fraction": 0.022286821705426358,
+    "left_pred_CTE_min": -3.5087161908361524,
+    "left_pred_CTE_max": 10.286021329734659,
+    "left_pred_CTE_mean": 4.624994508173201,
+    "right_total": 4099,
+    "right_wrong_sign": 50,
+    "right_wrong_sign_fraction": 0.012198097096852892,
+    "right_pred_CTE_min": -10.92379664861966,
+    "right_pred_CTE_max": 3.2791551260516414,
+    "right_pred_CTE_mean": -6.080486381049146
+  },
+  "witnesses": [
+    {
+      "name": "P4_C_right_threshold_2.0_mean=0.5",
+      "subset": "right",
+      "decoded_pixel_mean": 0.4999999677149054,
+      "decoded_pixel_range": [
+        0.1981643429605922,
+        0.7673806228142503
+      ],
+      "witness_output_expected": {
+        "CTE": 2.34144,
+        "HE": 5.93111
+      },
+      "witness_output_from_decode": {
+        "CTE": 2.341426475603372,
+        "HE": 5.931129059548109
+      },
+      "nearest_real_l2_dist": 0.992542167347605,
+      "nearest_real_linf_dist": 0.2651705154569188,
+      "nearest_real_label": {
+        "CTE_gt": -9.767160415649414,
+        "HE_gt": -29.11273765563965
+      },
+      "nearest_real_output": {
+        "CTE_pred": -4.12151867101368,
+        "HE_pred": 6.971700845123441
+      },
+      "subset_sample_output_stats": {
+        "n_sampled": 20,
+        "CTE_pred_min": -9.60316000529778,
+        "CTE_pred_max": -3.5130344438959997,
+        "CTE_pred_mean": -6.649108096513238,
+        "fraction_wrong_sign": null
+      }
+    },
+    {
+      "name": "P4_C_right_threshold_3.0_mean=0.5",
+      "subset": "right",
+      "decoded_pixel_mean": 0.49999998985979965,
+      "decoded_pixel_range": [
+        0.24338771580393287,
+        0.7610011776247314
+      ],
+      "witness_output_expected": {
+        "CTE": 3.0,
+        "HE": 3.251029
+      },
+      "witness_output_from_decode": {
+        "CTE": 2.999993917804743,
+        "HE": 3.2510275967360975
+      },
+      "nearest_real_l2_dist": 0.8601452760098949,
+      "nearest_real_linf_dist": 0.2210615706569436,
+      "nearest_real_label": {
+        "CTE_gt": -9.274039268493652,
+        "HE_gt": -27.956241607666016
+      },
+      "nearest_real_output": {
+        "CTE_pred": -5.791586428493091,
+        "HE_pred": 13.477263771840958
+      },
+      "subset_sample_output_stats": {
+        "n_sampled": 20,
+        "CTE_pred_min": -9.60316000529778,
+        "CTE_pred_max": -3.5130344438959997,
+        "CTE_pred_mean": -6.649108096513238,
+        "fraction_wrong_sign": null
+      }
+    },
+    {
+      "name": "P4_C_left_threshold_3.0_mean=0.5",
+      "subset": "left",
+      "decoded_pixel_mean": 0.5000000123059767,
+      "decoded_pixel_range": [
+        0.23583495677539057,
+        0.8422484322968372
+      ],
+      "witness_output_expected": {
+        "CTE": -3.422289,
+        "HE": 40.924269
+      },
+      "witness_output_from_decode": {
+        "CTE": -3.422281485953635,
+        "HE": 40.924246203579436
+      },
+      "nearest_real_l2_dist": 1.0774804170104941,
+      "nearest_real_linf_dist": 0.24232654390784203,
+      "nearest_real_label": {
+        "CTE_gt": 3.4261739253997803,
+        "HE_gt": 20.560962677001953
+      },
+      "nearest_real_output": {
+        "CTE_pred": 3.122832342091512,
+        "HE_pred": 23.418325360026017
+      },
+      "subset_sample_output_stats": {
+        "n_sampled": 20,
+        "CTE_pred_min": 0.7584683213475628,
+        "CTE_pred_max": 8.08629145422241,
+        "CTE_pred_mean": 4.615484883822662,
+        "fraction_wrong_sign": null
+      }
+    }
+  ]
+}

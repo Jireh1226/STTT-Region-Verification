@@ -1,0 +1,1675 @@
+{
+  "provenance": {
+    "script": "audit_math_witnesses.py",
+    "timestamp_utc": "2026-05-29T21:19:09.568803+00:00",
+    "classifier_weights": "plausibility_classifier.npz"
+  },
+  "real_image_baseline": {
+    "n_sampled": 45,
+    "prob_median": 0.9913,
+    "prob_mean": 0.9345
+  },
+  "per_file": {
+    "verification_tv_bound.json": {
+      "n_witnesses": 25,
+      "classifier_prob": {
+        "median": 0.0,
+        "mean": 0.0046,
+        "min": 0.0,
+        "max": 0.0569
+      },
+      "l2_to_nearest_centered": {
+        "median": 1.3233,
+        "mean": 1.3609
+      },
+      "witnesses": [
+        {
+          "label": "results.tau_inf.P1a",
+          "classifier_prob": 0.0,
+          "classifier_logit": -16.4881,
+          "l2_to_nearest_centered": 1.6268,
+          "witness_tv": 31.5123,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_inf.P1b",
+          "classifier_prob": 0.0,
+          "classifier_logit": -17.1661,
+          "l2_to_nearest_centered": 1.641,
+          "witness_tv": 30.8144,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_inf.P4_left",
+          "classifier_prob": 0.0,
+          "classifier_logit": -16.6377,
+          "l2_to_nearest_centered": 1.722,
+          "witness_tv": 33.2323,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_inf.P4_right",
+          "classifier_prob": 0.0,
+          "classifier_logit": -32.0822,
+          "l2_to_nearest_centered": 1.5165,
+          "witness_tv": 28.1276,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_inf.P5",
+          "classifier_prob": 0.0,
+          "classifier_logit": -27.2304,
+          "l2_to_nearest_centered": 1.8709,
+          "witness_tv": 30.2368,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_50.P1a",
+          "classifier_prob": 0.0,
+          "classifier_logit": -34.4983,
+          "l2_to_nearest_centered": 1.5933,
+          "witness_tv": 27.1193,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_50.P1b",
+          "classifier_prob": 0.0,
+          "classifier_logit": -22.0273,
+          "l2_to_nearest_centered": 1.3155,
+          "witness_tv": 12.9709,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_50.P4_left",
+          "classifier_prob": 0.0,
+          "classifier_logit": -15.701,
+          "l2_to_nearest_centered": 1.749,
+          "witness_tv": 25.6057,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_50.P4_right",
+          "classifier_prob": 0.0165,
+          "classifier_logit": -4.0861,
+          "l2_to_nearest_centered": 1.027,
+          "witness_tv": 10.1931,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_50.P5",
+          "classifier_prob": 0.0,
+          "classifier_logit": -25.846,
+          "l2_to_nearest_centered": 1.8434,
+          "witness_tv": 31.1857,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_15.P1a",
+          "classifier_prob": 0.0002,
+          "classifier_logit": -8.3794,
+          "l2_to_nearest_centered": 1.446,
+          "witness_tv": 15.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_15.P1b",
+          "classifier_prob": 0.0,
+          "classifier_logit": -22.0273,
+          "l2_to_nearest_centered": 1.3155,
+          "witness_tv": 12.9709,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_15.P4_left",
+          "classifier_prob": 0.0,
+          "classifier_logit": -19.4634,
+          "l2_to_nearest_centered": 1.385,
+          "witness_tv": 15.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_15.P4_right",
+          "classifier_prob": 0.0165,
+          "classifier_logit": -4.0861,
+          "l2_to_nearest_centered": 1.027,
+          "witness_tv": 10.1931,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_15.P5",
+          "classifier_prob": 0.0002,
+          "classifier_logit": -8.4459,
+          "l2_to_nearest_centered": 1.3967,
+          "witness_tv": 15.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_13.P1a",
+          "classifier_prob": 0.0,
+          "classifier_logit": -13.6752,
+          "l2_to_nearest_centered": 1.3233,
+          "witness_tv": 13.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_13.P1b",
+          "classifier_prob": 0.0,
+          "classifier_logit": -13.9459,
+          "l2_to_nearest_centered": 1.3292,
+          "witness_tv": 13.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_13.P4_left",
+          "classifier_prob": 0.0055,
+          "classifier_logit": -5.2021,
+          "l2_to_nearest_centered": 0.9354,
+          "witness_tv": 13.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_13.P4_right",
+          "classifier_prob": 0.0165,
+          "classifier_logit": -4.0861,
+          "l2_to_nearest_centered": 1.027,
+          "witness_tv": 10.1931,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_13.P5",
+          "classifier_prob": 0.0,
+          "classifier_logit": -22.7723,
+          "l2_to_nearest_centered": 1.2875,
+          "witness_tv": 13.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_10.P1a",
+          "classifier_prob": 0.0569,
+          "classifier_logit": -2.8074,
+          "l2_to_nearest_centered": 1.2699,
+          "witness_tv": 10.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_10.P1b",
+          "classifier_prob": 0.0,
+          "classifier_logit": -13.4384,
+          "l2_to_nearest_centered": 1.1324,
+          "witness_tv": 10.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_10.P4_left",
+          "classifier_prob": 0.0017,
+          "classifier_logit": -6.3508,
+          "l2_to_nearest_centered": 0.946,
+          "witness_tv": 10.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_10.P4_right",
+          "classifier_prob": 0.0011,
+          "classifier_logit": -6.7908,
+          "l2_to_nearest_centered": 1.1361,
+          "witness_tv": 9.9571,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_10.P5",
+          "classifier_prob": 0.0008,
+          "classifier_logit": -7.192,
+          "l2_to_nearest_centered": 1.1602,
+          "witness_tv": 10.0,
+          "witness_mean": 0.5
+        }
+      ]
+    },
+    "verification_fourier_bound.json": {
+      "n_witnesses": 20,
+      "classifier_prob": {
+        "median": 0.0,
+        "mean": 0.0509,
+        "min": 0.0,
+        "max": 0.9924
+      },
+      "l2_to_nearest_centered": {
+        "median": 1.3629,
+        "mean": 1.3567
+      },
+      "witnesses": [
+        {
+          "label": "results.tau_inf.queries.P1a",
+          "classifier_prob": 0.0,
+          "classifier_logit": -16.4881,
+          "l2_to_nearest_centered": 1.6268,
+          "witness_tv": 31.5123,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_inf.queries.P1b",
+          "classifier_prob": 0.0,
+          "classifier_logit": -17.1661,
+          "l2_to_nearest_centered": 1.641,
+          "witness_tv": 30.8144,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_inf.queries.P4_left",
+          "classifier_prob": 0.0,
+          "classifier_logit": -16.6377,
+          "l2_to_nearest_centered": 1.722,
+          "witness_tv": 33.2323,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_inf.queries.P4_right",
+          "classifier_prob": 0.0,
+          "classifier_logit": -32.0822,
+          "l2_to_nearest_centered": 1.5165,
+          "witness_tv": 28.1276,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_inf.queries.P5",
+          "classifier_prob": 0.0,
+          "classifier_logit": -27.2304,
+          "l2_to_nearest_centered": 1.8709,
+          "witness_tv": 30.2368,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_99p.queries.P1a",
+          "classifier_prob": 0.0,
+          "classifier_logit": -19.7346,
+          "l2_to_nearest_centered": 1.3773,
+          "witness_tv": 21.9533,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_99p.queries.P1b",
+          "classifier_prob": 0.0,
+          "classifier_logit": -12.5905,
+          "l2_to_nearest_centered": 1.3527,
+          "witness_tv": 24.2915,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_99p.queries.P4_left",
+          "classifier_prob": 0.0,
+          "classifier_logit": -21.7897,
+          "l2_to_nearest_centered": 1.3731,
+          "witness_tv": 29.1317,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_99p.queries.P4_right",
+          "classifier_prob": 0.0,
+          "classifier_logit": -26.297,
+          "l2_to_nearest_centered": 1.0858,
+          "witness_tv": 23.1396,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_99p.queries.P5",
+          "classifier_prob": 0.0,
+          "classifier_logit": -22.9853,
+          "l2_to_nearest_centered": 1.4134,
+          "witness_tv": 23.6074,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_max.queries.P1a",
+          "classifier_prob": 0.0258,
+          "classifier_logit": -3.6293,
+          "l2_to_nearest_centered": 1.2798,
+          "witness_tv": 15.5865,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_max.queries.P1b",
+          "classifier_prob": 0.0,
+          "classifier_logit": -14.9392,
+          "l2_to_nearest_centered": 1.2738,
+          "witness_tv": 24.4369,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_max.queries.P4_left",
+          "classifier_prob": 0.0,
+          "classifier_logit": -28.1933,
+          "l2_to_nearest_centered": 1.411,
+          "witness_tv": 28.5019,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_max.queries.P4_right",
+          "classifier_prob": 0.0,
+          "classifier_logit": -18.5412,
+          "l2_to_nearest_centered": 1.1737,
+          "witness_tv": 24.8347,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_max.queries.P5",
+          "classifier_prob": 0.0,
+          "classifier_logit": -17.3555,
+          "l2_to_nearest_centered": 1.4518,
+          "witness_tv": 28.7091,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_tight.queries.P1a",
+          "classifier_prob": 0.0002,
+          "classifier_logit": -8.7388,
+          "l2_to_nearest_centered": 1.0648,
+          "witness_tv": 15.6309,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_tight.queries.P1b",
+          "classifier_prob": 0.0001,
+          "classifier_logit": -9.8092,
+          "l2_to_nearest_centered": 1.0789,
+          "witness_tv": 18.8195,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_tight.queries.P4_left",
+          "classifier_prob": 0.0,
+          "classifier_logit": -15.7633,
+          "l2_to_nearest_centered": 1.1079,
+          "witness_tv": 16.8369,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_tight.queries.P4_right",
+          "classifier_prob": 0.9924,
+          "classifier_logit": 4.8729,
+          "l2_to_nearest_centered": 1.0066,
+          "witness_tv": 8.3041,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tau_tight.queries.P5",
+          "classifier_prob": 0.0,
+          "classifier_logit": -18.2431,
+          "l2_to_nearest_centered": 1.3064,
+          "witness_tv": 23.0558,
+          "witness_mean": 0.5
+        }
+      ]
+    },
+    "verification_photometric_bound.json": {
+      "n_witnesses": 25,
+      "classifier_prob": {
+        "median": 0.0,
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0002
+      },
+      "l2_to_nearest_centered": {
+        "median": 1.6349,
+        "mean": 1.6345
+      },
+      "witnesses": [
+        {
+          "label": "results.eps_inf.P1a",
+          "classifier_prob": 0.0,
+          "classifier_logit": -16.4881,
+          "l2_to_nearest_centered": 1.6268,
+          "witness_tv": 31.5123,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_inf.P1b",
+          "classifier_prob": 0.0,
+          "classifier_logit": -17.1661,
+          "l2_to_nearest_centered": 1.641,
+          "witness_tv": 30.8144,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_inf.P4_left",
+          "classifier_prob": 0.0,
+          "classifier_logit": -16.6377,
+          "l2_to_nearest_centered": 1.722,
+          "witness_tv": 33.2323,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_inf.P4_right",
+          "classifier_prob": 0.0,
+          "classifier_logit": -32.0822,
+          "l2_to_nearest_centered": 1.5165,
+          "witness_tv": 28.1276,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_inf.P5",
+          "classifier_prob": 0.0,
+          "classifier_logit": -27.2304,
+          "l2_to_nearest_centered": 1.8709,
+          "witness_tv": 30.2368,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_loose.P1a",
+          "classifier_prob": 0.0,
+          "classifier_logit": -19.7588,
+          "l2_to_nearest_centered": 1.57,
+          "witness_tv": 31.1114,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_loose.P1b",
+          "classifier_prob": 0.0,
+          "classifier_logit": -21.5254,
+          "l2_to_nearest_centered": 1.5656,
+          "witness_tv": 19.6998,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_loose.P4_left",
+          "classifier_prob": 0.0,
+          "classifier_logit": -11.0485,
+          "l2_to_nearest_centered": 1.5587,
+          "witness_tv": 15.1618,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_loose.P4_right",
+          "classifier_prob": 0.0,
+          "classifier_logit": -23.2726,
+          "l2_to_nearest_centered": 1.4901,
+          "witness_tv": 20.1154,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_loose.P5",
+          "classifier_prob": 0.0,
+          "classifier_logit": -27.2304,
+          "l2_to_nearest_centered": 1.8709,
+          "witness_tv": 30.2368,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_99p.P1a",
+          "classifier_prob": 0.0,
+          "classifier_logit": -30.1985,
+          "l2_to_nearest_centered": 1.6349,
+          "witness_tv": 25.9719,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_99p.P1b",
+          "classifier_prob": 0.0,
+          "classifier_logit": -13.188,
+          "l2_to_nearest_centered": 1.5837,
+          "witness_tv": 18.0675,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_99p.P4_left",
+          "classifier_prob": 0.0,
+          "classifier_logit": -14.7762,
+          "l2_to_nearest_centered": 1.6857,
+          "witness_tv": 17.973,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_99p.P4_right",
+          "classifier_prob": 0.0,
+          "classifier_logit": -16.5854,
+          "l2_to_nearest_centered": 1.331,
+          "witness_tv": 15.3385,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_99p.P5",
+          "classifier_prob": 0.0,
+          "classifier_logit": -29.0872,
+          "l2_to_nearest_centered": 1.9342,
+          "witness_tv": 37.5248,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_max.P1a",
+          "classifier_prob": 0.0,
+          "classifier_logit": -30.1797,
+          "l2_to_nearest_centered": 1.6347,
+          "witness_tv": 25.9819,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_max.P1b",
+          "classifier_prob": 0.0,
+          "classifier_logit": -27.9627,
+          "l2_to_nearest_centered": 1.6778,
+          "witness_tv": 29.1811,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_max.P4_left",
+          "classifier_prob": 0.0001,
+          "classifier_logit": -9.8742,
+          "l2_to_nearest_centered": 1.5497,
+          "witness_tv": 15.7506,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_max.P4_right",
+          "classifier_prob": 0.0,
+          "classifier_logit": -18.5476,
+          "l2_to_nearest_centered": 1.3543,
+          "witness_tv": 16.7306,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_max.P5",
+          "classifier_prob": 0.0,
+          "classifier_logit": -27.2304,
+          "l2_to_nearest_centered": 1.8709,
+          "witness_tv": 30.2368,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_tight.P1a",
+          "classifier_prob": 0.0,
+          "classifier_logit": -30.7762,
+          "l2_to_nearest_centered": 1.708,
+          "witness_tv": 26.4656,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_tight.P1b",
+          "classifier_prob": 0.0,
+          "classifier_logit": -29.0722,
+          "l2_to_nearest_centered": 1.687,
+          "witness_tv": 30.617,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_tight.P4_left",
+          "classifier_prob": 0.0,
+          "classifier_logit": -15.3441,
+          "l2_to_nearest_centered": 1.6583,
+          "witness_tv": 26.0128,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_tight.P4_right",
+          "classifier_prob": 0.0002,
+          "classifier_logit": -8.5084,
+          "l2_to_nearest_centered": 1.247,
+          "witness_tv": 16.5463,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.eps_tight.P5",
+          "classifier_prob": 0.0,
+          "classifier_logit": -44.7911,
+          "l2_to_nearest_centered": 1.8717,
+          "witness_tv": 40.7014,
+          "witness_mean": 0.5
+        }
+      ]
+    },
+    "verification_per_row_mean.json": {
+      "n_witnesses": 5,
+      "classifier_prob": {
+        "median": 0.0,
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "l2_to_nearest_centered": {
+        "median": 1.5862,
+        "mean": 1.653
+      },
+      "witnesses": [
+        {
+          "label": "results.P1a",
+          "classifier_prob": 0.0,
+          "classifier_logit": -21.7661,
+          "l2_to_nearest_centered": 1.5862,
+          "witness_tv": 25.1623,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.P1b",
+          "classifier_prob": 0.0,
+          "classifier_logit": -16.0264,
+          "l2_to_nearest_centered": 1.5391,
+          "witness_tv": 29.2523,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.P4_left",
+          "classifier_prob": 0.0,
+          "classifier_logit": -35.1225,
+          "l2_to_nearest_centered": 1.8693,
+          "witness_tv": 34.9828,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.P4_right",
+          "classifier_prob": 0.0,
+          "classifier_logit": -23.4953,
+          "l2_to_nearest_centered": 1.4497,
+          "witness_tv": 25.7015,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.P5",
+          "classifier_prob": 0.0,
+          "classifier_logit": -36.821,
+          "l2_to_nearest_centered": 1.8205,
+          "witness_tv": 29.0359,
+          "witness_mean": 0.5
+        }
+      ]
+    },
+    "verification_math_combined.json": {
+      "n_witnesses": 10,
+      "classifier_prob": {
+        "median": 0.0391,
+        "mean": 0.2048,
+        "min": 0.0,
+        "max": 0.8509
+      },
+      "l2_to_nearest_centered": {
+        "median": 1.1518,
+        "mean": 1.131
+      },
+      "witnesses": [
+        {
+          "label": "results.loose.P1a",
+          "classifier_prob": 0.0758,
+          "classifier_logit": -2.5005,
+          "l2_to_nearest_centered": 1.1826,
+          "witness_tv": 15.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.loose.P1b",
+          "classifier_prob": 0.1761,
+          "classifier_logit": -1.5432,
+          "l2_to_nearest_centered": 1.0745,
+          "witness_tv": 11.344,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.loose.P4_left",
+          "classifier_prob": 0.0,
+          "classifier_logit": -13.6676,
+          "l2_to_nearest_centered": 1.2635,
+          "witness_tv": 15.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.loose.P4_right",
+          "classifier_prob": 0.8509,
+          "classifier_logit": 1.7418,
+          "l2_to_nearest_centered": 0.9867,
+          "witness_tv": 15.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.loose.P5",
+          "classifier_prob": 0.0,
+          "classifier_logit": -16.9138,
+          "l2_to_nearest_centered": 1.2582,
+          "witness_tv": 15.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tight.P1a",
+          "classifier_prob": 0.8316,
+          "classifier_logit": 1.5969,
+          "l2_to_nearest_centered": 0.9764,
+          "witness_tv": 12.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tight.P1b",
+          "classifier_prob": 0.0,
+          "classifier_logit": -14.0324,
+          "l2_to_nearest_centered": 1.2574,
+          "witness_tv": 12.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tight.P4_left",
+          "classifier_prob": 0.0001,
+          "classifier_logit": -9.7027,
+          "l2_to_nearest_centered": 1.2717,
+          "witness_tv": 12.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tight.P4_right",
+          "classifier_prob": 0.0024,
+          "classifier_logit": -6.0476,
+          "l2_to_nearest_centered": 0.9183,
+          "witness_tv": 12.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tight.P5",
+          "classifier_prob": 0.111,
+          "classifier_logit": -2.0806,
+          "l2_to_nearest_centered": 1.121,
+          "witness_tv": 12.0,
+          "witness_mean": 0.5
+        }
+      ]
+    },
+    "verification_p4_right_strong_math.json": {
+      "n_witnesses": 6,
+      "classifier_prob": {
+        "median": 0.0,
+        "mean": 0.0029,
+        "min": 0.0,
+        "max": 0.0159
+      },
+      "l2_to_nearest_centered": {
+        "median": 1.3784,
+        "mean": 1.3972
+      },
+      "witnesses": [
+        {
+          "label": "results.tv_loose.P4_right_strong",
+          "classifier_prob": 0.0,
+          "classifier_logit": -24.6891,
+          "l2_to_nearest_centered": 1.3865,
+          "witness_tv": 15.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.tv_tight.P4_right_strong",
+          "classifier_prob": 0.0159,
+          "classifier_logit": -4.1268,
+          "l2_to_nearest_centered": 1.3459,
+          "witness_tv": 12.0,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.fourier_loose.P4_right_strong",
+          "classifier_prob": 0.0,
+          "classifier_logit": -16.9983,
+          "l2_to_nearest_centered": 1.3704,
+          "witness_tv": 22.8208,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.fourier_tight.P4_right_strong",
+          "classifier_prob": 0.0015,
+          "classifier_logit": -6.5109,
+          "l2_to_nearest_centered": 1.357,
+          "witness_tv": 20.3712,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.photometric_loose.P4_right_strong",
+          "classifier_prob": 0.0,
+          "classifier_logit": -33.6884,
+          "l2_to_nearest_centered": 1.4601,
+          "witness_tv": 21.9473,
+          "witness_mean": 0.5
+        },
+        {
+          "label": "results.photometric_tight.P4_right_strong",
+          "classifier_prob": 0.0,
+          "classifier_logit": -33.8978,
+          "l2_to_nearest_centered": 1.4632,
+          "witness_tv": 21.7753,
+          "witness_mean": 0.5
+        }
+      ]
+    },
+    "verification_ae_plus_math.json": {
+      "n_witnesses": 0
+    },
+    "verification_object_specific_math.json": {
+      "n_witnesses": 0
+    }
+  },
+  "all_witnesses": [
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_inf.P1a",
+      "classifier_prob": 0.0,
+      "classifier_logit": -16.4881,
+      "l2_to_nearest_centered": 1.6268,
+      "witness_tv": 31.5123,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_inf.P1b",
+      "classifier_prob": 0.0,
+      "classifier_logit": -17.1661,
+      "l2_to_nearest_centered": 1.641,
+      "witness_tv": 30.8144,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_inf.P4_left",
+      "classifier_prob": 0.0,
+      "classifier_logit": -16.6377,
+      "l2_to_nearest_centered": 1.722,
+      "witness_tv": 33.2323,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_inf.P4_right",
+      "classifier_prob": 0.0,
+      "classifier_logit": -32.0822,
+      "l2_to_nearest_centered": 1.5165,
+      "witness_tv": 28.1276,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_inf.P5",
+      "classifier_prob": 0.0,
+      "classifier_logit": -27.2304,
+      "l2_to_nearest_centered": 1.8709,
+      "witness_tv": 30.2368,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_50.P1a",
+      "classifier_prob": 0.0,
+      "classifier_logit": -34.4983,
+      "l2_to_nearest_centered": 1.5933,
+      "witness_tv": 27.1193,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_50.P1b",
+      "classifier_prob": 0.0,
+      "classifier_logit": -22.0273,
+      "l2_to_nearest_centered": 1.3155,
+      "witness_tv": 12.9709,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_50.P4_left",
+      "classifier_prob": 0.0,
+      "classifier_logit": -15.701,
+      "l2_to_nearest_centered": 1.749,
+      "witness_tv": 25.6057,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_50.P4_right",
+      "classifier_prob": 0.0165,
+      "classifier_logit": -4.0861,
+      "l2_to_nearest_centered": 1.027,
+      "witness_tv": 10.1931,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_50.P5",
+      "classifier_prob": 0.0,
+      "classifier_logit": -25.846,
+      "l2_to_nearest_centered": 1.8434,
+      "witness_tv": 31.1857,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_15.P1a",
+      "classifier_prob": 0.0002,
+      "classifier_logit": -8.3794,
+      "l2_to_nearest_centered": 1.446,
+      "witness_tv": 15.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_15.P1b",
+      "classifier_prob": 0.0,
+      "classifier_logit": -22.0273,
+      "l2_to_nearest_centered": 1.3155,
+      "witness_tv": 12.9709,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_15.P4_left",
+      "classifier_prob": 0.0,
+      "classifier_logit": -19.4634,
+      "l2_to_nearest_centered": 1.385,
+      "witness_tv": 15.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_15.P4_right",
+      "classifier_prob": 0.0165,
+      "classifier_logit": -4.0861,
+      "l2_to_nearest_centered": 1.027,
+      "witness_tv": 10.1931,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_15.P5",
+      "classifier_prob": 0.0002,
+      "classifier_logit": -8.4459,
+      "l2_to_nearest_centered": 1.3967,
+      "witness_tv": 15.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_13.P1a",
+      "classifier_prob": 0.0,
+      "classifier_logit": -13.6752,
+      "l2_to_nearest_centered": 1.3233,
+      "witness_tv": 13.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_13.P1b",
+      "classifier_prob": 0.0,
+      "classifier_logit": -13.9459,
+      "l2_to_nearest_centered": 1.3292,
+      "witness_tv": 13.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_13.P4_left",
+      "classifier_prob": 0.0055,
+      "classifier_logit": -5.2021,
+      "l2_to_nearest_centered": 0.9354,
+      "witness_tv": 13.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_13.P4_right",
+      "classifier_prob": 0.0165,
+      "classifier_logit": -4.0861,
+      "l2_to_nearest_centered": 1.027,
+      "witness_tv": 10.1931,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_13.P5",
+      "classifier_prob": 0.0,
+      "classifier_logit": -22.7723,
+      "l2_to_nearest_centered": 1.2875,
+      "witness_tv": 13.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_10.P1a",
+      "classifier_prob": 0.0569,
+      "classifier_logit": -2.8074,
+      "l2_to_nearest_centered": 1.2699,
+      "witness_tv": 10.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_10.P1b",
+      "classifier_prob": 0.0,
+      "classifier_logit": -13.4384,
+      "l2_to_nearest_centered": 1.1324,
+      "witness_tv": 10.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_10.P4_left",
+      "classifier_prob": 0.0017,
+      "classifier_logit": -6.3508,
+      "l2_to_nearest_centered": 0.946,
+      "witness_tv": 10.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_10.P4_right",
+      "classifier_prob": 0.0011,
+      "classifier_logit": -6.7908,
+      "l2_to_nearest_centered": 1.1361,
+      "witness_tv": 9.9571,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_tv_bound.json",
+      "label": "results.tau_10.P5",
+      "classifier_prob": 0.0008,
+      "classifier_logit": -7.192,
+      "l2_to_nearest_centered": 1.1602,
+      "witness_tv": 10.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_inf.queries.P1a",
+      "classifier_prob": 0.0,
+      "classifier_logit": -16.4881,
+      "l2_to_nearest_centered": 1.6268,
+      "witness_tv": 31.5123,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_inf.queries.P1b",
+      "classifier_prob": 0.0,
+      "classifier_logit": -17.1661,
+      "l2_to_nearest_centered": 1.641,
+      "witness_tv": 30.8144,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_inf.queries.P4_left",
+      "classifier_prob": 0.0,
+      "classifier_logit": -16.6377,
+      "l2_to_nearest_centered": 1.722,
+      "witness_tv": 33.2323,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_inf.queries.P4_right",
+      "classifier_prob": 0.0,
+      "classifier_logit": -32.0822,
+      "l2_to_nearest_centered": 1.5165,
+      "witness_tv": 28.1276,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_inf.queries.P5",
+      "classifier_prob": 0.0,
+      "classifier_logit": -27.2304,
+      "l2_to_nearest_centered": 1.8709,
+      "witness_tv": 30.2368,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_99p.queries.P1a",
+      "classifier_prob": 0.0,
+      "classifier_logit": -19.7346,
+      "l2_to_nearest_centered": 1.3773,
+      "witness_tv": 21.9533,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_99p.queries.P1b",
+      "classifier_prob": 0.0,
+      "classifier_logit": -12.5905,
+      "l2_to_nearest_centered": 1.3527,
+      "witness_tv": 24.2915,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_99p.queries.P4_left",
+      "classifier_prob": 0.0,
+      "classifier_logit": -21.7897,
+      "l2_to_nearest_centered": 1.3731,
+      "witness_tv": 29.1317,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_99p.queries.P4_right",
+      "classifier_prob": 0.0,
+      "classifier_logit": -26.297,
+      "l2_to_nearest_centered": 1.0858,
+      "witness_tv": 23.1396,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_99p.queries.P5",
+      "classifier_prob": 0.0,
+      "classifier_logit": -22.9853,
+      "l2_to_nearest_centered": 1.4134,
+      "witness_tv": 23.6074,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_max.queries.P1a",
+      "classifier_prob": 0.0258,
+      "classifier_logit": -3.6293,
+      "l2_to_nearest_centered": 1.2798,
+      "witness_tv": 15.5865,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_max.queries.P1b",
+      "classifier_prob": 0.0,
+      "classifier_logit": -14.9392,
+      "l2_to_nearest_centered": 1.2738,
+      "witness_tv": 24.4369,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_max.queries.P4_left",
+      "classifier_prob": 0.0,
+      "classifier_logit": -28.1933,
+      "l2_to_nearest_centered": 1.411,
+      "witness_tv": 28.5019,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_max.queries.P4_right",
+      "classifier_prob": 0.0,
+      "classifier_logit": -18.5412,
+      "l2_to_nearest_centered": 1.1737,
+      "witness_tv": 24.8347,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_max.queries.P5",
+      "classifier_prob": 0.0,
+      "classifier_logit": -17.3555,
+      "l2_to_nearest_centered": 1.4518,
+      "witness_tv": 28.7091,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_tight.queries.P1a",
+      "classifier_prob": 0.0002,
+      "classifier_logit": -8.7388,
+      "l2_to_nearest_centered": 1.0648,
+      "witness_tv": 15.6309,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_tight.queries.P1b",
+      "classifier_prob": 0.0001,
+      "classifier_logit": -9.8092,
+      "l2_to_nearest_centered": 1.0789,
+      "witness_tv": 18.8195,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_tight.queries.P4_left",
+      "classifier_prob": 0.0,
+      "classifier_logit": -15.7633,
+      "l2_to_nearest_centered": 1.1079,
+      "witness_tv": 16.8369,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_tight.queries.P4_right",
+      "classifier_prob": 0.9924,
+      "classifier_logit": 4.8729,
+      "l2_to_nearest_centered": 1.0066,
+      "witness_tv": 8.3041,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_fourier_bound.json",
+      "label": "results.tau_tight.queries.P5",
+      "classifier_prob": 0.0,
+      "classifier_logit": -18.2431,
+      "l2_to_nearest_centered": 1.3064,
+      "witness_tv": 23.0558,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_inf.P1a",
+      "classifier_prob": 0.0,
+      "classifier_logit": -16.4881,
+      "l2_to_nearest_centered": 1.6268,
+      "witness_tv": 31.5123,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_inf.P1b",
+      "classifier_prob": 0.0,
+      "classifier_logit": -17.1661,
+      "l2_to_nearest_centered": 1.641,
+      "witness_tv": 30.8144,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_inf.P4_left",
+      "classifier_prob": 0.0,
+      "classifier_logit": -16.6377,
+      "l2_to_nearest_centered": 1.722,
+      "witness_tv": 33.2323,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_inf.P4_right",
+      "classifier_prob": 0.0,
+      "classifier_logit": -32.0822,
+      "l2_to_nearest_centered": 1.5165,
+      "witness_tv": 28.1276,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_inf.P5",
+      "classifier_prob": 0.0,
+      "classifier_logit": -27.2304,
+      "l2_to_nearest_centered": 1.8709,
+      "witness_tv": 30.2368,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_loose.P1a",
+      "classifier_prob": 0.0,
+      "classifier_logit": -19.7588,
+      "l2_to_nearest_centered": 1.57,
+      "witness_tv": 31.1114,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_loose.P1b",
+      "classifier_prob": 0.0,
+      "classifier_logit": -21.5254,
+      "l2_to_nearest_centered": 1.5656,
+      "witness_tv": 19.6998,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_loose.P4_left",
+      "classifier_prob": 0.0,
+      "classifier_logit": -11.0485,
+      "l2_to_nearest_centered": 1.5587,
+      "witness_tv": 15.1618,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_loose.P4_right",
+      "classifier_prob": 0.0,
+      "classifier_logit": -23.2726,
+      "l2_to_nearest_centered": 1.4901,
+      "witness_tv": 20.1154,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_loose.P5",
+      "classifier_prob": 0.0,
+      "classifier_logit": -27.2304,
+      "l2_to_nearest_centered": 1.8709,
+      "witness_tv": 30.2368,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_99p.P1a",
+      "classifier_prob": 0.0,
+      "classifier_logit": -30.1985,
+      "l2_to_nearest_centered": 1.6349,
+      "witness_tv": 25.9719,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_99p.P1b",
+      "classifier_prob": 0.0,
+      "classifier_logit": -13.188,
+      "l2_to_nearest_centered": 1.5837,
+      "witness_tv": 18.0675,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_99p.P4_left",
+      "classifier_prob": 0.0,
+      "classifier_logit": -14.7762,
+      "l2_to_nearest_centered": 1.6857,
+      "witness_tv": 17.973,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_99p.P4_right",
+      "classifier_prob": 0.0,
+      "classifier_logit": -16.5854,
+      "l2_to_nearest_centered": 1.331,
+      "witness_tv": 15.3385,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_99p.P5",
+      "classifier_prob": 0.0,
+      "classifier_logit": -29.0872,
+      "l2_to_nearest_centered": 1.9342,
+      "witness_tv": 37.5248,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_max.P1a",
+      "classifier_prob": 0.0,
+      "classifier_logit": -30.1797,
+      "l2_to_nearest_centered": 1.6347,
+      "witness_tv": 25.9819,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_max.P1b",
+      "classifier_prob": 0.0,
+      "classifier_logit": -27.9627,
+      "l2_to_nearest_centered": 1.6778,
+      "witness_tv": 29.1811,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_max.P4_left",
+      "classifier_prob": 0.0001,
+      "classifier_logit": -9.8742,
+      "l2_to_nearest_centered": 1.5497,
+      "witness_tv": 15.7506,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_max.P4_right",
+      "classifier_prob": 0.0,
+      "classifier_logit": -18.5476,
+      "l2_to_nearest_centered": 1.3543,
+      "witness_tv": 16.7306,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_max.P5",
+      "classifier_prob": 0.0,
+      "classifier_logit": -27.2304,
+      "l2_to_nearest_centered": 1.8709,
+      "witness_tv": 30.2368,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_tight.P1a",
+      "classifier_prob": 0.0,
+      "classifier_logit": -30.7762,
+      "l2_to_nearest_centered": 1.708,
+      "witness_tv": 26.4656,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_tight.P1b",
+      "classifier_prob": 0.0,
+      "classifier_logit": -29.0722,
+      "l2_to_nearest_centered": 1.687,
+      "witness_tv": 30.617,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_tight.P4_left",
+      "classifier_prob": 0.0,
+      "classifier_logit": -15.3441,
+      "l2_to_nearest_centered": 1.6583,
+      "witness_tv": 26.0128,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_tight.P4_right",
+      "classifier_prob": 0.0002,
+      "classifier_logit": -8.5084,
+      "l2_to_nearest_centered": 1.247,
+      "witness_tv": 16.5463,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_photometric_bound.json",
+      "label": "results.eps_tight.P5",
+      "classifier_prob": 0.0,
+      "classifier_logit": -44.7911,
+      "l2_to_nearest_centered": 1.8717,
+      "witness_tv": 40.7014,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_per_row_mean.json",
+      "label": "results.P1a",
+      "classifier_prob": 0.0,
+      "classifier_logit": -21.7661,
+      "l2_to_nearest_centered": 1.5862,
+      "witness_tv": 25.1623,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_per_row_mean.json",
+      "label": "results.P1b",
+      "classifier_prob": 0.0,
+      "classifier_logit": -16.0264,
+      "l2_to_nearest_centered": 1.5391,
+      "witness_tv": 29.2523,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_per_row_mean.json",
+      "label": "results.P4_left",
+      "classifier_prob": 0.0,
+      "classifier_logit": -35.1225,
+      "l2_to_nearest_centered": 1.8693,
+      "witness_tv": 34.9828,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_per_row_mean.json",
+      "label": "results.P4_right",
+      "classifier_prob": 0.0,
+      "classifier_logit": -23.4953,
+      "l2_to_nearest_centered": 1.4497,
+      "witness_tv": 25.7015,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_per_row_mean.json",
+      "label": "results.P5",
+      "classifier_prob": 0.0,
+      "classifier_logit": -36.821,
+      "l2_to_nearest_centered": 1.8205,
+      "witness_tv": 29.0359,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_math_combined.json",
+      "label": "results.loose.P1a",
+      "classifier_prob": 0.0758,
+      "classifier_logit": -2.5005,
+      "l2_to_nearest_centered": 1.1826,
+      "witness_tv": 15.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_math_combined.json",
+      "label": "results.loose.P1b",
+      "classifier_prob": 0.1761,
+      "classifier_logit": -1.5432,
+      "l2_to_nearest_centered": 1.0745,
+      "witness_tv": 11.344,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_math_combined.json",
+      "label": "results.loose.P4_left",
+      "classifier_prob": 0.0,
+      "classifier_logit": -13.6676,
+      "l2_to_nearest_centered": 1.2635,
+      "witness_tv": 15.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_math_combined.json",
+      "label": "results.loose.P4_right",
+      "classifier_prob": 0.8509,
+      "classifier_logit": 1.7418,
+      "l2_to_nearest_centered": 0.9867,
+      "witness_tv": 15.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_math_combined.json",
+      "label": "results.loose.P5",
+      "classifier_prob": 0.0,
+      "classifier_logit": -16.9138,
+      "l2_to_nearest_centered": 1.2582,
+      "witness_tv": 15.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_math_combined.json",
+      "label": "results.tight.P1a",
+      "classifier_prob": 0.8316,
+      "classifier_logit": 1.5969,
+      "l2_to_nearest_centered": 0.9764,
+      "witness_tv": 12.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_math_combined.json",
+      "label": "results.tight.P1b",
+      "classifier_prob": 0.0,
+      "classifier_logit": -14.0324,
+      "l2_to_nearest_centered": 1.2574,
+      "witness_tv": 12.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_math_combined.json",
+      "label": "results.tight.P4_left",
+      "classifier_prob": 0.0001,
+      "classifier_logit": -9.7027,
+      "l2_to_nearest_centered": 1.2717,
+      "witness_tv": 12.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_math_combined.json",
+      "label": "results.tight.P4_right",
+      "classifier_prob": 0.0024,
+      "classifier_logit": -6.0476,
+      "l2_to_nearest_centered": 0.9183,
+      "witness_tv": 12.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_math_combined.json",
+      "label": "results.tight.P5",
+      "classifier_prob": 0.111,
+      "classifier_logit": -2.0806,
+      "l2_to_nearest_centered": 1.121,
+      "witness_tv": 12.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_p4_right_strong_math.json",
+      "label": "results.tv_loose.P4_right_strong",
+      "classifier_prob": 0.0,
+      "classifier_logit": -24.6891,
+      "l2_to_nearest_centered": 1.3865,
+      "witness_tv": 15.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_p4_right_strong_math.json",
+      "label": "results.tv_tight.P4_right_strong",
+      "classifier_prob": 0.0159,
+      "classifier_logit": -4.1268,
+      "l2_to_nearest_centered": 1.3459,
+      "witness_tv": 12.0,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_p4_right_strong_math.json",
+      "label": "results.fourier_loose.P4_right_strong",
+      "classifier_prob": 0.0,
+      "classifier_logit": -16.9983,
+      "l2_to_nearest_centered": 1.3704,
+      "witness_tv": 22.8208,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_p4_right_strong_math.json",
+      "label": "results.fourier_tight.P4_right_strong",
+      "classifier_prob": 0.0015,
+      "classifier_logit": -6.5109,
+      "l2_to_nearest_centered": 1.357,
+      "witness_tv": 20.3712,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_p4_right_strong_math.json",
+      "label": "results.photometric_loose.P4_right_strong",
+      "classifier_prob": 0.0,
+      "classifier_logit": -33.6884,
+      "l2_to_nearest_centered": 1.4601,
+      "witness_tv": 21.9473,
+      "witness_mean": 0.5
+    },
+    {
+      "source_file": "verification_p4_right_strong_math.json",
+      "label": "results.photometric_tight.P4_right_strong",
+      "classifier_prob": 0.0,
+      "classifier_logit": -33.8978,
+      "l2_to_nearest_centered": 1.4632,
+      "witness_tv": 21.7753,
+      "witness_mean": 0.5
+    }
+  ],
+  "aggregate": {
+    "n_total_witnesses_audited": 91,
+    "classifier_prob": {
+      "median": 0.0,
+      "mean": 0.0352,
+      "min": 0.0,
+      "max": 0.9924,
+      "n_below_0.5": 88,
+      "n_below_0.1": 86,
+      "n_above_0.9": 1
+    },
+    "l2_to_nearest_centered": {
+      "median": 1.411,
+      "mean": 1.4283
+    }
+  }
+}

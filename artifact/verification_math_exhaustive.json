@@ -1,0 +1,1079 @@
+{
+  "provenance": {
+    "script": "verify_math_exhaustive_batch.py",
+    "timestamp_utc": "2026-05-29T20:26:14.084929+00:00",
+    "timeout_seconds": 120
+  },
+  "exp1_per_image_tv_p3": {
+    "epsilon": 0.05,
+    "deltas": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "per_image": {
+      "image_1": {
+        "dataset_index": 20,
+        "anchor_tv": 6.2402,
+        "deltas": {
+          "delta_0": {
+            "tau": 6.2402,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 7.2402,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 8.2402,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 10.2402,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_2": {
+        "dataset_index": 375,
+        "anchor_tv": 6.7022,
+        "deltas": {
+          "delta_0": {
+            "tau": 6.7022,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 7.7022,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 8.7022,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 10.7022,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_3": {
+        "dataset_index": 921,
+        "anchor_tv": 10.4049,
+        "deltas": {
+          "delta_0": {
+            "tau": 10.4049,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 11.4049,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 12.4049,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 14.4049,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_4": {
+        "dataset_index": 1478,
+        "anchor_tv": 10.8105,
+        "deltas": {
+          "delta_0": {
+            "tau": 10.8105,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 11.8105,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 12.8105,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 14.8105,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_5": {
+        "dataset_index": 1980,
+        "anchor_tv": 9.4583,
+        "deltas": {
+          "delta_0": {
+            "tau": 9.4583,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 10.4583,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 11.4583,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 13.4583,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_6": {
+        "dataset_index": 2616,
+        "anchor_tv": 9.814,
+        "deltas": {
+          "delta_0": {
+            "tau": 9.814,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 10.814,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 11.814,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 13.814,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_7": {
+        "dataset_index": 3132,
+        "anchor_tv": 8.5069,
+        "deltas": {
+          "delta_0": {
+            "tau": 8.5069,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 9.5069,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 10.5069,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 12.5069,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_8": {
+        "dataset_index": 3572,
+        "anchor_tv": 9.9971,
+        "deltas": {
+          "delta_0": {
+            "tau": 9.9971,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 10.9971,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 11.9971,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 13.9971,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_9": {
+        "dataset_index": 4130,
+        "anchor_tv": 7.7145,
+        "deltas": {
+          "delta_0": {
+            "tau": 7.7145,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 8.7145,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 9.7145,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 11.7145,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_10": {
+        "dataset_index": 4772,
+        "anchor_tv": 11.4985,
+        "deltas": {
+          "delta_0": {
+            "tau": 11.4985,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 12.4985,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 13.4985,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 15.4985,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_11": {
+        "dataset_index": 5221,
+        "anchor_tv": 8.1998,
+        "deltas": {
+          "delta_0": {
+            "tau": 8.1998,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 9.1998,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 10.1998,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 12.1998,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_12": {
+        "dataset_index": 5723,
+        "anchor_tv": 9.0603,
+        "deltas": {
+          "delta_0": {
+            "tau": 9.0603,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 10.0603,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 11.0603,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 13.0603,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_13": {
+        "dataset_index": 6276,
+        "anchor_tv": 11.1404,
+        "deltas": {
+          "delta_0": {
+            "tau": 11.1404,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 12.1404,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 13.1404,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 15.1404,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_14": {
+        "dataset_index": 6775,
+        "anchor_tv": 9.7027,
+        "deltas": {
+          "delta_0": {
+            "tau": 9.7027,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 10.7027,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 11.7027,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 13.7027,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_15": {
+        "dataset_index": 7268,
+        "anchor_tv": 10.7436,
+        "deltas": {
+          "delta_0": {
+            "tau": 10.7436,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 11.7436,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 12.7436,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 14.7436,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_16": {
+        "dataset_index": 7724,
+        "anchor_tv": 7.6971,
+        "deltas": {
+          "delta_0": {
+            "tau": 7.6971,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 8.6971,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 9.6971,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 11.6971,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_17": {
+        "dataset_index": 8224,
+        "anchor_tv": 8.0478,
+        "deltas": {
+          "delta_0": {
+            "tau": 8.0478,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 9.0478,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 10.0478,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 12.0478,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_18": {
+        "dataset_index": 8775,
+        "anchor_tv": 9.7544,
+        "deltas": {
+          "delta_0": {
+            "tau": 9.7544,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 10.7544,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 11.7544,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 13.7544,
+            "verified": true,
+            "verdicts": [
+              "unsat",
+              "unsat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_19": {
+        "dataset_index": 9322,
+        "anchor_tv": 11.8012,
+        "deltas": {
+          "delta_0": {
+            "tau": 11.8012,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 12.8012,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 13.8012,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 15.8012,
+            "verified": false,
+            "verdicts": [
+              "sat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      },
+      "image_20": {
+        "dataset_index": 9973,
+        "anchor_tv": 9.738,
+        "deltas": {
+          "delta_0": {
+            "tau": 9.738,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_1": {
+            "tau": 10.738,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_2": {
+            "tau": 11.738,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          },
+          "delta_4": {
+            "tau": 13.738,
+            "verified": false,
+            "verdicts": [
+              "unsat",
+              "sat",
+              "unsat",
+              "unsat"
+            ]
+          }
+        }
+      }
+    },
+    "delta_0": {
+      "n_verified": 7,
+      "n_violated": 13,
+      "n_empty": 0
+    },
+    "delta_1": {
+      "n_verified": 6,
+      "n_violated": 14,
+      "n_empty": 0
+    },
+    "delta_2": {
+      "n_verified": 6,
+      "n_violated": 14,
+      "n_empty": 0
+    },
+    "delta_4": {
+      "n_verified": 4,
+      "n_violated": 16,
+      "n_empty": 0
+    }
+  },
+  "exp2_tv_p3_eps0p10": {
+    "epsilon": 0.1,
+    "results_by_tau": {
+      "tau_15": {
+        "tau": 15,
+        "n_verified": 0,
+        "n_violated": 20,
+        "n_empty": 0
+      },
+      "tau_10": {
+        "tau": 10,
+        "n_verified": 0,
+        "n_violated": 20,
+        "n_empty": 0
+      },
+      "tau_8": {
+        "tau": 8,
+        "n_verified": 0,
+        "n_violated": 20,
+        "n_empty": 0
+      },
+      "tau_6": {
+        "tau": 6,
+        "n_verified": 0,
+        "n_violated": 20,
+        "n_empty": 0
+      },
+      "tau_4": {
+        "tau": 4,
+        "n_verified": 6,
+        "n_violated": 14,
+        "n_empty": 0
+      },
+      "tau_2": {
+        "tau": 2,
+        "n_verified": 20,
+        "n_violated": 0,
+        "n_empty": 0
+      }
+    }
+  },
+  "exp3_math_on_p2": {
+    "epsilon": 0.02,
+    "cte_band": 1.0,
+    "he_band": 5.0,
+    "results_by_tau": {
+      "tau_15": {
+        "tau": 15,
+        "n_verified": 0,
+        "n_violated": 9,
+        "n_empty": 0,
+        "n_nominally_wrong": 11
+      },
+      "tau_10": {
+        "tau": 10,
+        "n_verified": 0,
+        "n_violated": 9,
+        "n_empty": 0,
+        "n_nominally_wrong": 11
+      },
+      "tau_8": {
+        "tau": 8,
+        "n_verified": 2,
+        "n_violated": 7,
+        "n_empty": 0,
+        "n_nominally_wrong": 11
+      },
+      "tau_6": {
+        "tau": 6,
+        "n_verified": 6,
+        "n_violated": 3,
+        "n_empty": 0,
+        "n_nominally_wrong": 11
+      },
+      "tau_4": {
+        "tau": 4,
+        "n_verified": 9,
+        "n_violated": 0,
+        "n_empty": 0,
+        "n_nominally_wrong": 11
+      }
+    }
+  },
+  "exp4_math_on_p6": {
+    "centered_n": 893,
+    "results_by_tau": {
+      "tau_15": {
+        "tau": 15,
+        "cte_bounds_approx": [
+          -21.88,
+          21.88
+        ],
+        "he_bounds_approx": [
+          -81.25,
+          75.0
+        ]
+      },
+      "tau_10": {
+        "tau": 10,
+        "cte_bounds_approx": [
+          -18.75,
+          18.75
+        ],
+        "he_bounds_approx": [
+          -81.25,
+          68.75
+        ]
+      },
+      "tau_8": {
+        "tau": 8,
+        "cte_bounds_approx": [
+          -18.75,
+          18.75
+        ],
+        "he_bounds_approx": [
+          -75.0,
+          62.5
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "provenance": {
+    "script": "rerun_mnistfc_broad_timeouts.py",
+    "timestamp_utc": "2026-07-02T03:29:15.876505+00:00",
+    "timeout_budget_s": 1200,
+    "note": "10x rerun of matrix R1 timeouts; timeout != SAT/UNSAT"
+  },
+  "results": [
+    {
+      "anchor_idx": 25,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "unsat",
+      "runtime_s": 137.5
+    },
+    {
+      "anchor_idx": 9,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "sat",
+      "runtime_s": 545.6
+    },
+    {
+      "anchor_idx": 84,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "unsat",
+      "runtime_s": 564.8
+    },
+    {
+      "anchor_idx": 3,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "sat",
+      "runtime_s": 943.0
+    },
+    {
+      "anchor_idx": 52,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.5
+    },
+    {
+      "anchor_idx": 12,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.5
+    },
+    {
+      "anchor_idx": 10,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 28,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 30,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 110,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 22,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 23,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 13,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 32,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 29,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 14,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 47,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 11,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 16,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 34,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 15,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 21,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 5,
+      "eps": 0.05,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 2,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.6
+    },
+    {
+      "anchor_idx": 5,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.3
+    },
+    {
+      "anchor_idx": 38,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "sat",
+      "runtime_s": 137.4
+    },
+    {
+      "anchor_idx": 47,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "unsat",
+      "runtime_s": 263.9
+    },
+    {
+      "anchor_idx": 29,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.5
+    },
+    {
+      "anchor_idx": 31,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.4
+    },
+    {
+      "anchor_idx": 20,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "unsat",
+      "runtime_s": 582.1
+    },
+    {
+      "anchor_idx": 27,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "unsat",
+      "runtime_s": 792.7
+    },
+    {
+      "anchor_idx": 1,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.3
+    },
+    {
+      "anchor_idx": 43,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "sat",
+      "runtime_s": 976.3
+    },
+    {
+      "anchor_idx": 34,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "unsat",
+      "runtime_s": 1221.3
+    },
+    {
+      "anchor_idx": 45,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "sat",
+      "runtime_s": 1227.7
+    },
+    {
+      "anchor_idx": 44,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.1
+    },
+    {
+      "anchor_idx": 50,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.3
+    },
+    {
+      "anchor_idx": 17,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.3
+    },
+    {
+      "anchor_idx": 21,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.3
+    },
+    {
+      "anchor_idx": 26,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.3
+    },
+    {
+      "anchor_idx": 36,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.3
+    },
+    {
+      "anchor_idx": 7,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.3
+    },
+    {
+      "anchor_idx": 12,
+      "eps": 0.03,
+      "region": "R1_pixel_ball_rerun",
+      "timeout_budget_s": 1200,
+      "status": "timeout",
+      "runtime_s": 1240.3
+    }
+  ]
+}

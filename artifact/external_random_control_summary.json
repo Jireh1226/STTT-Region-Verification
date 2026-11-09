@@ -1,0 +1,101 @@
+{
+  "experiment": "external_matched_random_subspace_controls",
+  "question": "How much of the external local-PCA witness removal is explained by matched random 8D subspaces?",
+  "control": "deterministic zero-mean orthonormal random 8D basis; same anchors, property, per-anchor local-PCA sigma scale, valid-pixel/mean/clip conventions, solver; seeds 0,1,2.",
+  "LARD": {
+    "network": "1152-64-32-3 ReLU MLP (pitch tercile), external LARD V2",
+    "broad_R1@0.4_SAT_baseline": {
+      "sat": 32,
+      "unsat": 18
+    },
+    "local_pca_bounded_removed": {
+      "1.0": 32,
+      "2.0": 32,
+      "3.0": 32
+    },
+    "R2_same_extent_removed": 0,
+    "random_subspace": {
+      "R4_random_bounded@1.0": {
+        "unsat": 150
+      },
+      "R4_random_bounded@2.0": {
+        "unsat": 150
+      },
+      "R4_random_bounded@3.0": {
+        "unsat": 150
+      },
+      "R4_random_unbounded@1.0": {
+        "unsat": 150
+      },
+      "R4_random_unbounded@2.0": {
+        "unsat": 150
+      },
+      "R4_random_unbounded@3.0": {
+        "unsat": 150
+      }
+    },
+    "basis_validation": {
+      "worst_orthonormality_error": 8.881784197001252e-16,
+      "worst_zero_mean_error": 1.4937896598689173e-18,
+      "n_bases": 150,
+      "within_1e-9": true
+    },
+    "reading": "Random 8D subspaces are UNSAT on all 150 queries at every alpha for both bounded and unbounded encodings. They remove every broad-ball witness removed by local PCA. The same-extent brightness band (R2) removes no witnesses, separating the LARD removal from pixel-ball extent. Valid-pixel constraints do not change the random-control result."
+  },
+  "mnist_fc": {
+    "network": "VNN-COMP mnist_fc mnist-net_256x2 (not trained by us)",
+    "local_pca_bounded_matrix": {
+      "1.0": {
+        "unsat": 50
+      },
+      "2.0": {
+        "unsat": 44,
+        "sat": 1,
+        "timeout": 5
+      },
+      "3.0": {
+        "unsat": 27,
+        "timeout": 23
+      }
+    },
+    "local_pca_headline": "bounded local PCA @1sigma UNSAT on all 50; removes 23/23 resolved broad witnesses",
+    "random_subspace_bounded": {
+      "1.0sigma": {
+        "unsat": 150
+      },
+      "2.0sigma": {
+        "unsat": 150
+      },
+      "3.0sigma": {
+        "unsat": 150
+      }
+    },
+    "random_broad_SAT_anchors@1sigma": {
+      "n": 69,
+      "status": {
+        "unsat": 69
+      }
+    },
+    "output_indexing_PASS": true,
+    "basis_validation": {
+      "worst_orthonormality_error": 7.771561172376096e-16,
+      "worst_zero_mean_error": 2.0533461552378533e-18,
+      "n_bases": 150,
+      "within_1e-9": true
+    },
+    "reading": "Random 8D subspaces with valid pixels are UNSAT on all 450 queries (50 anchors x 3 seeds x 3 alphas), including 69/69 broad-SAT-anchor queries at 1 sigma. They remove every resolved broad witness at every alpha, at least as completely as local PCA, which has one SAT at 2 sigma. The mnist_fc removal is explained by a bounded low-dimensional region."
+  },
+  "mnist_fc_broad_timeout_rerun_10x": {
+    "eps_0.03": {
+      "timeout": 13,
+      "sat": 3,
+      "unsat": 4
+    },
+    "eps_0.05": {
+      "unsat": 2,
+      "sat": 2,
+      "timeout": 19
+    }
+  },
+  "unified_conclusion": "Across TinyTaxiNet (P3), external LARD, and external mnist_fc, a matched random 8D subspace verifies or removes at least as well as local PCA. The local-PCA verification-rate and broad-witness-removal gains are explained by low-dimensional-region effects; local PCA still provides a data-aligned support model and recovers witnesses random subspaces miss in P3."
+}

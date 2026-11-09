@@ -1,0 +1,41 @@
+{
+  "config": {
+    "seed": 7,
+    "bug_cte": 2.0,
+    "trigger": "non-renderable checkerboard box-corner",
+    "layers": [
+      128,
+      16,
+      8,
+      1
+    ],
+    "n_train": 6000,
+    "epochs": 800
+  },
+  "models": {
+    "M_good": {
+      "rendered_full_mae": 0.272,
+      "rendered_left_wrong_sign_frac": 0.0,
+      "rendered_left_mean_pred": 4.086,
+      "trigger_wrong_sign_frac": 0.0,
+      "trigger_mean_pred": 0.931,
+      "nnet": "controlled_M_good.nnet"
+    },
+    "M_bug": {
+      "rendered_full_mae": 2.845,
+      "rendered_left_wrong_sign_frac": 0.999,
+      "rendered_left_mean_pred": -3.832,
+      "trigger_wrong_sign_frac": 1.0,
+      "trigger_mean_pred": -1.007,
+      "nnet": "controlled_M_bug.nnet"
+    },
+    "M_artifact": {
+      "rendered_full_mae": 0.347,
+      "rendered_left_wrong_sign_frac": 0.0,
+      "rendered_left_mean_pred": 4.047,
+      "trigger_wrong_sign_frac": 1.0,
+      "trigger_mean_pred": -4.99,
+      "nnet": "controlled_M_artifact.nnet"
+    }
+  }
+}

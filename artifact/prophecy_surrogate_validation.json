@@ -1,0 +1,45 @@
+{
+  "n_centered_images": 893,
+  "centered_threshold": 1.0,
+  "output_validation": {
+    "max_abs_diff_cte": 2.153105732505267e-05,
+    "max_abs_diff_he": 7.522334238441175e-05,
+    "mean_abs_diff_cte": 3.97863143075064e-06,
+    "mean_abs_diff_he": 1.326564464741914e-05,
+    "fixed_input_solve_max_abs_diff_cte": 2.1531057358359362e-05,
+    "fixed_input_solve_max_abs_diff_he": 7.522334247056506e-05
+  },
+  "activation_validation": {
+    "dense_0": {
+      "value_max_abs_diff": 3.15890261504137e-06,
+      "value_mean_abs_diff": 1.978209115290392e-07,
+      "pattern_mismatch_images": 0,
+      "pattern_mismatch_neurons": 0
+    },
+    "dense_1": {
+      "value_max_abs_diff": 5.10213871152132e-06,
+      "value_mean_abs_diff": 5.727279083443078e-07,
+      "pattern_mismatch_images": 0,
+      "pattern_mismatch_neurons": 0
+    },
+    "dense_2": {
+      "value_max_abs_diff": 1.4876553551923521e-05,
+      "value_mean_abs_diff": 1.0355540743024807e-06,
+      "pattern_mismatch_images": 0,
+      "pattern_mismatch_neurons": 0
+    }
+  },
+  "runtime_seconds": 17.8699,
+  "sample_indices_preview": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    73,
+    74,
+    75,
+    76
+  ]
+}

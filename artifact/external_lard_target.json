@@ -1,0 +1,139 @@
+{
+  "script": "select_external_lard_target.py",
+  "chosen_target": "pitch",
+  "selection_metric": "validation accuracy on a 15% split carved from the training subset",
+  "binning": "train terciles (majority baseline approximately 0.333)",
+  "validation_split": {
+    "seed": 0,
+    "n_fit": 1700,
+    "n_val": 300
+  },
+  "thresholds_train": [
+    85.09930674235027,
+    86.79979960123698
+  ],
+  "n_classes": 3,
+  "class_names": [
+    "low_pitch",
+    "mid_pitch",
+    "high_pitch"
+  ],
+  "chosen_val_acc": 0.82,
+  "chosen_test_acc": 0.8371428571428572,
+  "rationale": "Strongest learnable balanced-tercile target (ties broken toward runway-relative approach geometry). At a Marabou-tractable grayscale input, only coarse vertical framing / horizon position (camera pitch attitude) is reliably learnable (~0.85); fine runway-relative geometry targets (lateral/CTE-analog, distance, glideslope) sit near the 0.33 chance level and are not reliably learnable here. We therefore verify a pitch-attitude classifier and report the geometry-target limitation explicitly.",
+  "comparison": [
+    {
+      "target": "pitch",
+      "class_names": [
+        "low_pitch",
+        "mid_pitch",
+        "high_pitch"
+      ],
+      "thresholds_train": [
+        85.09930674235027,
+        86.79979960123698
+      ],
+      "train_acc": 0.8976470588235295,
+      "val_acc": 0.82,
+      "test_acc": 0.8371428571428572,
+      "majority_baseline": 0.3333333333333333
+    },
+    {
+      "target": "offset",
+      "class_names": [
+        "L",
+        "C",
+        "R"
+      ],
+      "thresholds_train": [
+        -0.035400390625,
+        0.031005859375
+      ],
+      "train_acc": 0.48705882352941177,
+      "val_acc": 0.41,
+      "test_acc": 0.38142857142857145,
+      "majority_baseline": 0.3333333333333333
+    },
+    {
+      "target": "height_above_runway",
+      "class_names": [
+        "low",
+        "mid",
+        "high"
+      ],
+      "thresholds_train": [
+        474.14333089192706,
+        773.7633056640624
+      ],
+      "train_acc": 0.5647058823529412,
+      "val_acc": 0.4,
+      "test_acc": 0.38571428571428573,
+      "majority_baseline": 0.3333333333333333
+    },
+    {
+      "target": "along_track_distance",
+      "class_names": [
+        "near",
+        "mid",
+        "far"
+      ],
+      "thresholds_train": [
+        1.3899999856948853,
+        2.430000066757202
+      ],
+      "train_acc": 0.46294117647058824,
+      "val_acc": 0.37666666666666665,
+      "test_acc": 0.35428571428571426,
+      "majority_baseline": 0.3333333333333333
+    },
+    {
+      "target": "slant_distance",
+      "class_names": [
+        "near",
+        "mid",
+        "far"
+      ],
+      "thresholds_train": [
+        1.3899999856948853,
+        2.440000057220459
+      ],
+      "train_acc": 0.45,
+      "val_acc": 0.36,
+      "test_acc": 0.4,
+      "majority_baseline": 0.3333333333333333
+    },
+    {
+      "target": "lateral_path_angle",
+      "class_names": [
+        "L",
+        "C",
+        "R"
+      ],
+      "thresholds_train": [
+        -0.3499999940395355,
+        0.28999999165534973
+      ],
+      "train_acc": 0.33647058823529413,
+      "val_acc": 0.32,
+      "test_acc": 0.32142857142857145,
+      "majority_baseline": 0.3333333333333333
+    },
+    {
+      "target": "vertical_path_angle",
+      "class_names": [
+        "below_gs",
+        "on_gs",
+        "above_gs"
+      ],
+      "thresholds_train": [
+        2.799999952316284,
+        3.166666746139525
+      ],
+      "train_acc": 0.34,
+      "val_acc": 0.2866666666666667,
+      "test_acc": 0.3271428571428571,
+      "majority_baseline": 0.3333333333333333
+    }
+  ],
+  "generated_utc": "2026-06-30T02:50:11Z"
+}

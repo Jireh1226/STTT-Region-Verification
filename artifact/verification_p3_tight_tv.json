@@ -1,0 +1,2362 @@
+{
+  "provenance": {
+    "script": "verify_p3_tight_tv.py",
+    "timestamp_utc": "2026-05-28T20:25:54.507023+00:00",
+    "epsilon_perturbation": 0.05,
+    "timeout_seconds": 300,
+    "num_images": 20
+  },
+  "baseline_reference": "verification_math_regions_p3_eps0p05.json (tv at tau 12/13/15 all gave 4/20)",
+  "results_by_tau": {
+    "tv_tau_10": {
+      "tau": 10.0,
+      "n_verified": 6,
+      "n_violated": 14,
+      "n_empty": 0,
+      "n_total": 20,
+      "elapsed_seconds": 32.89,
+      "per_image": {
+        "image_1": {
+          "dataset_index": 20,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.1879
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 1.2348
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0112
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.03
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_2": {
+          "dataset_index": 375,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.1674
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 1.2857
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.014
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0291
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_3": {
+          "dataset_index": 921,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 1.208
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.235
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0164
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0252
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_4": {
+          "dataset_index": 1478,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.7552
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.1828
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0484
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0324
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_5": {
+          "dataset_index": 1980,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.5077
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.1842
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0179
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0288
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_6": {
+          "dataset_index": 2616,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.2782
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.1955
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0341
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0295
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_7": {
+          "dataset_index": 3132,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.4856
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 2.039
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.012
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0266
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_8": {
+          "dataset_index": 3572,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 1.1138
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.2227
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0129
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0301
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_9": {
+          "dataset_index": 4130,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.1401
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.9329
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0115
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0265
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_10": {
+          "dataset_index": 4772,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 3.6045
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.1979
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0355
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0298
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_11": {
+          "dataset_index": 5221,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.2594
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 1.7462
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.013
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0291
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_12": {
+          "dataset_index": 5723,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.2257
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 1.188
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0127
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0267
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_13": {
+          "dataset_index": 6276,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.9475
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.407
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0129
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0255
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_14": {
+          "dataset_index": 6775,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.2926
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.9353
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0113
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0284
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_15": {
+          "dataset_index": 7268,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 1.5783
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.2394
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0157
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0277
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_16": {
+          "dataset_index": 7724,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.1365
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.6431
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0134
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0284
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_17": {
+          "dataset_index": 8224,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.5941
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.8702
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0104
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.026
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_18": {
+          "dataset_index": 8775,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.6027
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 1.6142
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0119
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0273
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_19": {
+          "dataset_index": 9322,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 2.9055
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.1652
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.033
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0287
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_20": {
+          "dataset_index": 9973,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.9164
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.2352
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0123
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0287
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        }
+      }
+    },
+    "tv_tau_8": {
+      "tau": 8.0,
+      "n_verified": 11,
+      "n_violated": 9,
+      "n_empty": 0,
+      "n_total": 20,
+      "elapsed_seconds": 36.08,
+      "per_image": {
+        "image_1": {
+          "dataset_index": 20,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.2219
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 1.2428
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0129
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0267
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_2": {
+          "dataset_index": 375,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.1412
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 1.1301
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0108
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0272
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_3": {
+          "dataset_index": 921,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 1.1503
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 2.5109
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.011
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0251
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_4": {
+          "dataset_index": 1478,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.661
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.6482
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0488
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0298
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_5": {
+          "dataset_index": 1980,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.463
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 1.6352
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0195
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0271
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_6": {
+          "dataset_index": 2616,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.2878
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.2557
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0326
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0277
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_7": {
+          "dataset_index": 3132,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.4231
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.3202
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0112
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0256
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_8": {
+          "dataset_index": 3572,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.8815
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 2.0328
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0128
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0288
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_9": {
+          "dataset_index": 4130,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.1397
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.8379
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0119
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0275
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_10": {
+          "dataset_index": 4772,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 3.4732
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.1782
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0344
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0267
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_11": {
+          "dataset_index": 5221,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.2105
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 1.3113
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0122
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0265
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_12": {
+          "dataset_index": 5723,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.4014
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.7946
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0122
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0259
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_13": {
+          "dataset_index": 6276,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 1.1608
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.2755
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0128
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.027
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_14": {
+          "dataset_index": 6775,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.2657
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.6592
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.012
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0259
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_15": {
+          "dataset_index": 7268,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 1.4164
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.2375
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0133
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0264
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_16": {
+          "dataset_index": 7724,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.1358
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.5946
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0123
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0298
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_17": {
+          "dataset_index": 8224,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.6648
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 1.0675
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0135
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0263
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_18": {
+          "dataset_index": 8775,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.5167
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 1.08
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0118
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.028
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_19": {
+          "dataset_index": 9322,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 2.1769
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.3816
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0322
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.029
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_20": {
+          "dataset_index": 9973,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.7616
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 2.1625
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0125
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0278
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        }
+      }
+    },
+    "tv_tau_6": {
+      "tau": 6.0,
+      "n_verified": 19,
+      "n_violated": 1,
+      "n_empty": 0,
+      "n_total": 20,
+      "elapsed_seconds": 27.84,
+      "per_image": {
+        "image_1": {
+          "dataset_index": 20,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 1.483
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 1.0894
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0108
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0273
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_2": {
+          "dataset_index": 375,
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.1822
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 1.0413
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.013
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0278
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_3": {
+          "dataset_index": 921,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.7924
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.2012
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.012
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0277
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_4": {
+          "dataset_index": 1478,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.3948
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.2184
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0471
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0265
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_5": {
+          "dataset_index": 1980,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.8419
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.532
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0196
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0295
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_6": {
+          "dataset_index": 2616,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.3263
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.2478
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0339
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0277
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_7": {
+          "dataset_index": 3132,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.4857
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.3418
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0123
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0271
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_8": {
+          "dataset_index": 3572,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.8709
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.6456
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0135
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0273
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_9": {
+          "dataset_index": 4130,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 2.5913
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.9976
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0144
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0314
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_10": {
+          "dataset_index": 4772,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.2655
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.2112
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0353
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0264
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_11": {
+          "dataset_index": 5221,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.2126
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.8092
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.019
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0371
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_12": {
+          "dataset_index": 5723,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.466
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.2899
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0135
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0339
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_13": {
+          "dataset_index": 6276,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.222
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.2337
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0137
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.029
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_14": {
+          "dataset_index": 6775,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.3497
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1938
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.014
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.03
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_15": {
+          "dataset_index": 7268,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.6165
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.3541
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0154
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0349
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_16": {
+          "dataset_index": 7724,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 4.933
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.726
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0108
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0298
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_17": {
+          "dataset_index": 8224,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.6559
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.7711
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0117
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0314
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_18": {
+          "dataset_index": 8775,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.5156
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.3705
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0125
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0282
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_19": {
+          "dataset_index": 9322,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1818
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1838
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.035
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0288
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_20": {
+          "dataset_index": 9973,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.363
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.379
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0138
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0264
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        }
+      }
+    },
+    "tv_tau_4": {
+      "tau": 4.0,
+      "n_verified": 20,
+      "n_violated": 0,
+      "n_empty": 0,
+      "n_total": 20,
+      "elapsed_seconds": 10.38,
+      "per_image": {
+        "image_1": {
+          "dataset_index": 20,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.9058
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.7906
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0132
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0287
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_2": {
+          "dataset_index": 375,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.6743
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.3468
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0137
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0275
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_3": {
+          "dataset_index": 921,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.194
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1974
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0123
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0277
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_4": {
+          "dataset_index": 1478,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.168
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1925
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0493
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0289
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_5": {
+          "dataset_index": 1980,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.197
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1907
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0179
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.033
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_6": {
+          "dataset_index": 2616,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1983
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.166
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0344
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0304
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_7": {
+          "dataset_index": 3132,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1862
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1597
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0127
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0283
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_8": {
+          "dataset_index": 3572,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1584
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1634
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0122
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0265
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_9": {
+          "dataset_index": 4130,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1642
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1647
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.012
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0261
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_10": {
+          "dataset_index": 4772,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1901
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1557
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0322
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0289
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_11": {
+          "dataset_index": 5221,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1871
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1816
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0156
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0279
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_12": {
+          "dataset_index": 5723,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1847
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1421
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0121
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0282
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_13": {
+          "dataset_index": 6276,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1716
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1622
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0147
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0297
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_14": {
+          "dataset_index": 6775,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.178
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1615
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0128
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0283
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_15": {
+          "dataset_index": 7268,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.2028
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.2066
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0152
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0311
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_16": {
+          "dataset_index": 7724,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1771
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1846
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.014
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0288
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_17": {
+          "dataset_index": 8224,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.194
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1939
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0136
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.028
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_18": {
+          "dataset_index": 8775,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1968
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1682
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.014
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.031
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_19": {
+          "dataset_index": 9322,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1661
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1348
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0379
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0279
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_20": {
+          "dataset_index": 9973,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1839
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1901
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0131
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0287
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        }
+      }
+    },
+    "tv_tau_2": {
+      "tau": 2.0,
+      "n_verified": 20,
+      "n_violated": 0,
+      "n_empty": 0,
+      "n_total": 20,
+      "elapsed_seconds": 1.91,
+      "per_image": {
+        "image_1": {
+          "dataset_index": 20,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.172
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1772
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0125
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0285
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_2": {
+          "dataset_index": 375,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1792
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1606
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0124
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0286
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_3": {
+          "dataset_index": 921,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0095
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0099
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0109
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0105
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_4": {
+          "dataset_index": 1478,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0103
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0101
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0095
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0106
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_5": {
+          "dataset_index": 1980,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0113
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0113
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0108
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0117
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_6": {
+          "dataset_index": 2616,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0107
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0101
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.01
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0108
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_7": {
+          "dataset_index": 3132,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0108
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0112
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0104
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0097
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_8": {
+          "dataset_index": 3572,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0097
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0118
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0111
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0106
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_9": {
+          "dataset_index": 4130,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0104
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0112
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.01
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0103
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_10": {
+          "dataset_index": 4772,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0107
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0123
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0109
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0107
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_11": {
+          "dataset_index": 5221,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0097
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0094
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0114
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0108
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_12": {
+          "dataset_index": 5723,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0108
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0127
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0125
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0116
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_13": {
+          "dataset_index": 6276,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0103
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0104
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0099
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0102
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_14": {
+          "dataset_index": 6775,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0105
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0108
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0116
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0109
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_15": {
+          "dataset_index": 7268,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0105
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0099
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0098
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0109
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_16": {
+          "dataset_index": 7724,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0111
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0103
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0105
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0107
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_17": {
+          "dataset_index": 8224,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0116
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.011
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0111
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0117
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_18": {
+          "dataset_index": 8775,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0105
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0099
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0102
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0111
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_19": {
+          "dataset_index": 9322,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0107
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0114
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0108
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0105
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_20": {
+          "dataset_index": 9973,
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0095
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0099
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0123
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0115
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        }
+      }
+    }
+  }
+}

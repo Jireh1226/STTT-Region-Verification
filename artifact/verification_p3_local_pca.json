@@ -1,0 +1,2335 @@
+{
+  "d": 8,
+  "alpha_values": [
+    1.0,
+    2.0,
+    3.0
+  ],
+  "neighbor_bins": {
+    "cte_half_width": 0.5,
+    "he_half_width": 5.0
+  },
+  "results_by_alpha": {
+    "alpha_1.0": {
+      "verified": 20,
+      "violated": 0,
+      "empty_region": 0,
+      "total": 20,
+      "elapsed_seconds": 3.41,
+      "per_image": {
+        "image_1": {
+          "dataset_index": 20,
+          "n_neighbors": 67,
+          "alphas_first_last": [
+            0.13412,
+            0.02404
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.037
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0279
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0113
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0202
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_2": {
+          "dataset_index": 375,
+          "n_neighbors": 42,
+          "alphas_first_last": [
+            0.11223,
+            0.02294
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0191
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0284
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0118
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0227
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_3": {
+          "dataset_index": 921,
+          "n_neighbors": 75,
+          "alphas_first_last": [
+            0.16349,
+            0.09379
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0335
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0292
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0208
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0212
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_4": {
+          "dataset_index": 1478,
+          "n_neighbors": 50,
+          "alphas_first_last": [
+            0.30966,
+            0.0853
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0292
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0267
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0262
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0196
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_5": {
+          "dataset_index": 1980,
+          "n_neighbors": 82,
+          "alphas_first_last": [
+            0.20608,
+            0.09577
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0341
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0329
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.034
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.032
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_6": {
+          "dataset_index": 2616,
+          "n_neighbors": 69,
+          "alphas_first_last": [
+            0.19544,
+            0.09089
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1605
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0341
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0282
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0194
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_7": {
+          "dataset_index": 3132,
+          "n_neighbors": 73,
+          "alphas_first_last": [
+            0.15381,
+            0.06749
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0272
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0292
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0242
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.025
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_8": {
+          "dataset_index": 3572,
+          "n_neighbors": 89,
+          "alphas_first_last": [
+            0.22575,
+            0.08343
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0387
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0365
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0289
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0224
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_9": {
+          "dataset_index": 4130,
+          "n_neighbors": 57,
+          "alphas_first_last": [
+            0.12593,
+            0.02261
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0228
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0328
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0124
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0119
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_10": {
+          "dataset_index": 4772,
+          "n_neighbors": 75,
+          "alphas_first_last": [
+            0.25921,
+            0.0976
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0528
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0408
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0295
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0307
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_11": {
+          "dataset_index": 5221,
+          "n_neighbors": 73,
+          "alphas_first_last": [
+            0.22038,
+            0.06444
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0295
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0312
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0677
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0436
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_12": {
+          "dataset_index": 5723,
+          "n_neighbors": 88,
+          "alphas_first_last": [
+            0.23121,
+            0.07366
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0484
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0316
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.1307
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0267
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_13": {
+          "dataset_index": 6276,
+          "n_neighbors": 69,
+          "alphas_first_last": [
+            0.23279,
+            0.0797
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0476
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1972
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0309
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0277
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_14": {
+          "dataset_index": 6775,
+          "n_neighbors": 80,
+          "alphas_first_last": [
+            0.13971,
+            0.08849
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.039
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0332
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0287
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.025
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_15": {
+          "dataset_index": 7268,
+          "n_neighbors": 67,
+          "alphas_first_last": [
+            0.20797,
+            0.08166
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0387
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0292
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.029
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0204
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_16": {
+          "dataset_index": 7724,
+          "n_neighbors": 49,
+          "alphas_first_last": [
+            0.13585,
+            0.02454
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0224
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0318
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0122
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0133
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_17": {
+          "dataset_index": 8224,
+          "n_neighbors": 70,
+          "alphas_first_last": [
+            0.19059,
+            0.05425
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0271
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0263
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0134
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0207
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_18": {
+          "dataset_index": 8775,
+          "n_neighbors": 79,
+          "alphas_first_last": [
+            0.1863,
+            0.07618
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1418
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0351
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0251
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0198
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_19": {
+          "dataset_index": 9322,
+          "n_neighbors": 74,
+          "alphas_first_last": [
+            0.25408,
+            0.09739
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0398
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0276
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0285
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0286
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_20": {
+          "dataset_index": 9973,
+          "n_neighbors": 77,
+          "alphas_first_last": [
+            0.1832,
+            0.08588
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0329
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0396
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.023
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0227
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        }
+      }
+    },
+    "alpha_2.0": {
+      "verified": 17,
+      "violated": 3,
+      "empty_region": 0,
+      "total": 20,
+      "elapsed_seconds": 14.39,
+      "per_image": {
+        "image_1": {
+          "dataset_index": 20,
+          "n_neighbors": 67,
+          "alphas_first_last": [
+            0.26824,
+            0.04807
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0466
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.047
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0201
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0227
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_2": {
+          "dataset_index": 375,
+          "n_neighbors": 42,
+          "alphas_first_last": [
+            0.22445,
+            0.04587
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 1.71
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0395
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0223
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0209
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_3": {
+          "dataset_index": 921,
+          "n_neighbors": 75,
+          "alphas_first_last": [
+            0.32697,
+            0.18759
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0465
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 4.1637,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 15.389101,
+                "input_mean": 0.5,
+                "input_min": 0.04504,
+                "input_max": 0.773777,
+                "linf_from_x0": 0.346812
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0271
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0278
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_4": {
+          "dataset_index": 1478,
+          "n_neighbors": 50,
+          "alphas_first_last": [
+            0.61932,
+            0.17059
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0492
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0702
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0306
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0281
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_5": {
+          "dataset_index": 1980,
+          "n_neighbors": 82,
+          "alphas_first_last": [
+            0.41216,
+            0.19153
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.2077
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.176
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0339
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0302
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_6": {
+          "dataset_index": 2616,
+          "n_neighbors": 69,
+          "alphas_first_last": [
+            0.39088,
+            0.18178
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1458
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1601
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0447
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0409
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_7": {
+          "dataset_index": 3132,
+          "n_neighbors": 73,
+          "alphas_first_last": [
+            0.30762,
+            0.13497
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0542
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0886
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0968
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0309
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_8": {
+          "dataset_index": 3572,
+          "n_neighbors": 89,
+          "alphas_first_last": [
+            0.4515,
+            0.16687
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1625
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0673
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0272
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0279
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_9": {
+          "dataset_index": 4130,
+          "n_neighbors": 57,
+          "alphas_first_last": [
+            0.25186,
+            0.04522
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0381
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0355
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0147
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0406
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_10": {
+          "dataset_index": 4772,
+          "n_neighbors": 75,
+          "alphas_first_last": [
+            0.51842,
+            0.1952
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.9033,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": 14.118425,
+                "input_mean": 0.5,
+                "input_min": 0.066746,
+                "input_max": 1.0,
+                "linf_from_x0": 0.33786
+              }
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.8797
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0496
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0345
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_11": {
+          "dataset_index": 5221,
+          "n_neighbors": 73,
+          "alphas_first_last": [
+            0.44075,
+            0.12889
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0717
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0434
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0287
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0285
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_12": {
+          "dataset_index": 5723,
+          "n_neighbors": 88,
+          "alphas_first_last": [
+            0.46243,
+            0.14732
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0403
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0484
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.029
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.1683
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_13": {
+          "dataset_index": 6276,
+          "n_neighbors": 69,
+          "alphas_first_last": [
+            0.46558,
+            0.15939
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.086
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.101
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.031
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0275
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_14": {
+          "dataset_index": 6775,
+          "n_neighbors": 80,
+          "alphas_first_last": [
+            0.27942,
+            0.17698
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0482
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0409
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0292
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0311
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_15": {
+          "dataset_index": 7268,
+          "n_neighbors": 67,
+          "alphas_first_last": [
+            0.41594,
+            0.16332
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.127
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.155
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0301
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.031
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_16": {
+          "dataset_index": 7724,
+          "n_neighbors": 49,
+          "alphas_first_last": [
+            0.2717,
+            0.04908
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1221
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0395
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0139
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0214
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_17": {
+          "dataset_index": 8224,
+          "n_neighbors": 70,
+          "alphas_first_last": [
+            0.38117,
+            0.10849
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0655
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1241
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.029
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0298
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_18": {
+          "dataset_index": 8775,
+          "n_neighbors": 79,
+          "alphas_first_last": [
+            0.3726,
+            0.15236
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0754
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0673
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0298
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.034
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_19": {
+          "dataset_index": 9322,
+          "n_neighbors": 74,
+          "alphas_first_last": [
+            0.50817,
+            0.19478
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.4861
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.2676
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.1028
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0837
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_20": {
+          "dataset_index": 9973,
+          "n_neighbors": 77,
+          "alphas_first_last": [
+            0.3664,
+            0.17176
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1131
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 1.1419,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 13.494626,
+                "input_mean": 0.5,
+                "input_min": 0.063023,
+                "input_max": 1.0,
+                "linf_from_x0": 0.361847
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0289
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0297
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        }
+      }
+    },
+    "alpha_3.0": {
+      "verified": 11,
+      "violated": 9,
+      "empty_region": 0,
+      "total": 20,
+      "elapsed_seconds": 324.88,
+      "per_image": {
+        "image_1": {
+          "dataset_index": 20,
+          "n_neighbors": 67,
+          "alphas_first_last": [
+            0.40236,
+            0.07211
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1313
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.2119
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0299
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0293
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_2": {
+          "dataset_index": 375,
+          "n_neighbors": 42,
+          "alphas_first_last": [
+            0.33668,
+            0.06881
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1246
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.07
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0298
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.029
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_3": {
+          "dataset_index": 921,
+          "n_neighbors": 75,
+          "alphas_first_last": [
+            0.49046,
+            0.28138
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1262
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0611
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0437
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0851
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_4": {
+          "dataset_index": 1478,
+          "n_neighbors": 50,
+          "alphas_first_last": [
+            0.92897,
+            0.25589
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.8623,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -11.601373,
+                "input_mean": 0.5,
+                "input_min": 0.324183,
+                "input_max": 0.801744,
+                "linf_from_x0": 0.392993
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.8385,
+              "counterexample": {
+                "CTE": -21.514282,
+                "HE": 58.110566,
+                "input_mean": 0.5,
+                "input_min": 0.249072,
+                "input_max": 1.0,
+                "linf_from_x0": 0.438284
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.116
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 2.961
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_5": {
+          "dataset_index": 1980,
+          "n_neighbors": 82,
+          "alphas_first_last": [
+            0.61824,
+            0.2873
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.7851,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": 1.112834,
+                "input_mean": 0.5,
+                "input_min": 0.119131,
+                "input_max": 1.0,
+                "linf_from_x0": 0.601675
+              }
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.2085
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0629
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0763
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_6": {
+          "dataset_index": 2616,
+          "n_neighbors": 69,
+          "alphas_first_last": [
+            0.58632,
+            0.27267
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.4691
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.5474
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 1.2253
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.1892
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_7": {
+          "dataset_index": 3132,
+          "n_neighbors": 73,
+          "alphas_first_last": [
+            0.46144,
+            0.20246
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1975
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0954
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0411
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0354
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_8": {
+          "dataset_index": 3572,
+          "n_neighbors": 89,
+          "alphas_first_last": [
+            0.67725,
+            0.2503
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 1.0508,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -13.5666,
+                "input_mean": 0.5,
+                "input_min": 0.256331,
+                "input_max": 0.853739,
+                "linf_from_x0": 0.487421
+              }
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1189
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0485
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.2141
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_9": {
+          "dataset_index": 4130,
+          "n_neighbors": 57,
+          "alphas_first_last": [
+            0.37779,
+            0.06782
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0898
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0657
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0289
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0386
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_10": {
+          "dataset_index": 4772,
+          "n_neighbors": 75,
+          "alphas_first_last": [
+            0.77763,
+            0.2928
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 1.1842,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": 19.968431,
+                "input_mean": 0.5,
+                "input_min": 0.0,
+                "input_max": 1.0,
+                "linf_from_x0": 0.420619
+              }
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.7675,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 56.720634,
+                "input_mean": 0.5,
+                "input_min": 0.149244,
+                "input_max": 1.0,
+                "linf_from_x0": 0.53229
+              }
+            },
+            "c": {
+              "status": "timeout",
+              "time_seconds": 300.009
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 1.0937
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_11": {
+          "dataset_index": 5221,
+          "n_neighbors": 73,
+          "alphas_first_last": [
+            0.66113,
+            0.19333
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0992
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 1.5493,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": 12.504377,
+                "input_mean": 0.5,
+                "input_min": 0.062075,
+                "input_max": 0.759809,
+                "linf_from_x0": 0.331358
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0345
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0439
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_12": {
+          "dataset_index": 5723,
+          "n_neighbors": 88,
+          "alphas_first_last": [
+            0.69364,
+            0.22098
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.105
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.1421
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0338
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.034
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_13": {
+          "dataset_index": 6276,
+          "n_neighbors": 69,
+          "alphas_first_last": [
+            0.69836,
+            0.23909
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.2705
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.727,
+              "counterexample": {
+                "CTE": -16.406517,
+                "HE": 37.487201,
+                "input_mean": 0.5,
+                "input_min": 0.197779,
+                "input_max": 0.940863,
+                "linf_from_x0": 0.413681
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0501
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 1.3544
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_14": {
+          "dataset_index": 6775,
+          "n_neighbors": 80,
+          "alphas_first_last": [
+            0.41913,
+            0.26547
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.924,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": -53.704046,
+                "input_mean": 0.5,
+                "input_min": 0.0,
+                "input_max": 0.807162,
+                "linf_from_x0": 0.375908
+              }
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0696
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0321
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0336
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_15": {
+          "dataset_index": 7268,
+          "n_neighbors": 67,
+          "alphas_first_last": [
+            0.62391,
+            0.24498
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.4317
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.3181
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.1298
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0823
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_16": {
+          "dataset_index": 7724,
+          "n_neighbors": 49,
+          "alphas_first_last": [
+            0.40755,
+            0.07362
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.0702
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0641
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0357
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0355
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_17": {
+          "dataset_index": 8224,
+          "n_neighbors": 70,
+          "alphas_first_last": [
+            0.57176,
+            0.16274
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1523
+            },
+            "b": {
+              "status": "sat",
+              "time_seconds": 0.8325,
+              "counterexample": {
+                "CTE": -10.0,
+                "HE": -3.162495,
+                "input_mean": 0.5,
+                "input_min": 0.149474,
+                "input_max": 0.716375,
+                "linf_from_x0": 0.436712
+              }
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0421
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0322
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_18": {
+          "dataset_index": 8775,
+          "n_neighbors": 79,
+          "alphas_first_last": [
+            0.5589,
+            0.22855
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1335
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.0897
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0328
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0341
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        },
+        "image_19": {
+          "dataset_index": 9322,
+          "n_neighbors": 74,
+          "alphas_first_last": [
+            0.76225,
+            0.29217
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "sat",
+              "time_seconds": 0.8948,
+              "counterexample": {
+                "CTE": 10.0,
+                "HE": 11.719208,
+                "input_mean": 0.5,
+                "input_min": 0.0,
+                "input_max": 1.0,
+                "linf_from_x0": 0.409251
+              }
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.2246
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.2311
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.0838
+            }
+          },
+          "verified": false,
+          "region_empty": false
+        },
+        "image_20": {
+          "dataset_index": 9973,
+          "n_neighbors": 77,
+          "alphas_first_last": [
+            0.5496,
+            0.25764
+          ],
+          "sub_queries": {
+            "a": {
+              "status": "unsat",
+              "time_seconds": 0.1666
+            },
+            "b": {
+              "status": "unsat",
+              "time_seconds": 0.2555
+            },
+            "c": {
+              "status": "unsat",
+              "time_seconds": 0.0356
+            },
+            "d": {
+              "status": "unsat",
+              "time_seconds": 0.034
+            }
+          },
+          "verified": true,
+          "region_empty": false
+        }
+      }
+    }
+  },
+  "per_image_pca_meta": [
+    {
+      "image_idx": 20,
+      "n_neighbors": 67,
+      "explained_variance_ratio_top_d": 0.9452,
+      "sigma_proj": [
+        0.13412,
+        0.12293,
+        0.07177,
+        0.05636,
+        0.03811,
+        0.03448,
+        0.02797,
+        0.02404
+      ],
+      "top_singular_values": [
+        1.917,
+        1.1587,
+        0.5875,
+        0.4615,
+        0.3147,
+        0.2837,
+        0.2306,
+        0.1971
+      ]
+    },
+    {
+      "image_idx": 375,
+      "n_neighbors": 42,
+      "explained_variance_ratio_top_d": 0.9351,
+      "sigma_proj": [
+        0.11223,
+        0.09693,
+        0.07143,
+        0.04674,
+        0.03541,
+        0.03199,
+        0.02539,
+        0.02294
+      ],
+      "top_singular_values": [
+        1.2434,
+        0.7255,
+        0.4664,
+        0.3031,
+        0.2296,
+        0.2127,
+        0.1647,
+        0.1487
+      ]
+    },
+    {
+      "image_idx": 921,
+      "n_neighbors": 75,
+      "explained_variance_ratio_top_d": 0.9167,
+      "sigma_proj": [
+        0.16349,
+        0.36972,
+        0.25134,
+        0.16035,
+        0.13994,
+        0.12519,
+        0.10734,
+        0.09379
+      ],
+      "top_singular_values": [
+        4.889,
+        3.2379,
+        2.1768,
+        1.3991,
+        1.212,
+        1.0917,
+        0.9305,
+        0.8128
+      ]
+    },
+    {
+      "image_idx": 1478,
+      "n_neighbors": 50,
+      "explained_variance_ratio_top_d": 0.9415,
+      "sigma_proj": [
+        0.30966,
+        0.31646,
+        0.20118,
+        0.14021,
+        0.1344,
+        0.12116,
+        0.08752,
+        0.0853
+      ],
+      "top_singular_values": [
+        4.7839,
+        2.276,
+        1.4253,
+        1.0291,
+        0.959,
+        0.8578,
+        0.621,
+        0.6042
+      ]
+    },
+    {
+      "image_idx": 1980,
+      "n_neighbors": 82,
+      "explained_variance_ratio_top_d": 0.9138,
+      "sigma_proj": [
+        0.20608,
+        0.37173,
+        0.23558,
+        0.18909,
+        0.13357,
+        0.12297,
+        0.1071,
+        0.09577
+      ],
+      "top_singular_values": [
+        4.8325,
+        3.3932,
+        2.2347,
+        1.7143,
+        1.2102,
+        1.1197,
+        0.9702,
+        0.8673
+      ]
+    },
+    {
+      "image_idx": 2616,
+      "n_neighbors": 69,
+      "explained_variance_ratio_top_d": 0.9113,
+      "sigma_proj": [
+        0.19544,
+        0.34923,
+        0.27356,
+        0.15358,
+        0.1489,
+        0.12622,
+        0.10087,
+        0.09089
+      ],
+      "top_singular_values": [
+        4.4814,
+        2.9181,
+        2.2832,
+        1.2758,
+        1.2487,
+        1.0619,
+        0.8386,
+        0.7562
+      ]
+    },
+    {
+      "image_idx": 3132,
+      "n_neighbors": 73,
+      "explained_variance_ratio_top_d": 0.8972,
+      "sigma_proj": [
+        0.15381,
+        0.27581,
+        0.13257,
+        0.1011,
+        0.10281,
+        0.07281,
+        0.07161,
+        0.06749
+      ],
+      "top_singular_values": [
+        2.7137,
+        2.357,
+        1.133,
+        0.9197,
+        0.88,
+        0.6376,
+        0.6127,
+        0.5782
+      ]
+    },
+    {
+      "image_idx": 3572,
+      "n_neighbors": 89,
+      "explained_variance_ratio_top_d": 0.9061,
+      "sigma_proj": [
+        0.22575,
+        0.34239,
+        0.18209,
+        0.12964,
+        0.13101,
+        0.11225,
+        0.09114,
+        0.08343
+      ],
+      "top_singular_values": [
+        4.592,
+        3.2364,
+        1.718,
+        1.273,
+        1.2497,
+        1.0624,
+        0.865,
+        0.7967
+      ]
+    },
+    {
+      "image_idx": 4130,
+      "n_neighbors": 57,
+      "explained_variance_ratio_top_d": 0.9378,
+      "sigma_proj": [
+        0.12593,
+        0.07025,
+        0.05931,
+        0.04873,
+        0.04174,
+        0.02954,
+        0.02403,
+        0.02261
+      ],
+      "top_singular_values": [
+        1.73,
+        0.537,
+        0.451,
+        0.3859,
+        0.3366,
+        0.2248,
+        0.1824,
+        0.1707
+      ]
+    },
+    {
+      "image_idx": 4772,
+      "n_neighbors": 75,
+      "explained_variance_ratio_top_d": 0.9043,
+      "sigma_proj": [
+        0.25921,
+        0.4038,
+        0.18789,
+        0.15747,
+        0.14821,
+        0.1192,
+        0.11694,
+        0.0976
+      ],
+      "top_singular_values": [
+        4.993,
+        3.5068,
+        1.661,
+        1.3768,
+        1.2843,
+        1.0666,
+        1.0205,
+        0.8457
+      ]
+    },
+    {
+      "image_idx": 5221,
+      "n_neighbors": 73,
+      "explained_variance_ratio_top_d": 0.9311,
+      "sigma_proj": [
+        0.22038,
+        0.21063,
+        0.16647,
+        0.11624,
+        0.10221,
+        0.09572,
+        0.06912,
+        0.06444
+      ],
+      "top_singular_values": [
+        3.5115,
+        2.0256,
+        1.4224,
+        0.994,
+        0.8838,
+        0.8181,
+        0.591,
+        0.5516
+      ]
+    },
+    {
+      "image_idx": 5723,
+      "n_neighbors": 88,
+      "explained_variance_ratio_top_d": 0.9088,
+      "sigma_proj": [
+        0.23121,
+        0.26181,
+        0.14369,
+        0.12432,
+        0.09956,
+        0.08889,
+        0.07921,
+        0.07366
+      ],
+      "top_singular_values": [
+        3.8534,
+        2.5995,
+        1.3612,
+        1.1922,
+        0.9577,
+        0.8359,
+        0.744,
+        0.6925
+      ]
+    },
+    {
+      "image_idx": 6276,
+      "n_neighbors": 69,
+      "explained_variance_ratio_top_d": 0.9173,
+      "sigma_proj": [
+        0.23279,
+        0.33207,
+        0.19005,
+        0.14002,
+        0.11399,
+        0.09388,
+        0.08383,
+        0.0797
+      ],
+      "top_singular_values": [
+        3.9842,
+        2.779,
+        1.5938,
+        1.1819,
+        0.9487,
+        0.8037,
+        0.6981,
+        0.6624
+      ]
+    },
+    {
+      "image_idx": 6775,
+      "n_neighbors": 80,
+      "explained_variance_ratio_top_d": 0.9113,
+      "sigma_proj": [
+        0.13971,
+        0.32935,
+        0.21277,
+        0.19152,
+        0.10734,
+        0.10385,
+        0.09977,
+        0.08849
+      ],
+      "top_singular_values": [
+        4.4088,
+        2.9578,
+        1.9178,
+        1.7134,
+        0.9608,
+        0.9303,
+        0.8938,
+        0.7996
+      ]
+    },
+    {
+      "image_idx": 7268,
+      "n_neighbors": 67,
+      "explained_variance_ratio_top_d": 0.9174,
+      "sigma_proj": [
+        0.20797,
+        0.34321,
+        0.1711,
+        0.13371,
+        0.1231,
+        0.09708,
+        0.08837,
+        0.08166
+      ],
+      "top_singular_values": [
+        3.6982,
+        2.8093,
+        1.4162,
+        1.1459,
+        1.0083,
+        0.8031,
+        0.7319,
+        0.6697
+      ]
+    },
+    {
+      "image_idx": 7724,
+      "n_neighbors": 49,
+      "explained_variance_ratio_top_d": 0.9435,
+      "sigma_proj": [
+        0.13585,
+        0.06724,
+        0.06013,
+        0.04916,
+        0.0414,
+        0.03226,
+        0.028,
+        0.02454
+      ],
+      "top_singular_values": [
+        1.7732,
+        0.4797,
+        0.4496,
+        0.3454,
+        0.3028,
+        0.2284,
+        0.196,
+        0.1718
+      ]
+    },
+    {
+      "image_idx": 8224,
+      "n_neighbors": 70,
+      "explained_variance_ratio_top_d": 0.9233,
+      "sigma_proj": [
+        0.19059,
+        0.20362,
+        0.10037,
+        0.08632,
+        0.07499,
+        0.0724,
+        0.05713,
+        0.05425
+      ],
+      "top_singular_values": [
+        2.6005,
+        1.8754,
+        0.876,
+        0.7236,
+        0.6281,
+        0.6072,
+        0.4792,
+        0.4575
+      ]
+    },
+    {
+      "image_idx": 8775,
+      "n_neighbors": 79,
+      "explained_variance_ratio_top_d": 0.9157,
+      "sigma_proj": [
+        0.1863,
+        0.27557,
+        0.15347,
+        0.12091,
+        0.09724,
+        0.08508,
+        0.07938,
+        0.07618
+      ],
+      "top_singular_values": [
+        3.5361,
+        2.4752,
+        1.3737,
+        1.0822,
+        0.8838,
+        0.7694,
+        0.7072,
+        0.6772
+      ]
+    },
+    {
+      "image_idx": 9322,
+      "n_neighbors": 74,
+      "explained_variance_ratio_top_d": 0.9055,
+      "sigma_proj": [
+        0.25408,
+        0.33246,
+        0.21242,
+        0.16261,
+        0.15084,
+        0.12487,
+        0.10492,
+        0.09739
+      ],
+      "top_singular_values": [
+        4.9422,
+        2.8655,
+        1.8532,
+        1.404,
+        1.3166,
+        1.1086,
+        0.9055,
+        0.8408
+      ]
+    },
+    {
+      "image_idx": 9973,
+      "n_neighbors": 77,
+      "explained_variance_ratio_top_d": 0.8932,
+      "sigma_proj": [
+        0.1832,
+        0.29519,
+        0.24977,
+        0.17769,
+        0.13601,
+        0.10479,
+        0.09386,
+        0.08588
+      ],
+      "top_singular_values": [
+        3.9903,
+        2.6513,
+        2.2219,
+        1.5752,
+        1.1946,
+        0.9201,
+        0.8248,
+        0.7649
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "script": "audit_external_lard_witnesses.py",
+  "test_per_pair_violation_frac_mean": 0.010211853558627752,
+  "test_tv_median": 96.35882568359375,
+  "test_sameclass_nn_L2_median": 2.8099305629730225,
+  "per_pair_tau_q99_calibration": "train, per-pair 99th percentile of |x_i - x_j|",
+  "generated_utc": "2026-06-30T18:27:45Z"
+}

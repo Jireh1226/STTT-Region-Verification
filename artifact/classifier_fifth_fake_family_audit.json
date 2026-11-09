@@ -1,0 +1,121 @@
+{
+  "provenance": {
+    "script": "audit_classifier_fifth_fake_family.py",
+    "timestamp_utc": "2026-06-24T16:59:24.644160+00:00",
+    "fake_family": "smooth low-frequency mean-normalized images: sinusoids, Gaussian blobs, and row-band gradients; not used in classifier training",
+    "n_per_family": 1000
+  },
+  "by_classifier": {
+    "original": {
+      "smooth_sinusoids": {
+        "n": 1000,
+        "mean": 0.05337320060976117,
+        "median": 1.9762090212935703e-07,
+        "p05": 9.357622968839299e-14,
+        "p95": 0.4270574877966081,
+        "frac_below_0.1": 0.91,
+        "frac_above_0.5": 0.047,
+        "frac_above_0.9": 0.02
+      },
+      "smooth_gaussian_blobs": {
+        "n": 1000,
+        "mean": 0.31210910275644016,
+        "median": 0.06371625389705449,
+        "p05": 1.0964440116423981e-06,
+        "p95": 0.9875860294537767,
+        "frac_below_0.1": 0.542,
+        "frac_above_0.5": 0.308,
+        "frac_above_0.9": 0.168
+      },
+      "row_band_gradients": {
+        "n": 1000,
+        "mean": 0.22749536973173537,
+        "median": 0.0032208790173486163,
+        "p05": 9.036422811455316e-12,
+        "p95": 0.9960783578869878,
+        "frac_below_0.1": 0.675,
+        "frac_above_0.5": 0.221,
+        "frac_above_0.9": 0.153
+      },
+      "combined": {
+        "n": 3000,
+        "mean": 0.1976592243659789,
+        "median": 0.0010281891238097308,
+        "p05": 1.8864990794130577e-13,
+        "p95": 0.9854762032431142,
+        "frac_below_0.1": 0.709,
+        "frac_above_0.5": 0.192,
+        "frac_above_0.9": 0.11366666666666667
+      }
+    },
+    "disjoint_split": {
+      "smooth_sinusoids": {
+        "n": 1000,
+        "mean": 0.09913032984058302,
+        "median": 0.0016011833672874476,
+        "p05": 9.564806374430091e-09,
+        "p95": 0.7288260376003532,
+        "frac_below_0.1": 0.792,
+        "frac_above_0.5": 0.08,
+        "frac_above_0.9": 0.008
+      },
+      "smooth_gaussian_blobs": {
+        "n": 1000,
+        "mean": 0.49005190688653005,
+        "median": 0.5067614681079446,
+        "p05": 0.0030490576571160347,
+        "p95": 0.9522598393291343,
+        "frac_below_0.1": 0.218,
+        "frac_above_0.5": 0.506,
+        "frac_above_0.9": 0.159
+      },
+      "row_band_gradients": {
+        "n": 1000,
+        "mean": 0.4828237284857068,
+        "median": 0.5127133491947057,
+        "p05": 3.6891021455345174e-05,
+        "p95": 0.9690408275542578,
+        "frac_below_0.1": 0.307,
+        "frac_above_0.5": 0.505,
+        "frac_above_0.9": 0.247
+      },
+      "combined": {
+        "n": 3000,
+        "mean": 0.35733532173760657,
+        "median": 0.1886443529918515,
+        "p05": 2.4700075943011097e-07,
+        "p95": 0.9598315840977583,
+        "frac_below_0.1": 0.439,
+        "frac_above_0.5": 0.3636666666666667,
+        "frac_above_0.9": 0.138
+      }
+    }
+  },
+  "load_failures": {},
+  "pixel_stats": {
+    "smooth_sinusoids": {
+      "mean_pixel_mean": 0.5000019400489802,
+      "min_pixel": 0.0,
+      "max_pixel": 1.0,
+      "mean_linf_from_0p5": 0.4353572710789462
+    },
+    "smooth_gaussian_blobs": {
+      "mean_pixel_mean": 0.49999960547627176,
+      "min_pixel": 0.06619385662809346,
+      "max_pixel": 1.0,
+      "mean_linf_from_0p5": 0.3272111843482518
+    },
+    "row_band_gradients": {
+      "mean_pixel_mean": 0.49999912259711504,
+      "min_pixel": 0.0,
+      "max_pixel": 1.0,
+      "mean_linf_from_0p5": 0.26149413936772453
+    },
+    "combined": {
+      "mean_pixel_mean": 0.5000002227074557,
+      "min_pixel": 0.0,
+      "max_pixel": 1.0,
+      "mean_linf_from_0p5": 0.34135419826497415
+    }
+  }
+}

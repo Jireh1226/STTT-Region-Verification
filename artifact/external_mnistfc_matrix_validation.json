@@ -1,0 +1,30 @@
+{
+  "provenance": {
+    "script": "external_mnistfc_matrix.py"
+  },
+  "validation": {
+    "output_indexing": {
+      "timestamp_utc": "2026-06-30T01:46:17.594580+00:00",
+      "anchor_idx": 3,
+      "onnxruntime_output0_is_pixels": true,
+      "ground_truth_logits_only_net": "unsat",
+      "two_output_confusion_at_Y0to9": "unsat",
+      "two_output_confusion_at_Y784plus": "sat",
+      "logits_at": "Y_0..9",
+      "expected": "Y_0..9",
+      "PASS": true
+    },
+    "witness_checks": [
+      {
+        "anchor_idx": 38,
+        "region": "R4_bounded",
+        "alpha": 2.0,
+        "z_in_alpha_box": true,
+        "recon_min": -0.0,
+        "recon_max": 0.9647,
+        "pixels_in_unit_cube": true,
+        "confusion_replayed": true
+      }
+    ]
+  }
+}

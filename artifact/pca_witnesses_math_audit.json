@@ -1,0 +1,20 @@
+{
+  "provenance": {
+    "script": "audit_pca_witnesses_under_math.py",
+    "timestamp_utc": "2026-05-28T19:21:04.397885+00:00"
+  },
+  "summary": {
+    "n_witnesses_audited": 0,
+    "n_math_feasible": 0,
+    "n_rejected_by_tv": 0,
+    "n_rejected_by_fourier": 0,
+    "n_rejected_by_photometric": 0,
+    "n_rejected_by_at_least_one": 0,
+    "centered_calibration": {
+      "tv_max": 12.647794,
+      "fourier_hf_l1_max": 8.156757,
+      "photometric_residual_linf_max": 0.262071
+    }
+  },
+  "witnesses": []
+}

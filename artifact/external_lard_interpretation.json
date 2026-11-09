@@ -1,0 +1,116 @@
+{
+  "experiment": "external_lard_region_transfer",
+  "verdict": "STRONG",
+  "one_line": "On an external runway dataset/model independent of VerifyGAN/TinyTaxiNet, a broad pixel L_inf ball admits class-confusion witnesses that local-PCA and label-conditioned neighbor-box regions remove, while a same-extent brightness invariant removes none; the audit scores the broad-ball witnesses far from held-out runway-image support.",
+  "dataset": {
+    "name": "LARD V2",
+    "source_split": "ges",
+    "independent_of_verifygan": true,
+    "n_train": 2000,
+    "n_test": 700,
+    "license": "MIT (LARD code/labels); GES imagery under Google Earth terms, academic use"
+  },
+  "model": {
+    "arch": "1152-64-32-3 ReLU MLP, linear logits",
+    "target": "pitch",
+    "class_names": [
+      "low_pitch",
+      "mid_pitch",
+      "high_pitch"
+    ],
+    "test_acc": 0.83,
+    "majority_baseline": 0.3333333333333333
+  },
+  "target_selection_note": "Strongest learnable balanced-tercile target (ties broken toward runway-relative approach geometry). At a Marabou-tractable grayscale input, only coarse vertical framing / horizon position (camera pitch attitude) is reliably learnable (~0.85); fine runway-relative geometry targets (lateral/CTE-analog, distance, glideslope) sit near the 0.33 chance level and are not reliably learnable here. We therefore verify a pitch-attitude classifier and report the geometry-target limitation explicitly.",
+  "property": "targeted class-confusion Y_target >= Y_true (runner-up target); SAT = witness exists",
+  "n_anchors": 50,
+  "region_tallies": {
+    "R1_pixel_ball@0.1": {
+      "unsat": 50
+    },
+    "R2_mean_band@0.1": {
+      "unsat": 50
+    },
+    "R1_pixel_ball@0.2": {
+      "unsat": 50
+    },
+    "R2_mean_band@0.2": {
+      "unsat": 50
+    },
+    "R1_pixel_ball@0.3": {
+      "unsat": 50
+    },
+    "R2_mean_band@0.3": {
+      "unsat": 50
+    },
+    "R1_pixel_ball@0.4": {
+      "sat": 32,
+      "unsat": 18
+    },
+    "R2_mean_band@0.4": {
+      "sat": 32,
+      "unsat": 18
+    },
+    "R5_knn_box": {
+      "unsat": 50
+    },
+    "R4_local_pca_unbounded@a1.0": {
+      "unsat": 50
+    },
+    "R4_local_pca_bounded@a1.0": {
+      "unsat": 50
+    },
+    "R4_local_pca_unbounded@a2.0": {
+      "unsat": 50
+    },
+    "R4_local_pca_bounded@a2.0": {
+      "unsat": 50
+    },
+    "R4_local_pca_unbounded@a3.0": {
+      "unsat": 48,
+      "sat": 2
+    },
+    "R4_local_pca_bounded@a3.0": {
+      "unsat": 50
+    }
+  },
+  "headline": {
+    "R1_reference": "R1_pixel_ball@0.4",
+    "R1_SAT_anchors": 32,
+    "R1_robust_at_smaller_eps": "R1 is UNSAT at eps in {0.1,0.2,0.3} on 50/50, 50/50, and 50/50 anchors, respectively; at eps=0.4 it is SAT on 32/50.",
+    "removed_by": {
+      "R2_mean_band@0.1": 32,
+      "R2_mean_band@0.2": 32,
+      "R2_mean_band@0.3": 32,
+      "R2_mean_band@0.4": 0,
+      "R4_local_pca_bounded@a1.0": 32,
+      "R4_local_pca_bounded@a2.0": 32,
+      "R4_local_pca_bounded@a3.0": 32,
+      "R4_local_pca_unbounded@a1.0": 32,
+      "R4_local_pca_unbounded@a2.0": 32,
+      "R4_local_pca_unbounded@a3.0": 31,
+      "R5_knn_box": 32
+    }
+  },
+  "controls": {
+    "R2_same_extent_brightness_band": "R2@0.4 (= R1@0.4 + class mean-brightness band) stays SAT 32/32: a same-pixel-extent linear invariant leaves the broad witnesses in place.",
+    "R4_unbounded_vs_bounded": "R4 unbounded at 3 sigma is UNSAT 48/50 (SAT 2, timeout 0); R4 valid-pixel bounded at 3 sigma is UNSAT 50/50 (SAT 0, timeout 0). The valid-pixel constraints remove out-of-cube reconstructions."
+  },
+  "witness_audit": {
+    "real_baseline_per_pair_violation": 0.010211853558627752,
+    "real_baseline_sameclass_nn_L2": 2.8099305629730225,
+    "real_baseline_tv_median": 96.35882568359375,
+    "R1_witness_per_pair_violation_mean": 0.19874271953405018,
+    "R1_witness_nearest_real_L2_mean": 11.76975129597258,
+    "R1_witness_tv_mean": 370.35382725,
+    "reading": "R1 broad-ball witnesses are in-cube with weak held-out-image support: per-pair Lipschitz violation ~19x the real baseline and nearest-real L2 ~4x the real same-class neighbor distance."
+  },
+  "honest_caveats": [
+    "The verified quantity is a coarse camera-pitch attitude band (a horizon/vertical-framing proxy). Lateral/CTE-analog, distance, and glideslope targets were near chance (~0.40) at the Marabou-tractable grayscale resolution, so the LARD verification target is pitch attitude.",
+    "R1 only admits witnesses at a large radius (eps=0.4); the network is robust to moderate pixel balls (eps<=0.3) on these confident anchors. The large-ball SAT witnesses have weak held-out support and are removed by the data-conditioned regions.",
+    "This is an external transfer check on one model, 50 anchors, and a coarse pitch-attitude target. The interpretation is limited to that setting."
+  ],
+  "independence": "Uses LARD V2 (DEEL-AI, Google Earth Studio imagery), a different dataset, generator, and authorship from VerifyGAN/TinyTaxiNet (X-Plane). No VerifyGAN data is used.",
+  "gpu_used": false,
+  "generated_utc": "2026-07-02T04:23:52Z"
+}

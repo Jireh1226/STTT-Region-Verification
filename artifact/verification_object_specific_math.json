@@ -1,0 +1,169 @@
+{
+  "provenance": {
+    "script": "verify_object_specific_math.py",
+    "timestamp_utc": "2026-05-29T20:54:19.091360+00:00",
+    "timeout_seconds": 120
+  },
+  "cell_mean_2x2": {
+    "n_cells": 32,
+    "calibration_quantiles": [
+      1,
+      99
+    ],
+    "results": {
+      "P1a": {
+        "status": "sat",
+        "time_seconds": 0.054,
+        "CTE": 10.0,
+        "HE": -50.6923
+      },
+      "P1b": {
+        "status": "sat",
+        "time_seconds": 0.067,
+        "CTE": -10.0,
+        "HE": 24.5106
+      },
+      "P4_left": {
+        "status": "sat",
+        "time_seconds": 0.024,
+        "CTE": 0.0,
+        "HE": -0.4236
+      },
+      "P4_right": {
+        "status": "sat",
+        "time_seconds": 0.022,
+        "CTE": 0.0,
+        "HE": -4.3722
+      },
+      "P5": {
+        "status": "sat",
+        "time_seconds": 0.029,
+        "CTE": -0.01,
+        "HE": -0.01
+      }
+    }
+  },
+  "cell_mean_4x4": {
+    "n_cells": 8,
+    "calibration_quantiles": [
+      1,
+      99
+    ],
+    "results": {
+      "P1a": {
+        "status": "sat",
+        "time_seconds": 0.024,
+        "CTE": 10.0,
+        "HE": -32.4215
+      },
+      "P1b": {
+        "status": "sat",
+        "time_seconds": 0.02,
+        "CTE": -10.0,
+        "HE": 13.4946
+      },
+      "P4_left": {
+        "status": "sat",
+        "time_seconds": 0.023,
+        "CTE": 0.0,
+        "HE": -2.5561
+      },
+      "P4_right": {
+        "status": "sat",
+        "time_seconds": 0.019,
+        "CTE": 0.0,
+        "HE": -0.4236
+      },
+      "P5": {
+        "status": "sat",
+        "time_seconds": 0.034,
+        "CTE": 0.01,
+        "HE": 0.01
+      }
+    }
+  },
+  "per_pair_lipschitz_p99": {
+    "n_pairs": 232,
+    "calibration_quantile": 99,
+    "tau_summary": {
+      "min": 0.02036273479461671,
+      "median": 0.23462254106998479,
+      "p95": 0.27407843631505974,
+      "max": 0.2831470620632172
+    },
+    "results": {
+      "P1a": {
+        "status": "sat",
+        "time_seconds": 0.149,
+        "CTE": 10.0,
+        "HE": -53.2902
+      },
+      "P1b": {
+        "status": "sat",
+        "time_seconds": 0.163,
+        "CTE": -10.0,
+        "HE": 15.7508
+      },
+      "P4_left": {
+        "status": "sat",
+        "time_seconds": 0.097,
+        "CTE": -3.7183,
+        "HE": 4.3866
+      },
+      "P4_right": {
+        "status": "sat",
+        "time_seconds": 0.096,
+        "CTE": 0.0,
+        "HE": -0.4236
+      },
+      "P5": {
+        "status": "sat",
+        "time_seconds": 0.18,
+        "CTE": 0.01,
+        "HE": 0.01
+      }
+    }
+  },
+  "per_pair_lipschitz_p90": {
+    "n_pairs": 232,
+    "calibration_quantile": 90,
+    "tau_summary": {
+      "min": 0.013921546936035173,
+      "median": 0.09323530197143556,
+      "p95": 0.20155882596969604,
+      "max": 0.20549018383026127
+    },
+    "results": {
+      "P1a": {
+        "status": "sat",
+        "time_seconds": 0.201,
+        "CTE": 10.0,
+        "HE": -52.5666
+      },
+      "P1b": {
+        "status": "sat",
+        "time_seconds": 0.112,
+        "CTE": -10.0,
+        "HE": 13.4946
+      },
+      "P4_left": {
+        "status": "sat",
+        "time_seconds": 0.117,
+        "CTE": -2.2933,
+        "HE": 3.352
+      },
+      "P4_right": {
+        "status": "sat",
+        "time_seconds": 0.095,
+        "CTE": 0.0,
+        "HE": -0.4236
+      },
+      "P5": {
+        "status": "sat",
+        "time_seconds": 0.172,
+        "CTE": -0.01,
+        "HE": -0.01
+      }
+    }
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "provenance": {
+    "script": "run_vnnlib_calibration_slice.py",
+    "timestamp_utc": "2026-06-24T18:40:02.359040+00:00",
+    "marabou": "Marabou version 2.0.0 [HEAD 215828c]",
+    "solver_binary": "prophecy_env/bin/Marabou",
+    "timeout_s": 120,
+    "split_and_conquer": true,
+    "snc_workers": 4,
+    "asset_source": "VNN-COMP 2023 benchmark mirror (github.com/ChristopherBrix/vnncomp2023_benchmarks)",
+    "purpose": "solver/property-plumbing calibration on known SAT/UNSAT labels; NOT a semantic-realism oracle"
+  },
+  "n_ran": 20,
+  "n_skipped_missing_assets": 0,
+  "results": [
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_2_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_2.vnnlib",
+      "expected": "sat",
+      "marabou_result": "sat",
+      "runtime_s": 48.92,
+      "timeout_s": 120,
+      "witness_returned": true,
+      "match": true
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_3_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_2.vnnlib",
+      "expected": "sat",
+      "marabou_result": "sat",
+      "runtime_s": 10.34,
+      "timeout_s": 120,
+      "witness_returned": true,
+      "match": true
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_4_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_2.vnnlib",
+      "expected": "sat",
+      "marabou_result": "sat",
+      "runtime_s": 3.25,
+      "timeout_s": 120,
+      "witness_returned": true,
+      "match": true
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_5_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_2.vnnlib",
+      "expected": "sat",
+      "marabou_result": "timeout",
+      "runtime_s": 120.3,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": false
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_6_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_2.vnnlib",
+      "expected": "sat",
+      "marabou_result": "sat",
+      "runtime_s": 39.62,
+      "timeout_s": 120,
+      "witness_returned": true,
+      "match": true
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_7_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_3.vnnlib",
+      "expected": "sat",
+      "marabou_result": "sat",
+      "runtime_s": 0.48,
+      "timeout_s": 120,
+      "witness_returned": true,
+      "match": true
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_7_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_4.vnnlib",
+      "expected": "sat",
+      "marabou_result": "sat",
+      "runtime_s": 0.45,
+      "timeout_s": 120,
+      "witness_returned": true,
+      "match": true
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_8_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_3.vnnlib",
+      "expected": "sat",
+      "marabou_result": "sat",
+      "runtime_s": 0.44,
+      "timeout_s": 120,
+      "witness_returned": true,
+      "match": true
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_8_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_4.vnnlib",
+      "expected": "sat",
+      "marabou_result": "sat",
+      "runtime_s": 0.46,
+      "timeout_s": 120,
+      "witness_returned": true,
+      "match": true
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_9_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_3.vnnlib",
+      "expected": "sat",
+      "marabou_result": "sat",
+      "runtime_s": 0.44,
+      "timeout_s": 120,
+      "witness_returned": true,
+      "match": true
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_1_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_1.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "unsat",
+      "runtime_s": 2.99,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": true
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_1_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_2.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "unsat",
+      "runtime_s": 42.85,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": true
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_1_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_3.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "timeout",
+      "runtime_s": 120.29,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": false
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_1_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_4.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "unsat",
+      "runtime_s": 68.57,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": true
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_1_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_5.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "timeout",
+      "runtime_s": 133.47,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": false
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_1_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_6.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "timeout",
+      "runtime_s": 120.32,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": false
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_2_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_1.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "unsat",
+      "runtime_s": 5.16,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": true
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_2_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_3.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "unsat",
+      "runtime_s": 56.67,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": true
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_2_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_4.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "unsat",
+      "runtime_s": 26.9,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": true
+    },
+    {
+      "bench": "acasxu_2023",
+      "onnx": "onnx/ACASXU_run2a_1_3_batch_2000.onnx",
+      "vnnlib": "vnnlib/prop_1.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "unsat",
+      "runtime_s": 12.36,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": true
+    }
+  ]
+}

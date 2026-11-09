@@ -1,0 +1,66 @@
+{
+  "dims": [
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "pca": {
+    "2": {
+      "verified_pct": 100.0,
+      "heldout_variance_capture": 0.7106
+    },
+    "4": {
+      "verified_pct": 100.0,
+      "heldout_variance_capture": 0.8292
+    },
+    "8": {
+      "verified_pct": 94.38,
+      "heldout_variance_capture": 0.9131
+    },
+    "16": {
+      "verified_pct": 68.44,
+      "heldout_variance_capture": 0.9674
+    },
+    "32": {
+      "verified_pct": 38.76,
+      "heldout_variance_capture": 0.9929
+    },
+    "64": {
+      "verified_pct": 26.8,
+      "heldout_variance_capture": 0.9997
+    }
+  },
+  "random": {
+    "2": {
+      "verified_pct": 100.0,
+      "heldout_variance_capture": 0.0142
+    },
+    "4": {
+      "verified_pct": 100.0,
+      "heldout_variance_capture": 0.0306
+    },
+    "8": {
+      "verified_pct": 100.0,
+      "heldout_variance_capture": 0.0604
+    },
+    "16": {
+      "verified_pct": 100.0,
+      "heldout_variance_capture": 0.1296
+    },
+    "32": {
+      "verified_pct": 99.81,
+      "heldout_variance_capture": 0.2547
+    },
+    "64": {
+      "verified_pct": 99.28,
+      "heldout_variance_capture": 0.502
+    }
+  },
+  "linf_reference": {
+    "verified_pct": 20.8,
+    "coverage": "n/a (full-dim pixel box; no low-dim membership)"
+  }
+}

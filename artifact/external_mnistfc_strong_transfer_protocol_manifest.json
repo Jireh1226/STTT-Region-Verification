@@ -1,0 +1,19 @@
+{
+  "experiment": "external_mnistfc_strong_transfer",
+  "protocol_version": 1,
+  "purpose": "Test the region-tagged workflow on an external image classifier (VNN-COMP mnist_fc, mnist-net_256x2) we did not train, with at least one genuinely data-conditioned non-box region (R4 local PCA; R3 class-AE if feasible) via composed ONNX + Marabou CLI.",
+  "benchmark": "VNN-COMP mnist_fc",
+  "network": "external/vnncomp/mnist_fc/onnx/mnist-net_256x2.onnx (784-256-256-10 ReLU; input [1,784,1] in [0,1]); not trained by us",
+  "dataset": "official MNIST (~/.keras/datasets/mnist.npz), numpy load",
+  "seed": 0,
+  "anchor_selection": "20 held-out test anchors, 2 per class, correctly classified by mnist_fc, ascending test index",
+  "target_class_rule": "highest non-true logit at the clean anchor x0",
+  "epsilons_R1": [0.05, 0.03],
+  "R4": {"pca_dim_d": 8, "neighbors": 100, "neighbor_source": "same-class train", "alpha_sigma": [1, 2, 3], "encoding": "composed ONNX z -> x0 + V_d^T z -> mnist_fc -> logits; verify z-box |z_j| <= alpha*sigma_j"},
+  "R3": {"source": "mnist_class_aes.npz (class decoders z(8)->ReLU(32)->linear(784), trained on MNIST train split)", "latent_box": "per-class [latent_lo, latent_hi] from train encodings", "encoding": "composed ONNX z -> D_k(z) -> mnist_fc -> logits"},
+  "property": "targeted class confusion: logit_target >= logit_true (SAT = confusion witness exists)",
+  "solver": "Marabou 2.0 CLI on composed/base ONNX, split-and-conquer, 4 workers, 120 s per query",
+  "status_parsing": "exact token match: 'sat' or 'unsat' in tokenized output; never substring",
+  "no_post_hoc_tuning": true,
+  "note": "Composition uses onnx 1.16.2 + onnxruntime 1.19.2 in prophecy_env (both import fine; only maraboupy hangs, so the CLI is used). Specs of VNN-COMP files are not modified; this region-transfer run is separate from the mnist_fc expected-label plumbing calibration."
+}

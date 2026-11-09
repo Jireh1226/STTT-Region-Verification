@@ -1,0 +1,152 @@
+{
+  "experiment": "p3_coverage_verification_frontier",
+  "note": "Verification rate vs data-membership/support for TinyTaxiNet P3 regions. Random 8D has no membership metric by construction and is marked accordingly.",
+  "L_inf_reference_verified": "186/893 (20.8%)",
+  "rows": [
+    {
+      "region": "L_inf mean+clip ball (eps=0.05)",
+      "family": "broad pixel box",
+      "n": 893,
+      "verified": 186,
+      "sat": 707,
+      "timeout": 0,
+      "verified_pct": 20.8,
+      "membership_metric": "none (axis-aligned pixel box; no learned/data membership)",
+      "membership_defined": false,
+      "support_note": "broad-ball witnesses in-cube but off-manifold; per-pair Lipschitz ~19x real baseline in the LARD analogue; on TinyTaxiNet the mean-constrained ball admits 707/893 excursions beyond the +-10 m envelope."
+    },
+    {
+      "region": "Label-conditioned KNN box (R5)",
+      "family": "data-conditioned pixel box",
+      "n": 20,
+      "verified": 5,
+      "sat": 15,
+      "timeout": 0,
+      "verified_pct": 25.0,
+      "membership_metric": "same-class K=100 nearest-neighbour per-pixel extent (data-conditioned box)",
+      "membership_defined": true,
+      "support_value": {
+        "witness_classifier_prob_median": 0.009795504302684357,
+        "witness_below_0_1": 17,
+        "nearest_real_L2_median": 0.8640519067027183
+      },
+      "support_note": "box extent is data-conditioned but per-pixel independence still admits off-manifold corners: witness classifier prob median ~0.01, 17/20 below 0.1."
+    },
+    {
+      "region": "Local PCA (R4), 1 sigma",
+      "family": "data-conditioned 8D affine subspace",
+      "n": 893,
+      "verified": 847,
+      "sat": 43,
+      "timeout": 3,
+      "verified_pct": 94.8,
+      "membership_metric": "8D local-PCA subspace of same-state-neighbour deviations (top-8 PCA variance capture)",
+      "membership_defined": true,
+      "support_value": {
+        "top8_variance_capture_median": 0.9166,
+        "top8_variance_capture_min": 0.8838,
+        "witness_classifier_prob_median": 0.0723
+      }
+    },
+    {
+      "region": "Local PCA (R4), 2 sigma",
+      "family": "data-conditioned 8D affine subspace",
+      "n": 893,
+      "verified": 664,
+      "sat": 225,
+      "timeout": 4,
+      "verified_pct": 74.4,
+      "membership_metric": "8D local-PCA subspace of same-state-neighbour deviations (top-8 PCA variance capture)",
+      "membership_defined": true,
+      "support_value": {
+        "top8_variance_capture_median": 0.9166,
+        "top8_variance_capture_min": 0.8838,
+        "witness_classifier_prob_median": 0.0723
+      }
+    },
+    {
+      "region": "Local PCA (R4), 3 sigma (200-subset)",
+      "family": "data-conditioned 8D affine subspace",
+      "n": 200,
+      "verified": 128,
+      "sat": 70,
+      "timeout": 2,
+      "verified_pct": 64.0,
+      "membership_metric": "8D local-PCA subspace",
+      "membership_defined": true,
+      "support_value": {
+        "top8_variance_capture_median": 0.9166,
+        "top8_variance_capture_min": 0.8838,
+        "witness_classifier_prob_median": 0.0723
+      }
+    },
+    {
+      "region": "Random 8D subspace, 1 sigma",
+      "family": "random 8D affine subspace (control)",
+      "n": 893,
+      "verified": 893,
+      "sat": 0,
+      "timeout": 0,
+      "verified_pct": 100.0,
+      "verified_range": [
+        893,
+        893
+      ],
+      "seeds": 3,
+      "membership_metric": "NONE",
+      "membership_defined": false,
+      "support_note": "random orientation at matched sigma scale; not data-conditioned, so no reconstruction / variance-capture / neighbour-membership metric applies. Verifies as often or more than local PCA, which is the point: verification rate alone does not certify a data-faithful region."
+    },
+    {
+      "region": "Random 8D subspace, 2 sigma",
+      "family": "random 8D affine subspace (control)",
+      "n": 893,
+      "verified": 881,
+      "sat": 12,
+      "timeout": 0,
+      "verified_pct": 98.7,
+      "verified_range": [
+        877,
+        886
+      ],
+      "seeds": 3,
+      "membership_metric": "NONE",
+      "membership_defined": false,
+      "support_note": "random orientation at matched sigma scale; not data-conditioned, so no reconstruction / variance-capture / neighbour-membership metric applies. Verifies as often or more than local PCA, which is the point: verification rate alone does not certify a data-faithful region."
+    },
+    {
+      "region": "Random 8D subspace, 3 sigma (200-subset)",
+      "family": "random 8D affine subspace (control)",
+      "n": 200,
+      "verified": 169,
+      "sat": 31,
+      "timeout": 0,
+      "verified_pct": 84.5,
+      "verified_range": [
+        165,
+        171
+      ],
+      "seeds": 3,
+      "membership_metric": "NONE",
+      "membership_defined": false,
+      "support_note": "random orientation at matched sigma scale; not data-conditioned, so no reconstruction / variance-capture / neighbour-membership metric applies. Verifies as often or more than local PCA, which is the point: verification rate alone does not certify a data-faithful region."
+    },
+    {
+      "region": "AE decoder box (R3) [P1 region, context]",
+      "family": "data-conditioned learned manifold",
+      "n": null,
+      "verified": null,
+      "sat": null,
+      "timeout": null,
+      "verified_pct": null,
+      "membership_metric": "AE latent box; held-out reconstruction + latent-box coverage",
+      "membership_defined": true,
+      "support_value": {
+        "heldout_recon_linf_median": 0.1604,
+        "heldout_latent_coverage_train_box": 0.9775,
+        "output_preservation_abs_delta_cte_median": 0.746
+      },
+      "support_note": "strongest data support of the region families (used for P1); shown for the coverage axis, not P3 verification rate."
+    }
+  ]
+}

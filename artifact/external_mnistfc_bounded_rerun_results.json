@@ -1,0 +1,89 @@
+{
+  "provenance": {
+    "script": "external_mnistfc_bounded_rerun.py",
+    "timestamp_utc": "2026-06-30T16:25:00.886134+00:00",
+    "timeout_budget_s": 600,
+    "anchors": [
+      3,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      21,
+      22,
+      23,
+      25,
+      28,
+      29,
+      30,
+      32,
+      34,
+      47,
+      51,
+      52,
+      54,
+      84,
+      110,
+      128,
+      134
+    ],
+    "selection": "R1@0.05 SAT and R4+bounds@1sigma timed out at 120s"
+  },
+  "results": [
+    {
+      "anchor_idx": 3,
+      "true_class": 0,
+      "target_class": 5,
+      "region": "R4_local_pca_bounded",
+      "alpha": 1.0,
+      "timeout_budget_s": 600,
+      "status": "unsat",
+      "runtime_s": 38.6
+    },
+    {
+      "anchor_idx": 5,
+      "true_class": 1,
+      "target_class": 9,
+      "region": "R4_local_pca_bounded",
+      "alpha": 1.0,
+      "timeout_budget_s": 600,
+      "status": "unsat",
+      "runtime_s": 36.4
+    },
+    {
+      "anchor_idx": 9,
+      "true_class": 9,
+      "target_class": 4,
+      "region": "R4_local_pca_bounded",
+      "alpha": 1.0,
+      "timeout_budget_s": 600,
+      "status": "unsat",
+      "runtime_s": 37.0
+    },
+    {
+      "anchor_idx": 10,
+      "true_class": 0,
+      "target_class": 8,
+      "region": "R4_local_pca_bounded",
+      "alpha": 1.0,
+      "timeout_budget_s": 600,
+      "status": "unsat",
+      "runtime_s": 34.7
+    },
+    {
+      "anchor_idx": 11,
+      "true_class": 6,
+      "target_class": 3,
+      "region": "R4_local_pca_bounded",
+      "alpha": 1.0,
+      "timeout_budget_s": 600,
+      "status": "unsat",
+      "runtime_s": 51.3
+    }
+  ]
+}

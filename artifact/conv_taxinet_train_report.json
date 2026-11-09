@@ -1,0 +1,14 @@
+{
+  "arch": "Conv(1,4,3)-ReLU-Conv(4,4,3)-ReLU-Flatten-Linear(512,32)-ReLU-Linear(32,2)",
+  "train_mse": 10.1024,
+  "test_mse": 10.8522,
+  "test_cte_mae_m": 1.395,
+  "test_he_mae_deg": 3.213,
+  "onnx": "conv_taxinet.onnx",
+  "input_shape": [
+    1,
+    1,
+    8,
+    16
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "experiment": "external_mnistfc_bounded_transfer_CORRECTED",
+  "verdict": "STRONG",
+  "critical_correction": "The first bounded run had an output-indexing bug: Marabou maps the composed two-output net as Y_0..9=logits, Y_10..793=pixels (the reverse of the onnxruntime graph output order). The original spec clamped logits to [0,1] and asserted confusion between two pixels, so its verdicts were invalid. Caught by the requested indexing validation, fixed in emit_bounded, re-validated on 5 anchors (confusion-only at Y_0..9 reproduces the unbounded R4 verdict exactly), and re-run.",
+  "indexing_validation": "external_mnistfc_output_indexing_validation.json (logits Y_0..9, pixels Y_10..793; 5/5 anchors match unbounded verdict)",
+  "monotonic_sanity": "external_mnistfc_monotonic_sanity.json (38 SAT witnesses: 23 clear confusion + 15 within 0.05 logit of the boundary; consistent, no bug)",
+  "corrected_result": {
+    "region": "R4 local-PCA at 1 sigma with valid-pixel constraints (0<=x_i<=1 on reconstructed pixels Y_10..793), 600 s budget",
+    "anchors": "the 11 held-out anchors where R1@0.05 (broad pixel ball) is SAT",
+    "R4_bounded_1sigma_status": "UNSAT on 11/11 (resolved in 32-390 s, zero timeouts)",
+    "runtimes_s": [
+      82.5,
+      67.1,
+      31.8,
+      54.6,
+      49.2,
+      77.6,
+      389.9,
+      135.0,
+      325.0,
+      68.5,
+      137.4
+    ]
+  },
+  "comparison": {
+    "R1@0.05_SAT_anchors": 11,
+    "removed_by_R4_unbounded_1sigma": 6,
+    "removed_by_R4_bounded_1sigma": 11,
+    "note": "Valid-pixel constraints make the removal MORE complete (11/11) than the unbounded region (6/11): the unbounded SAT witnesses on the other anchors were out-of-cube and disappear when pixels are bounded."
+  },
+  "R3_dropped": "R3 (class-AE latent box) is not used to support external transfer; even with correct indexing it is solver-heavy. External transfer is framed around bounded R4 only.",
+  "claim": "Bounded local-PCA removes broad-region class-confusion witnesses on an external image classifier we did not train: R4 at 1 sigma with valid-pixel constraints enforced is UNSAT on all 11 anchors where the broad pixel ball admits a witness."
+}

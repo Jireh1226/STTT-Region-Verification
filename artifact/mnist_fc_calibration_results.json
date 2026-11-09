@@ -1,0 +1,237 @@
+{
+  "provenance": {
+    "script": "run_vnnlib_calibration_slice.py",
+    "timestamp_utc": "2026-06-29T00:36:59.357677+00:00",
+    "marabou": "Marabou version 2.0.0 [HEAD 215828c]",
+    "solver_binary": "prophecy_env/bin/Marabou",
+    "timeout_s": 120,
+    "split_and_conquer": true,
+    "snc_workers": 4,
+    "asset_source": "VNN-COMP 2023 benchmark mirror (github.com/ChristopherBrix/vnncomp2023_benchmarks)",
+    "purpose": "solver/property-plumbing calibration on known SAT/UNSAT labels; NOT a semantic-realism oracle"
+  },
+  "n_ran": 20,
+  "n_skipped_missing_assets": 0,
+  "results": [
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_0_0.05.vnnlib",
+      "expected": "sat",
+      "marabou_result": "sat",
+      "runtime_s": 38.38,
+      "timeout_s": 120,
+      "witness_returned": true,
+      "match": true
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_12_0.03.vnnlib",
+      "expected": "sat",
+      "marabou_result": "sat",
+      "runtime_s": 48.77,
+      "timeout_s": 120,
+      "witness_returned": true,
+      "match": true
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_12_0.05.vnnlib",
+      "expected": "sat",
+      "marabou_result": "sat",
+      "runtime_s": 37.21,
+      "timeout_s": 120,
+      "witness_returned": true,
+      "match": true
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_1_0.03.vnnlib",
+      "expected": "sat",
+      "marabou_result": "timeout",
+      "runtime_s": 150.13,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": false
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_1_0.05.vnnlib",
+      "expected": "sat",
+      "marabou_result": "sat",
+      "runtime_s": 32.59,
+      "timeout_s": 120,
+      "witness_returned": true,
+      "match": true
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_2_0.03.vnnlib",
+      "expected": "sat",
+      "marabou_result": "timeout",
+      "runtime_s": 150.01,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": false
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_2_0.05.vnnlib",
+      "expected": "sat",
+      "marabou_result": "sat",
+      "runtime_s": 37.31,
+      "timeout_s": 120,
+      "witness_returned": true,
+      "match": true
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_4_0.05.vnnlib",
+      "expected": "sat",
+      "marabou_result": "timeout",
+      "runtime_s": 150.1,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": false
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_5_0.05.vnnlib",
+      "expected": "sat",
+      "marabou_result": "timeout",
+      "runtime_s": 150.21,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": false
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_6_0.05.vnnlib",
+      "expected": "sat",
+      "marabou_result": "timeout",
+      "runtime_s": 150.18,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": false
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_0_0.03.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "unsat",
+      "runtime_s": 101.73,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": true
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_10_0.03.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "unsat",
+      "runtime_s": 49.2,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": true
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_10_0.05.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "timeout",
+      "runtime_s": 150.16,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": false
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_11_0.03.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "unsat",
+      "runtime_s": 58.9,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": true
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_11_0.05.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "timeout",
+      "runtime_s": 150.13,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": false
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_13_0.03.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "unsat",
+      "runtime_s": 84.56,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": true
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_13_0.05.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "unsat",
+      "runtime_s": 148.82,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": true
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_14_0.03.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "unsat",
+      "runtime_s": 59.99,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": true
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_14_0.05.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "timeout",
+      "runtime_s": 150.09,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": false
+    },
+    {
+      "bench": "mnist_fc",
+      "onnx": "onnx/mnist-net_256x2.onnx",
+      "vnnlib": "vnnlib/prop_3_0.03.vnnlib",
+      "expected": "unsat",
+      "marabou_result": "unsat",
+      "runtime_s": 41.27,
+      "timeout_s": 120,
+      "witness_returned": false,
+      "match": true
+    }
+  ]
+}

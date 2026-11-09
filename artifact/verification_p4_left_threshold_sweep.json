@@ -1,0 +1,437 @@
+{
+  "provenance": {
+    "script": "verify_p4_left_threshold_sweep.py",
+    "timestamp_utc": "2026-05-30T21:00:09.619475+00:00",
+    "timeout_seconds": 120,
+    "purpose": "Magnitude floor for P4-left wrong-sign witness under each math region"
+  },
+  "by_region": {
+    "baseline_box_plus_mean": {
+      "largest_sat_k": -8,
+      "per_k": {
+        "k_1": {
+          "k": -1,
+          "status": "sat",
+          "time_seconds": 0.02,
+          "CTE": -1.8832,
+          "HE": 1.1608
+        },
+        "k_2": {
+          "k": -2,
+          "status": "sat",
+          "time_seconds": 0.02,
+          "CTE": -2.0,
+          "HE": 1.4133
+        },
+        "k_3": {
+          "k": -3,
+          "status": "sat",
+          "time_seconds": 0.02,
+          "CTE": -3.0,
+          "HE": 3.5446
+        },
+        "k_4": {
+          "k": -4,
+          "status": "sat",
+          "time_seconds": 0.02,
+          "CTE": -4.0,
+          "HE": 5.482
+        },
+        "k_5": {
+          "k": -5,
+          "status": "sat",
+          "time_seconds": 0.01,
+          "CTE": -5.0,
+          "HE": 7.1089
+        },
+        "k_6": {
+          "k": -6,
+          "status": "sat",
+          "time_seconds": 0.02,
+          "CTE": -6.0,
+          "HE": 8.3861
+        },
+        "k_7": {
+          "k": -7,
+          "status": "sat",
+          "time_seconds": 0.02,
+          "CTE": -7.0,
+          "HE": 9.6632
+        },
+        "k_8": {
+          "k": -8,
+          "status": "sat",
+          "time_seconds": 0.01,
+          "CTE": -8.0,
+          "HE": 10.9403
+        }
+      }
+    },
+    "tv_le_10": {
+      "largest_sat_k": -8,
+      "per_k": {
+        "k_1": {
+          "k": -1,
+          "status": "sat",
+          "time_seconds": 0.18,
+          "CTE": -1.0,
+          "HE": 2.5867
+        },
+        "k_2": {
+          "k": -2,
+          "status": "sat",
+          "time_seconds": 0.28,
+          "CTE": -2.0,
+          "HE": 1.1832
+        },
+        "k_3": {
+          "k": -3,
+          "status": "sat",
+          "time_seconds": 0.29,
+          "CTE": -3.0,
+          "HE": 3.339
+        },
+        "k_4": {
+          "k": -4,
+          "status": "sat",
+          "time_seconds": 0.28,
+          "CTE": -4.0,
+          "HE": 5.492
+        },
+        "k_5": {
+          "k": -5,
+          "status": "sat",
+          "time_seconds": 0.33,
+          "CTE": -5.0,
+          "HE": 7.6422
+        },
+        "k_6": {
+          "k": -6,
+          "status": "sat",
+          "time_seconds": 0.41,
+          "CTE": -6.0,
+          "HE": 9.7698
+        },
+        "k_7": {
+          "k": -7,
+          "status": "sat",
+          "time_seconds": 0.29,
+          "CTE": -7.0,
+          "HE": 11.2064
+        },
+        "k_8": {
+          "k": -8,
+          "status": "sat",
+          "time_seconds": 0.25,
+          "CTE": -8.0,
+          "HE": 12.643
+        }
+      }
+    },
+    "tv_le_6": {
+      "largest_sat_k": -8,
+      "per_k": {
+        "k_1": {
+          "k": -1,
+          "status": "sat",
+          "time_seconds": 0.16,
+          "CTE": -3.5475,
+          "HE": 6.2465
+        },
+        "k_2": {
+          "k": -2,
+          "status": "sat",
+          "time_seconds": 0.22,
+          "CTE": -2.0,
+          "HE": 4.0233
+        },
+        "k_3": {
+          "k": -3,
+          "status": "sat",
+          "time_seconds": 0.23,
+          "CTE": -5.2839,
+          "HE": 8.741
+        },
+        "k_4": {
+          "k": -4,
+          "status": "sat",
+          "time_seconds": 0.2,
+          "CTE": -5.2839,
+          "HE": 8.741
+        },
+        "k_5": {
+          "k": -5,
+          "status": "sat",
+          "time_seconds": 0.21,
+          "CTE": -5.3208,
+          "HE": 8.7941
+        },
+        "k_6": {
+          "k": -6,
+          "status": "sat",
+          "time_seconds": 0.19,
+          "CTE": -6.0,
+          "HE": 9.7698
+        },
+        "k_7": {
+          "k": -7,
+          "status": "sat",
+          "time_seconds": 0.21,
+          "CTE": -7.0,
+          "HE": 11.2064
+        },
+        "k_8": {
+          "k": -8,
+          "status": "sat",
+          "time_seconds": 0.19,
+          "CTE": -8.0,
+          "HE": 12.643
+        }
+      }
+    },
+    "fourier_le_3p34_orthonormal": {
+      "largest_sat_k": -8,
+      "per_k": {
+        "k_1": {
+          "k": -1,
+          "status": "sat",
+          "time_seconds": 1.25,
+          "CTE": -1.0,
+          "HE": -1.694
+        },
+        "k_2": {
+          "k": -2,
+          "status": "sat",
+          "time_seconds": 1.0,
+          "CTE": -2.0,
+          "HE": 0.4464
+        },
+        "k_3": {
+          "k": -3,
+          "status": "sat",
+          "time_seconds": 0.86,
+          "CTE": -3.0,
+          "HE": 2.5847
+        },
+        "k_4": {
+          "k": -4,
+          "status": "sat",
+          "time_seconds": 0.85,
+          "CTE": -4.0,
+          "HE": 4.7069
+        },
+        "k_5": {
+          "k": -5,
+          "status": "sat",
+          "time_seconds": 0.93,
+          "CTE": -5.0,
+          "HE": 6.7476
+        },
+        "k_6": {
+          "k": -6,
+          "status": "sat",
+          "time_seconds": 1.09,
+          "CTE": -6.0,
+          "HE": 6.5547
+        },
+        "k_7": {
+          "k": -7,
+          "status": "sat",
+          "time_seconds": 1.03,
+          "CTE": -7.0,
+          "HE": 8.764
+        },
+        "k_8": {
+          "k": -8,
+          "status": "sat",
+          "time_seconds": 1.09,
+          "CTE": -8.0,
+          "HE": 10.8284
+        }
+      }
+    },
+    "photometric_le_0p184": {
+      "largest_sat_k": -8,
+      "per_k": {
+        "k_1": {
+          "k": -1,
+          "status": "sat",
+          "time_seconds": 0.05,
+          "CTE": -2.8625,
+          "HE": 5.2624
+        },
+        "k_2": {
+          "k": -2,
+          "status": "sat",
+          "time_seconds": 0.05,
+          "CTE": -3.8475,
+          "HE": 6.6774
+        },
+        "k_3": {
+          "k": -3,
+          "status": "sat",
+          "time_seconds": 0.05,
+          "CTE": -3.9894,
+          "HE": 6.8814
+        },
+        "k_4": {
+          "k": -4,
+          "status": "sat",
+          "time_seconds": 0.05,
+          "CTE": -4.2387,
+          "HE": 6.6461
+        },
+        "k_5": {
+          "k": -5,
+          "status": "sat",
+          "time_seconds": 0.05,
+          "CTE": -5.0,
+          "HE": 8.3332
+        },
+        "k_6": {
+          "k": -6,
+          "status": "sat",
+          "time_seconds": 0.05,
+          "CTE": -6.0,
+          "HE": 8.7287
+        },
+        "k_7": {
+          "k": -7,
+          "status": "sat",
+          "time_seconds": 0.04,
+          "CTE": -7.0,
+          "HE": 9.6632
+        },
+        "k_8": {
+          "k": -8,
+          "status": "sat",
+          "time_seconds": 0.05,
+          "CTE": -8.0,
+          "HE": 10.9403
+        }
+      }
+    },
+    "per_pair_lip_p90": {
+      "largest_sat_k": -8,
+      "per_k": {
+        "k_1": {
+          "k": -1,
+          "status": "sat",
+          "time_seconds": 0.13,
+          "CTE": -1.0,
+          "HE": 0.7289
+        },
+        "k_2": {
+          "k": -2,
+          "status": "sat",
+          "time_seconds": 0.15,
+          "CTE": -2.0,
+          "HE": 2.5352
+        },
+        "k_3": {
+          "k": -3,
+          "status": "sat",
+          "time_seconds": 0.14,
+          "CTE": -3.0,
+          "HE": 4.6038
+        },
+        "k_4": {
+          "k": -4,
+          "status": "sat",
+          "time_seconds": 0.15,
+          "CTE": -4.0,
+          "HE": 6.3212
+        },
+        "k_5": {
+          "k": -5,
+          "status": "sat",
+          "time_seconds": 0.13,
+          "CTE": -5.0,
+          "HE": 8.3332
+        },
+        "k_6": {
+          "k": -6,
+          "status": "sat",
+          "time_seconds": 0.14,
+          "CTE": -6.0,
+          "HE": 9.6223
+        },
+        "k_7": {
+          "k": -7,
+          "status": "sat",
+          "time_seconds": 0.13,
+          "CTE": -7.0,
+          "HE": 10.1107
+        },
+        "k_8": {
+          "k": -8,
+          "status": "sat",
+          "time_seconds": 0.16,
+          "CTE": -8.0,
+          "HE": 10.9403
+        }
+      }
+    },
+    "per_pair_lip_p99": {
+      "largest_sat_k": -8,
+      "per_k": {
+        "k_1": {
+          "k": -1,
+          "status": "sat",
+          "time_seconds": 0.1,
+          "CTE": -4.2779,
+          "HE": 5.2663
+        },
+        "k_2": {
+          "k": -2,
+          "status": "sat",
+          "time_seconds": 0.11,
+          "CTE": -5.1681,
+          "HE": 7.3236
+        },
+        "k_3": {
+          "k": -3,
+          "status": "sat",
+          "time_seconds": 0.1,
+          "CTE": -3.0,
+          "HE": 1.1802
+        },
+        "k_4": {
+          "k": -4,
+          "status": "sat",
+          "time_seconds": 0.11,
+          "CTE": -4.0,
+          "HE": 3.7102
+        },
+        "k_5": {
+          "k": -5,
+          "status": "sat",
+          "time_seconds": 0.12,
+          "CTE": -5.0,
+          "HE": 5.552
+        },
+        "k_6": {
+          "k": -6,
+          "status": "sat",
+          "time_seconds": 0.12,
+          "CTE": -6.0,
+          "HE": 7.3125
+        },
+        "k_7": {
+          "k": -7,
+          "status": "sat",
+          "time_seconds": 0.12,
+          "CTE": -7.0,
+          "HE": 8.6184
+        },
+        "k_8": {
+          "k": -8,
+          "status": "sat",
+          "time_seconds": 0.15,
+          "CTE": -8.0,
+          "HE": 8.992
+        }
+      }
+    }
+  }
+}

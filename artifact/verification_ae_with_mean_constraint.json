@@ -1,0 +1,147 @@
+{
+  "P1a_CTE_upper": {
+    "ae_subset": "centered",
+    "ae_no_mean": {
+      "status": "unsat",
+      "time_seconds": 12.0453
+    },
+    "ae_with_mean": {
+      "status": "unsat",
+      "time_seconds": 12.7506
+    }
+  },
+  "P1b_CTE_lower": {
+    "ae_subset": "centered",
+    "ae_no_mean": {
+      "status": "unsat",
+      "time_seconds": 3.638
+    },
+    "ae_with_mean": {
+      "status": "unsat",
+      "time_seconds": 3.4284
+    }
+  },
+  "P4_C_left": {
+    "ae_subset": "left",
+    "ae_no_mean": {
+      "status": "sat",
+      "time_seconds": 0.1027,
+      "counterexample": {
+        "CTE": 0.0,
+        "HE": 13.704363,
+        "pixel_sum": 53.725158,
+        "latent": [
+          -1.788821,
+          -1.16984,
+          0.174378,
+          0.983719,
+          1.836424,
+          -0.526133,
+          0.390725,
+          -0.021969
+        ]
+      }
+    },
+    "ae_with_mean": {
+      "status": "sat",
+      "time_seconds": 0.1373,
+      "counterexample": {
+        "CTE": 0.0,
+        "HE": 16.693525,
+        "pixel_sum": 64.0,
+        "latent": [
+          -2.257564,
+          -1.649378,
+          0.194791,
+          1.176655,
+          2.137067,
+          -0.490266,
+          0.604185,
+          -0.103046
+        ]
+      }
+    }
+  },
+  "P4_C_right": {
+    "ae_subset": "right",
+    "ae_no_mean": {
+      "status": "sat",
+      "time_seconds": 0.1479,
+      "counterexample": {
+        "CTE": 0.0,
+        "HE": 35.265698,
+        "pixel_sum": 66.630679,
+        "latent": [
+          -1.764717,
+          -0.793867,
+          -0.071426,
+          1.35287,
+          1.920117,
+          -0.100405,
+          0.886296,
+          -0.452879
+        ]
+      }
+    },
+    "ae_with_mean": {
+      "status": "sat",
+      "time_seconds": 0.068,
+      "counterexample": {
+        "CTE": 0.0,
+        "HE": 3.865049,
+        "pixel_sum": 64.0,
+        "latent": [
+          -2.430933,
+          -0.595438,
+          -0.610358,
+          1.409641,
+          1.727222,
+          0.275683,
+          0.319274,
+          0.482947
+        ]
+      }
+    }
+  },
+  "P5_deadzone": {
+    "ae_subset": "off_center",
+    "ae_no_mean": {
+      "status": "sat",
+      "time_seconds": 0.1421,
+      "counterexample": {
+        "CTE": 0.01,
+        "HE": 0.01,
+        "pixel_sum": 55.07257,
+        "latent": [
+          -1.132951,
+          -0.763109,
+          0.141431,
+          1.25453,
+          1.421203,
+          -0.901872,
+          -0.001386,
+          -0.24703
+        ]
+      }
+    },
+    "ae_with_mean": {
+      "status": "sat",
+      "time_seconds": 0.1307,
+      "counterexample": {
+        "CTE": 0.01,
+        "HE": 0.01,
+        "pixel_sum": 64.0,
+        "latent": [
+          -2.078665,
+          -0.280251,
+          -0.250284,
+          1.333721,
+          1.301499,
+          0.373694,
+          -0.409746,
+          0.505079
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "provenance": {
+    "script": "characterize_p4_wrong_sign.py",
+    "timestamp_utc": "2026-07-02T04:23:52.970761+00:00",
+    "method": "released .nnet numpy forward on SK_DownsampledGANFocusAreaData.h5",
+    "definition": "wrong-sign = sign(true_CTE)!=sign(pred_CTE) among |true_CTE|>2 m"
+  },
+  "counts": {
+    "n_images": 10000,
+    "n_eligible_abs_cte_gt2": 8227,
+    "n_wrong_sign": 142,
+    "rate": 0.01726
+  },
+  "by_side": {
+    "true_left_pred_right": {
+      "n": 92,
+      "of_eligible_left": 4128
+    },
+    "true_right_pred_left": {
+      "n": 50,
+      "of_eligible_right": 4099
+    }
+  },
+  "by_magnitude_band_abs_true_cte": {
+    "2-3": {
+      "eligible": 917,
+      "wrong": 58,
+      "rate": 0.0632
+    },
+    "3-5": {
+      "eligible": 1820,
+      "wrong": 43,
+      "rate": 0.0236
+    },
+    "5-8": {
+      "eligible": 2741,
+      "wrong": 13,
+      "rate": 0.0047
+    },
+    ">8": {
+      "eligible": 2749,
+      "wrong": 28,
+      "rate": 0.0102
+    }
+  },
+  "wrong_sign_distribution": {
+    "true_cte": {
+      "p0": -3.3628,
+      "p5": -2.8482,
+      "p25": -2.2171,
+      "p50": 3.4222,
+      "p75": 5.3977,
+      "p95": 10.4898,
+      "p100": 10.897
+    },
+    "true_he": {
+      "p0": -17.753,
+      "p5": 10.6307,
+      "p25": 16.3275,
+      "p50": 21.5744,
+      "p75": 25.3212,
+      "p95": 28.5473,
+      "p100": 29.713
+    },
+    "pred_cte": {
+      "p0": -3.5087,
+      "p5": -2.8759,
+      "p25": -1.0253,
+      "p50": -0.2109,
+      "p75": 0.4494,
+      "p95": 1.827,
+      "p100": 3.2792
+    },
+    "pred_he": {
+      "p0": -14.9791,
+      "p5": 13.2223,
+      "p25": 20.2993,
+      "p50": 24.4817,
+      "p75": 27.9826,
+      "p95": 31.5392,
+      "p100": 32.7505
+    },
+    "abs_true_cte": {
+      "p0": 2.0036,
+      "p5": 2.0598,
+      "p25": 2.4221,
+      "p50": 3.4222,
+      "p75": 5.3977,
+      "p95": 10.4898,
+      "p100": 10.897
+    },
+    "abs_pred_cte": {
+      "p0": 0.0025,
+      "p5": 0.066,
+      "p25": 0.251,
+      "p50": 0.7225,
+      "p75": 1.5639,
+      "p95": 2.9592,
+      "p100": 3.5087
+    }
+  },
+  "boundary_profile": {
+    "abs_pred_cte_quantiles": {
+      "p0": 0.0025,
+      "p5": 0.066,
+      "p25": 0.251,
+      "p50": 0.7225,
+      "p75": 1.5639,
+      "p95": 2.9592,
+      "p100": 3.5087
+    },
+    "frac_marginal_abs_pred_cte_lt_0p5": 0.3944,
+    "frac_marginal_abs_pred_cte_lt_1p0": 0.5775,
+    "frac_confident_abs_pred_cte_gt_2p0": 0.1197,
+    "note": "small |pred_CTE| = network places the image just on the wrong side of 0 (near its CTE decision boundary); large = confidently wrong"
+  },
+  "support_profile": {
+    "subsample_size": 142,
+    "nearest_real_L2_median": 0.2234,
+    "baseline_eligible_nearest_real_L2_median": 0.178,
+    "frac_wrong_whose_nearest_neighbour_is_opposite_side": 0.0,
+    "mean_kNN_opposite_side_fraction_k10": 0.0,
+    "reading": "high opposite-side kNN fraction => wrong-sign images sit among opposite-side images (a confusable geometric neighbourhood); low => isolated"
+  },
+  "clustering": {
+    "wrong_sign_mean_pairwise_L2": 0.9653,
+    "random_eligible_mean_pairwise_L2": 1.1305,
+    "reading": "smaller wrong-sign pairwise distance than random eligible => the wrong-sign set is more localized than a random eligible subset"
+  }
+}

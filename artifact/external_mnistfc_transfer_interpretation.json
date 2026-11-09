@@ -1,0 +1,18 @@
+{
+  "experiment": "external_mnistfc_region_transfer",
+  "verdict": "WEAK / DO NOT INCLUDE",
+  "external_network": "VNN-COMP mnist_fc mnist-net_256x2 (784-256-256-10 ReLU), not trained by us",
+  "ran": {"anchors": 10, "per_class": 1, "regions_run": ["R1_linf_ball", "R2_ball_mass_band", "R5_neighbor_box"], "eps": 0.05, "property": "single-target class-confusion (runner-up)"},
+  "answers": {
+    "1_module_protocol_ran_on_external_net": "Partly. The protocol ran on the external ONNX via the Marabou CLI with region_audit numpy helpers, but the intended region_audit.run_query (maraboupy) path could not be used: maraboupy import hangs on this filesystem. TensorFlow also hangs and the onnx library is absent.",
+    "2_region_dependent_verdict_shift": "NO. 0/10 anchors show any SAT/UNSAT disagreement across R1, R2, R5. Counts: R1 7 SAT / 3 timeout, R2 7 SAT / 3 timeout, R5 10 SAT. The data-conditioned R5 removes no witnesses.",
+    "3_broad_witnesses_less_supported_than_tight": "NO clean signal. The audit discriminates region TYPE but the two non-learned signals disagree: R1/R2 broad witnesses sit near the real anchor (nearest-test-sameclass L2 ~0.8-1.0) with elevated per-pair (~0.03-0.15, adversarial noise); R5 box witnesses are far off-manifold (L2 ~3.6-6.1) but smooth (per-pair ~0.005, near the real baseline 0.007). Neither region is uniformly less supported.",
+    "4_learned_regions_preserve_real_data": "Not testable here. R3 (class-AE) and R4 (local-PCA) require maraboupy or onnx graph surgery to compose onto the external ONNX; neither is available, so the learned/manifold-constrained regions were not run.",
+    "5_meaningful_comparison": "NO. The only data-conditioned region runnable in this environment (R5, a per-pixel box) is itself loose and admits witnesses just like the broad ball. The manifold-constrained regions that produce the verdict shift in the paper (R3, R4) and R6 (TV, needs aux slack vars) are environmentally blocked.",
+    "6_expected_label_calibration_correct": "YES, unchanged. The mnist_fc expected-label plumbing calibration remains 12/12 completed-match (separate run); make reproduce-calibration still defaults to mnist_fc.",
+    "7_what_failed_or_weakened": "maraboupy/tensorflow import hang and missing onnx lib block region_audit.run_query and the R3/R4/R6 regions; mnist-net_256x2 robustness is timeout-heavy (3/10 broad-region timeouts at 120s SnC); the runnable pixel-box regions do not differentiate."
+  },
+  "real_baselines": {"test_self_nn_L2_median": 5.95, "test_per_pair_violation_frac_mean": 0.007, "test_tv_median": 101.3, "anchor_model_accuracy": 1.0},
+  "manuscript_action": "NONE. Per the protocol, a WEAK verdict means the manuscript is not edited. The expected-label plumbing calibration (already in the paper) is unaffected.",
+  "honest_summary": "The reusable workflow could be pointed at an external image classifier we did not train, and it ran and audited witnesses; but it did NOT reproduce the region-dependent verdict shift that is the paper's central transfer phenomenon. That shift depends on manifold-constrained regions (R3 AE, R4 local PCA), which this environment cannot compose onto an external ONNX (maraboupy import hangs, onnx lib absent). The loose pixel-box regions that ARE runnable give identical verdicts. This is an environment-and-network limitation, not evidence against the workflow, but it does not provide transfer evidence, so it is reported and not added to the paper."
+}

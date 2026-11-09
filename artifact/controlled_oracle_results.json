@@ -1,0 +1,241 @@
+{
+  "provenance": {
+    "script": "verify_controlled_oracle.py",
+    "timestamp_utc": "2026-06-24T18:57:48.079784+00:00",
+    "solver": "Marabou 2.0 CLI on exported .nnet with generated VNN-LIB",
+    "property": "P4-analog: correct sign y0>0 on left-offset region (true CTE>2.0); witness query asserts y0<=-1.0 (strong wrong-sign)",
+    "bug_cte": 2.0,
+    "wrong_sign_margin": -1.0,
+    "timeout_s": 60,
+    "local_pca_alpha": 1.0,
+    "audit_script": "audit_controlled_witnesses.py",
+    "renderer_grid_n": 20000,
+    "support_percentile": 99.0,
+    "renderer_supported_threshold_L2": 0.756,
+    "note": "Controlled known-truth oracle calibration. The renderer grid is a semantic-support oracle independent of the audit classifier; it lets the true-vs-artifact distinction be checked, unlike on TinyTaxiNet."
+  },
+  "ground_truth": {
+    "M_good": "no semantic failure in the tested state range",
+    "M_bug": "injected TRUE failure: wrong-sign CTE on rendered images with true CTE > 2.0",
+    "M_artifact": "ARTIFACT-only failure: wrong-sign only on a non-renderable checkerboard trigger; correct on all rendered images"
+  },
+  "compact_table": [
+    {
+      "model": "M_good",
+      "ground_truth": "no semantic failure in the tested state range",
+      "broad_R1": "sat",
+      "tight_R5": "sat",
+      "structured_R4": "unsat",
+      "witness_audit": "removed by structured region; no failure on any re-rendered state (box artifact)",
+      "expected_recovered": true
+    },
+    {
+      "model": "M_bug",
+      "ground_truth": "injected TRUE failure: wrong-sign CTE on rendered images with true CTE > 2.0",
+      "broad_R1": "sat",
+      "tight_R5": "sat",
+      "structured_R4": "sat",
+      "witness_audit": "survives structured region; failure reproduces on the re-rendered nearest state (true failure)",
+      "expected_recovered": true
+    },
+    {
+      "model": "M_artifact",
+      "ground_truth": "ARTIFACT-only failure: wrong-sign only on a non-renderable checkerboard trigger; correct on all rendered images",
+      "broad_R1": "sat",
+      "tight_R5": "sat",
+      "structured_R4": "unsat",
+      "witness_audit": "removed by structured region; no failure on any re-rendered state (box artifact)",
+      "expected_recovered": true
+    }
+  ],
+  "by_model": {
+    "M_good": {
+      "ground_truth": "no semantic failure in the tested state range",
+      "regions": {
+        "R1_broad_box": {
+          "status": "sat",
+          "pred_cte": -1.0,
+          "audit": {
+            "classifier_prob": 0.0,
+            "nearest_rendered_L2": 1.751,
+            "per_pair_violation_frac": 0.069,
+            "nearest_grid_L2": 1.475,
+            "nearest_grid_state": {
+              "cte": -5.34,
+              "heading": 8.39,
+              "brightness": 0.3,
+              "width": 1.01
+            },
+            "nearest_state_in_bug_region": false,
+            "renderer_supported_L2": false,
+            "pred_on_nearest_render": -4.799,
+            "wrong_sign_on_nearest_render": false
+          }
+        },
+        "R5_neighbor_box": {
+          "status": "sat",
+          "pred_cte": -1.0,
+          "audit": {
+            "classifier_prob": 0.0,
+            "nearest_rendered_L2": 1.786,
+            "per_pair_violation_frac": 0.147,
+            "nearest_grid_L2": 1.572,
+            "nearest_grid_state": {
+              "cte": -5.58,
+              "heading": 6.79,
+              "brightness": 0.32,
+              "width": 1.0
+            },
+            "nearest_state_in_bug_region": false,
+            "renderer_supported_L2": false,
+            "pred_on_nearest_render": -5.035,
+            "wrong_sign_on_nearest_render": false
+          }
+        },
+        "R4_local_pca": {
+          "status": "unsat"
+        }
+      }
+    },
+    "M_bug": {
+      "ground_truth": "injected TRUE failure: wrong-sign CTE on rendered images with true CTE > 2.0",
+      "regions": {
+        "R1_broad_box": {
+          "status": "sat",
+          "pred_cte": -3.479,
+          "audit": {
+            "classifier_prob": 0.0001,
+            "nearest_rendered_L2": 1.682,
+            "per_pair_violation_frac": 0.091,
+            "nearest_grid_L2": 1.59,
+            "nearest_grid_state": {
+              "cte": 3.77,
+              "heading": 8.51,
+              "brightness": 0.31,
+              "width": 1.0
+            },
+            "nearest_state_in_bug_region": true,
+            "renderer_supported_L2": false,
+            "pred_on_nearest_render": -4.089,
+            "wrong_sign_on_nearest_render": true
+          }
+        },
+        "R5_neighbor_box": {
+          "status": "sat",
+          "pred_cte": -3.641,
+          "audit": {
+            "classifier_prob": 0.5603,
+            "nearest_rendered_L2": 1.577,
+            "per_pair_violation_frac": 0.082,
+            "nearest_grid_L2": 1.5,
+            "nearest_grid_state": {
+              "cte": 3.77,
+              "heading": 8.51,
+              "brightness": 0.31,
+              "width": 1.0
+            },
+            "nearest_state_in_bug_region": true,
+            "renderer_supported_L2": false,
+            "pred_on_nearest_render": -4.089,
+            "wrong_sign_on_nearest_render": true
+          }
+        },
+        "R4_local_pca": {
+          "status": "sat",
+          "pred_cte": -4.682,
+          "audit": {
+            "classifier_prob": 0.0285,
+            "nearest_rendered_L2": 1.299,
+            "per_pair_violation_frac": 0.177,
+            "nearest_grid_L2": 1.255,
+            "nearest_grid_state": {
+              "cte": 3.79,
+              "heading": 8.24,
+              "brightness": 0.51,
+              "width": 1.69
+            },
+            "nearest_state_in_bug_region": true,
+            "renderer_supported_L2": false,
+            "pred_on_nearest_render": -4.039,
+            "wrong_sign_on_nearest_render": true
+          }
+        }
+      }
+    },
+    "M_artifact": {
+      "ground_truth": "ARTIFACT-only failure: wrong-sign only on a non-renderable checkerboard trigger; correct on all rendered images",
+      "regions": {
+        "R1_broad_box": {
+          "status": "sat",
+          "pred_cte": -1.0,
+          "audit": {
+            "classifier_prob": 0.0001,
+            "nearest_rendered_L2": 1.734,
+            "per_pair_violation_frac": 0.03,
+            "nearest_grid_L2": 1.547,
+            "nearest_grid_state": {
+              "cte": -5.78,
+              "heading": -8.03,
+              "brightness": 0.3,
+              "width": 1.09
+            },
+            "nearest_state_in_bug_region": false,
+            "renderer_supported_L2": false,
+            "pred_on_nearest_render": -4.684,
+            "wrong_sign_on_nearest_render": false
+          }
+        },
+        "R5_neighbor_box": {
+          "status": "sat",
+          "pred_cte": -1.0,
+          "audit": {
+            "classifier_prob": 0.0008,
+            "nearest_rendered_L2": 1.611,
+            "per_pair_violation_frac": 0.069,
+            "nearest_grid_L2": 1.484,
+            "nearest_grid_state": {
+              "cte": 3.29,
+              "heading": 0.91,
+              "brightness": 0.3,
+              "width": 1.01
+            },
+            "nearest_state_in_bug_region": true,
+            "renderer_supported_L2": false,
+            "pred_on_nearest_render": 2.433,
+            "wrong_sign_on_nearest_render": false
+          }
+        },
+        "R4_local_pca": {
+          "status": "unsat"
+        }
+      }
+    }
+  },
+  "assessment": {
+    "M_good": {
+      "expected_supported": false,
+      "box_region_sat": true,
+      "structured_region_sat": false,
+      "failure_reproduces_on_render": false,
+      "min_nearest_grid_L2": 1.475,
+      "expected_behavior_recovered": true
+    },
+    "M_bug": {
+      "expected_supported": true,
+      "box_region_sat": true,
+      "structured_region_sat": true,
+      "failure_reproduces_on_render": true,
+      "min_nearest_grid_L2": 1.255,
+      "expected_behavior_recovered": true
+    },
+    "M_artifact": {
+      "expected_supported": false,
+      "box_region_sat": true,
+      "structured_region_sat": false,
+      "failure_reproduces_on_render": false,
+      "min_nearest_grid_L2": 1.484,
+      "expected_behavior_recovered": true
+    }
+  },
+  "all_recovered": true
+}

@@ -1,0 +1,130 @@
+{
+  "provenance": {
+    "script": "mnist_instantiation.py",
+    "module": "region_audit.py",
+    "anchor_idx": 3,
+    "true_class": 0,
+    "expected_from": "mnist_protocol_results.json",
+    "timestamp_utc": "2026-06-13T00:02:51.903882+00:00"
+  },
+  "checks": [
+    {
+      "name": "P3@R1(x0,0.05)",
+      "expected": "sat",
+      "got": "sat",
+      "ok": true,
+      "time_seconds": 0.4402,
+      "region": {
+        "tag": "R1",
+        "kind": "linf_ball",
+        "eps": 0.05
+      }
+    },
+    {
+      "name": "P3@R2(x0,0.05)",
+      "expected": "sat",
+      "got": "sat",
+      "ok": true,
+      "time_seconds": 0.4259,
+      "region": {
+        "tag": "R2",
+        "kind": "linf_ball",
+        "eps": 0.05,
+        "constraints": [
+          {
+            "name": "mass_band",
+            "lo": 69.92802447419815,
+            "hi": 201.96211731272092
+          }
+        ]
+      }
+    },
+    {
+      "name": "P3@R3(class-AE)",
+      "expected": "unsat",
+      "got": "unsat",
+      "ok": true,
+      "time_seconds": 2.8387,
+      "region": {
+        "tag": "R3",
+        "kind": "inline_relu_decoder",
+        "latent_dim": 8
+      }
+    },
+    {
+      "name": "P3@R4(2sigma)",
+      "expected": "unsat",
+      "got": "unsat",
+      "ok": true,
+      "time_seconds": 2.3303,
+      "region": {
+        "tag": "R4",
+        "kind": "local_pca",
+        "d": 8,
+        "alpha": 2.0
+      }
+    },
+    {
+      "name": "P3@R5(neighbor box)",
+      "expected": "sat",
+      "got": "sat",
+      "ok": true,
+      "time_seconds": 0.1563,
+      "region": {
+        "tag": "R5",
+        "kind": "neighbor_box",
+        "n_neighbors": 100
+      }
+    },
+    {
+      "name": "P3@R6(class box+TV)",
+      "expected": "sat",
+      "got": "sat",
+      "ok": true,
+      "time_seconds": 5.7824,
+      "region": {
+        "tag": "R6",
+        "kind": "subset_box",
+        "subset": "class0",
+        "n_images": 5923,
+        "constraints": [
+          {
+            "name": "tv",
+            "tau": 135.59215686274533
+          }
+        ]
+      }
+    },
+    {
+      "name": "P4@R1(class box)",
+      "expected": "sat",
+      "got": "sat",
+      "ok": true,
+      "time_seconds": 0.1654,
+      "region": {
+        "tag": "R1",
+        "kind": "subset_box",
+        "subset": "class0",
+        "n_images": 5923
+      }
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "total": 7
+  },
+  "witness_audit": {
+    "witness_scores": {
+      "nearest_real_L2": 0.9440740194970384,
+      "per_pair_violation_frac": 0.20105820105820105,
+      "classifier_prob": 9.602057459812368e-07
+    },
+    "real_baseline": {
+      "n": 98,
+      "nearest_real_L2_median": 4.889070563885333,
+      "per_pair_violation_frac_mean": 0.05140508584386136,
+      "classifier_prob_mean": 0.9989919269149123,
+      "classifier_prob_median": 0.9996893031307537
+    }
+  }
+}

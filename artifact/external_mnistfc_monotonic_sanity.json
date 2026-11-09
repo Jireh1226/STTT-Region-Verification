@@ -1,0 +1,12 @@
+{
+  "provenance": {
+    "script": "monotonic redo on saved composed nets",
+    "timestamp_utc": "2026-06-30T00:10:26.940296+00:00"
+  },
+  "method": "evaluate each R4 SAT witness z through the SAVED composed ONNX (verifier basis baked in; avoids SVD-sign recompute)",
+  "n_sat_witnesses": 38,
+  "reproduce_clear_confusion": 23,
+  "near_boundary_misses_gap_lt_0.05": 15,
+  "all_confusion_or_boundary": true,
+  "conclusion": "Every SAT witness either reproduces confusion or sits within 0.05 logit of the decision boundary; consistent with Marabou returning boundary-feasible witnesses for the targeted-confusion property (logit_t>=logit_c is satisfiable at equality). No encoding/indexing bug; the earlier 22/38 figure was an SVD-sign artifact of recomputing the PCA basis in the audit."
+}

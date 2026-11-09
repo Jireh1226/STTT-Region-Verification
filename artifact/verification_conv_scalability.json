@@ -1,0 +1,228 @@
+{
+  "provenance": {
+    "script": "verify_conv_scalability.py",
+    "onnx": "conv_taxinet.onnx",
+    "eps": 0.05,
+    "alpha": 1.0,
+    "d": 8,
+    "timeout_s": 300
+  },
+  "results": [
+    {
+      "anchor_idx": 20,
+      "R1": [
+        {
+          "subquery": "CTE_upper",
+          "status": "unsat",
+          "time_s": 120.9
+        },
+        {
+          "subquery": "CTE_lower",
+          "status": "sat",
+          "time_s": 5.8
+        }
+      ],
+      "R4": [
+        {
+          "subquery": "CTE_upper",
+          "status": "unsat",
+          "time_s": 0.6
+        },
+        {
+          "subquery": "CTE_lower",
+          "status": "unsat",
+          "time_s": 1.3
+        }
+      ]
+    },
+    {
+      "anchor_idx": 1327,
+      "R1": [
+        {
+          "subquery": "CTE_upper",
+          "status": "sat",
+          "time_s": 5.0
+        },
+        {
+          "subquery": "CTE_lower",
+          "status": "sat",
+          "time_s": 4.9
+        }
+      ],
+      "R4": [
+        {
+          "subquery": "CTE_upper",
+          "status": "unsat",
+          "time_s": 63.7
+        },
+        {
+          "subquery": "CTE_lower",
+          "status": "timeout",
+          "time_s": 300.1
+        }
+      ]
+    },
+    {
+      "anchor_idx": 2823,
+      "R1": [
+        {
+          "subquery": "CTE_upper",
+          "status": "sat",
+          "time_s": 5.5
+        },
+        {
+          "subquery": "CTE_lower",
+          "status": "unsat",
+          "time_s": 5.1
+        }
+      ],
+      "R4": [
+        {
+          "subquery": "CTE_upper",
+          "status": "unsat",
+          "time_s": 31.1
+        },
+        {
+          "subquery": "CTE_lower",
+          "status": "sat",
+          "time_s": 5.9
+        }
+      ]
+    },
+    {
+      "anchor_idx": 4223,
+      "R1": [
+        {
+          "subquery": "CTE_upper",
+          "status": "error",
+          "time_s": 0.7
+        },
+        {
+          "subquery": "CTE_lower",
+          "status": "error",
+          "time_s": 0.7
+        }
+      ],
+      "R4": [
+        {
+          "subquery": "CTE_upper",
+          "status": "unsat",
+          "time_s": 0.6
+        },
+        {
+          "subquery": "CTE_lower",
+          "status": "unsat",
+          "time_s": 1.3
+        }
+      ]
+    },
+    {
+      "anchor_idx": 5627,
+      "R1": [
+        {
+          "subquery": "CTE_upper",
+          "status": "sat",
+          "time_s": 5.6
+        },
+        {
+          "subquery": "CTE_lower",
+          "status": "sat",
+          "time_s": 5.4
+        }
+      ],
+      "R4": [
+        {
+          "subquery": "CTE_upper",
+          "status": "unsat",
+          "time_s": 22.0
+        },
+        {
+          "subquery": "CTE_lower",
+          "status": "unsat",
+          "time_s": 17.6
+        }
+      ]
+    },
+    {
+      "anchor_idx": 7021,
+      "R1": [
+        {
+          "subquery": "CTE_upper",
+          "status": "sat",
+          "time_s": 7.0
+        },
+        {
+          "subquery": "CTE_lower",
+          "status": "sat",
+          "time_s": 11.7
+        }
+      ],
+      "R4": [
+        {
+          "subquery": "CTE_upper",
+          "status": "unsat",
+          "time_s": 3.4
+        },
+        {
+          "subquery": "CTE_lower",
+          "status": "unsat",
+          "time_s": 2.2
+        }
+      ]
+    },
+    {
+      "anchor_idx": 8334,
+      "R1": [
+        {
+          "subquery": "CTE_upper",
+          "status": "sat",
+          "time_s": 9.0
+        },
+        {
+          "subquery": "CTE_lower",
+          "status": "sat",
+          "time_s": 9.2
+        }
+      ],
+      "R4": [
+        {
+          "subquery": "CTE_upper",
+          "status": "unsat",
+          "time_s": 15.7
+        },
+        {
+          "subquery": "CTE_lower",
+          "status": "unsat",
+          "time_s": 9.6
+        }
+      ]
+    },
+    {
+      "anchor_idx": 9973,
+      "R1": [
+        {
+          "subquery": "CTE_upper",
+          "status": "sat",
+          "time_s": 9.0
+        },
+        {
+          "subquery": "CTE_lower",
+          "status": "sat",
+          "time_s": 14.3
+        }
+      ],
+      "R4": [
+        {
+          "subquery": "CTE_upper",
+          "status": "unsat",
+          "time_s": 12.6
+        },
+        {
+          "subquery": "CTE_lower",
+          "status": "unsat",
+          "time_s": 4.7
+        }
+      ]
+    }
+  ]
+}

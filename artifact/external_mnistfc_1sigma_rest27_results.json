@@ -1,0 +1,279 @@
+{
+  "provenance": {
+    "script": "external_mnistfc_1sigma_rest27.py",
+    "alpha": 1.0,
+    "valid_pixels": true
+  },
+  "results": [
+    {
+      "anchor_idx": 3,
+      "true_class": 0,
+      "target_class": 5,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 39.4,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 5,
+      "true_class": 1,
+      "target_class": 9,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 35.1,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 9,
+      "true_class": 9,
+      "target_class": 4,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 36.2,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 10,
+      "true_class": 0,
+      "target_class": 8,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 31.8,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 11,
+      "true_class": 6,
+      "target_class": 3,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 46.3,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 12,
+      "true_class": 9,
+      "target_class": 1,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 30.4,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 13,
+      "true_class": 0,
+      "target_class": 2,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 30.6,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 14,
+      "true_class": 1,
+      "target_class": 6,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 31.1,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 15,
+      "true_class": 5,
+      "target_class": 9,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 57.8,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 16,
+      "true_class": 9,
+      "target_class": 3,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 52.6,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 21,
+      "true_class": 6,
+      "target_class": 3,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 53.6,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 22,
+      "true_class": 6,
+      "target_class": 3,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 45.7,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 23,
+      "true_class": 5,
+      "target_class": 9,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 38.0,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 25,
+      "true_class": 0,
+      "target_class": 5,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 39.3,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 28,
+      "true_class": 0,
+      "target_class": 6,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 43.7,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 29,
+      "true_class": 1,
+      "target_class": 7,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 59.5,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 30,
+      "true_class": 3,
+      "target_class": 5,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 63.5,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 32,
+      "true_class": 3,
+      "target_class": 2,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 49.0,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 34,
+      "true_class": 7,
+      "target_class": 0,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 51.2,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 47,
+      "true_class": 2,
+      "target_class": 5,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 77.5,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 51,
+      "true_class": 3,
+      "target_class": 5,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 82.0,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 52,
+      "true_class": 5,
+      "target_class": 6,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 120.9,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 54,
+      "true_class": 6,
+      "target_class": 3,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 96.2,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 84,
+      "true_class": 8,
+      "target_class": 2,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 253.4,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 110,
+      "true_class": 8,
+      "target_class": 6,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 117.6,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 128,
+      "true_class": 8,
+      "target_class": 5,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 63.7,
+      "source": "rest27_direct"
+    },
+    {
+      "anchor_idx": 134,
+      "true_class": 8,
+      "target_class": 2,
+      "region": "R4_bounded",
+      "alpha": 1.0,
+      "status": "unsat",
+      "runtime_s": 36.6,
+      "source": "rest27_direct"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "per_pixel_std": [
+    {
+      "subset": "centered",
+      "n_images": 893,
+      "per_pixel_std_min": 0.01955106543801128,
+      "per_pixel_std_median": 0.06659126511330932,
+      "per_pixel_std_max": 0.1274760037617214,
+      "per_pixel_std_mean": 0.06382203878142191
+    },
+    {
+      "subset": "left",
+      "n_images": 4128,
+      "per_pixel_std_min": 0.028823590164590653,
+      "per_pixel_std_median": 0.06485295565062278,
+      "per_pixel_std_max": 0.11671752108224946,
+      "per_pixel_std_mean": 0.06704023345994631
+    },
+    {
+      "subset": "right",
+      "n_images": 4099,
+      "per_pixel_std_min": 0.023467522852607118,
+      "per_pixel_std_median": 0.0614719787859072,
+      "per_pixel_std_max": 0.09556861125720409,
+      "per_pixel_std_mean": 0.05932400473790603
+    },
+    {
+      "subset": "off_center",
+      "n_images": 9107,
+      "per_pixel_std_min": 0.04532750302441872,
+      "per_pixel_std_median": 0.06827856382592053,
+      "per_pixel_std_max": 0.109777111851587,
+      "per_pixel_std_mean": 0.06984670212984412
+    }
+  ],
+  "nearest_state_neighbor": [
+    {
+      "subset": "centered",
+      "n_queries": 400,
+      "min": 0.02163565158843994,
+      "max": 0.2419673204421997,
+      "mean": 0.10683554135262967,
+      "p5": 0.02841644883155823,
+      "p10": 0.032875680923461915,
+      "p25": 0.06002506613731384,
+      "p50": 0.1030081957578659,
+      "p75": 0.1474030315876007,
+      "p90": 0.18882831931114197,
+      "p95": 0.21492272913455962
+    },
+    {
+      "subset": "left",
+      "n_queries": 400,
+      "min": 0.0166398286819458,
+      "max": 0.25111058354377747,
+      "mean": 0.11459543973207474,
+      "p5": 0.03765738904476166,
+      "p10": 0.04769129157066345,
+      "p25": 0.07627289742231369,
+      "p50": 0.10777899622917175,
+      "p75": 0.14906077086925507,
+      "p90": 0.18911418914794928,
+      "p95": 0.21146427690982808
+    },
+    {
+      "subset": "right",
+      "n_queries": 400,
+      "min": 0.024381548166275024,
+      "max": 0.22798138856887817,
+      "mean": 0.07217602550983429,
+      "p5": 0.030715763568878174,
+      "p10": 0.03386371731758118,
+      "p25": 0.04187251627445221,
+      "p50": 0.06292413175106049,
+      "p75": 0.09029996395111084,
+      "p90": 0.12610447704792027,
+      "p95": 0.14025812447071062
+    }
+  ],
+  "same_position_pairs": {
+    "note": "no buckets with >=2 members at this tolerance"
+  },
+  "random_pairs": {
+    "n_pairs": 1000,
+    "min": 0.15256208181381226,
+    "max": 0.41370248794555664,
+    "mean": 0.27563770148158073,
+    "p5": 0.20882221162319184,
+    "p10": 0.2213926672935486,
+    "p25": 0.2430003434419632,
+    "p50": 0.2711349129676819,
+    "p75": 0.3056238666176796,
+    "p90": 0.3380558669567108,
+    "p95": 0.3571787104010582
+  },
+  "eps_anchoring": {
+    "eps_0.005": {
+      "below_centered_nn_p50": true,
+      "below_centered_nn_p10": true,
+      "below_random_pair_p50": true,
+      "below_random_pair_p10": true
+    },
+    "eps_0.01": {
+      "below_centered_nn_p50": true,
+      "below_centered_nn_p10": true,
+      "below_random_pair_p50": true,
+      "below_random_pair_p10": true
+    },
+    "eps_0.02": {
+      "below_centered_nn_p50": true,
+      "below_centered_nn_p10": true,
+      "below_random_pair_p50": true,
+      "below_random_pair_p10": true
+    },
+    "eps_0.03": {
+      "below_centered_nn_p50": true,
+      "below_centered_nn_p10": true,
+      "below_random_pair_p50": true,
+      "below_random_pair_p10": true
+    },
+    "eps_0.05": {
+      "below_centered_nn_p50": true,
+      "below_centered_nn_p10": false,
+      "below_random_pair_p50": true,
+      "below_random_pair_p10": true
+    },
+    "eps_0.075": {
+      "below_centered_nn_p50": true,
+      "below_centered_nn_p10": false,
+      "below_random_pair_p50": true,
+      "below_random_pair_p10": true
+    },
+    "eps_0.1": {
+      "below_centered_nn_p50": true,
+      "below_centered_nn_p10": false,
+      "below_random_pair_p50": true,
+      "below_random_pair_p10": true
+    },
+    "eps_0.15": {
+      "below_centered_nn_p50": false,
+      "below_centered_nn_p10": false,
+      "below_random_pair_p50": true,
+      "below_random_pair_p10": true
+    }
+  }
+}

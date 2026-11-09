@@ -1,0 +1,118 @@
+{
+  "provenance": {
+    "script": "verify_p4_left_threshold_sweep_complete.py",
+    "timestamp_utc": "2026-05-30T22:20:11.630458+00:00",
+    "timeout_seconds": 120,
+    "purpose": "Extend threshold sweep to -20 for regions not previously pushed there"
+  },
+  "by_region": {
+    "photometric_le_0p184": {
+      "largest_sat_k": -20,
+      "first_unsat_k": null,
+      "per_k": {
+        "k_10": {
+          "k": -10,
+          "status": "sat",
+          "time_seconds": 0.06,
+          "CTE": -10.0
+        },
+        "k_12": {
+          "k": -12,
+          "status": "sat",
+          "time_seconds": 0.06,
+          "CTE": -12.0
+        },
+        "k_15": {
+          "k": -15,
+          "status": "sat",
+          "time_seconds": 0.07,
+          "CTE": -15.0
+        },
+        "k_18": {
+          "k": -18,
+          "status": "sat",
+          "time_seconds": 0.1,
+          "CTE": -18.0
+        },
+        "k_20": {
+          "k": -20,
+          "status": "sat",
+          "time_seconds": 0.08,
+          "CTE": -20.0
+        }
+      }
+    },
+    "per_pair_lip_p99": {
+      "largest_sat_k": -20,
+      "first_unsat_k": null,
+      "per_k": {
+        "k_10": {
+          "k": -10,
+          "status": "sat",
+          "time_seconds": 0.12,
+          "CTE": -10.0
+        },
+        "k_12": {
+          "k": -12,
+          "status": "sat",
+          "time_seconds": 0.15,
+          "CTE": -12.0
+        },
+        "k_15": {
+          "k": -15,
+          "status": "sat",
+          "time_seconds": 0.15,
+          "CTE": -15.0
+        },
+        "k_18": {
+          "k": -18,
+          "status": "sat",
+          "time_seconds": 0.17,
+          "CTE": -18.0
+        },
+        "k_20": {
+          "k": -20,
+          "status": "sat",
+          "time_seconds": 0.22,
+          "CTE": -20.0
+        }
+      }
+    },
+    "per_pair_lip_p90": {
+      "largest_sat_k": -20,
+      "first_unsat_k": null,
+      "per_k": {
+        "k_10": {
+          "k": -10,
+          "status": "sat",
+          "time_seconds": 0.16,
+          "CTE": -10.0
+        },
+        "k_12": {
+          "k": -12,
+          "status": "sat",
+          "time_seconds": 0.17,
+          "CTE": -12.0
+        },
+        "k_15": {
+          "k": -15,
+          "status": "sat",
+          "time_seconds": 0.23,
+          "CTE": -15.0
+        },
+        "k_18": {
+          "k": -18,
+          "status": "sat",
+          "time_seconds": 0.26,
+          "CTE": -18.0
+        },
+        "k_20": {
+          "k": -20,
+          "status": "sat",
+          "time_seconds": 0.45,
+          "CTE": -20.0
+        }
+      }
+    }
+  }
+}

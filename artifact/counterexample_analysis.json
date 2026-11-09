@@ -1,0 +1,68 @@
+[
+  {
+    "property": "P1a (CTE >= 10)",
+    "unconstrained": {
+      "CTE": 10.0,
+      "HE": -52.470728,
+      "pixel_mean": 0.611054,
+      "mean_deviation": 0.111054,
+      "satisfies_mean_invariant": false,
+      "nearest_l2_dist": 2.014555,
+      "nearest_l2_cte": -0.8649
+    },
+    "mean_constrained": {
+      "CTE": 10.0,
+      "HE": -54.284214,
+      "pixel_mean": 0.5,
+      "mean_deviation": 0.0,
+      "satisfies_mean_invariant": true,
+      "nearest_l2_dist": 1.626792,
+      "nearest_l2_cte": -0.9474
+    },
+    "failure_survives_mean_constraint": true
+  },
+  {
+    "property": "P4 C_left (CTE > 0)",
+    "unconstrained": {
+      "CTE": 0.0,
+      "HE": -2.414173,
+      "pixel_mean": 0.472049,
+      "mean_deviation": 0.027951,
+      "satisfies_mean_invariant": false,
+      "nearest_l2_dist": 1.771694,
+      "nearest_l2_cte": 4.6037
+    },
+    "mean_constrained": {
+      "CTE": -4.376821,
+      "HE": 6.313047,
+      "pixel_mean": 0.5,
+      "mean_deviation": 0.0,
+      "satisfies_mean_invariant": true,
+      "nearest_l2_dist": 1.727764,
+      "nearest_l2_cte": 3.0497
+    },
+    "failure_survives_mean_constraint": true
+  },
+  {
+    "property": "P5 (Deadzone)",
+    "unconstrained": {
+      "CTE": -0.01,
+      "HE": -0.01,
+      "pixel_mean": 0.396623,
+      "mean_deviation": 0.103377,
+      "satisfies_mean_invariant": false,
+      "nearest_l2_dist": 1.664435,
+      "nearest_l2_cte": 3.8691
+    },
+    "mean_constrained": {
+      "CTE": -0.01,
+      "HE": -0.01,
+      "pixel_mean": 0.5,
+      "mean_deviation": 0.0,
+      "satisfies_mean_invariant": true,
+      "nearest_l2_dist": 1.788633,
+      "nearest_l2_cte": -5.3873
+    },
+    "failure_survives_mean_constraint": true
+  }
+]

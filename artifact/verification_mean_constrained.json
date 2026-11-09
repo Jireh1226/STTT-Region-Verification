@@ -1,0 +1,108 @@
+{
+  "mean_target": 0.5,
+  "sum_target": 64.0,
+  "P1_global_mean_constrained": {
+    "P1a_mean": {
+      "description": "CTE >= 10",
+      "status": "sat",
+      "time_seconds": 0.0459,
+      "counterexample": {
+        "CTE": 10.0,
+        "HE": -54.284214,
+        "input_mean": 0.5
+      }
+    },
+    "P1b_mean": {
+      "description": "CTE <= -10",
+      "status": "sat",
+      "time_seconds": 0.028,
+      "counterexample": {
+        "CTE": -10.0,
+        "HE": 13.494626,
+        "input_mean": 0.5
+      }
+    },
+    "P1c_mean": {
+      "description": "HE >= 90",
+      "status": "unsat",
+      "time_seconds": 2.6998
+    },
+    "P1d_mean": {
+      "description": "HE <= -90",
+      "status": "unsat",
+      "time_seconds": 3.9427
+    }
+  },
+  "P4_mean_constrained": {
+    "C_left_mean": {
+      "status": "sat",
+      "time_seconds": 0.026,
+      "counterexample": {
+        "CTE": -4.376821,
+        "HE": 6.313047,
+        "input_mean": 0.5
+      }
+    },
+    "C_right_mean": {
+      "status": "sat",
+      "time_seconds": 0.023,
+      "counterexample": {
+        "CTE": 0.0,
+        "HE": -0.423643,
+        "input_mean": 0.5
+      }
+    }
+  },
+  "P5_mean_constrained": {
+    "threshold": 0.01,
+    "status": "sat",
+    "time_seconds": 0.042,
+    "counterexample": {
+      "CTE": -0.01,
+      "HE": -0.01,
+      "input_mean": 0.5
+    }
+  },
+  "P5_threshold_sweep_mean_constrained": {
+    "threshold_0.01": {
+      "threshold": 0.01,
+      "status": "sat",
+      "time_seconds": 0.0437,
+      "counterexample": {
+        "CTE": -0.01,
+        "HE": -0.01,
+        "input_mean": 0.5
+      }
+    },
+    "threshold_0.1": {
+      "threshold": 0.1,
+      "status": "sat",
+      "time_seconds": 0.0372,
+      "counterexample": {
+        "CTE": -0.1,
+        "HE": -0.1,
+        "input_mean": 0.5
+      }
+    },
+    "threshold_0.5": {
+      "threshold": 0.5,
+      "status": "sat",
+      "time_seconds": 0.0422,
+      "counterexample": {
+        "CTE": -0.5,
+        "HE": -0.5,
+        "input_mean": 0.5
+      }
+    },
+    "threshold_1.0": {
+      "threshold": 1.0,
+      "status": "sat",
+      "time_seconds": 0.0281,
+      "counterexample": {
+        "CTE": -1.0,
+        "HE": -0.970201,
+        "input_mean": 0.5
+      }
+    }
+  }
+}

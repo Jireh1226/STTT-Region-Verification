@@ -1,0 +1,41 @@
+{
+  "provenance": {
+    "script": "idx confirm",
+    "timestamp_utc": "2026-06-30T00:07:17.254144+00:00"
+  },
+  "logits_at": "Y_0..9",
+  "pixels_at": "Y_10..793",
+  "confusion_only_no_pixel_bounds": [
+    {
+      "anchor_idx": 2,
+      "twoout_confusion_Y0to9": "unsat",
+      "unbounded_R4_1sigma": "unsat",
+      "match": true
+    },
+    {
+      "anchor_idx": 4,
+      "twoout_confusion_Y0to9": "unsat",
+      "unbounded_R4_1sigma": "unsat",
+      "match": true
+    },
+    {
+      "anchor_idx": 6,
+      "twoout_confusion_Y0to9": "sat",
+      "unbounded_R4_1sigma": "sat",
+      "match": true
+    },
+    {
+      "anchor_idx": 8,
+      "twoout_confusion_Y0to9": "sat",
+      "unbounded_R4_1sigma": "sat",
+      "match": true
+    },
+    {
+      "anchor_idx": 35,
+      "twoout_confusion_Y0to9": "unsat",
+      "unbounded_R4_1sigma": "unsat",
+      "match": true
+    }
+  ],
+  "all_match": true
+}

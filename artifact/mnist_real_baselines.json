@@ -1,0 +1,30 @@
+{
+  "provenance": {
+    "script": "audit_mnist_real_baselines.py",
+    "timestamp_utc": "2026-06-12T23:26:49.041378+00:00",
+    "classifier": "mnist_plausibility_classifier_weights.npz",
+    "l2_reference": "nearest same-class MNIST test digit, self excluded",
+    "pca": "top-8 directions over 100 nearest same-class train neighbors (matches mnist_regions.compute_local_pca)"
+  },
+  "real_test_classifier_baseline": {
+    "n": 10000,
+    "mean": 0.9918102500492172,
+    "median": 0.9995971491436453,
+    "frac_above_0.5": 0.9939,
+    "frac_below_0.1": 0.0024
+  },
+  "real_test_nearest_same_class_L2": {
+    "n": 10000,
+    "median": 4.772846292265921,
+    "mean": 4.636074874161277,
+    "p90": 6.171923872661451
+  },
+  "local_pca_top8_variance_explained": {
+    "p3_anchors": {
+      "n_anchors": 20,
+      "mean": 0.7523483312569328,
+      "min": 0.6981953325233472,
+      "max": 0.8185495429545363
+    }
+  }
+}
