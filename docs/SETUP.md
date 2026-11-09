@@ -61,4 +61,4 @@ The original [research README](../artifact/README.md) describes further targets.
 
 ## Manuscript
 
-The complete PDF is `manuscript/paper.pdf`. Its source is `manuscript/paper.tex`, with figures and LaTeX support files alongside it. Use a LaTeX installation with the packages named in the source if rebuilding the paper. The manuscript remains unpublished.
+The complete PDF is `manuscript/paper.pdf`. Its source is `manuscript/paper.tex`, with figures and LaTeX support files alongside it. Use a LaTeX installation with the packages named in the source if rebuilding the paper. The manuscript is the revised unpublished draft used in the graduation portfolio.

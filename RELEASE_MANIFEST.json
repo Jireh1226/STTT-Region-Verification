@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "fee391b41c94ce502123fd81db44bef0dd9d72bcb7a9c2521ef52d2bf8f5a8d0",
-      "bytes": 3481
+      "sha256": "c0d414fe191cd03b5304d9e15e9a89d445165b231475547ac20ec3b087eee36c",
+      "bytes": 3726
     },
     {
       "path": "RESULTS_AND_CODE.md",
@@ -34,13 +34,13 @@
     },
     {
       "path": "SOURCE_MANIFEST.json",
-      "sha256": "73a998f4924d8e70098c238ca3ced561a5524023a634566bdf9f6fe6d72cfc34",
-      "bytes": 184226
+      "sha256": "8c6bb5598c49c7298e939f0deeca32ec821a711aefb528f9b7db6b6e910e2bf4",
+      "bytes": 184492
     },
     {
       "path": "START_HERE.html",
-      "sha256": "396edec410c45923347e79d1623e06ba6ecb214ac2d0825a7f2a3dbc12390d0a",
-      "bytes": 57356
+      "sha256": "e0437582b10414fb7cfb92b24b841f5624c6c5f7df8b282d1801fcd67f33898c",
+      "bytes": 57369
     },
     {
       "path": "VALIDATION.json",
@@ -2239,8 +2239,8 @@
     },
     {
       "path": "docs/RELEASE_CHANGES.md",
-      "sha256": "8f94b9c343db86a0286665e4a7717dd4ae26e633a0f5e0c34b10e92185a54aef",
-      "bytes": 1061
+      "sha256": "101a278bd396982c21edb26b727d7dcfd0e3e548fc7a21c6da2b842c530db9f5",
+      "bytes": 1654
     },
     {
       "path": "docs/REQUIREMENTS.md",
@@ -2249,8 +2249,8 @@
     },
     {
       "path": "docs/SETUP.md",
-      "sha256": "1088c61f16cfe88119ef20400bf1e31b4117ed6adbb40c62770788f6d40093d9",
-      "bytes": 3459
+      "sha256": "2335a9251a3a1c0656cd9c0e2223385c22bd029556404edc00b57c9d51d68c76",
+      "bytes": 3505
     },
     {
       "path": "docs/THIRD_PARTY.md",
@@ -2294,13 +2294,13 @@
     },
     {
       "path": "manuscript/paper.pdf",
-      "sha256": "acc23b132fda5ba81445978b2362c4adf17e72997dc33dd9bc90843e711f5d4a",
-      "bytes": 964104
+      "sha256": "a1d3e1828c09f24f4c6aabde5a33549e8eb21da990faed6bef910aed7576c501",
+      "bytes": 943948
     },
     {
       "path": "manuscript/paper.tex",
-      "sha256": "72cbc9a3513cd9fca640ccaf8fda1bbf074d674fa0d9bad0c9e5aaa5f652c226",
-      "bytes": 126830
+      "sha256": "67d54afbf801094e63f5c657451110def1ab7aa492ddbc07decc74d5c2d31593",
+      "bytes": 115513
     },
     {
       "path": "manuscript/plausibility_P1a_mean_constrained.png",

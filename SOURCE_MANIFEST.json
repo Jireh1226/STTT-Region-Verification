@@ -3931,19 +3931,21 @@
       "path": "manuscript/paper.pdf",
       "source_tree": "portfolio",
       "source_relative": "evidence/selected/verification/manuscript.pdf",
-      "sha256": "acc23b132fda5ba81445978b2362c4adf17e72997dc33dd9bc90843e711f5d4a",
-      "bytes": 964104,
+      "sha256": "a1d3e1828c09f24f4c6aabde5a33549e8eb21da990faed6bef910aed7576c501",
+      "bytes": 943948,
       "source_sha256": "acc23b132fda5ba81445978b2362c4adf17e72997dc33dd9bc90843e711f5d4a",
-      "modified_for_release": false
+      "modified_for_release": true,
+      "release_change": "Editorial revision and explicit unpublished-draft status, November 8, 2026; original source hash retained."
     },
     {
       "path": "manuscript/paper.tex",
       "source_tree": "portfolio",
       "source_relative": "evidence/selected/verification/manuscript.tex",
-      "sha256": "72cbc9a3513cd9fca640ccaf8fda1bbf074d674fa0d9bad0c9e5aaa5f652c226",
-      "bytes": 126830,
+      "sha256": "67d54afbf801094e63f5c657451110def1ab7aa492ddbc07decc74d5c2d31593",
+      "bytes": 115513,
       "source_sha256": "72cbc9a3513cd9fca640ccaf8fda1bbf074d674fa0d9bad0c9e5aaa5f652c226",
-      "modified_for_release": false
+      "modified_for_release": true,
+      "release_change": "Editorial revision and explicit unpublished-draft status, November 8, 2026; original source hash retained."
     },
     {
       "path": "manuscript/SpringerLarge.sty",

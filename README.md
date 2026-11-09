@@ -2,11 +2,11 @@
 
 A neural-network verification result applies to the input region encoded for the solver. To make that scope explicit, I designed a reusable artifact that constructs input regions, attaches a requested property, and records the result together with the region's parameters. It also examines counterexamples using comparisons with reference images.
 
-This repository contains the implementation, saved experimental results, and my unpublished manuscript, **Region-Relative Verification of TinyTaxiNet Using Marabou 2.0**, prepared for STTT. I designed the study and workflow, with AI assistance for implementation. The experiments use TinyTaxiNet, MNIST, a VNN-COMP MNIST network, and LARD V2 runway imagery.
+This repository contains the implementation, saved experimental results, and my unpublished draft manuscript, **Region-Relative Verification of TinyTaxiNet Using Marabou 2.0**, prepared for STTT. I designed the study and workflow, with AI assistance for implementation. The experiments use TinyTaxiNet, MNIST, a VNN-COMP MNIST network, and LARD V2 runway imagery.
 
 ## Start here
 
-- [Full manuscript](manuscript/paper.pdf)
+- [Revised unpublished draft](manuscript/paper.pdf)
 - [Results and the code behind each finding](RESULTS_AND_CODE.md)
 - [Reusable verification module](artifact/region_audit.py)
 - [Complete file index](FILE_INDEX.md)
@@ -49,5 +49,7 @@ The [results map](RESULTS_AND_CODE.md) links these counts to their files and exp
 ## Run experiments
 
 The [setup guide](docs/SETUP.md) separates reviewing saved results from running new solver queries or training models. Scripts and their saved outputs live together in `artifact/`. The full manuscript, LaTeX source, and figures live in `manuscript/`.
+
+The manuscript was revised on November 8, 2026 for clarity and is explicitly labeled as an unpublished draft. Its PDF matches the version excerpted in the graduation portfolio. Experimental code and saved results are unchanged.
 
 The selected source snapshot includes the PCA, random-direction, MNIST, and LARD extensions as well as the earlier verification core. Model weights and datasets are obtained from the upstream projects listed in the setup guide. The project uses the [MIT license](LICENSE) selected for this repository. Third-party notices remain with their respective files.
